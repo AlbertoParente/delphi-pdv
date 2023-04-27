@@ -9,7 +9,12 @@ uses
 type
   TForm1 = class(TForm)
     PanelContainer: TPanel;
+    GridPanelMain: TGridPanel;
     PanelTitle: TPanel;
+    PanelButton: TPanel;
+    GridPanelCenter: TGridPanel;
+    GridPanelButtons: TGridPanel;
+    PanelCancelOperation: TPanel;
   private
     { Private declarations }
   public
