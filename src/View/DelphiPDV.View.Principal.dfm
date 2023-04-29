@@ -11,6 +11,9 @@ object Form1: TForm1
   Font.Name = 'Segoe UI'
   Font.Style = []
   Position = poDesigned
+  OnClose = FormClose
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
   TextHeight = 15
   object PanelContainer: TPanel
     Left = 0
@@ -123,12 +126,38 @@ object Form1: TForm1
               Column = 1
               Control = Panel1
               Row = 0
+            end
+            item
+              Column = 2
+              Control = Panel2
+              Row = 0
+            end
+            item
+              Column = 3
+              Control = Panel3
+              Row = 0
+            end
+            item
+              Column = 4
+              Control = Panel4
+              Row = 0
+            end
+            item
+              Column = 5
+              Control = Panel5
+              Row = 0
+            end
+            item
+              Column = 6
+              Control = Panel6
+              Row = 0
             end>
           RowCollection = <
             item
               Value = 100.000000000000000000
             end>
           TabOrder = 0
+          ExplicitTop = 6
           object PanelCancelOperation: TPanel
             AlignWithMargins = True
             Left = 0
@@ -199,10 +228,204 @@ object Form1: TForm1
               Height = 114
               Align = alClient
               Flat = True
-              ExplicitLeft = 16
-              ExplicitTop = 40
-              ExplicitWidth = 23
-              ExplicitHeight = 22
+              ExplicitLeft = 3
+            end
+          end
+          object Panel2: TPanel
+            AlignWithMargins = True
+            Left = 296
+            Top = 0
+            Width = 140
+            Height = 114
+            Margins.Left = 0
+            Margins.Top = 0
+            Margins.Bottom = 0
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 2
+            ExplicitLeft = 299
+            ExplicitTop = 36
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+            object Shape2: TShape
+              Left = 0
+              Top = 0
+              Width = 140
+              Height = 114
+              Align = alClient
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 64
+              ExplicitTop = 48
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object SpeedButton2: TSpeedButton
+              Left = 0
+              Top = 0
+              Width = 140
+              Height = 114
+              Align = alClient
+              Flat = True
+              ExplicitLeft = 3
+            end
+          end
+          object Panel3: TPanel
+            AlignWithMargins = True
+            Left = 439
+            Top = 0
+            Width = 141
+            Height = 114
+            Margins.Left = 0
+            Margins.Top = 0
+            Margins.Bottom = 0
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 3
+            ExplicitLeft = 442
+            ExplicitTop = 36
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+            object Shape3: TShape
+              Left = 0
+              Top = 0
+              Width = 141
+              Height = 114
+              Align = alClient
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 64
+              ExplicitTop = 48
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object SpeedButton3: TSpeedButton
+              Left = 0
+              Top = 0
+              Width = 141
+              Height = 114
+              Align = alClient
+              Flat = True
+              ExplicitLeft = 3
+              ExplicitWidth = 140
+            end
+          end
+          object Panel4: TPanel
+            AlignWithMargins = True
+            Left = 583
+            Top = 0
+            Width = 140
+            Height = 114
+            Margins.Left = 0
+            Margins.Top = 0
+            Margins.Bottom = 0
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 4
+            ExplicitLeft = 586
+            ExplicitTop = 36
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+            object Shape4: TShape
+              Left = 0
+              Top = 0
+              Width = 140
+              Height = 114
+              Align = alClient
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 64
+              ExplicitTop = 48
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object SpeedButton4: TSpeedButton
+              Left = 0
+              Top = 0
+              Width = 140
+              Height = 114
+              Align = alClient
+              Flat = True
+              ExplicitLeft = 3
+            end
+          end
+          object Panel5: TPanel
+            AlignWithMargins = True
+            Left = 726
+            Top = 0
+            Width = 140
+            Height = 114
+            Margins.Left = 0
+            Margins.Top = 0
+            Margins.Bottom = 0
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 5
+            ExplicitLeft = 729
+            ExplicitTop = 36
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+            object Shape5: TShape
+              Left = 0
+              Top = 0
+              Width = 140
+              Height = 114
+              Align = alClient
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 64
+              ExplicitTop = 48
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object SpeedButton5: TSpeedButton
+              Left = 0
+              Top = 0
+              Width = 140
+              Height = 114
+              Align = alClient
+              Flat = True
+              ExplicitLeft = 3
+            end
+          end
+          object Panel6: TPanel
+            AlignWithMargins = True
+            Left = 869
+            Top = 0
+            Width = 150
+            Height = 114
+            Margins.Left = 0
+            Margins.Top = 0
+            Margins.Bottom = 0
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 6
+            ExplicitLeft = 872
+            ExplicitTop = 36
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+            object Shape6: TShape
+              Left = 0
+              Top = 0
+              Width = 150
+              Height = 114
+              Align = alClient
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 64
+              ExplicitTop = 48
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object SpeedButton6: TSpeedButton
+              Left = 0
+              Top = 0
+              Width = 150
+              Height = 114
+              Align = alClient
+              Flat = True
+              ExplicitLeft = 3
+              ExplicitWidth = 140
             end
           end
         end
