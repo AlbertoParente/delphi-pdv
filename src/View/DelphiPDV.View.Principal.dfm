@@ -426,12 +426,12 @@ object Form1: TForm1
         ControlCollection = <
           item
             Column = 1
-            Control = Panel7
+            Control = GridPanel1
             Row = 0
           end
           item
             Column = 0
-            Control = Panel8
+            Control = cxGrid1
             Row = 0
           end>
         RowCollection = <
@@ -439,31 +439,61 @@ object Form1: TForm1
             Value = 100.000000000000000000
           end>
         TabOrder = 2
-        object Panel7: TPanel
+        object GridPanel1: TGridPanel
           Left = 715
           Top = 0
           Width = 307
           Height = 570
           Align = alClient
           BevelOuter = bvNone
+          ColumnCollection = <
+            item
+              Value = 100.000000000000000000
+            end>
+          ControlCollection = <>
+          RowCollection = <
+            item
+              Value = 20.000000000000000000
+            end
+            item
+              Value = 20.000000000000000000
+            end
+            item
+              Value = 20.000000000000000000
+            end
+            item
+              Value = 20.000000000000000000
+            end
+            item
+              Value = 20.000000000000000000
+            end>
           TabOrder = 0
-          ExplicitLeft = 840
+          ExplicitLeft = 848
           ExplicitTop = 144
           ExplicitWidth = 185
           ExplicitHeight = 41
         end
-        object Panel8: TPanel
+        object cxGrid1: TcxGrid
           Left = 0
           Top = 0
           Width = 715
           Height = 570
           Align = alClient
-          BevelOuter = bvNone
           TabOrder = 1
-          ExplicitLeft = 208
-          ExplicitTop = 216
-          ExplicitWidth = 185
-          ExplicitHeight = 41
+          ExplicitLeft = 256
+          ExplicitTop = 160
+          ExplicitWidth = 250
+          ExplicitHeight = 200
+          object cxGrid1DBTableView1: TcxGridDBTableView
+            Navigator.Buttons.CustomButtons = <>
+            ScrollbarAnnotations.CustomAnnotations = <>
+            DataController.Summary.DefaultGroupSummaryItems = <>
+            DataController.Summary.FooterSummaryItems = <>
+            DataController.Summary.SummaryGroups = <>
+          end
+          object cxGrid1Level1: TcxGridLevel
+            GridView = cxGrid1DBTableView1
+          end
         end
       end
     end
