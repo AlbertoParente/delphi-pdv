@@ -35,6 +35,8 @@ type
     Panel6: TPanel;
     Shape6: TShape;
     SpeedButton6: TSpeedButton;
+    Panel7: TPanel;
+    Panel8: TPanel;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -42,6 +44,8 @@ type
     { Private declarations }
   public
     { Public declarations }
+    Procedure Process;
+    Procedure Review;
   end;
 
 var
@@ -63,6 +67,16 @@ begin
 end;
 
 procedure TForm1.FormShow(Sender: TObject);
+begin
+//
+end;
+
+procedure TForm1.Process;
+begin
+//
+end;
+
+procedure TForm1.Review;
 begin
 //
 end;

@@ -157,7 +157,6 @@ object Form1: TForm1
               Value = 100.000000000000000000
             end>
           TabOrder = 0
-          ExplicitTop = 6
           object PanelCancelOperation: TPanel
             AlignWithMargins = True
             Left = 0
@@ -243,10 +242,6 @@ object Form1: TForm1
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 2
-            ExplicitLeft = 299
-            ExplicitTop = 36
-            ExplicitWidth = 185
-            ExplicitHeight = 41
             object Shape2: TShape
               Left = 0
               Top = 0
@@ -282,10 +277,6 @@ object Form1: TForm1
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 3
-            ExplicitLeft = 442
-            ExplicitTop = 36
-            ExplicitWidth = 185
-            ExplicitHeight = 41
             object Shape3: TShape
               Left = 0
               Top = 0
@@ -322,10 +313,6 @@ object Form1: TForm1
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 4
-            ExplicitLeft = 586
-            ExplicitTop = 36
-            ExplicitWidth = 185
-            ExplicitHeight = 41
             object Shape4: TShape
               Left = 0
               Top = 0
@@ -361,10 +348,6 @@ object Form1: TForm1
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 5
-            ExplicitLeft = 729
-            ExplicitTop = 36
-            ExplicitWidth = 185
-            ExplicitHeight = 41
             object Shape5: TShape
               Left = 0
               Top = 0
@@ -400,10 +383,6 @@ object Form1: TForm1
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 6
-            ExplicitLeft = 872
-            ExplicitTop = 36
-            ExplicitWidth = 185
-            ExplicitHeight = 41
             object Shape6: TShape
               Left = 0
               Top = 0
@@ -444,12 +423,48 @@ object Form1: TForm1
           item
             Value = 30.000000000000000000
           end>
-        ControlCollection = <>
+        ControlCollection = <
+          item
+            Column = 1
+            Control = Panel7
+            Row = 0
+          end
+          item
+            Column = 0
+            Control = Panel8
+            Row = 0
+          end>
         RowCollection = <
           item
             Value = 100.000000000000000000
           end>
         TabOrder = 2
+        object Panel7: TPanel
+          Left = 715
+          Top = 0
+          Width = 307
+          Height = 570
+          Align = alClient
+          BevelOuter = bvNone
+          TabOrder = 0
+          ExplicitLeft = 840
+          ExplicitTop = 144
+          ExplicitWidth = 185
+          ExplicitHeight = 41
+        end
+        object Panel8: TPanel
+          Left = 0
+          Top = 0
+          Width = 715
+          Height = 570
+          Align = alClient
+          BevelOuter = bvNone
+          TabOrder = 1
+          ExplicitLeft = 208
+          ExplicitTop = 216
+          ExplicitWidth = 185
+          ExplicitHeight = 41
+        end
       end
     end
   end
