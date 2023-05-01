@@ -60,9 +60,16 @@ type
     cxGrid1DBTableView1: TcxGridDBTableView;
     cxGrid1Level1: TcxGridLevel;
     cxGrid1: TcxGrid;
+    Panel7: TPanel;
+    Panel8: TPanel;
+    Panel9: TPanel;
+    Panel10: TPanel;
+    Panel11: TPanel;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormDestroy(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -79,6 +86,16 @@ implementation
 {$R *.dfm}
 
 procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+//
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+//
+end;
+
+procedure TForm1.FormDestroy(Sender: TObject);
 begin
 //
 end;

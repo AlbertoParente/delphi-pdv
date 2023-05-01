@@ -12,6 +12,8 @@ object Form1: TForm1
   Font.Style = []
   Position = poDesigned
   OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
   OnKeyDown = FormKeyDown
   OnShow = FormShow
   TextHeight = 15
@@ -189,10 +191,7 @@ object Form1: TForm1
               Height = 114
               Align = alClient
               Flat = True
-              ExplicitLeft = 16
-              ExplicitTop = 40
-              ExplicitWidth = 23
-              ExplicitHeight = 22
+              ExplicitTop = 6
             end
           end
           object Panel1: TPanel
@@ -450,7 +449,32 @@ object Form1: TForm1
             item
               Value = 100.000000000000000000
             end>
-          ControlCollection = <>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = Panel7
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = Panel8
+              Row = 1
+            end
+            item
+              Column = 0
+              Control = Panel9
+              Row = 2
+            end
+            item
+              Column = 0
+              Control = Panel10
+              Row = 3
+            end
+            item
+              Column = 0
+              Control = Panel11
+              Row = 4
+            end>
           RowCollection = <
             item
               Value = 20.000000000000000000
@@ -468,10 +492,73 @@ object Form1: TForm1
               Value = 20.000000000000000000
             end>
           TabOrder = 0
-          ExplicitLeft = 848
-          ExplicitTop = 144
-          ExplicitWidth = 185
-          ExplicitHeight = 41
+          ExplicitLeft = 721
+          ExplicitTop = -3
+          object Panel7: TPanel
+            Left = 0
+            Top = 0
+            Width = 307
+            Height = 114
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 0
+            ExplicitLeft = 184
+            ExplicitTop = 56
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+          end
+          object Panel8: TPanel
+            Left = 0
+            Top = 114
+            Width = 307
+            Height = 114
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 1
+            ExplicitLeft = 184
+            ExplicitTop = 56
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+          end
+          object Panel9: TPanel
+            Left = 0
+            Top = 228
+            Width = 307
+            Height = 114
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 2
+            ExplicitLeft = 184
+            ExplicitTop = 56
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+          end
+          object Panel10: TPanel
+            Left = 0
+            Top = 342
+            Width = 307
+            Height = 114
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 3
+            ExplicitLeft = 184
+            ExplicitTop = 56
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+          end
+          object Panel11: TPanel
+            Left = 0
+            Top = 456
+            Width = 307
+            Height = 114
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 4
+            ExplicitLeft = 184
+            ExplicitTop = 56
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+          end
         end
         object cxGrid1: TcxGrid
           Left = 0
@@ -480,10 +567,6 @@ object Form1: TForm1
           Height = 570
           Align = alClient
           TabOrder = 1
-          ExplicitLeft = 256
-          ExplicitTop = 160
-          ExplicitWidth = 250
-          ExplicitHeight = 200
           object cxGrid1DBTableView1: TcxGridDBTableView
             Navigator.Buttons.CustomButtons = <>
             ScrollbarAnnotations.CustomAnnotations = <>
