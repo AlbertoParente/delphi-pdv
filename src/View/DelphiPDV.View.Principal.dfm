@@ -430,7 +430,7 @@ object Form1: TForm1
           end
           item
             Column = 0
-            Control = cxGrid1
+            Control = DBGrid
             Row = 0
           end>
         RowCollection = <
@@ -492,8 +492,6 @@ object Form1: TForm1
               Value = 20.000000000000000000
             end>
           TabOrder = 0
-          ExplicitLeft = 721
-          ExplicitTop = -3
           object Panel7: TPanel
             Left = 0
             Top = 0
@@ -502,10 +500,6 @@ object Form1: TForm1
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 0
-            ExplicitLeft = 184
-            ExplicitTop = 56
-            ExplicitWidth = 185
-            ExplicitHeight = 41
           end
           object Panel8: TPanel
             Left = 0
@@ -515,10 +509,6 @@ object Form1: TForm1
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 1
-            ExplicitLeft = 184
-            ExplicitTop = 56
-            ExplicitWidth = 185
-            ExplicitHeight = 41
           end
           object Panel9: TPanel
             Left = 0
@@ -528,10 +518,6 @@ object Form1: TForm1
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 2
-            ExplicitLeft = 184
-            ExplicitTop = 56
-            ExplicitWidth = 185
-            ExplicitHeight = 41
           end
           object Panel10: TPanel
             Left = 0
@@ -541,10 +527,6 @@ object Form1: TForm1
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 3
-            ExplicitLeft = 184
-            ExplicitTop = 56
-            ExplicitWidth = 185
-            ExplicitHeight = 41
           end
           object Panel11: TPanel
             Left = 0
@@ -554,28 +536,136 @@ object Form1: TForm1
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 4
-            ExplicitLeft = 184
-            ExplicitTop = 56
-            ExplicitWidth = 185
-            ExplicitHeight = 41
           end
         end
-        object cxGrid1: TcxGrid
+        object DBGrid: TcxGrid
+          AlignWithMargins = True
           Left = 0
-          Top = 0
+          Top = 2
           Width = 715
-          Height = 570
+          Height = 568
+          Margins.Left = 0
+          Margins.Top = 2
+          Margins.Right = 0
+          Margins.Bottom = 0
           Align = alClient
+          BevelInner = bvNone
+          BevelOuter = bvNone
+          Enabled = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
           TabOrder = 1
-          object cxGrid1DBTableView1: TcxGridDBTableView
+          TabStop = False
+          LookAndFeel.Kind = lfOffice11
+          ExplicitLeft = 232
+          ExplicitTop = 185
+          ExplicitWidth = 250
+          ExplicitHeight = 200
+          object GridView: TcxGridDBTableView
+            Navigator.Buttons.CustomButtons = <>
+            Navigator.Buttons.First.Visible = True
+            Navigator.Buttons.PriorPage.Visible = True
+            Navigator.Buttons.Prior.Visible = True
+            Navigator.Buttons.Next.Visible = True
+            Navigator.Buttons.NextPage.Visible = True
+            Navigator.Buttons.Last.Visible = True
+            Navigator.Buttons.Insert.Visible = True
+            Navigator.Buttons.Append.Visible = False
+            Navigator.Buttons.Delete.Visible = True
+            Navigator.Buttons.Edit.Visible = True
+            Navigator.Buttons.Post.Visible = True
+            Navigator.Buttons.Cancel.Visible = True
+            Navigator.Buttons.Refresh.Visible = True
+            Navigator.Buttons.SaveBookmark.Visible = True
+            Navigator.Buttons.GotoBookmark.Visible = True
+            Navigator.Buttons.Filter.Visible = True
+            FilterBox.CustomizeDialog = False
+            ScrollbarAnnotations.CustomAnnotations = <>
+            DataController.Filter.Options = [fcoCaseInsensitive]
+            DataController.Summary.DefaultGroupSummaryItems = <>
+            DataController.Summary.FooterSummaryItems = <>
+            DataController.Summary.SummaryGroups = <>
+            Filtering.ColumnFilteredItemsList = True
+            OptionsBehavior.CellHints = True
+            OptionsBehavior.DragDropText = True
+            OptionsBehavior.IncSearch = True
+            OptionsCustomize.ColumnFiltering = False
+            OptionsCustomize.ColumnGrouping = False
+            OptionsCustomize.ColumnHidingOnGrouping = False
+            OptionsCustomize.ColumnHorzSizing = False
+            OptionsCustomize.ColumnMoving = False
+            OptionsCustomize.ColumnSorting = False
+            OptionsCustomize.ColumnsQuickCustomizationReordering = qcrEnabled
+            OptionsCustomize.DataRowSizing = True
+            OptionsData.CancelOnExit = False
+            OptionsData.Deleting = False
+            OptionsData.DeletingConfirmation = False
+            OptionsData.Editing = False
+            OptionsData.Inserting = False
+            OptionsSelection.CellSelect = False
+            OptionsSelection.HideSelection = True
+            OptionsView.FocusRect = False
+            OptionsView.NoDataToDisplayInfoText = '<Sem Dados>'
+            OptionsView.ColumnAutoWidth = True
+            OptionsView.GroupByBox = False
+            OptionsView.ShowColumnFilterButtons = sfbAlways
+            object ColumnCodigo: TcxGridDBColumn
+              Caption = 'Codigo'
+              DataBinding.FieldName = 'uf'
+              PropertiesClassName = 'TcxTextEditProperties'
+              Properties.Alignment.Horz = taCenter
+              HeaderAlignmentHorz = taCenter
+              Options.AutoWidthSizable = False
+              Width = 60
+            end
+            object ColumnItem: TcxGridDBColumn
+              Caption = 'Item'
+              DataBinding.FieldName = 'tipoconselho'
+              PropertiesClassName = 'TcxTextEditProperties'
+              Properties.Alignment.Horz = taCenter
+              HeaderAlignmentHorz = taCenter
+              Options.AutoWidthSizable = False
+              Width = 60
+            end
+            object ColumnDescriptionProduct: TcxGridDBColumn
+              Caption = 'Descri'#231#227'o do Produto'
+              DataBinding.FieldName = 'numconselho'
+              PropertiesClassName = 'TcxTextEditProperties'
+              Properties.Alignment.Horz = taRightJustify
+              Properties.MaxLength = 0
+              Options.AutoWidthSizable = False
+              Width = 200
+            end
+            object ColumnUnitaryValue: TcxGridDBColumn
+              Caption = 'Valor Unit'#225'rio'
+              DataBinding.FieldName = 'nome'
+              PropertiesClassName = 'TcxTextEditProperties'
+              HeaderAlignmentHorz = taRightJustify
+            end
+            object ColumnQuantity: TcxGridDBColumn
+              Caption = 'Quantidade'
+              HeaderAlignmentHorz = taCenter
+            end
+            object ColumnSubTotal: TcxGridDBColumn
+              Caption = 'Sub-Total'
+              HeaderAlignmentHorz = taRightJustify
+            end
+          end
+          object DBGridDBCardView1: TcxGridDBCardView
             Navigator.Buttons.CustomButtons = <>
             ScrollbarAnnotations.CustomAnnotations = <>
             DataController.Summary.DefaultGroupSummaryItems = <>
             DataController.Summary.FooterSummaryItems = <>
             DataController.Summary.SummaryGroups = <>
+            OptionsView.CardIndent = 7
+            OptionsView.CellAutoHeight = True
           end
-          object cxGrid1Level1: TcxGridLevel
-            GridView = cxGrid1DBTableView1
+          object DBGridLevel1: TcxGridLevel
+            GridView = GridView
           end
         end
       end

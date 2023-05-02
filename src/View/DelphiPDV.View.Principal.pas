@@ -25,7 +25,8 @@ uses
   dxSkinXmas2008Blue, cxStyles, cxCustomData, cxFilter, cxData, cxDataStorage,
   cxEdit, cxNavigator, dxDateRanges, dxScrollbarAnnotations, Data.DB, cxDBData,
   cxGridLevel, cxClasses, cxGridCustomView, cxGridCustomTableView,
-  cxGridTableView, cxGridDBTableView, cxGrid;
+  cxGridTableView, cxGridDBTableView, cxGrid, cxTextEdit,
+  cxGridCustomLayoutView, cxGridCardView, cxGridDBCardView;
 
 type
   TForm1 = class(TForm)
@@ -57,14 +58,21 @@ type
     Shape6: TShape;
     SpeedButton6: TSpeedButton;
     GridPanel1: TGridPanel;
-    cxGrid1DBTableView1: TcxGridDBTableView;
-    cxGrid1Level1: TcxGridLevel;
-    cxGrid1: TcxGrid;
     Panel7: TPanel;
     Panel8: TPanel;
     Panel9: TPanel;
     Panel10: TPanel;
     Panel11: TPanel;
+    DBGrid: TcxGrid;
+    GridView: TcxGridDBTableView;
+    ColumnCodigo: TcxGridDBColumn;
+    ColumnItem: TcxGridDBColumn;
+    ColumnDescriptionProduct: TcxGridDBColumn;
+    ColumnUnitaryValue: TcxGridDBColumn;
+    DBGridDBCardView1: TcxGridDBCardView;
+    DBGridLevel1: TcxGridLevel;
+    ColumnQuantity: TcxGridDBColumn;
+    ColumnSubTotal: TcxGridDBColumn;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
