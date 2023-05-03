@@ -58,11 +58,6 @@ type
     Shape6: TShape;
     SpeedButton6: TSpeedButton;
     GridPanel1: TGridPanel;
-    Panel7: TPanel;
-    Panel8: TPanel;
-    Panel9: TPanel;
-    Panel10: TPanel;
-    Panel11: TPanel;
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -73,6 +68,22 @@ type
     DBGridLevel1: TcxGridLevel;
     ColumnQuantity: TcxGridDBColumn;
     ColumnSubTotal: TcxGridDBColumn;
+    Panel7: TPanel;
+    Shape7: TShape;
+    SpeedButton7: TSpeedButton;
+    Panel8: TPanel;
+    Shape8: TShape;
+    SpeedButton8: TSpeedButton;
+    Panel9: TPanel;
+    Shape9: TShape;
+    SpeedButton9: TSpeedButton;
+    Panel10: TPanel;
+    Shape10: TShape;
+    SpeedButton10: TSpeedButton;
+    Panel11: TPanel;
+    Shape11: TShape;
+    SpeedButton11: TSpeedButton;
+    aDataSource: TDataSource;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -111,9 +122,32 @@ end;
 procedure TForm1.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
+  inherited;
+  case Key of
+    VK_ESCAPE:
+    begin
 //
+    end;
+    VK_NEXT:
+    begin
+      Process;
+    end;
+    VK_RETURN:
+    begin
+//
+    end;
+    VK_UP:
+    begin
+      if Assigned(aDataSource.DataSet) then
+        aDataSource.DataSet.Prior;
+    end;
+    VK_DOWN:
+    begin
+      if Assigned(aDataSource.DataSet) then
+        aDataSource.DataSet.Next;
+    end;
+  end;
 end;
-
 procedure TForm1.FormShow(Sender: TObject);
 begin
 //

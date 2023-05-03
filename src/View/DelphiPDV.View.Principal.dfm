@@ -493,49 +493,184 @@ object Form1: TForm1
             end>
           TabOrder = 0
           object Panel7: TPanel
+            AlignWithMargins = True
             Left = 0
             Top = 0
-            Width = 307
+            Width = 304
             Height = 114
+            Margins.Left = 0
+            Margins.Top = 0
+            Margins.Bottom = 0
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 0
+            object Shape7: TShape
+              Left = 0
+              Top = 0
+              Width = 304
+              Height = 114
+              Align = alClient
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 64
+              ExplicitTop = 48
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object SpeedButton7: TSpeedButton
+              Left = 0
+              Top = 0
+              Width = 304
+              Height = 114
+              Align = alClient
+              Flat = True
+              ExplicitLeft = 3
+              ExplicitWidth = 140
+            end
           end
           object Panel8: TPanel
+            AlignWithMargins = True
             Left = 0
             Top = 114
-            Width = 307
+            Width = 304
             Height = 114
+            Margins.Left = 0
+            Margins.Top = 0
+            Margins.Bottom = 0
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 1
+            object Shape8: TShape
+              Left = 0
+              Top = 0
+              Width = 304
+              Height = 114
+              Align = alClient
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 64
+              ExplicitTop = 48
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object SpeedButton8: TSpeedButton
+              Left = 0
+              Top = 0
+              Width = 304
+              Height = 114
+              Align = alClient
+              Flat = True
+              ExplicitLeft = 3
+              ExplicitWidth = 140
+            end
           end
           object Panel9: TPanel
+            AlignWithMargins = True
             Left = 0
             Top = 228
-            Width = 307
+            Width = 304
             Height = 114
+            Margins.Left = 0
+            Margins.Top = 0
+            Margins.Bottom = 0
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 2
+            object Shape9: TShape
+              Left = 0
+              Top = 0
+              Width = 304
+              Height = 114
+              Align = alClient
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 64
+              ExplicitTop = 48
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object SpeedButton9: TSpeedButton
+              Left = 0
+              Top = 0
+              Width = 304
+              Height = 114
+              Align = alClient
+              Flat = True
+              ExplicitLeft = 3
+              ExplicitWidth = 140
+            end
           end
           object Panel10: TPanel
+            AlignWithMargins = True
             Left = 0
             Top = 342
-            Width = 307
+            Width = 304
             Height = 114
+            Margins.Left = 0
+            Margins.Top = 0
+            Margins.Bottom = 0
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 3
+            object Shape10: TShape
+              Left = 0
+              Top = 0
+              Width = 304
+              Height = 114
+              Align = alClient
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 64
+              ExplicitTop = 48
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object SpeedButton10: TSpeedButton
+              Left = 0
+              Top = 0
+              Width = 304
+              Height = 114
+              Align = alClient
+              Flat = True
+              ExplicitLeft = 3
+              ExplicitWidth = 140
+            end
           end
           object Panel11: TPanel
+            AlignWithMargins = True
             Left = 0
             Top = 456
-            Width = 307
+            Width = 304
             Height = 114
+            Margins.Left = 0
+            Margins.Top = 0
+            Margins.Bottom = 0
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 4
+            object Shape11: TShape
+              Left = 0
+              Top = 0
+              Width = 304
+              Height = 114
+              Align = alClient
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 64
+              ExplicitTop = 48
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object SpeedButton11: TSpeedButton
+              Left = 0
+              Top = 0
+              Width = 304
+              Height = 114
+              Align = alClient
+              Flat = True
+              ExplicitLeft = 3
+              ExplicitWidth = 140
+            end
           end
         end
         object DBGrid: TcxGrid
@@ -561,10 +696,6 @@ object Form1: TForm1
           TabOrder = 1
           TabStop = False
           LookAndFeel.Kind = lfOffice11
-          ExplicitLeft = 232
-          ExplicitTop = 185
-          ExplicitWidth = 250
-          ExplicitHeight = 200
           object GridView: TcxGridDBTableView
             Navigator.Buttons.CustomButtons = <>
             Navigator.Buttons.First.Visible = True
@@ -648,10 +779,12 @@ object Form1: TForm1
             end
             object ColumnQuantity: TcxGridDBColumn
               Caption = 'Quantidade'
+              PropertiesClassName = 'TcxTextEditProperties'
               HeaderAlignmentHorz = taCenter
             end
             object ColumnSubTotal: TcxGridDBColumn
               Caption = 'Sub-Total'
+              PropertiesClassName = 'TcxTextEditProperties'
               HeaderAlignmentHorz = taRightJustify
             end
           end
@@ -670,5 +803,9 @@ object Form1: TForm1
         end
       end
     end
+  end
+  object aDataSource: TDataSource
+    Left = 643
+    Top = 456
   end
 end
