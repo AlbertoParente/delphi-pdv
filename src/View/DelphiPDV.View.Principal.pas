@@ -29,7 +29,7 @@ uses
   cxGridCustomLayoutView, cxGridCardView, cxGridDBCardView;
 
 type
-  TForm1 = class(TForm)
+  TFormPrincipal = class(TForm)
     PanelContainer: TPanel;
     GridPanelMain: TGridPanel;
     PanelTitle: TPanel;
@@ -39,24 +39,6 @@ type
     PanelCancelOperation: TPanel;
     ShapeCancelOperation: TShape;
     SpeedButtonCancelOperation: TSpeedButton;
-    Panel1: TPanel;
-    Shape1: TShape;
-    SpeedButton1: TSpeedButton;
-    Panel2: TPanel;
-    Shape2: TShape;
-    SpeedButton2: TSpeedButton;
-    Panel3: TPanel;
-    Shape3: TShape;
-    SpeedButton3: TSpeedButton;
-    Panel4: TPanel;
-    Shape4: TShape;
-    SpeedButton4: TSpeedButton;
-    Panel5: TPanel;
-    Shape5: TShape;
-    SpeedButton5: TSpeedButton;
-    Panel6: TPanel;
-    Shape6: TShape;
-    SpeedButton6: TSpeedButton;
     GridPanel1: TGridPanel;
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
@@ -68,21 +50,6 @@ type
     DBGridLevel1: TcxGridLevel;
     ColumnQuantity: TcxGridDBColumn;
     ColumnSubTotal: TcxGridDBColumn;
-    Panel7: TPanel;
-    Shape7: TShape;
-    SpeedButton7: TSpeedButton;
-    Panel8: TPanel;
-    Shape8: TShape;
-    SpeedButton8: TSpeedButton;
-    Panel9: TPanel;
-    Shape9: TShape;
-    SpeedButton9: TSpeedButton;
-    Panel10: TPanel;
-    Shape10: TShape;
-    SpeedButton10: TSpeedButton;
-    Panel11: TPanel;
-    Shape11: TShape;
-    SpeedButton11: TSpeedButton;
     aDataSource: TDataSource;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
@@ -98,28 +65,28 @@ type
   end;
 
 var
-  Form1: TForm1;
+  FormPrincipal: TFormPrincipal;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TFormPrincipal.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
 //
 end;
 
-procedure TForm1.FormCreate(Sender: TObject);
+procedure TFormPrincipal.FormCreate(Sender: TObject);
 begin
 //
 end;
 
-procedure TForm1.FormDestroy(Sender: TObject);
+procedure TFormPrincipal.FormDestroy(Sender: TObject);
 begin
 //
 end;
 
-procedure TForm1.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TFormPrincipal.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -148,17 +115,18 @@ begin
     end;
   end;
 end;
-procedure TForm1.FormShow(Sender: TObject);
+
+procedure TFormPrincipal.FormShow(Sender: TObject);
 begin
 //
 end;
 
-procedure TForm1.Process;
+procedure TFormPrincipal.Process;
 begin
 //
 end;
 
-procedure TForm1.Review;
+procedure TFormPrincipal.Review;
 begin
 //
 end;
