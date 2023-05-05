@@ -51,11 +51,42 @@ type
     ColumnQuantity: TcxGridDBColumn;
     ColumnSubTotal: TcxGridDBColumn;
     aDataSource: TDataSource;
+    Panel1: TPanel;
+    Shape1: TShape;
+    SpeedButton1: TSpeedButton;
+    Panel2: TPanel;
+    Shape2: TShape;
+    SpeedButton2: TSpeedButton;
+    Panel3: TPanel;
+    Shape3: TShape;
+    SpeedButton3: TSpeedButton;
+    Panel4: TPanel;
+    Shape4: TShape;
+    SpeedButton4: TSpeedButton;
+    Panel5: TPanel;
+    Shape5: TShape;
+    SpeedButton5: TSpeedButton;
+    Panel6: TPanel;
+    Shape6: TShape;
+    SpeedButton6: TSpeedButton;
+    Panel7: TPanel;
+    Shape7: TShape;
+    SpeedButton7: TSpeedButton;
+    Panel8: TPanel;
+    Shape8: TShape;
+    SpeedButton8: TSpeedButton;
+    Panel9: TPanel;
+    Shape9: TShape;
+    SpeedButton9: TSpeedButton;
+    Panel10: TPanel;
+    Shape10: TShape;
+    SpeedButton10: TSpeedButton;
+    Panel11: TPanel;
+    Shape11: TShape;
+    SpeedButton11: TSpeedButton;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
-    procedure FormDestroy(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -72,16 +103,6 @@ implementation
 {$R *.dfm}
 
 procedure TFormPrincipal.FormClose(Sender: TObject; var Action: TCloseAction);
-begin
-//
-end;
-
-procedure TFormPrincipal.FormCreate(Sender: TObject);
-begin
-//
-end;
-
-procedure TFormPrincipal.FormDestroy(Sender: TObject);
 begin
 //
 end;
