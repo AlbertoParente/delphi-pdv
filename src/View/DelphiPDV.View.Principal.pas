@@ -69,24 +69,12 @@ type
     Panel6: TPanel;
     Shape6: TShape;
     SpeedButton6: TSpeedButton;
-    Panel7: TPanel;
-    Shape7: TShape;
-    SpeedButton7: TSpeedButton;
-    Panel8: TPanel;
-    Shape8: TShape;
-    SpeedButton8: TSpeedButton;
-    Panel9: TPanel;
-    Shape9: TShape;
-    SpeedButton9: TSpeedButton;
-    Panel10: TPanel;
-    Shape10: TShape;
-    SpeedButton10: TSpeedButton;
-    Panel11: TPanel;
-    Shape11: TShape;
-    SpeedButton11: TSpeedButton;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+      ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
+      var ADone: Boolean);
   private
     { Private declarations }
   public
@@ -139,7 +127,19 @@ end;
 
 procedure TFormPrincipal.FormShow(Sender: TObject);
 begin
-//
+  aDataSource.DataSet := nil;
+end;
+
+procedure TFormPrincipal.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+  ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
+  var ADone: Boolean);
+begin
+  inherited;
+  if AViewInfo.GridRecord.Selected then
+  begin
+    ACanvas.Brush.Color := clHighlight;
+    ACanvas.Font.Color  := clWhite;
+  end;
 end;
 
 procedure TFormPrincipal.Process;
