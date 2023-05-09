@@ -463,7 +463,32 @@ object FormPrincipal: TFormPrincipal
             item
               Value = 100.000000000000000000
             end>
-          ControlCollection = <>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = Panel1
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = Panel2
+              Row = 1
+            end
+            item
+              Column = 0
+              Control = Panel3
+              Row = 2
+            end
+            item
+              Column = 0
+              Control = Panel4
+              Row = 3
+            end
+            item
+              Column = 0
+              Control = Panel5
+              Row = 4
+            end>
           RowCollection = <
             item
               Value = 20.000000000000000000
@@ -481,6 +506,216 @@ object FormPrincipal: TFormPrincipal
               Value = 20.000000000000000000
             end>
           TabOrder = 0
+          ExplicitLeft = 718
+          ExplicitTop = 6
+          object Panel1: TPanel
+            AlignWithMargins = True
+            Left = 0
+            Top = 0
+            Width = 304
+            Height = 114
+            Margins.Left = 0
+            Margins.Top = 0
+            Margins.Bottom = 0
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 0
+            ExplicitLeft = 3
+            ExplicitTop = 8
+            object Shape1: TShape
+              Left = 0
+              Top = 0
+              Width = 304
+              Height = 114
+              Align = alClient
+              Brush.Color = 14342621
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 64
+              ExplicitTop = 48
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object SpeedButton1: TSpeedButton
+              Left = 0
+              Top = 0
+              Width = 304
+              Height = 114
+              Align = alClient
+              Caption = 'Image'
+              Flat = True
+              ExplicitTop = 6
+              ExplicitWidth = 150
+            end
+          end
+          object Panel2: TPanel
+            AlignWithMargins = True
+            Left = 0
+            Top = 114
+            Width = 304
+            Height = 114
+            Margins.Left = 0
+            Margins.Top = 0
+            Margins.Bottom = 0
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 1
+            ExplicitLeft = 61
+            ExplicitTop = 150
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+            object Shape2: TShape
+              Left = 0
+              Top = 0
+              Width = 304
+              Height = 114
+              Align = alClient
+              Brush.Color = 14342621
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 64
+              ExplicitTop = 48
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object SpeedButton2: TSpeedButton
+              Left = 0
+              Top = 0
+              Width = 304
+              Height = 114
+              Align = alClient
+              Caption = 'Price'
+              Flat = True
+              ExplicitTop = 6
+              ExplicitWidth = 150
+            end
+          end
+          object Panel3: TPanel
+            AlignWithMargins = True
+            Left = 0
+            Top = 228
+            Width = 304
+            Height = 114
+            Margins.Left = 0
+            Margins.Top = 0
+            Margins.Bottom = 0
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 2
+            ExplicitLeft = 61
+            ExplicitTop = 264
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+            object Shape3: TShape
+              Left = 0
+              Top = 0
+              Width = 304
+              Height = 114
+              Align = alClient
+              Brush.Color = 14342621
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 64
+              ExplicitTop = 48
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object SpeedButton3: TSpeedButton
+              Left = 0
+              Top = 0
+              Width = 304
+              Height = 114
+              Align = alClient
+              Caption = 'Quantidade'
+              Flat = True
+              ExplicitLeft = -8
+              ExplicitTop = -3
+            end
+          end
+          object Panel4: TPanel
+            AlignWithMargins = True
+            Left = 0
+            Top = 342
+            Width = 304
+            Height = 114
+            Margins.Left = 0
+            Margins.Top = 0
+            Margins.Bottom = 0
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 3
+            ExplicitLeft = 61
+            ExplicitTop = 378
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+            object Shape4: TShape
+              Left = 0
+              Top = 0
+              Width = 304
+              Height = 114
+              Align = alClient
+              Brush.Color = 14342621
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 64
+              ExplicitTop = 48
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object SpeedButton4: TSpeedButton
+              Left = 0
+              Top = 0
+              Width = 304
+              Height = 114
+              Align = alClient
+              Caption = 'Sub Total'
+              Flat = True
+              ExplicitTop = 6
+              ExplicitWidth = 150
+            end
+          end
+          object Panel5: TPanel
+            AlignWithMargins = True
+            Left = 0
+            Top = 456
+            Width = 304
+            Height = 114
+            Margins.Left = 0
+            Margins.Top = 0
+            Margins.Bottom = 0
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 4
+            ExplicitLeft = 61
+            ExplicitTop = 492
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+            object Shape5: TShape
+              Left = 0
+              Top = 0
+              Width = 304
+              Height = 114
+              Align = alClient
+              Brush.Color = 14342621
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 64
+              ExplicitTop = 48
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object SpeedButton5: TSpeedButton
+              Left = 0
+              Top = 0
+              Width = 304
+              Height = 114
+              Align = alClient
+              Caption = 'Total da Compra'
+              Flat = True
+              ExplicitLeft = 3
+              ExplicitTop = 3
+            end
+          end
         end
         object DBGrid: TcxGrid
           AlignWithMargins = True
@@ -557,6 +792,7 @@ object FormPrincipal: TFormPrincipal
             object ColumnCodigo: TcxGridDBColumn
               Caption = 'Codigo'
               DataBinding.FieldName = 'uf'
+              DataBinding.IsNullValueType = True
               PropertiesClassName = 'TcxTextEditProperties'
               Properties.Alignment.Horz = taCenter
               HeaderAlignmentHorz = taCenter
@@ -566,6 +802,7 @@ object FormPrincipal: TFormPrincipal
             object ColumnItem: TcxGridDBColumn
               Caption = 'Item'
               DataBinding.FieldName = 'tipoconselho'
+              DataBinding.IsNullValueType = True
               PropertiesClassName = 'TcxTextEditProperties'
               Properties.Alignment.Horz = taCenter
               HeaderAlignmentHorz = taCenter
@@ -575,6 +812,7 @@ object FormPrincipal: TFormPrincipal
             object ColumnDescriptionProduct: TcxGridDBColumn
               Caption = 'Descri'#231#227'o do Produto'
               DataBinding.FieldName = 'numconselho'
+              DataBinding.IsNullValueType = True
               PropertiesClassName = 'TcxTextEditProperties'
               Properties.Alignment.Horz = taRightJustify
               Properties.MaxLength = 0
@@ -584,16 +822,19 @@ object FormPrincipal: TFormPrincipal
             object ColumnUnitaryValue: TcxGridDBColumn
               Caption = 'Valor Unit'#225'rio'
               DataBinding.FieldName = 'nome'
+              DataBinding.IsNullValueType = True
               PropertiesClassName = 'TcxTextEditProperties'
               HeaderAlignmentHorz = taRightJustify
             end
             object ColumnQuantity: TcxGridDBColumn
               Caption = 'Quantidade'
+              DataBinding.IsNullValueType = True
               PropertiesClassName = 'TcxTextEditProperties'
               HeaderAlignmentHorz = taCenter
             end
             object ColumnSubTotal: TcxGridDBColumn
               Caption = 'Sub-Total'
+              DataBinding.IsNullValueType = True
               PropertiesClassName = 'TcxTextEditProperties'
               HeaderAlignmentHorz = taRightJustify
             end
