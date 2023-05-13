@@ -1,4 +1,4 @@
-unit DelphiPDV.View.Produto;
+unit DelphiPDV.View.Vendedor;
 
 interface
 
@@ -30,7 +30,7 @@ uses
   Vcl.ExtCtrls;
 
 type
-  TForm1 = class(TForm)
+  TVendedor = class(TForm)
     Panel1: TPanel;
     Shape1: TShape;
     Panel3: TPanel;
@@ -69,18 +69,18 @@ type
   end;
 
 var
-  Form1: TForm1;
+  Vendedor: TVendedor;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TVendedor.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
 //
 end;
 
-procedure TForm1.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TVendedor.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -101,7 +101,7 @@ begin
 end;
 
 
-procedure TForm1.FormShow(Sender: TObject);
+procedure TVendedor.FormShow(Sender: TObject);
 begin
 //
 end;

@@ -1,7 +1,7 @@
-object Form1: TForm1
+object Produto: TProduto
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'Produto'
   ClientHeight = 745
   ClientWidth = 997
   Color = clBtnFace
@@ -33,9 +33,6 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 0
-    ExplicitLeft = -17
-    ExplicitTop = 42
-    ExplicitWidth = 1014
     object Shape1: TShape
       Left = 0
       Top = 25
@@ -60,7 +57,6 @@ object Form1: TForm1
       Color = clHighlight
       ParentBackground = False
       TabOrder = 0
-      ExplicitWidth = 1014
       object Label6: TLabel
         AlignWithMargins = True
         Left = 0
@@ -105,7 +101,6 @@ object Form1: TForm1
       Style.Shadow = False
       Style.IsFontAssigned = True
       TabOrder = 1
-      ExplicitWidth = 1010
       Width = 993
     end
   end
@@ -132,10 +127,6 @@ object Form1: TForm1
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -17
-    ExplicitTop = 108
-    ExplicitWidth = 1014
-    ExplicitHeight = 318
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
