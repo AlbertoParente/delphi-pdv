@@ -62,10 +62,15 @@ type
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormShow(Sender: TObject);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+      ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
+      var ADone: Boolean);
   private
     { Private declarations }
   public
     { Public declarations }
+    Procedure Process;
+    Procedure Review;
   end;
 
 var
@@ -102,6 +107,28 @@ end;
 
 
 procedure TProduto.FormShow(Sender: TObject);
+begin
+//
+end;
+
+procedure TProduto.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+  ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
+  var ADone: Boolean);
+begin
+  if AViewInfo.GridRecord.Selected then
+  begin
+    ACanvas.Brush.Color := clHighlight;
+    ACanvas.Font.Color  := clWhite;
+  end;
+end;
+
+procedure TProduto.Process;
+begin
+  Review;
+//
+end;
+
+procedure TProduto.Review;
 begin
 //
 end;
