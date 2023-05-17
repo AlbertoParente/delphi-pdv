@@ -30,7 +30,7 @@ uses
   Vcl.ExtCtrls;
 
 type
-  TProduto = class(TForm)
+  TVwProduto = class(TForm)
     Panel1: TPanel;
     Shape1: TShape;
     Panel3: TPanel;
@@ -74,18 +74,18 @@ type
   end;
 
 var
-  Produto: TProduto;
+  VwProduto: TVwProduto;
 
 implementation
 
 {$R *.dfm}
 
-procedure TProduto.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TVwProduto.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
 //
 end;
 
-procedure TProduto.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TVwProduto.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -105,12 +105,12 @@ begin
   end;
 end;
 
-procedure TProduto.FormShow(Sender: TObject);
+procedure TVwProduto.FormShow(Sender: TObject);
 begin
 //
 end;
 
-procedure TProduto.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+procedure TVwProduto.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
   ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
   var ADone: Boolean);
 begin
@@ -121,13 +121,13 @@ begin
   end;
 end;
 
-procedure TProduto.Process;
+procedure TVwProduto.Process;
 begin
   Review;
 //
 end;
 
-procedure TProduto.Review;
+procedure TVwProduto.Review;
 begin
 //
 end;

@@ -1,9 +1,9 @@
-object Produto: TProduto
+object VwProduto: TVwProduto
   Left = 0
   Top = 0
-  Caption = 'Produto'
-  ClientHeight = 745
-  ClientWidth = 997
+  Caption = 'VwProduto'
+  ClientHeight = 760
+  ClientWidth = 1022
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -18,7 +18,7 @@ object Produto: TProduto
     AlignWithMargins = True
     Left = 0
     Top = 2
-    Width = 997
+    Width = 1022
     Height = 64
     Margins.Left = 0
     Margins.Top = 2
@@ -33,10 +33,11 @@ object Produto: TProduto
     Font.Style = []
     ParentFont = False
     TabOrder = 0
+    ExplicitWidth = 997
     object Shape1: TShape
       Left = 0
       Top = 25
-      Width = 997
+      Width = 1022
       Height = 39
       Align = alClient
       Brush.Color = 16774626
@@ -50,18 +51,19 @@ object Produto: TProduto
     object Panel3: TPanel
       Left = 0
       Top = 0
-      Width = 997
+      Width = 1022
       Height = 25
       Align = alTop
       BevelOuter = bvNone
       Color = clHighlight
       ParentBackground = False
       TabOrder = 0
+      ExplicitWidth = 997
       object Label6: TLabel
         AlignWithMargins = True
         Left = 0
         Top = 3
-        Width = 994
+        Width = 1019
         Height = 19
         Margins.Left = 0
         Align = alClient
@@ -101,15 +103,16 @@ object Produto: TProduto
       Style.Shadow = False
       Style.IsFontAssigned = True
       TabOrder = 1
-      Width = 993
+      ExplicitWidth = 993
+      Width = 1018
     end
   end
   object DBGrid: TcxGrid
     AlignWithMargins = True
     Left = 0
     Top = 68
-    Width = 997
-    Height = 677
+    Width = 1022
+    Height = 692
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -127,6 +130,8 @@ object Produto: TProduto
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitWidth = 997
+    ExplicitHeight = 677
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True

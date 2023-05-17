@@ -29,7 +29,7 @@ uses
   cxGridCustomLayoutView, cxGridCardView, cxGridDBCardView;
 
 type
-  TFormPrincipal = class(TForm)
+  TVwFormPrincipal = class(TForm)
     PanelContainer: TPanel;
     GridPanelMain: TGridPanel;
     PanelTitle: TPanel;
@@ -69,21 +69,6 @@ type
     PanelMoreFunctions: TPanel;
     ShapeMoreFunctions: TShape;
     SpeedButtonMoreFunctions: TSpeedButton;
-    Panel1: TPanel;
-    Shape1: TShape;
-    SpeedButton1: TSpeedButton;
-    Panel2: TPanel;
-    Shape2: TShape;
-    SpeedButton2: TSpeedButton;
-    Panel3: TPanel;
-    Shape3: TShape;
-    SpeedButton3: TSpeedButton;
-    Panel4: TPanel;
-    Shape4: TShape;
-    SpeedButton4: TSpeedButton;
-    Panel5: TPanel;
-    Shape5: TShape;
-    SpeedButton5: TSpeedButton;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -99,18 +84,18 @@ type
   end;
 
 var
-  FormPrincipal: TFormPrincipal;
+  VwFormPrincipal: TVwFormPrincipal;
 
 implementation
 
 {$R *.dfm}
 
-procedure TFormPrincipal.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TVwFormPrincipal.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
 //
 end;
 
-procedure TFormPrincipal.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TVwFormPrincipal.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -130,12 +115,12 @@ begin
   end;
 end;
 
-procedure TFormPrincipal.FormShow(Sender: TObject);
+procedure TVwFormPrincipal.FormShow(Sender: TObject);
 begin
   aDataSource.DataSet := nil;
 end;
 
-procedure TFormPrincipal.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+procedure TVwFormPrincipal.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
   ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
   var ADone: Boolean);
 begin
@@ -147,13 +132,13 @@ begin
   end;
 end;
 
-procedure TFormPrincipal.Process;
+procedure TVwFormPrincipal.Process;
 begin
   Review;
 //
 end;
 
-procedure TFormPrincipal.Review;
+procedure TVwFormPrincipal.Review;
 begin
 //
 end;

@@ -30,7 +30,7 @@ uses
   cxGridCustomView, cxGrid;
 
 type
-  TVendedor = class(TForm)
+  TVwVendedor = class(TForm)
     Panel1: TPanel;
     Shape1: TShape;
     Panel3: TPanel;
@@ -54,18 +54,18 @@ type
   end;
 
 var
-  Vendedor: TVendedor;
+  VwVendedor: TVwVendedor;
 
 implementation
 
 {$R *.dfm}
 
-procedure TVendedor.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TVwVendedor.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
 //
 end;
 
-procedure TVendedor.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TVwVendedor.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -85,17 +85,17 @@ begin
   end;
 end;
 
-procedure TVendedor.FormShow(Sender: TObject);
+procedure TVwVendedor.FormShow(Sender: TObject);
 begin
 //
 end;
 
-procedure TVendedor.Process;
+procedure TVwVendedor.Process;
 begin
 //
 end;
 
-procedure TVendedor.Review;
+procedure TVwVendedor.Review;
 begin
 //
 end;

@@ -99,15 +99,15 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="src\view\DelphiPDV.View.Principal.pas">
-            <Form>FormPrincipal</Form>
+            <Form>VwFormPrincipal</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\View\DelphiPDV.View.Produto.pas">
-            <Form>Produto</Form>
+            <Form>VwProduto</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\View\DelphiPDV.View.Vendedor.pas">
-            <Form>Vendedor</Form>
+            <Form>VwVendedor</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

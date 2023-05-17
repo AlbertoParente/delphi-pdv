@@ -1,9 +1,9 @@
-object Vendedor: TVendedor
+object VwVendedor: TVwVendedor
   Left = 0
   Top = 0
-  Caption = 'Vendedor'
-  ClientHeight = 433
-  ClientWidth = 622
+  Caption = 'VwVendedor'
+  ClientHeight = 760
+  ClientWidth = 1022
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -18,7 +18,7 @@ object Vendedor: TVendedor
     AlignWithMargins = True
     Left = 0
     Top = 2
-    Width = 622
+    Width = 1022
     Height = 64
     Margins.Left = 0
     Margins.Top = 2
@@ -33,12 +33,11 @@ object Vendedor: TVendedor
     Font.Style = []
     ParentFont = False
     TabOrder = 0
-    ExplicitLeft = -375
-    ExplicitWidth = 997
+    ExplicitWidth = 622
     object Shape1: TShape
       Left = 0
       Top = 25
-      Width = 622
+      Width = 1022
       Height = 39
       Align = alClient
       Brush.Color = 16774626
@@ -52,19 +51,19 @@ object Vendedor: TVendedor
     object Panel3: TPanel
       Left = 0
       Top = 0
-      Width = 622
+      Width = 1022
       Height = 25
       Align = alTop
       BevelOuter = bvNone
       Color = clHighlight
       ParentBackground = False
       TabOrder = 0
-      ExplicitWidth = 997
+      ExplicitWidth = 622
       object Label6: TLabel
         AlignWithMargins = True
         Left = 0
         Top = 3
-        Width = 619
+        Width = 1019
         Height = 19
         Margins.Left = 0
         Align = alClient
@@ -104,16 +103,16 @@ object Vendedor: TVendedor
       Style.Shadow = False
       Style.IsFontAssigned = True
       TabOrder = 1
-      ExplicitWidth = 993
-      Width = 618
+      ExplicitWidth = 618
+      Width = 1018
     end
   end
   object DBGrid: TcxGrid
     AlignWithMargins = True
     Left = 0
     Top = 68
-    Width = 622
-    Height = 365
+    Width = 1022
+    Height = 692
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -131,10 +130,8 @@ object Vendedor: TVendedor
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -375
-    ExplicitTop = -244
-    ExplicitWidth = 997
-    ExplicitHeight = 677
+    ExplicitWidth = 622
+    ExplicitHeight = 365
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -199,9 +196,9 @@ object Vendedor: TVendedor
         Caption = 'Nome'
         DataBinding.FieldName = 'ean'
         DataBinding.IsNullValueType = True
+        PropertiesClassName = 'TcxTextEditProperties'
         BestFitMaxWidth = 102
         MinWidth = 102
-        Options.AutoWidthSizable = False
         Width = 102
       end
     end
