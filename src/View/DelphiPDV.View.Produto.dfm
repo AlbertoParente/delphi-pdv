@@ -33,7 +33,6 @@ object VwProduto: TVwProduto
     Font.Style = []
     ParentFont = False
     TabOrder = 0
-    ExplicitWidth = 997
     object Shape1: TShape
       Left = 0
       Top = 25
@@ -58,7 +57,6 @@ object VwProduto: TVwProduto
       Color = clHighlight
       ParentBackground = False
       TabOrder = 0
-      ExplicitWidth = 997
       object Label6: TLabel
         AlignWithMargins = True
         Left = 0
@@ -103,7 +101,6 @@ object VwProduto: TVwProduto
       Style.Shadow = False
       Style.IsFontAssigned = True
       TabOrder = 1
-      ExplicitWidth = 993
       Width = 1018
     end
   end
@@ -130,8 +127,6 @@ object VwProduto: TVwProduto
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitWidth = 997
-    ExplicitHeight = 677
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -182,33 +177,6 @@ object VwProduto: TVwProduto
       OptionsView.GroupByBox = False
       OptionsView.Indicator = True
       OptionsView.ShowColumnFilterButtons = sfbAlways
-      object ColunaPbm: TcxGridDBColumn
-        DataBinding.IsNullValueType = True
-        PropertiesClassName = 'TcxTextEditProperties'
-        Properties.Alignment.Horz = taCenter
-        BestFitMaxWidth = 30
-        FooterAlignmentHorz = taCenter
-        HeaderAlignmentHorz = taCenter
-        MinWidth = 30
-        Options.AutoWidthSizable = False
-        Width = 30
-        IsCaptionAssigned = True
-      end
-      object ColunaTipo: TcxGridDBColumn
-        DataBinding.FieldName = 'tipoMedicamento'
-        DataBinding.IsNullValueType = True
-        PropertiesClassName = 'TcxTextEditProperties'
-        Properties.Alignment.Horz = taCenter
-        Properties.CharCase = ecUpperCase
-        BestFitMaxWidth = 20
-        FooterAlignmentHorz = taCenter
-        GroupSummaryAlignment = taCenter
-        HeaderAlignmentHorz = taCenter
-        HeaderGlyphAlignmentHorz = taCenter
-        Options.AutoWidthSizable = False
-        Width = 20
-        IsCaptionAssigned = True
-      end
       object ColunaCodigo: TcxGridDBColumn
         Caption = 'C'#243'digo'
         DataBinding.FieldName = 'codigo'
@@ -347,6 +315,9 @@ object VwProduto: TVwProduto
         DataBinding.IsNullValueType = True
         Visible = False
       end
+      object GridViewColumn1: TcxGridDBColumn
+        DataBinding.IsNullValueType = True
+      end
     end
     object DBGridDBCardView1: TcxGridDBCardView
       Navigator.Buttons.CustomButtons = <>
@@ -360,5 +331,9 @@ object VwProduto: TVwProduto
     object DBGridLevel1: TcxGridLevel
       GridView = GridView
     end
+  end
+  object aDataSource: TDataSource
+    Left = 936
+    Top = 208
   end
 end

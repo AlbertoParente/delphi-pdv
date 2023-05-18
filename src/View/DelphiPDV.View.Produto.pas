@@ -38,8 +38,6 @@ type
     EditPesquisaProduto: TcxTextEdit;
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
-    ColunaPbm: TcxGridDBColumn;
-    ColunaTipo: TcxGridDBColumn;
     ColunaCodigo: TcxGridDBColumn;
     ColunaCodBarras: TcxGridDBColumn;
     ColunaDescricao: TcxGridDBColumn;
@@ -59,6 +57,8 @@ type
     ColunaPossuiDescontos: TcxGridDBColumn;
     DBGridDBCardView1: TcxGridDBCardView;
     DBGridLevel1: TcxGridLevel;
+    aDataSource: TDataSource;
+    GridViewColumn1: TcxGridDBColumn;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormShow(Sender: TObject);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);

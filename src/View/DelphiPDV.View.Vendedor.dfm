@@ -33,7 +33,6 @@ object VwVendedor: TVwVendedor
     Font.Style = []
     ParentFont = False
     TabOrder = 0
-    ExplicitWidth = 622
     object Shape1: TShape
       Left = 0
       Top = 25
@@ -58,7 +57,6 @@ object VwVendedor: TVwVendedor
       Color = clHighlight
       ParentBackground = False
       TabOrder = 0
-      ExplicitWidth = 622
       object Label6: TLabel
         AlignWithMargins = True
         Left = 0
@@ -103,7 +101,6 @@ object VwVendedor: TVwVendedor
       Style.Shadow = False
       Style.IsFontAssigned = True
       TabOrder = 1
-      ExplicitWidth = 618
       Width = 1018
     end
   end
@@ -130,8 +127,7 @@ object VwVendedor: TVwVendedor
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitWidth = 622
-    ExplicitHeight = 365
+    ExplicitLeft = 5
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -200,6 +196,10 @@ object VwVendedor: TVwVendedor
         BestFitMaxWidth = 102
         MinWidth = 102
         Width = 102
+      end
+      object GridViewColumn1: TcxGridDBColumn
+        Caption = 'Cpf'
+        DataBinding.IsNullValueType = True
       end
     end
     object DBGridDBCardView1: TcxGridDBCardView
