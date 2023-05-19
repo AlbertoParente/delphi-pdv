@@ -92,15 +92,15 @@ begin
   case Key of
     VK_ESCAPE:
     begin
-//
+      Close;
     end;
     VK_NEXT:
     begin
-//      Process;
+      Process;
     end;
     VK_RETURN:
     begin
-//
+      SelectNext(Screen.ActiveControl, True, True);
     end;
   end;
 end;
@@ -129,7 +129,8 @@ end;
 
 procedure TVwProduto.Review;
 begin
-//
+  if Trim(EditPesquisaProduto.Text) = '' then
+    Abort;
 end;
 
 end.

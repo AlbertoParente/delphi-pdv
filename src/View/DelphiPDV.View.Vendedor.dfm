@@ -79,7 +79,7 @@ object VwVendedor: TVwVendedor
         ExplicitHeight = 17
       end
     end
-    object EditPesquisaProduto: TcxTextEdit
+    object EditPesquisaVendedor: TcxTextEdit
       AlignWithMargins = True
       Left = 2
       Top = 27
@@ -127,7 +127,6 @@ object VwVendedor: TVwVendedor
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = 5
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
