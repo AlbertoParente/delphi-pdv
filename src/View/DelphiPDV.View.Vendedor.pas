@@ -48,6 +48,7 @@ type
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
+    FVendedir: TVendedor;
   public
     { Public declarations }
     Procedure Process;
@@ -63,7 +64,7 @@ implementation
 
 procedure TVwVendedor.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
-//
+ Action := caFree;
 end;
 
 procedure TVwVendedor.FormKeyDown(Sender: TObject; var Key: Word;
@@ -88,12 +89,13 @@ end;
 
 procedure TVwVendedor.FormShow(Sender: TObject);
 begin
-//
+  aDataSource := nil;
+  EditPesquisaVendedor.Clear;
 end;
 
 procedure TVwVendedor.Process;
 begin
-//
+
 end;
 
 procedure TVwVendedor.Review;
