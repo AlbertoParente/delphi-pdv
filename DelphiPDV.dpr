@@ -4,7 +4,8 @@ uses
   Vcl.Forms,
   DelphiPDV.View.Principal in 'src\view\DelphiPDV.View.Principal.pas' {VwFormPrincipal},
   DelphiPDV.View.Produto in 'src\View\DelphiPDV.View.Produto.pas' {VwProduto},
-  DelphiPDV.View.Vendedor in 'src\View\DelphiPDV.View.Vendedor.pas' {VwVendedor};
+  DelphiPDV.View.Vendedor in 'src\View\DelphiPDV.View.Vendedor.pas' {VwVendedor},
+  DelphiPDV.View.Login in 'src\View\DelphiPDV.View.Login.pas' {Form1};
 
 {$R *.res}
 
@@ -14,5 +15,6 @@ begin
   Application.CreateForm(TVwFormPrincipal, VwFormPrincipal);
   Application.CreateForm(TVwProduto, VwProduto);
   Application.CreateForm(TVwVendedor, VwVendedor);
+  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.
