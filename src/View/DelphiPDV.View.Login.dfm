@@ -1,7 +1,6 @@
-object Form1: TForm1
+object VwLogin: TVwLogin
   Left = 0
   Top = 0
-  Caption = 'Form1'
   ClientHeight = 433
   ClientWidth = 622
   Color = clBtnFace
@@ -39,24 +38,20 @@ object Form1: TForm1
       end>
     RowCollection = <
       item
-        Value = 20.000000000000000000
+        Value = 15.000000000000000000
       end
       item
-        Value = 60.000000000000000000
+        Value = 70.000000000000000000
       end
       item
-        Value = 20.000000000000000000
+        Value = 15.000000000000000000
       end>
     TabOrder = 0
-    ExplicitLeft = 256
-    ExplicitTop = 136
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object GridPanel2: TGridPanel
       Left = 156
-      Top = 87
+      Top = 65
       Width = 310
-      Height = 259
+      Height = 303
       Align = alClient
       BevelOuter = bvNone
       ColumnCollection = <
@@ -66,69 +61,80 @@ object Form1: TForm1
       ControlCollection = <
         item
           Column = 0
-          Control = cxTextEdit1
-          Row = 0
-        end
-        item
-          Column = 0
-          Control = cxTextEdit2
+          Control = EditName
           Row = 1
         end
         item
           Column = 0
-          Control = cxTextEdit3
+          Control = EditPassword
           Row = 2
+        end
+        item
+          Column = 0
+          Control = ButtonEnter
+          Row = 3
+        end
+        item
+          Column = 0
+          Control = PanelLogo
+          Row = 0
         end>
       RowCollection = <
         item
-          Value = 33.333333333333300000
+          Value = 46.000000000000000000
         end
         item
-          Value = 33.333333333333300000
+          Value = 18.000000000000000000
         end
         item
-          Value = 33.333333333333400000
+          Value = 18.000000000000000000
+        end
+        item
+          Value = 18.000000000000000000
         end>
       TabOrder = 0
-      ExplicitLeft = 256
-      ExplicitTop = 192
-      ExplicitWidth = 185
-      ExplicitHeight = 41
-      object cxTextEdit1: TcxTextEdit
+      ExplicitTop = 87
+      ExplicitHeight = 259
+      object EditName: TcxTextEdit
         Left = 0
-        Top = 0
+        Top = 139
         Align = alClient
         TabOrder = 0
-        Text = 'cxTextEdit1'
-        ExplicitLeft = 94
-        ExplicitTop = 32
-        ExplicitWidth = 121
-        ExplicitHeight = 23
+        ExplicitTop = 0
+        ExplicitHeight = 86
         Width = 310
       end
-      object cxTextEdit2: TcxTextEdit
+      object EditPassword: TcxTextEdit
         Left = 0
-        Top = 86
+        Top = 194
         Align = alClient
         TabOrder = 1
-        Text = 'cxTextEdit1'
-        ExplicitLeft = 94
-        ExplicitTop = 119
-        ExplicitWidth = 121
-        ExplicitHeight = 23
+        ExplicitTop = 86
+        ExplicitHeight = 87
         Width = 310
       end
-      object cxTextEdit3: TcxTextEdit
+      object ButtonEnter: TcxButton
         Left = 0
-        Top = 173
-        Align = alClient
-        TabOrder = 2
-        Text = 'cxTextEdit1'
-        ExplicitLeft = 94
-        ExplicitTop = 205
-        ExplicitWidth = 121
-        ExplicitHeight = 23
+        Top = 248
         Width = 310
+        Height = 55
+        Align = alClient
+        Caption = 'Entrar'
+        TabOrder = 2
+        ExplicitLeft = 104
+        ExplicitTop = 200
+        ExplicitWidth = 75
+        ExplicitHeight = 25
+      end
+      object PanelLogo: TPanel
+        Left = 0
+        Top = 0
+        Width = 310
+        Height = 139
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 3
+        ExplicitTop = -6
       end
     end
   end

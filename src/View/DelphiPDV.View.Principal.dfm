@@ -1,4 +1,4 @@
-object VwFormPrincipal: TVwFormPrincipal
+object VwPrincipal: TVwPrincipal
   Left = 0
   Top = 0
   Caption = 'Delphi PDV'

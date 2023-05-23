@@ -29,7 +29,7 @@ uses
   cxGridCustomLayoutView, cxGridCardView, cxGridDBCardView;
 
 type
-  TVwFormPrincipal = class(TForm)
+  TVwPrincipal = class(TForm)
     PanelContainer: TPanel;
     GridPanelMain: TGridPanel;
     PanelTitle: TPanel;
@@ -84,18 +84,18 @@ type
   end;
 
 var
-  VwFormPrincipal: TVwFormPrincipal;
+  VwPrincipal: TVwPrincipal;
 
 implementation
 
 {$R *.dfm}
 
-procedure TVwFormPrincipal.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TVwPrincipal.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
 //
 end;
 
-procedure TVwFormPrincipal.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TVwPrincipal.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -115,12 +115,12 @@ begin
   end;
 end;
 
-procedure TVwFormPrincipal.FormShow(Sender: TObject);
+procedure TVwPrincipal.FormShow(Sender: TObject);
 begin
   aDataSource.DataSet := nil;
 end;
 
-procedure TVwFormPrincipal.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+procedure TVwPrincipal.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
   ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
   var ADone: Boolean);
 begin
@@ -132,13 +132,13 @@ begin
   end;
 end;
 
-procedure TVwFormPrincipal.Process;
+procedure TVwPrincipal.Process;
 begin
   Review;
 //
 end;
 
-procedure TVwFormPrincipal.Review;
+procedure TVwPrincipal.Review;
 begin
 //
 end;

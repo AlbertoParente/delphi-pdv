@@ -22,15 +22,17 @@ uses
   dxSkinTheBezier, dxSkinsDefaultPainters, dxSkinValentine,
   dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark,
   dxSkinVisualStudio2013Light, dxSkinVS2010, dxSkinWhiteprint,
-  dxSkinXmas2008Blue, cxTextEdit, Vcl.ExtCtrls;
+  dxSkinXmas2008Blue, cxTextEdit, Vcl.ExtCtrls, Vcl.Menus, Vcl.StdCtrls,
+  cxButtons;
 
 type
-  TForm1 = class(TForm)
+  TVwLogin = class(TForm)
     GridPanel1: TGridPanel;
     GridPanel2: TGridPanel;
-    cxTextEdit1: TcxTextEdit;
-    cxTextEdit2: TcxTextEdit;
-    cxTextEdit3: TcxTextEdit;
+    EditName: TcxTextEdit;
+    EditPassword: TcxTextEdit;
+    ButtonEnter: TcxButton;
+    PanelLogo: TPanel;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
@@ -43,34 +45,34 @@ type
   end;
 
 var
-  Form1: TForm1;
+  VwLogin: TVwLogin;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TVwLogin.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
 //
 end;
 
-procedure TForm1.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TVwLogin.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
 //
 end;
 
-procedure TForm1.FormShow(Sender: TObject);
+procedure TVwLogin.FormShow(Sender: TObject);
 begin
 //
 end;
 
-procedure TForm1.Process;
+procedure TVwLogin.Process;
 begin
 //
 end;
 
-procedure TForm1.Review;
+procedure TVwLogin.Review;
 begin
 //
 end;
