@@ -31,8 +31,10 @@ type
     GridPanel2: TGridPanel;
     EditName: TcxTextEdit;
     EditPassword: TcxTextEdit;
+    GridPanel3: TGridPanel;
     ButtonEnter: TcxButton;
-    PanelLogo: TPanel;
+    cxButton1: TcxButton;
+    Panel1: TPanel;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);

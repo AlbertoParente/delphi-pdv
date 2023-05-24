@@ -2,8 +2,8 @@ object VwPrincipal: TVwPrincipal
   Left = 0
   Top = 0
   Caption = 'Delphi PDV'
-  ClientHeight = 760
-  ClientWidth = 1022
+  ClientHeight = 752
+  ClientWidth = 1020
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -18,16 +18,18 @@ object VwPrincipal: TVwPrincipal
   object PanelContainer: TPanel
     Left = 0
     Top = 0
-    Width = 1022
-    Height = 760
+    Width = 1020
+    Height = 752
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
+    ExplicitWidth = 1022
+    ExplicitHeight = 760
     object GridPanelMain: TGridPanel
       Left = 0
       Top = 0
-      Width = 1022
-      Height = 760
+      Width = 1020
+      Height = 752
       Align = alClient
       BevelOuter = bvNone
       ColumnCollection = <
@@ -61,11 +63,13 @@ object VwPrincipal: TVwPrincipal
           Value = 15.000000000000000000
         end>
       TabOrder = 0
+      ExplicitWidth = 1022
+      ExplicitHeight = 760
       object PanelTitle: TPanel
         Left = 0
         Top = 0
-        Width = 1022
-        Height = 76
+        Width = 1020
+        Height = 75
         Align = alClient
         BevelOuter = bvNone
         Caption = 'Caixa Livre'
@@ -78,20 +82,25 @@ object VwPrincipal: TVwPrincipal
         ParentBackground = False
         ParentFont = False
         TabOrder = 0
+        ExplicitWidth = 1022
+        ExplicitHeight = 76
       end
       object PanelButton: TPanel
         Left = 0
-        Top = 646
-        Width = 1022
-        Height = 114
+        Top = 639
+        Width = 1020
+        Height = 113
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 1
+        ExplicitTop = 646
+        ExplicitWidth = 1022
+        ExplicitHeight = 114
         object GridPanelButtons: TGridPanel
           Left = 0
           Top = 0
-          Width = 1022
-          Height = 114
+          Width = 1020
+          Height = 113
           Align = alClient
           BevelOuter = bvNone
           ColumnCollection = <
@@ -157,23 +166,26 @@ object VwPrincipal: TVwPrincipal
               Value = 100.000000000000000000
             end>
           TabOrder = 0
+          ExplicitWidth = 1022
+          ExplicitHeight = 114
           object PanelCancelOperation: TPanel
             AlignWithMargins = True
             Left = 0
             Top = 0
             Width = 150
-            Height = 114
+            Height = 113
             Margins.Left = 0
             Margins.Top = 0
             Margins.Bottom = 0
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 0
+            ExplicitHeight = 114
             object ShapeCancelOperation: TShape
               Left = 0
               Top = 0
               Width = 150
-              Height = 114
+              Height = 113
               Align = alClient
               Brush.Color = 14342621
               Pen.Style = psClear
@@ -187,11 +199,12 @@ object VwPrincipal: TVwPrincipal
               Left = 0
               Top = 0
               Width = 150
-              Height = 114
+              Height = 113
               Align = alClient
               Caption = 'Cancelar Opera'#231#227'o '
               Flat = True
               ExplicitTop = 6
+              ExplicitHeight = 114
             end
           end
           object PanelSearchPrice: TPanel
@@ -199,18 +212,19 @@ object VwPrincipal: TVwPrincipal
             Left = 153
             Top = 0
             Width = 140
-            Height = 114
+            Height = 113
             Margins.Left = 0
             Margins.Top = 0
             Margins.Bottom = 0
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 1
+            ExplicitHeight = 114
             object ShapeSearchPrice: TShape
               Left = 0
               Top = 0
               Width = 140
-              Height = 114
+              Height = 113
               Align = alClient
               Brush.Color = 14342621
               Pen.Style = psClear
@@ -224,11 +238,12 @@ object VwPrincipal: TVwPrincipal
               Left = 0
               Top = 0
               Width = 140
-              Height = 114
+              Height = 113
               Align = alClient
               Caption = 'Consultar Pre'#231'o'
               Flat = True
               ExplicitTop = 3
+              ExplicitHeight = 114
             end
           end
           object PanelOpenCashier: TPanel
@@ -236,18 +251,19 @@ object VwPrincipal: TVwPrincipal
             Left = 296
             Top = 0
             Width = 140
-            Height = 114
+            Height = 113
             Margins.Left = 0
             Margins.Top = 0
             Margins.Bottom = 0
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 2
+            ExplicitHeight = 114
             object ShapeOpenCashier: TShape
               Left = 0
               Top = 0
               Width = 140
-              Height = 114
+              Height = 113
               Align = alClient
               Brush.Color = 14342621
               Pen.Style = psClear
@@ -261,31 +277,34 @@ object VwPrincipal: TVwPrincipal
               Left = 0
               Top = 0
               Width = 140
-              Height = 114
+              Height = 113
               Align = alClient
               Caption = 'Abrir Caixa'
               Flat = True
               ExplicitLeft = 3
               ExplicitTop = 3
+              ExplicitHeight = 114
             end
           end
           object PanelCancelSale: TPanel
             AlignWithMargins = True
             Left = 439
             Top = 0
-            Width = 141
-            Height = 114
+            Width = 139
+            Height = 113
             Margins.Left = 0
             Margins.Top = 0
             Margins.Bottom = 0
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 3
+            ExplicitWidth = 141
+            ExplicitHeight = 114
             object ShapeCancelSale: TShape
               Left = 0
               Top = 0
-              Width = 141
-              Height = 114
+              Width = 139
+              Height = 113
               Align = alClient
               Brush.Color = 14342621
               Pen.Style = psClear
@@ -298,32 +317,35 @@ object VwPrincipal: TVwPrincipal
             object SpeedButtonCancelSale: TSpeedButton
               Left = 0
               Top = 0
-              Width = 141
-              Height = 114
+              Width = 139
+              Height = 113
               Align = alClient
               Caption = 'Cancelar Venda'
               Flat = True
               ExplicitTop = 6
               ExplicitWidth = 150
+              ExplicitHeight = 114
             end
           end
           object PanelCancelItem: TPanel
             AlignWithMargins = True
-            Left = 583
+            Left = 581
             Top = 0
             Width = 140
-            Height = 114
+            Height = 113
             Margins.Left = 0
             Margins.Top = 0
             Margins.Bottom = 0
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 4
+            ExplicitLeft = 583
+            ExplicitHeight = 114
             object ShapeCancelItem: TShape
               Left = 0
               Top = 0
               Width = 140
-              Height = 114
+              Height = 113
               Align = alClient
               Brush.Color = 14342621
               Pen.Style = psClear
@@ -337,31 +359,34 @@ object VwPrincipal: TVwPrincipal
               Left = 0
               Top = 0
               Width = 140
-              Height = 114
+              Height = 113
               Align = alClient
               Caption = 'Cancelar Item'
               Flat = True
               ExplicitTop = 6
               ExplicitWidth = 150
+              ExplicitHeight = 114
             end
           end
           object PanelDevolution: TPanel
             AlignWithMargins = True
-            Left = 726
+            Left = 724
             Top = 0
             Width = 140
-            Height = 114
+            Height = 113
             Margins.Left = 0
             Margins.Top = 0
             Margins.Bottom = 0
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 5
+            ExplicitLeft = 726
+            ExplicitHeight = 114
             object ShapeDevolution: TShape
               Left = 0
               Top = 0
               Width = 140
-              Height = 114
+              Height = 113
               Align = alClient
               Brush.Color = 14342621
               Pen.Style = psClear
@@ -375,31 +400,34 @@ object VwPrincipal: TVwPrincipal
               Left = 0
               Top = 0
               Width = 140
-              Height = 114
+              Height = 113
               Align = alClient
               Caption = 'Devolu'#231#227'o'
               Flat = True
               ExplicitTop = 6
               ExplicitWidth = 150
+              ExplicitHeight = 114
             end
           end
           object PanelMoreFunctions: TPanel
             AlignWithMargins = True
-            Left = 869
+            Left = 867
             Top = 0
             Width = 150
-            Height = 114
+            Height = 113
             Margins.Left = 0
             Margins.Top = 0
             Margins.Bottom = 0
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 6
+            ExplicitLeft = 869
+            ExplicitHeight = 114
             object ShapeMoreFunctions: TShape
               Left = 0
               Top = 0
               Width = 150
-              Height = 114
+              Height = 113
               Align = alClient
               Brush.Color = 14342621
               Pen.Style = psClear
@@ -413,20 +441,21 @@ object VwPrincipal: TVwPrincipal
               Left = 0
               Top = 0
               Width = 150
-              Height = 114
+              Height = 113
               Align = alClient
               Caption = 'Mais Fun'#231#245'es'
               Flat = True
               ExplicitLeft = 3
+              ExplicitHeight = 114
             end
           end
         end
       end
       object GridPanelCenter: TGridPanel
         Left = 0
-        Top = 76
-        Width = 1022
-        Height = 570
+        Top = 75
+        Width = 1020
+        Height = 564
         Align = alClient
         BevelOuter = bvNone
         ColumnCollection = <
@@ -452,11 +481,14 @@ object VwPrincipal: TVwPrincipal
             Value = 100.000000000000000000
           end>
         TabOrder = 2
+        ExplicitTop = 76
+        ExplicitWidth = 1022
+        ExplicitHeight = 570
         object GridPanel1: TGridPanel
-          Left = 715
+          Left = 714
           Top = 0
-          Width = 307
-          Height = 570
+          Width = 306
+          Height = 564
           Align = alClient
           BevelOuter = bvNone
           ColumnCollection = <
@@ -481,13 +513,16 @@ object VwPrincipal: TVwPrincipal
               Value = 20.000000000000000000
             end>
           TabOrder = 0
+          ExplicitLeft = 715
+          ExplicitWidth = 307
+          ExplicitHeight = 570
         end
         object DBGrid: TcxGrid
           AlignWithMargins = True
           Left = 0
           Top = 2
-          Width = 715
-          Height = 568
+          Width = 714
+          Height = 562
           Margins.Left = 0
           Margins.Top = 2
           Margins.Right = 0
@@ -505,6 +540,8 @@ object VwPrincipal: TVwPrincipal
           TabOrder = 1
           TabStop = False
           LookAndFeel.Kind = lfOffice11
+          ExplicitWidth = 715
+          ExplicitHeight = 568
           object GridView: TcxGridDBTableView
             Navigator.Buttons.CustomButtons = <>
             Navigator.Buttons.First.Visible = True

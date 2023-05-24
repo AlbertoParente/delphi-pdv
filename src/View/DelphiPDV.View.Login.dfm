@@ -62,26 +62,29 @@ object VwLogin: TVwLogin
         item
           Column = 0
           Control = EditName
-          Row = 1
-        end
-        item
-          Column = 0
-          Control = EditPassword
           Row = 2
         end
         item
           Column = 0
-          Control = ButtonEnter
+          Control = EditPassword
           Row = 3
         end
         item
           Column = 0
-          Control = PanelLogo
-          Row = 0
+          Control = GridPanel3
+          Row = 4
+        end
+        item
+          Column = 0
+          Control = Panel1
+          Row = 1
         end>
       RowCollection = <
         item
-          Value = 46.000000000000000000
+          Value = 28.000000000000000000
+        end
+        item
+          Value = 18.000000000000000000
         end
         item
           Value = 18.000000000000000000
@@ -93,15 +96,11 @@ object VwLogin: TVwLogin
           Value = 18.000000000000000000
         end>
       TabOrder = 0
-      ExplicitTop = 87
-      ExplicitHeight = 259
       object EditName: TcxTextEdit
         Left = 0
         Top = 139
         Align = alClient
         TabOrder = 0
-        ExplicitTop = 0
-        ExplicitHeight = 86
         Width = 310
       end
       object EditPassword: TcxTextEdit
@@ -109,32 +108,77 @@ object VwLogin: TVwLogin
         Top = 194
         Align = alClient
         TabOrder = 1
-        ExplicitTop = 86
-        ExplicitHeight = 87
         Width = 310
       end
-      object ButtonEnter: TcxButton
+      object GridPanel3: TGridPanel
         Left = 0
         Top = 248
         Width = 310
         Height = 55
         Align = alClient
-        Caption = 'Entrar'
+        BevelOuter = bvNone
+        ColumnCollection = <
+          item
+            Value = 50.000000000000000000
+          end
+          item
+            Value = 50.000000000000000000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = ButtonEnter
+            Row = 0
+          end
+          item
+            Column = 1
+            Control = cxButton1
+            Row = 0
+          end>
+        RowCollection = <
+          item
+            Value = 100.000000000000000000
+          end>
         TabOrder = 2
-        ExplicitLeft = 104
-        ExplicitTop = 200
-        ExplicitWidth = 75
-        ExplicitHeight = 25
+        ExplicitTop = 254
+        object ButtonEnter: TcxButton
+          Left = 0
+          Top = 0
+          Width = 155
+          Height = 54
+          Align = alClient
+          Caption = 'Entrar'
+          TabOrder = 0
+          ExplicitLeft = 8
+          ExplicitHeight = 55
+        end
+        object cxButton1: TcxButton
+          Left = 155
+          Top = 0
+          Width = 155
+          Height = 54
+          Align = alClient
+          Caption = 'Cancelar'
+          TabOrder = 1
+          ExplicitLeft = 195
+          ExplicitTop = 15
+          ExplicitWidth = 75
+          ExplicitHeight = 25
+        end
       end
-      object PanelLogo: TPanel
+      object Panel1: TPanel
         Left = 0
-        Top = 0
+        Top = 85
         Width = 310
-        Height = 139
+        Height = 54
         Align = alClient
         BevelOuter = bvNone
+        Caption = 'Login'
         TabOrder = 3
-        ExplicitTop = -6
+        ExplicitLeft = 40
+        ExplicitTop = 112
+        ExplicitWidth = 185
+        ExplicitHeight = 41
       end
     end
   end
