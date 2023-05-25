@@ -23,18 +23,22 @@ uses
   dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark,
   dxSkinVisualStudio2013Light, dxSkinVS2010, dxSkinWhiteprint,
   dxSkinXmas2008Blue, cxTextEdit, Vcl.ExtCtrls, Vcl.Menus, Vcl.StdCtrls,
-  cxButtons;
+  cxButtons, dxGDIPlusClasses;
 
 type
   TVwLogin = class(TForm)
     GridPanel1: TGridPanel;
     GridPanel2: TGridPanel;
-    EditName: TcxTextEdit;
-    EditPassword: TcxTextEdit;
     GridPanel3: TGridPanel;
-    ButtonEnter: TcxButton;
-    cxButton1: TcxButton;
     Panel1: TPanel;
+    Panel2: TPanel;
+    Image2: TImage;
+    EditNome: TcxTextEdit;
+    Panel3: TPanel;
+    Image3: TImage;
+    EditSenha: TcxTextEdit;
+    ButtonEnter: TcxButton;
+    ButtonClose: TcxButton;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);

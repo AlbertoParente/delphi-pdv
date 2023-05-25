@@ -2,8 +2,8 @@ object VwVendedor: TVwVendedor
   Left = 0
   Top = 0
   Caption = 'VwVendedor'
-  ClientHeight = 760
-  ClientWidth = 1022
+  ClientHeight = 744
+  ClientWidth = 1018
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -18,7 +18,7 @@ object VwVendedor: TVwVendedor
     AlignWithMargins = True
     Left = 0
     Top = 2
-    Width = 1022
+    Width = 1018
     Height = 64
     Margins.Left = 0
     Margins.Top = 2
@@ -33,10 +33,11 @@ object VwVendedor: TVwVendedor
     Font.Style = []
     ParentFont = False
     TabOrder = 0
+    ExplicitWidth = 1022
     object Shape1: TShape
       Left = 0
       Top = 25
-      Width = 1022
+      Width = 1018
       Height = 39
       Align = alClient
       Brush.Color = 16774626
@@ -50,18 +51,19 @@ object VwVendedor: TVwVendedor
     object Panel3: TPanel
       Left = 0
       Top = 0
-      Width = 1022
+      Width = 1018
       Height = 25
       Align = alTop
       BevelOuter = bvNone
       Color = clHighlight
       ParentBackground = False
       TabOrder = 0
+      ExplicitWidth = 1022
       object Label6: TLabel
         AlignWithMargins = True
         Left = 0
         Top = 3
-        Width = 1019
+        Width = 1015
         Height = 19
         Margins.Left = 0
         Align = alClient
@@ -101,15 +103,16 @@ object VwVendedor: TVwVendedor
       Style.Shadow = False
       Style.IsFontAssigned = True
       TabOrder = 1
-      Width = 1018
+      ExplicitWidth = 1018
+      Width = 1014
     end
   end
   object DBGrid: TcxGrid
     AlignWithMargins = True
     Left = 0
     Top = 68
-    Width = 1022
-    Height = 692
+    Width = 1018
+    Height = 676
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -127,6 +130,8 @@ object VwVendedor: TVwVendedor
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitWidth = 1022
+    ExplicitHeight = 692
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
