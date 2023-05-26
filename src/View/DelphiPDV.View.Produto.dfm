@@ -33,7 +33,6 @@ object VwProduto: TVwProduto
     Font.Style = []
     ParentFont = False
     TabOrder = 0
-    ExplicitWidth = 1022
     object Shape1: TShape
       Left = 0
       Top = 25
@@ -58,7 +57,6 @@ object VwProduto: TVwProduto
       Color = clHighlight
       ParentBackground = False
       TabOrder = 0
-      ExplicitWidth = 1022
       object Label6: TLabel
         AlignWithMargins = True
         Left = 0
@@ -103,7 +101,6 @@ object VwProduto: TVwProduto
       Style.Shadow = False
       Style.IsFontAssigned = True
       TabOrder = 1
-      ExplicitWidth = 1018
       Width = 1014
     end
   end
@@ -130,8 +127,6 @@ object VwProduto: TVwProduto
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitWidth = 1022
-    ExplicitHeight = 692
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -245,17 +240,6 @@ object VwProduto: TVwProduto
         Options.AutoWidthSizable = False
         Width = 45
       end
-      object ColunaPrecoAnterior: TcxGridDBColumn
-        Caption = 'R$ Ant.'
-        DataBinding.FieldName = 'precoAnterior'
-        DataBinding.IsNullValueType = True
-        PropertiesClassName = 'TcxCurrencyEditProperties'
-        BestFitMaxWidth = 60
-        HeaderAlignmentHorz = taRightJustify
-        MinWidth = 60
-        Options.AutoWidthSizable = False
-        Width = 60
-      end
       object ColunaPercentualDesconto: TcxGridDBColumn
         Caption = '%'
         DataBinding.FieldName = 'percentualDesconto'
@@ -277,51 +261,6 @@ object VwProduto: TVwProduto
         MinWidth = 60
         Options.AutoWidthSizable = False
         Width = 60
-      end
-      object ColunaRentabilidade: TcxGridDBColumn
-        Caption = '% Rent.'
-        DataBinding.ValueType = 'Currency'
-        Visible = False
-        MinWidth = 70
-        Width = 70
-      end
-      object ColunaCtrVenda: TcxGridDBColumn
-        DataBinding.IsNullValueType = True
-        Visible = False
-        VisibleForCustomization = False
-      end
-      object ColunaDesPromoc: TcxGridDBColumn
-        DataBinding.IsNullValueType = True
-        Visible = False
-        VisibleForCustomization = False
-      end
-      object ColunaPrcBonVdr: TcxGridDBColumn
-        DataBinding.IsNullValueType = True
-        Visible = False
-        VisibleForCustomization = False
-      end
-      object ColunaFlgBlqDsc: TcxGridDBColumn
-        DataBinding.IsNullValueType = True
-        Visible = False
-        VisibleForCustomization = False
-      end
-      object ColunaChavePbm: TcxGridDBColumn
-        DataBinding.FieldName = 'chavepbm'
-        DataBinding.IsNullValueType = True
-        Visible = False
-      end
-      object ColunaPortaria: TcxGridDBColumn
-        DataBinding.FieldName = 'tipoControlado'
-        DataBinding.IsNullValueType = True
-        Visible = False
-      end
-      object ColunaPossuiDescontos: TcxGridDBColumn
-        DataBinding.FieldName = 'possuiDescontos'
-        DataBinding.IsNullValueType = True
-        Visible = False
-      end
-      object GridViewColumn1: TcxGridDBColumn
-        DataBinding.IsNullValueType = True
       end
     end
     object DBGridDBCardView1: TcxGridDBCardView
