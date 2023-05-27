@@ -44,7 +44,6 @@ type
     ColunaUnidade: TcxGridDBColumn;
     ColunaFabricante: TcxGridDBColumn;
     ColunaSaldo: TcxGridDBColumn;
-    ColunaPercentualDesconto: TcxGridDBColumn;
     ColunaPreco: TcxGridDBColumn;
     DBGridDBCardView1: TcxGridDBCardView;
     DBGridLevel1: TcxGridLevel;

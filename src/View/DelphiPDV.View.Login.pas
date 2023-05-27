@@ -39,6 +39,7 @@ type
     EditSenha: TcxTextEdit;
     ButtonEnter: TcxButton;
     ButtonClose: TcxButton;
+    Image1: TImage;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);

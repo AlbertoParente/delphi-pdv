@@ -26,7 +26,8 @@ uses
   cxEdit, cxNavigator, dxDateRanges, dxScrollbarAnnotations, Data.DB, cxDBData,
   cxGridLevel, cxClasses, cxGridCustomView, cxGridCustomTableView,
   cxGridTableView, cxGridDBTableView, cxGrid, cxTextEdit,
-  cxGridCustomLayoutView, cxGridCardView, cxGridDBCardView;
+  cxGridCustomLayoutView, cxGridCardView, cxGridDBCardView, DelphiPDV.View.Produto,
+  DelphiPDV.View.Vendedor;
 
 type
   TVwPrincipal = class(TForm)
@@ -69,12 +70,6 @@ type
     PanelMoreFunctions: TPanel;
     ShapeMoreFunctions: TShape;
     SpeedButtonMoreFunctions: TSpeedButton;
-    Panel1: TPanel;
-    Shape1: TShape;
-    SpeedButton1: TSpeedButton;
-    Panel2: TPanel;
-    Shape2: TShape;
-    SpeedButton2: TSpeedButton;
     Panel3: TPanel;
     Shape3: TShape;
     SpeedButton3: TSpeedButton;

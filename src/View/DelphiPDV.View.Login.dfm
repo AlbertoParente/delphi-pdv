@@ -22,13 +22,13 @@ object VwLogin: TVwLogin
     BevelOuter = bvNone
     ColumnCollection = <
       item
-        Value = 25.000000000000000000
+        Value = 30.000000000000000000
       end
       item
-        Value = 50.000000000000000000
+        Value = 40.000000000000000000
       end
       item
-        Value = 25.000000000000000000
+        Value = 30.000000000000000000
       end>
     ControlCollection = <
       item
@@ -47,12 +47,10 @@ object VwLogin: TVwLogin
         Value = 15.000000000000000000
       end>
     TabOrder = 0
-    ExplicitWidth = 622
-    ExplicitHeight = 433
     object GridPanel2: TGridPanel
-      Left = 254
+      Left = 305
       Top = 112
-      Width = 510
+      Width = 408
       Height = 520
       Align = alClient
       BevelOuter = bvNone
@@ -80,6 +78,11 @@ object VwLogin: TVwLogin
           Column = 0
           Control = Panel3
           Row = 3
+        end
+        item
+          Column = 0
+          Control = Image1
+          Row = 0
         end>
       RowCollection = <
         item
@@ -98,14 +101,12 @@ object VwLogin: TVwLogin
           Value = 18.000000000000000000
         end>
       TabOrder = 0
-      ExplicitLeft = 156
-      ExplicitTop = 65
-      ExplicitWidth = 310
-      ExplicitHeight = 303
+      ExplicitLeft = 254
+      ExplicitWidth = 510
       object GridPanel3: TGridPanel
         Left = 0
         Top = 426
-        Width = 510
+        Width = 408
         Height = 94
         Align = alClient
         BevelOuter = bvNone
@@ -132,13 +133,11 @@ object VwLogin: TVwLogin
             Value = 100.000000000000000000
           end>
         TabOrder = 0
-        ExplicitTop = 245
-        ExplicitWidth = 310
-        ExplicitHeight = 55
+        ExplicitWidth = 510
         object ButtonEnter: TcxButton
           Left = 0
           Top = 0
-          Width = 255
+          Width = 204
           Height = 94
           Align = alClient
           Caption = 'Entrar'
@@ -149,15 +148,12 @@ object VwLogin: TVwLogin
           Font.Name = 'Segoe UI'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitLeft = 32
-          ExplicitTop = 16
-          ExplicitWidth = 75
-          ExplicitHeight = 25
+          ExplicitWidth = 255
         end
         object ButtonClose: TcxButton
-          Left = 255
+          Left = 204
           Top = 0
-          Width = 255
+          Width = 204
           Height = 94
           Align = alClient
           Caption = 'Close'
@@ -168,16 +164,14 @@ object VwLogin: TVwLogin
           Font.Name = 'Segoe UI'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitLeft = 32
-          ExplicitTop = 16
-          ExplicitWidth = 75
-          ExplicitHeight = 25
+          ExplicitLeft = 255
+          ExplicitWidth = 255
         end
       end
       object Panel1: TPanel
         Left = 0
         Top = 146
-        Width = 510
+        Width = 408
         Height = 93
         Align = alClient
         BevelOuter = bvNone
@@ -189,23 +183,18 @@ object VwLogin: TVwLogin
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 1
-        ExplicitTop = 85
-        ExplicitWidth = 310
-        ExplicitHeight = 54
+        ExplicitWidth = 510
       end
       object Panel2: TPanel
         AlignWithMargins = True
         Left = 3
         Top = 242
-        Width = 504
+        Width = 402
         Height = 88
         Align = alClient
         BevelKind = bkSoft
         TabOrder = 2
-        ExplicitLeft = 62
-        ExplicitTop = 22
-        ExplicitWidth = 185
-        ExplicitHeight = 41
+        ExplicitWidth = 504
         object Image2: TImage
           AlignWithMargins = True
           Left = 1
@@ -260,24 +249,20 @@ object VwLogin: TVwLogin
           StyleHot.BorderStyle = ebsNone
           TabOrder = 0
           TextHint = 'Usu'#225'rio'
-          ExplicitWidth = 262
-          ExplicitHeight = 69
-          Width = 462
+          ExplicitWidth = 462
+          Width = 360
         end
       end
       object Panel3: TPanel
         AlignWithMargins = True
         Left = 3
         Top = 336
-        Width = 504
+        Width = 402
         Height = 87
         Align = alClient
         BevelKind = bkSoft
         TabOrder = 3
-        ExplicitLeft = 62
-        ExplicitTop = 22
-        ExplicitWidth = 185
-        ExplicitHeight = 41
+        ExplicitWidth = 504
         object Image3: TImage
           AlignWithMargins = True
           Left = 1
@@ -335,11 +320,20 @@ object VwLogin: TVwLogin
           StyleHot.BorderStyle = ebsNone
           TabOrder = 0
           TextHint = 'Senha'
-          ExplicitTop = 6
-          ExplicitWidth = 262
-          ExplicitHeight = 38
-          Width = 462
+          ExplicitWidth = 462
+          Width = 360
         end
+      end
+      object Image1: TImage
+        Left = 0
+        Top = 0
+        Width = 408
+        Height = 146
+        Align = alClient
+        ExplicitLeft = 192
+        ExplicitTop = 64
+        ExplicitWidth = 105
+        ExplicitHeight = 105
       end
     end
   end

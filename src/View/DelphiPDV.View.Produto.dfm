@@ -240,17 +240,6 @@ object VwProduto: TVwProduto
         Options.AutoWidthSizable = False
         Width = 45
       end
-      object ColunaPercentualDesconto: TcxGridDBColumn
-        Caption = '%'
-        DataBinding.FieldName = 'percentualDesconto'
-        DataBinding.IsNullValueType = True
-        PropertiesClassName = 'TcxCurrencyEditProperties'
-        BestFitMaxWidth = 55
-        HeaderAlignmentHorz = taRightJustify
-        MinWidth = 55
-        Options.AutoWidthSizable = False
-        Width = 55
-      end
       object ColunaPreco: TcxGridDBColumn
         Caption = 'Pre'#231'o'
         DataBinding.FieldName = 'unitario'

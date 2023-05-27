@@ -48,7 +48,7 @@ type
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
-    FVendedir: TVendedor;
+    FVendedor: TVendedor;
   public
     { Public declarations }
     Procedure Process;

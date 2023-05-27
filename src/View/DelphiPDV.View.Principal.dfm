@@ -474,16 +474,6 @@ object VwPrincipal: TVwPrincipal
           ControlCollection = <
             item
               Column = 0
-              Control = Panel1
-              Row = 0
-            end
-            item
-              Column = 0
-              Control = Panel2
-              Row = 1
-            end
-            item
-              Column = 0
               Control = Panel3
               Row = 2
             end
@@ -514,88 +504,6 @@ object VwPrincipal: TVwPrincipal
               Value = 20.000000000000000000
             end>
           TabOrder = 0
-          object Panel1: TPanel
-            AlignWithMargins = True
-            Left = 0
-            Top = 0
-            Width = 302
-            Height = 112
-            Margins.Left = 0
-            Margins.Top = 0
-            Margins.Bottom = 0
-            Align = alClient
-            BevelOuter = bvNone
-            TabOrder = 0
-            ExplicitLeft = 3
-            ExplicitTop = 8
-            object Shape1: TShape
-              Left = 0
-              Top = 0
-              Width = 302
-              Height = 112
-              Align = alClient
-              Brush.Color = 14342621
-              Pen.Style = psClear
-              Shape = stRoundRect
-              ExplicitLeft = 64
-              ExplicitTop = 48
-              ExplicitWidth = 65
-              ExplicitHeight = 65
-            end
-            object SpeedButton1: TSpeedButton
-              Left = 0
-              Top = 0
-              Width = 302
-              Height = 112
-              Align = alClient
-              Flat = True
-              ExplicitTop = 6
-              ExplicitWidth = 150
-              ExplicitHeight = 114
-            end
-          end
-          object Panel2: TPanel
-            AlignWithMargins = True
-            Left = 0
-            Top = 112
-            Width = 302
-            Height = 111
-            Margins.Left = 0
-            Margins.Top = 0
-            Margins.Bottom = 0
-            Align = alClient
-            BevelOuter = bvNone
-            TabOrder = 1
-            ExplicitLeft = 60
-            ExplicitTop = 147
-            ExplicitWidth = 185
-            ExplicitHeight = 41
-            object Shape2: TShape
-              Left = 0
-              Top = 0
-              Width = 302
-              Height = 111
-              Align = alClient
-              Brush.Color = 14342621
-              Pen.Style = psClear
-              Shape = stRoundRect
-              ExplicitLeft = 64
-              ExplicitTop = 48
-              ExplicitWidth = 65
-              ExplicitHeight = 65
-            end
-            object SpeedButton2: TSpeedButton
-              Left = 0
-              Top = 0
-              Width = 302
-              Height = 111
-              Align = alClient
-              Flat = True
-              ExplicitTop = 6
-              ExplicitWidth = 150
-              ExplicitHeight = 114
-            end
-          end
           object Panel3: TPanel
             AlignWithMargins = True
             Left = 0
@@ -607,11 +515,7 @@ object VwPrincipal: TVwPrincipal
             Margins.Bottom = 0
             Align = alClient
             BevelOuter = bvNone
-            TabOrder = 2
-            ExplicitLeft = 60
-            ExplicitTop = 258
-            ExplicitWidth = 185
-            ExplicitHeight = 41
+            TabOrder = 0
             object Shape3: TShape
               Left = 0
               Top = 0
@@ -649,7 +553,7 @@ object VwPrincipal: TVwPrincipal
             Margins.Bottom = 0
             Align = alClient
             BevelOuter = bvNone
-            TabOrder = 3
+            TabOrder = 1
             object Shape4: TShape
               Left = 0
               Top = 0
@@ -687,7 +591,7 @@ object VwPrincipal: TVwPrincipal
             Margins.Bottom = 0
             Align = alClient
             BevelOuter = bvNone
-            TabOrder = 4
+            TabOrder = 2
             object Shape5: TShape
               Left = 0
               Top = 0
