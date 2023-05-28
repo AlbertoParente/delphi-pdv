@@ -66,6 +66,7 @@ implementation
 procedure TVwVendedor.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
  Action := caFree;
+//
 end;
 
 procedure TVwVendedor.FormKeyDown(Sender: TObject; var Key: Word;
@@ -92,17 +93,20 @@ procedure TVwVendedor.FormShow(Sender: TObject);
 begin
   aDataSource := nil;
   EditPesquisaVendedor.Clear;
+//
 end;
 
 procedure TVwVendedor.Process;
 begin
-
+  Review;
+//
 end;
 
 procedure TVwVendedor.Review;
 begin
   if Trim(EditPesquisaVendedor.Text) = '' then
     Abort;
+//
 end;
 
 end.

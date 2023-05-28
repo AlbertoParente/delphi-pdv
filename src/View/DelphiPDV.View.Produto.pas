@@ -71,6 +71,7 @@ implementation
 
 procedure TVwProduto.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
+  Action := caFree;
 //
 end;
 
@@ -96,6 +97,8 @@ end;
 
 procedure TVwProduto.FormShow(Sender: TObject);
 begin
+  aDataSource := nil;
+  EditPesquisaProduto.Clear;
 //
 end;
 
@@ -120,6 +123,7 @@ procedure TVwProduto.Review;
 begin
   if Trim(EditPesquisaProduto.Text) = '' then
     Abort;
+//
 end;
 
 end.

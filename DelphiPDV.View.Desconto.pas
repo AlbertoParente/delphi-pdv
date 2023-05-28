@@ -40,7 +40,7 @@ type
     Shape1: TShape;
     Panel3: TPanel;
     Label6: TLabel;
-    EditPesquisaVendedor: TcxTextEdit;
+    EditPesquisaDesconto: TcxTextEdit;
     aDataSource: TDataSource;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormShow(Sender: TObject);
@@ -65,6 +65,7 @@ implementation
 procedure TVwDesconto.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Action := caFree;
+//
 end;
 
 procedure TVwDesconto.FormKeyDown(Sender: TObject; var Key: Word;
@@ -90,15 +91,19 @@ end;
 procedure TVwDesconto.FormShow(Sender: TObject);
 begin
   aDataSource := nil;
+//
 end;
 
 procedure TVwDesconto.Process;
 begin
+  Review;
 //
 end;
 
 procedure TVwDesconto.Review;
 begin
+  if Trim(EditPesquisaDesconto.Text) = '' then
+    Abort;
 //
 end;
 

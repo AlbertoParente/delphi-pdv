@@ -184,7 +184,7 @@ object VwDesconto: TVwDesconto
         ExplicitHeight = 17
       end
     end
-    object EditPesquisaVendedor: TcxTextEdit
+    object EditPesquisaDesconto: TcxTextEdit
       AlignWithMargins = True
       Left = 2
       Top = 27
