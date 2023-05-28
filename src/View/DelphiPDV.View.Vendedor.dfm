@@ -214,4 +214,8 @@ object VwVendedor: TVwVendedor
       GridView = GridView
     end
   end
+  object aDataSource: TDataSource
+    Left = 936
+    Top = 128
+  end
 end

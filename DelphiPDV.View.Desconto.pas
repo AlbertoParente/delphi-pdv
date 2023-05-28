@@ -41,6 +41,7 @@ type
     Panel3: TPanel;
     Label6: TLabel;
     EditPesquisaVendedor: TcxTextEdit;
+    aDataSource: TDataSource;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormShow(Sender: TObject);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
@@ -88,7 +89,7 @@ end;
 
 procedure TVwDesconto.FormShow(Sender: TObject);
 begin
-//
+  aDataSource := nil;
 end;
 
 procedure TVwDesconto.Process;

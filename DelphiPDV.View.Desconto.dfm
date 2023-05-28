@@ -138,7 +138,6 @@ object VwDesconto: TVwDesconto
     Font.Style = []
     ParentFont = False
     TabOrder = 1
-    ExplicitTop = 10
     object Shape1: TShape
       Left = 0
       Top = 25
@@ -209,5 +208,9 @@ object VwDesconto: TVwDesconto
       TabOrder = 1
       Width = 1014
     end
+  end
+  object aDataSource: TDataSource
+    Left = 936
+    Top = 128
   end
 end

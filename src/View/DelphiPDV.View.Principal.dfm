@@ -471,22 +471,7 @@ object VwPrincipal: TVwPrincipal
             item
               Value = 100.000000000000000000
             end>
-          ControlCollection = <
-            item
-              Column = 0
-              Control = Panel3
-              Row = 2
-            end
-            item
-              Column = 0
-              Control = Panel4
-              Row = 3
-            end
-            item
-              Column = 0
-              Control = Panel5
-              Row = 4
-            end>
+          ControlCollection = <>
           RowCollection = <
             item
               Value = 20.000000000000000000
@@ -504,120 +489,6 @@ object VwPrincipal: TVwPrincipal
               Value = 20.000000000000000000
             end>
           TabOrder = 0
-          object Panel3: TPanel
-            AlignWithMargins = True
-            Left = 0
-            Top = 223
-            Width = 302
-            Height = 112
-            Margins.Left = 0
-            Margins.Top = 0
-            Margins.Bottom = 0
-            Align = alClient
-            BevelOuter = bvNone
-            TabOrder = 0
-            object Shape3: TShape
-              Left = 0
-              Top = 0
-              Width = 302
-              Height = 112
-              Align = alClient
-              Brush.Color = 14342621
-              Pen.Style = psClear
-              Shape = stRoundRect
-              ExplicitLeft = 64
-              ExplicitTop = 48
-              ExplicitWidth = 65
-              ExplicitHeight = 65
-            end
-            object SpeedButton3: TSpeedButton
-              Left = 0
-              Top = 0
-              Width = 302
-              Height = 112
-              Align = alClient
-              Flat = True
-              ExplicitTop = 6
-              ExplicitWidth = 150
-              ExplicitHeight = 114
-            end
-          end
-          object Panel4: TPanel
-            AlignWithMargins = True
-            Left = 0
-            Top = 335
-            Width = 302
-            Height = 111
-            Margins.Left = 0
-            Margins.Top = 0
-            Margins.Bottom = 0
-            Align = alClient
-            BevelOuter = bvNone
-            TabOrder = 1
-            object Shape4: TShape
-              Left = 0
-              Top = 0
-              Width = 302
-              Height = 111
-              Align = alClient
-              Brush.Color = 14342621
-              Pen.Style = psClear
-              Shape = stRoundRect
-              ExplicitLeft = 64
-              ExplicitTop = 48
-              ExplicitWidth = 65
-              ExplicitHeight = 65
-            end
-            object SpeedButton4: TSpeedButton
-              Left = 0
-              Top = 0
-              Width = 302
-              Height = 111
-              Align = alClient
-              Flat = True
-              ExplicitTop = 6
-              ExplicitWidth = 150
-              ExplicitHeight = 114
-            end
-          end
-          object Panel5: TPanel
-            AlignWithMargins = True
-            Left = 0
-            Top = 446
-            Width = 302
-            Height = 112
-            Margins.Left = 0
-            Margins.Top = 0
-            Margins.Bottom = 0
-            Align = alClient
-            BevelOuter = bvNone
-            TabOrder = 2
-            object Shape5: TShape
-              Left = 0
-              Top = 0
-              Width = 302
-              Height = 112
-              Align = alClient
-              Brush.Color = 14342621
-              Pen.Style = psClear
-              Shape = stRoundRect
-              ExplicitLeft = 64
-              ExplicitTop = 48
-              ExplicitWidth = 65
-              ExplicitHeight = 65
-            end
-            object SpeedButton5: TSpeedButton
-              Left = 0
-              Top = 0
-              Width = 302
-              Height = 112
-              Align = alClient
-              Flat = True
-              ExplicitTop = 6
-              ExplicitWidth = 150
-              ExplicitHeight = 114
-            end
-          end
         end
         object DBGrid: TcxGrid
           AlignWithMargins = True
