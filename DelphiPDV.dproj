@@ -116,10 +116,6 @@
             <Form>VwLogin</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="DelphiPDV.View.Desconto.pas">
-            <Form>VwDesconto</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

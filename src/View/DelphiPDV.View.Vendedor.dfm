@@ -61,8 +61,8 @@ object VwVendedor: TVwVendedor
         AlignWithMargins = True
         Left = 0
         Top = 3
-        Width = 1015
-        Height = 19
+        Width = 424
+        Height = 17
         Margins.Left = 0
         Align = alClient
         Caption = 
@@ -75,8 +75,6 @@ object VwVendedor: TVwVendedor
         Font.Style = [fsBold]
         ParentFont = False
         Layout = tlCenter
-        ExplicitWidth = 424
-        ExplicitHeight = 17
       end
     end
     object EditPesquisaVendedor: TcxTextEdit
