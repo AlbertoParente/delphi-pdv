@@ -26,8 +26,7 @@ uses
   cxEdit, cxNavigator, dxDateRanges, dxScrollbarAnnotations, Data.DB, cxDBData,
   cxGridLevel, cxClasses, cxGridCustomView, cxGridCustomTableView,
   cxGridTableView, cxGridDBTableView, cxGrid, cxTextEdit,
-  cxGridCustomLayoutView, cxGridCardView, cxGridDBCardView, DelphiPDV.View.Produto,
-  DelphiPDV.View.Vendedor;
+  cxGridCustomLayoutView, cxGridCardView, cxGridDBCardView;
 
 type
   TVwPrincipal = class(TForm)
