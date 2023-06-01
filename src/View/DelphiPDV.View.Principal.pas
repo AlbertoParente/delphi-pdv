@@ -69,21 +69,6 @@ type
     PanelMoreFunctions: TPanel;
     ShapeMoreFunctions: TShape;
     SpeedButtonMoreFunctions: TSpeedButton;
-    Panel1: TPanel;
-    Shape1: TShape;
-    SpeedButton1: TSpeedButton;
-    Panel2: TPanel;
-    Shape2: TShape;
-    SpeedButton2: TSpeedButton;
-    Panel3: TPanel;
-    Shape3: TShape;
-    SpeedButton3: TSpeedButton;
-    Panel4: TPanel;
-    Shape4: TShape;
-    SpeedButton4: TSpeedButton;
-    Panel5: TPanel;
-    Shape5: TShape;
-    SpeedButton5: TSpeedButton;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -126,6 +111,14 @@ begin
     VK_RETURN:
     begin
 //
+    end;
+    VK_NEXT:
+    begin
+      aDataSource.DataSet.Next;
+    end;
+    VK_DOWN:
+    begin
+      aDataSource.DataSet.Prior;
     end;
   end;
 end;
