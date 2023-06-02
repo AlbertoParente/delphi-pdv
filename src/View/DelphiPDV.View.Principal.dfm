@@ -483,7 +483,32 @@ object VwPrincipal: TVwPrincipal
             item
               Value = 100.000000000000000000
             end>
-          ControlCollection = <>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = Panel1
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = Panel2
+              Row = 1
+            end
+            item
+              Column = 0
+              Control = Panel3
+              Row = 2
+            end
+            item
+              Column = 0
+              Control = Panel5
+              Row = 3
+            end
+            item
+              Column = 0
+              Control = Panel6
+              Row = 4
+            end>
           RowCollection = <
             item
               Value = 20.000000000000000000
@@ -501,6 +526,271 @@ object VwPrincipal: TVwPrincipal
               Value = 20.000000000000000000
             end>
           TabOrder = 0
+          object Panel1: TPanel
+            AlignWithMargins = True
+            Left = 0
+            Top = 0
+            Width = 302
+            Height = 112
+            Margins.Left = 0
+            Margins.Top = 0
+            Margins.Bottom = 0
+            Align = alClient
+            BevelOuter = bvNone
+            Color = clBlue
+            ParentBackground = False
+            TabOrder = 0
+            ExplicitLeft = 3
+            ExplicitTop = 8
+            object Shape1: TShape
+              Left = 0
+              Top = 0
+              Width = 302
+              Height = 112
+              Align = alClient
+              Brush.Color = 14342621
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 64
+              ExplicitTop = 48
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object SpeedButton1: TSpeedButton
+              Left = 0
+              Top = 0
+              Width = 302
+              Height = 112
+              Align = alClient
+              Caption = 'Cancelar Opera'#231#227'o '
+              Flat = True
+              ExplicitTop = 6
+              ExplicitWidth = 150
+              ExplicitHeight = 114
+            end
+          end
+          object Panel2: TPanel
+            AlignWithMargins = True
+            Left = 0
+            Top = 112
+            Width = 302
+            Height = 111
+            Margins.Left = 0
+            Margins.Top = 0
+            Margins.Bottom = 0
+            Align = alClient
+            BevelOuter = bvNone
+            Color = clBlue
+            ParentBackground = False
+            TabOrder = 1
+            ExplicitLeft = 60
+            ExplicitTop = 147
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+            object Shape2: TShape
+              Left = 0
+              Top = 0
+              Width = 302
+              Height = 111
+              Align = alClient
+              Brush.Color = 14342621
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 64
+              ExplicitTop = 48
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object SpeedButton2: TSpeedButton
+              Left = 0
+              Top = 0
+              Width = 302
+              Height = 111
+              Align = alClient
+              Caption = 'Cancelar Opera'#231#227'o '
+              Flat = True
+              ExplicitTop = 6
+              ExplicitWidth = 150
+              ExplicitHeight = 114
+            end
+          end
+          object Panel3: TPanel
+            AlignWithMargins = True
+            Left = 0
+            Top = 223
+            Width = 302
+            Height = 112
+            Margins.Left = 0
+            Margins.Top = 0
+            Margins.Bottom = 0
+            Align = alClient
+            BevelOuter = bvNone
+            Color = clBlue
+            ParentBackground = False
+            TabOrder = 2
+            ExplicitLeft = 60
+            ExplicitTop = 258
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+            object Shape3: TShape
+              Left = 0
+              Top = 0
+              Width = 302
+              Height = 112
+              Align = alClient
+              Brush.Color = 14342621
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 64
+              ExplicitTop = 48
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object SpeedButton3: TSpeedButton
+              Left = 0
+              Top = 0
+              Width = 302
+              Height = 112
+              Align = alClient
+              Caption = 'Cancelar Opera'#231#227'o '
+              Flat = True
+              ExplicitTop = 6
+              ExplicitWidth = 150
+              ExplicitHeight = 114
+            end
+            object Panel4: TPanel
+              AlignWithMargins = True
+              Left = 0
+              Top = 0
+              Width = 299
+              Height = 112
+              Margins.Left = 0
+              Margins.Top = 0
+              Margins.Bottom = 0
+              Align = alClient
+              BevelOuter = bvNone
+              Color = clBlue
+              ParentBackground = False
+              TabOrder = 0
+              ExplicitLeft = 3
+              object Shape4: TShape
+                Left = 0
+                Top = 0
+                Width = 299
+                Height = 112
+                Align = alClient
+                Brush.Color = 14342621
+                Pen.Style = psClear
+                Shape = stRoundRect
+                ExplicitLeft = 64
+                ExplicitTop = 48
+                ExplicitWidth = 65
+                ExplicitHeight = 65
+              end
+              object SpeedButton4: TSpeedButton
+                Left = 0
+                Top = 0
+                Width = 299
+                Height = 112
+                Align = alClient
+                Caption = 'object PanelCancelOperation: TPanel'
+                Flat = True
+                ExplicitTop = 6
+                ExplicitWidth = 150
+                ExplicitHeight = 114
+              end
+            end
+          end
+          object Panel5: TPanel
+            AlignWithMargins = True
+            Left = 0
+            Top = 335
+            Width = 302
+            Height = 111
+            Margins.Left = 0
+            Margins.Top = 0
+            Margins.Bottom = 0
+            Align = alClient
+            BevelOuter = bvNone
+            Color = clBlue
+            ParentBackground = False
+            TabOrder = 3
+            ExplicitLeft = 60
+            ExplicitTop = 370
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+            object Shape5: TShape
+              Left = 0
+              Top = 0
+              Width = 302
+              Height = 111
+              Align = alClient
+              Brush.Color = 14342621
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 64
+              ExplicitTop = 48
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object SpeedButton5: TSpeedButton
+              Left = 0
+              Top = 0
+              Width = 302
+              Height = 111
+              Align = alClient
+              Caption = 'Cancelar Opera'#231#227'o '
+              Flat = True
+              ExplicitTop = 6
+              ExplicitWidth = 150
+              ExplicitHeight = 114
+            end
+          end
+          object Panel6: TPanel
+            AlignWithMargins = True
+            Left = 0
+            Top = 446
+            Width = 302
+            Height = 112
+            Margins.Left = 0
+            Margins.Top = 0
+            Margins.Bottom = 0
+            Align = alClient
+            BevelOuter = bvNone
+            Color = clBlue
+            ParentBackground = False
+            TabOrder = 4
+            ExplicitLeft = 60
+            ExplicitTop = 481
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+            object Shape6: TShape
+              Left = 0
+              Top = 0
+              Width = 302
+              Height = 112
+              Align = alClient
+              Brush.Color = 14342621
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 64
+              ExplicitTop = 48
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object SpeedButton6: TSpeedButton
+              Left = 0
+              Top = 0
+              Width = 302
+              Height = 112
+              Align = alClient
+              Caption = 'Cancelar Opera'#231#227'o '
+              Flat = True
+              ExplicitTop = 6
+              ExplicitWidth = 150
+              ExplicitHeight = 114
+            end
+          end
         end
         object DBGrid: TcxGrid
           AlignWithMargins = True
