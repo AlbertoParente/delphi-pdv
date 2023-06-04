@@ -35,6 +35,46 @@ object VwLogin: TVwLogin
         Column = 1
         Control = GridPanel2
         Row = 1
+      end
+      item
+        Column = 0
+        Control = Image4
+        Row = 0
+      end
+      item
+        Column = 1
+        Control = Image5
+        Row = 0
+      end
+      item
+        Column = 2
+        Control = Image6
+        Row = 0
+      end
+      item
+        Column = 0
+        Control = Image7
+        Row = 1
+      end
+      item
+        Column = 2
+        Control = Image8
+        Row = 1
+      end
+      item
+        Column = 0
+        Control = Image9
+        Row = 2
+      end
+      item
+        Column = 1
+        Control = Image10
+        Row = 2
+      end
+      item
+        Column = 2
+        Control = Image11
+        Row = 2
       end>
     RowCollection = <
       item
@@ -47,6 +87,7 @@ object VwLogin: TVwLogin
         Value = 15.000000000000000000
       end>
     TabOrder = 0
+    ExplicitLeft = 8
     object GridPanel2: TGridPanel
       Left = 305
       Top = 112
@@ -101,8 +142,6 @@ object VwLogin: TVwLogin
           Value = 18.000000000000000000
         end>
       TabOrder = 0
-      ExplicitLeft = 254
-      ExplicitWidth = 510
       object GridPanel3: TGridPanel
         Left = 0
         Top = 426
@@ -133,7 +172,6 @@ object VwLogin: TVwLogin
             Value = 100.000000000000000000
           end>
         TabOrder = 0
-        ExplicitWidth = 510
         object ButtonEnter: TcxButton
           Left = 0
           Top = 0
@@ -148,7 +186,6 @@ object VwLogin: TVwLogin
           Font.Name = 'Segoe UI'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitWidth = 255
         end
         object ButtonClose: TcxButton
           Left = 204
@@ -164,8 +201,6 @@ object VwLogin: TVwLogin
           Font.Name = 'Segoe UI'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitLeft = 255
-          ExplicitWidth = 255
         end
       end
       object Panel1: TPanel
@@ -183,7 +218,6 @@ object VwLogin: TVwLogin
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 1
-        ExplicitWidth = 510
       end
       object Panel2: TPanel
         AlignWithMargins = True
@@ -194,7 +228,6 @@ object VwLogin: TVwLogin
         Align = alClient
         BevelKind = bkSoft
         TabOrder = 2
-        ExplicitWidth = 504
         object Image2: TImage
           AlignWithMargins = True
           Left = 1
@@ -249,7 +282,6 @@ object VwLogin: TVwLogin
           StyleHot.BorderStyle = ebsNone
           TabOrder = 0
           TextHint = 'Usu'#225'rio'
-          ExplicitWidth = 462
           Width = 360
         end
       end
@@ -262,7 +294,6 @@ object VwLogin: TVwLogin
         Align = alClient
         BevelKind = bkSoft
         TabOrder = 3
-        ExplicitWidth = 504
         object Image3: TImage
           AlignWithMargins = True
           Left = 1
@@ -320,7 +351,6 @@ object VwLogin: TVwLogin
           StyleHot.BorderStyle = ebsNone
           TabOrder = 0
           TextHint = 'Senha'
-          ExplicitWidth = 462
           Width = 360
         end
       end
@@ -335,6 +365,92 @@ object VwLogin: TVwLogin
         ExplicitWidth = 105
         ExplicitHeight = 105
       end
+    end
+    object Image4: TImage
+      Left = 0
+      Top = 0
+      Width = 305
+      Height = 112
+      Align = alClient
+      ExplicitLeft = 56
+      ExplicitTop = 264
+    end
+    object Image5: TImage
+      Left = 305
+      Top = 0
+      Width = 408
+      Height = 112
+      Align = alClient
+      ExplicitLeft = 56
+      ExplicitTop = 264
+      ExplicitWidth = 105
+      ExplicitHeight = 105
+    end
+    object Image6: TImage
+      Left = 713
+      Top = 0
+      Width = 305
+      Height = 112
+      Align = alClient
+      ExplicitLeft = 56
+      ExplicitTop = 264
+      ExplicitWidth = 105
+      ExplicitHeight = 105
+    end
+    object Image7: TImage
+      Left = 0
+      Top = 112
+      Width = 305
+      Height = 520
+      Align = alClient
+      ExplicitLeft = 56
+      ExplicitTop = 264
+      ExplicitWidth = 105
+      ExplicitHeight = 105
+    end
+    object Image8: TImage
+      Left = 713
+      Top = 112
+      Width = 305
+      Height = 520
+      Align = alClient
+      ExplicitLeft = 56
+      ExplicitTop = 264
+      ExplicitWidth = 105
+      ExplicitHeight = 105
+    end
+    object Image9: TImage
+      Left = 0
+      Top = 632
+      Width = 305
+      Height = 112
+      Align = alClient
+      ExplicitLeft = 56
+      ExplicitTop = 264
+      ExplicitWidth = 105
+      ExplicitHeight = 105
+    end
+    object Image10: TImage
+      Left = 305
+      Top = 632
+      Width = 408
+      Height = 112
+      Align = alClient
+      ExplicitLeft = 56
+      ExplicitTop = 264
+      ExplicitWidth = 105
+      ExplicitHeight = 105
+    end
+    object Image11: TImage
+      Left = 713
+      Top = 632
+      Width = 305
+      Height = 112
+      Align = alClient
+      ExplicitLeft = 56
+      ExplicitTop = 264
+      ExplicitWidth = 105
+      ExplicitHeight = 105
     end
   end
 end

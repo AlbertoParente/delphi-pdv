@@ -39,7 +39,6 @@ type
     PanelCancelOperation: TPanel;
     ShapeCancelOperation: TShape;
     SpeedButtonCancelOperation: TSpeedButton;
-    GridPanel1: TGridPanel;
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -74,7 +73,7 @@ implementation
 
 procedure TVwPrincipal.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
-//
+  Action := caFree
 end;
 
 procedure TVwPrincipal.FormKeyDown(Sender: TObject; var Key: Word;
@@ -84,24 +83,18 @@ begin
   case Key of
     VK_ESCAPE:
     begin
-//
+      Close;
     end;
     VK_NEXT:
-    begin
       Process;
-    end;
     VK_RETURN:
     begin
 //
     end;
     VK_UP:
-    begin
       aDataSource.DataSet.Next;
-    end;
     VK_DOWN:
-    begin
       aDataSource.DataSet.Prior;
-    end;
   end;
 end;
 
@@ -133,12 +126,7 @@ begin
   if Assigned(aDataSource.DataSet) then
   begin
 //
-  end
-  else
-  begin
-//
   end;
-
 end;
 
 end.

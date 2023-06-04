@@ -185,11 +185,6 @@ object VwPrincipal: TVwPrincipal
           end>
         ControlCollection = <
           item
-            Column = 1
-            Control = GridPanel1
-            Row = 0
-          end
-          item
             Column = 0
             Control = DBGrid
             Row = 0
@@ -199,36 +194,6 @@ object VwPrincipal: TVwPrincipal
             Value = 100.000000000000000000
           end>
         TabOrder = 2
-        object GridPanel1: TGridPanel
-          Left = 713
-          Top = 0
-          Width = 305
-          Height = 558
-          Align = alClient
-          BevelOuter = bvNone
-          ColumnCollection = <
-            item
-              Value = 100.000000000000000000
-            end>
-          ControlCollection = <>
-          RowCollection = <
-            item
-              Value = 20.000000000000000000
-            end
-            item
-              Value = 20.000000000000000000
-            end
-            item
-              Value = 20.000000000000000000
-            end
-            item
-              Value = 20.000000000000000000
-            end
-            item
-              Value = 20.000000000000000000
-            end>
-          TabOrder = 0
-        end
         object DBGrid: TcxGrid
           AlignWithMargins = True
           Left = 0
@@ -249,7 +214,7 @@ object VwPrincipal: TVwPrincipal
           Font.Name = 'Segoe UI'
           Font.Style = []
           ParentFont = False
-          TabOrder = 1
+          TabOrder = 0
           TabStop = False
           LookAndFeel.Kind = lfOffice11
           object GridView: TcxGridDBTableView
