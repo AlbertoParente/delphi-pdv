@@ -35,46 +35,6 @@ object VwLogin: TVwLogin
         Column = 1
         Control = GridPanel2
         Row = 1
-      end
-      item
-        Column = 0
-        Control = Image4
-        Row = 0
-      end
-      item
-        Column = 1
-        Control = Image5
-        Row = 0
-      end
-      item
-        Column = 2
-        Control = Image6
-        Row = 0
-      end
-      item
-        Column = 0
-        Control = Image7
-        Row = 1
-      end
-      item
-        Column = 2
-        Control = Image8
-        Row = 1
-      end
-      item
-        Column = 0
-        Control = Image9
-        Row = 2
-      end
-      item
-        Column = 1
-        Control = Image10
-        Row = 2
-      end
-      item
-        Column = 2
-        Control = Image11
-        Row = 2
       end>
     RowCollection = <
       item
@@ -87,7 +47,6 @@ object VwLogin: TVwLogin
         Value = 15.000000000000000000
       end>
     TabOrder = 0
-    ExplicitLeft = 8
     object GridPanel2: TGridPanel
       Left = 305
       Top = 112
@@ -119,11 +78,6 @@ object VwLogin: TVwLogin
           Column = 0
           Control = Panel3
           Row = 3
-        end
-        item
-          Column = 0
-          Control = Image1
-          Row = 0
         end>
       RowCollection = <
         item
@@ -354,103 +308,6 @@ object VwLogin: TVwLogin
           Width = 360
         end
       end
-      object Image1: TImage
-        Left = 0
-        Top = 0
-        Width = 408
-        Height = 146
-        Align = alClient
-        ExplicitLeft = 192
-        ExplicitTop = 64
-        ExplicitWidth = 105
-        ExplicitHeight = 105
-      end
-    end
-    object Image4: TImage
-      Left = 0
-      Top = 0
-      Width = 305
-      Height = 112
-      Align = alClient
-      ExplicitLeft = 56
-      ExplicitTop = 264
-    end
-    object Image5: TImage
-      Left = 305
-      Top = 0
-      Width = 408
-      Height = 112
-      Align = alClient
-      ExplicitLeft = 56
-      ExplicitTop = 264
-      ExplicitWidth = 105
-      ExplicitHeight = 105
-    end
-    object Image6: TImage
-      Left = 713
-      Top = 0
-      Width = 305
-      Height = 112
-      Align = alClient
-      ExplicitLeft = 56
-      ExplicitTop = 264
-      ExplicitWidth = 105
-      ExplicitHeight = 105
-    end
-    object Image7: TImage
-      Left = 0
-      Top = 112
-      Width = 305
-      Height = 520
-      Align = alClient
-      ExplicitLeft = 56
-      ExplicitTop = 264
-      ExplicitWidth = 105
-      ExplicitHeight = 105
-    end
-    object Image8: TImage
-      Left = 713
-      Top = 112
-      Width = 305
-      Height = 520
-      Align = alClient
-      ExplicitLeft = 56
-      ExplicitTop = 264
-      ExplicitWidth = 105
-      ExplicitHeight = 105
-    end
-    object Image9: TImage
-      Left = 0
-      Top = 632
-      Width = 305
-      Height = 112
-      Align = alClient
-      ExplicitLeft = 56
-      ExplicitTop = 264
-      ExplicitWidth = 105
-      ExplicitHeight = 105
-    end
-    object Image10: TImage
-      Left = 305
-      Top = 632
-      Width = 408
-      Height = 112
-      Align = alClient
-      ExplicitLeft = 56
-      ExplicitTop = 264
-      ExplicitWidth = 105
-      ExplicitHeight = 105
-    end
-    object Image11: TImage
-      Left = 713
-      Top = 632
-      Width = 305
-      Height = 112
-      Align = alClient
-      ExplicitLeft = 56
-      ExplicitTop = 264
-      ExplicitWidth = 105
-      ExplicitHeight = 105
     end
   end
 end

@@ -39,15 +39,6 @@ type
     EditSenha: TcxTextEdit;
     ButtonEnter: TcxButton;
     ButtonClose: TcxButton;
-    Image1: TImage;
-    Image4: TImage;
-    Image5: TImage;
-    Image6: TImage;
-    Image7: TImage;
-    Image8: TImage;
-    Image9: TImage;
-    Image10: TImage;
-    Image11: TImage;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
@@ -89,7 +80,11 @@ end;
 
 procedure TVwLogin.Review;
 begin
-//
+  if Trim(EditNome.Text) = '' then
+    Abort;
+
+  if Trim(EditSenha.Text) = '' then
+    Abort;
 end;
 
 end.
