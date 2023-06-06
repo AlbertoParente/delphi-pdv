@@ -59,7 +59,7 @@ implementation
 
 procedure TVwLogin.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
-//
+  Action := Cafree;
 end;
 
 procedure TVwLogin.FormKeyDown(Sender: TObject; var Key: Word;

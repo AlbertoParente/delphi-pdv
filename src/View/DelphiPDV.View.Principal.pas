@@ -50,6 +50,24 @@ type
     ColumnQuantity: TcxGridDBColumn;
     ColumnSubTotal: TcxGridDBColumn;
     aDataSource: TDataSource;
+    Panel1: TPanel;
+    Shape1: TShape;
+    SpeedButton1: TSpeedButton;
+    Panel2: TPanel;
+    Shape2: TShape;
+    SpeedButton2: TSpeedButton;
+    Panel3: TPanel;
+    Shape3: TShape;
+    SpeedButton3: TSpeedButton;
+    Panel4: TPanel;
+    Shape4: TShape;
+    SpeedButton4: TSpeedButton;
+    Panel5: TPanel;
+    Shape5: TShape;
+    SpeedButton5: TSpeedButton;
+    Panel6: TPanel;
+    Shape6: TShape;
+    SpeedButton6: TSpeedButton;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -82,15 +100,11 @@ begin
   inherited;
   case Key of
     VK_ESCAPE:
-    begin
       Close;
-    end;
     VK_NEXT:
       Process;
     VK_RETURN:
-    begin
-//
-    end;
+      SelectNext(Screen.ActiveControl, True, True);
     VK_UP:
       aDataSource.DataSet.Next;
     VK_DOWN:
@@ -118,15 +132,12 @@ end;
 procedure TVwPrincipal.Process;
 begin
   Review;
-//
 end;
 
 procedure TVwPrincipal.Review;
 begin
-  if Assigned(aDataSource.DataSet) then
-  begin
-//
-  end;
+  if not Assigned(aDataSource.DataSet) then
+    Exit;
 end;
 
 end.
