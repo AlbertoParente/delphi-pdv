@@ -127,10 +127,11 @@ object VwLogin: TVwLogin
           end>
         TabOrder = 0
         object ButtonEnter: TcxButton
-          Left = 0
-          Top = 0
-          Width = 204
-          Height = 94
+          AlignWithMargins = True
+          Left = 3
+          Top = 3
+          Width = 198
+          Height = 88
           Align = alClient
           Caption = 'Entrar'
           TabOrder = 0
@@ -140,12 +141,17 @@ object VwLogin: TVwLogin
           Font.Name = 'Segoe UI'
           Font.Style = [fsBold]
           ParentFont = False
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 204
+          ExplicitHeight = 94
         end
         object ButtonClose: TcxButton
-          Left = 204
-          Top = 0
-          Width = 204
-          Height = 94
+          AlignWithMargins = True
+          Left = 207
+          Top = 3
+          Width = 198
+          Height = 88
           Align = alClient
           Caption = 'Close'
           TabOrder = 1
@@ -155,6 +161,10 @@ object VwLogin: TVwLogin
           Font.Name = 'Segoe UI'
           Font.Style = [fsBold]
           ParentFont = False
+          ExplicitLeft = 204
+          ExplicitTop = 0
+          ExplicitWidth = 204
+          ExplicitHeight = 94
         end
       end
       object Panel1: TPanel
