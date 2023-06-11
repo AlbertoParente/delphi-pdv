@@ -26,7 +26,7 @@ uses
   cxEdit, cxNavigator, dxDateRanges, dxScrollbarAnnotations, Data.DB, cxDBData,
   cxGridLevel, cxClasses, cxGridCustomView, cxGridCustomTableView,
   cxGridTableView, cxGridDBTableView, cxGrid, cxTextEdit,
-  cxGridCustomLayoutView, cxGridCardView, cxGridDBCardView;
+  cxGridCustomLayoutView, cxGridCardView, cxGridDBCardView, Datasnap.DBClient;
 
 type
   TVwPrincipal = class(TForm)
@@ -46,7 +46,6 @@ type
     ColumnSubTotal: TcxGridDBColumn;
     aDataSource: TDataSource;
     ColumnDesconto: TcxGridDBColumn;
-    GridPanel1: TGridPanel;
     GridPanelButtons: TGridPanel;
     PanelCancelOperation: TPanel;
     ShapeCancelOperation: TShape;
@@ -69,19 +68,7 @@ type
     PanelMoreFunctions: TPanel;
     ShapeMoreFunctions: TShape;
     SpeedButtonMoreFunctions: TSpeedButton;
-    Image1: TImage;
-    Panel1: TPanel;
-    Shape1: TShape;
-    SpeedButton1: TSpeedButton;
-    Panel2: TPanel;
-    Shape2: TShape;
-    SpeedButton2: TSpeedButton;
-    Panel3: TPanel;
-    Shape3: TShape;
-    SpeedButton3: TSpeedButton;
-    Panel4: TPanel;
-    Shape4: TShape;
-    SpeedButton4: TSpeedButton;
+    cdsItens: TClientDataSet;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);

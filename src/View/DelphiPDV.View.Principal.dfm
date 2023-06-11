@@ -23,8 +23,6 @@ object VwPrincipal: TVwPrincipal
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitWidth = 1016
-    ExplicitHeight = 736
     object GridPanelMain: TGridPanel
       Left = 0
       Top = 0
@@ -63,8 +61,6 @@ object VwPrincipal: TVwPrincipal
           Value = 15.000000000000000000
         end>
       TabOrder = 0
-      ExplicitWidth = 1016
-      ExplicitHeight = 736
       object PanelTitle: TPanel
         Left = 0
         Top = 0
@@ -82,8 +78,6 @@ object VwPrincipal: TVwPrincipal
         ParentBackground = False
         ParentFont = False
         TabOrder = 0
-        ExplicitWidth = 1016
-        ExplicitHeight = 74
       end
       object GridPanelCenter: TGridPanel
         Left = 0
@@ -104,20 +98,12 @@ object VwPrincipal: TVwPrincipal
             Column = 0
             Control = DBGrid
             Row = 0
-          end
-          item
-            Column = 1
-            Control = GridPanel1
-            Row = 0
           end>
         RowCollection = <
           item
             Value = 100.000000000000000000
           end>
         TabOrder = 1
-        ExplicitTop = 74
-        ExplicitWidth = 1016
-        ExplicitHeight = 552
         object DBGrid: TcxGrid
           AlignWithMargins = True
           Left = 0
@@ -141,8 +127,6 @@ object VwPrincipal: TVwPrincipal
           TabOrder = 0
           TabStop = False
           LookAndFeel.Kind = lfOffice11
-          ExplicitWidth = 711
-          ExplicitHeight = 550
           object GridView: TcxGridDBTableView
             Navigator.Buttons.CustomButtons = <>
             Navigator.Buttons.First.Visible = True
@@ -260,245 +244,6 @@ object VwPrincipal: TVwPrincipal
             GridView = GridView
           end
         end
-        object GridPanel1: TGridPanel
-          Left = 710
-          Top = 0
-          Width = 304
-          Height = 546
-          Align = alClient
-          BevelOuter = bvNone
-          ColumnCollection = <
-            item
-              Value = 100.000000000000000000
-            end>
-          ControlCollection = <
-            item
-              Column = 0
-              Control = Image1
-              Row = 0
-            end
-            item
-              Column = 0
-              Control = Panel1
-              Row = 1
-            end
-            item
-              Column = 0
-              Control = Panel2
-              Row = 2
-            end
-            item
-              Column = 0
-              Control = Panel3
-              Row = 3
-            end
-            item
-              Column = 0
-              Control = Panel4
-              Row = 4
-            end>
-          RowCollection = <
-            item
-              Value = 20.000000000000000000
-            end
-            item
-              Value = 20.000000000000000000
-            end
-            item
-              Value = 20.000000000000000000
-            end
-            item
-              Value = 20.000000000000000000
-            end
-            item
-              Value = 20.000000000000000000
-            end>
-          TabOrder = 1
-          ExplicitLeft = 713
-          ExplicitTop = -3
-          object Image1: TImage
-            AlignWithMargins = True
-            Left = 3
-            Top = 3
-            Width = 298
-            Height = 103
-            Align = alClient
-            ExplicitLeft = 72
-            ExplicitTop = 56
-            ExplicitWidth = 105
-            ExplicitHeight = 105
-          end
-          object Panel1: TPanel
-            AlignWithMargins = True
-            Left = 0
-            Top = 109
-            Width = 301
-            Height = 109
-            Margins.Left = 0
-            Margins.Top = 0
-            Margins.Bottom = 0
-            Align = alClient
-            BevelOuter = bvNone
-            TabOrder = 0
-            ExplicitLeft = 59
-            ExplicitTop = 143
-            ExplicitWidth = 185
-            ExplicitHeight = 110
-            object Shape1: TShape
-              Left = 0
-              Top = 0
-              Width = 301
-              Height = 109
-              Align = alClient
-              Brush.Color = 14342621
-              Pen.Style = psClear
-              Shape = stRoundRect
-              ExplicitLeft = 64
-              ExplicitTop = 48
-              ExplicitWidth = 65
-              ExplicitHeight = 65
-            end
-            object SpeedButton1: TSpeedButton
-              Left = 0
-              Top = 0
-              Width = 301
-              Height = 109
-              Align = alClient
-              Caption = 'Pre'#231'o'
-              Flat = True
-              ExplicitTop = 6
-              ExplicitWidth = 150
-              ExplicitHeight = 114
-            end
-          end
-          object Panel2: TPanel
-            AlignWithMargins = True
-            Left = 0
-            Top = 218
-            Width = 301
-            Height = 110
-            Margins.Left = 0
-            Margins.Top = 0
-            Margins.Bottom = 0
-            Align = alClient
-            BevelOuter = bvNone
-            TabOrder = 1
-            ExplicitLeft = 59
-            ExplicitTop = 252
-            ExplicitWidth = 185
-            object Shape2: TShape
-              Left = 0
-              Top = 0
-              Width = 301
-              Height = 110
-              Align = alClient
-              Brush.Color = 14342621
-              Pen.Style = psClear
-              Shape = stRoundRect
-              ExplicitLeft = 64
-              ExplicitTop = 48
-              ExplicitWidth = 65
-              ExplicitHeight = 65
-            end
-            object SpeedButton2: TSpeedButton
-              Left = 0
-              Top = 0
-              Width = 301
-              Height = 110
-              Align = alClient
-              Caption = 'Quantidade'
-              Flat = True
-              ExplicitTop = 6
-              ExplicitWidth = 150
-              ExplicitHeight = 114
-            end
-          end
-          object Panel3: TPanel
-            AlignWithMargins = True
-            Left = 0
-            Top = 328
-            Width = 301
-            Height = 109
-            Margins.Left = 0
-            Margins.Top = 0
-            Margins.Bottom = 0
-            Align = alClient
-            BevelOuter = bvNone
-            TabOrder = 2
-            ExplicitLeft = 59
-            ExplicitTop = 362
-            ExplicitWidth = 185
-            ExplicitHeight = 110
-            object Shape3: TShape
-              Left = 0
-              Top = 0
-              Width = 301
-              Height = 109
-              Align = alClient
-              Brush.Color = 14342621
-              Pen.Style = psClear
-              Shape = stRoundRect
-              ExplicitLeft = 64
-              ExplicitTop = 48
-              ExplicitWidth = 65
-              ExplicitHeight = 65
-            end
-            object SpeedButton3: TSpeedButton
-              Left = 0
-              Top = 0
-              Width = 301
-              Height = 109
-              Align = alClient
-              Caption = 'Sub-Total'
-              Flat = True
-              ExplicitTop = 6
-              ExplicitWidth = 150
-              ExplicitHeight = 114
-            end
-          end
-          object Panel4: TPanel
-            AlignWithMargins = True
-            Left = 0
-            Top = 437
-            Width = 301
-            Height = 109
-            Margins.Left = 0
-            Margins.Top = 0
-            Margins.Bottom = 0
-            Align = alClient
-            BevelOuter = bvNone
-            TabOrder = 3
-            ExplicitLeft = 59
-            ExplicitTop = 471
-            ExplicitWidth = 185
-            ExplicitHeight = 110
-            object Shape4: TShape
-              Left = 0
-              Top = 0
-              Width = 301
-              Height = 109
-              Align = alClient
-              Brush.Color = 14342621
-              Pen.Style = psClear
-              Shape = stRoundRect
-              ExplicitLeft = 64
-              ExplicitTop = 48
-              ExplicitWidth = 65
-              ExplicitHeight = 65
-            end
-            object SpeedButton4: TSpeedButton
-              Left = 0
-              Top = 0
-              Width = 301
-              Height = 109
-              Align = alClient
-              Caption = 'Purchase Total'
-              Flat = True
-              ExplicitLeft = 3
-              ExplicitTop = -3
-            end
-          end
-        end
       end
       object GridPanelButtons: TGridPanel
         Left = 0
@@ -570,9 +315,6 @@ object VwPrincipal: TVwPrincipal
             Value = 100.000000000000000000
           end>
         TabOrder = 2
-        ExplicitTop = 626
-        ExplicitWidth = 1016
-        ExplicitHeight = 110
         object PanelCancelOperation: TPanel
           AlignWithMargins = True
           Left = 0
@@ -585,7 +327,6 @@ object VwPrincipal: TVwPrincipal
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 0
-          ExplicitHeight = 110
           object ShapeCancelOperation: TShape
             Left = 0
             Top = 0
@@ -625,8 +366,6 @@ object VwPrincipal: TVwPrincipal
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 1
-          ExplicitWidth = 140
-          ExplicitHeight = 110
           object ShapeSearchPrice: TShape
             Left = 0
             Top = 0
@@ -666,8 +405,6 @@ object VwPrincipal: TVwPrincipal
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 2
-          ExplicitLeft = 295
-          ExplicitHeight = 110
           object ShapeOpenCashier: TShape
             Left = 0
             Top = 0
@@ -707,8 +444,6 @@ object VwPrincipal: TVwPrincipal
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 3
-          ExplicitLeft = 437
-          ExplicitHeight = 110
           object ShapeCancelSale: TShape
             Left = 0
             Top = 0
@@ -748,8 +483,6 @@ object VwPrincipal: TVwPrincipal
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 4
-          ExplicitLeft = 579
-          ExplicitHeight = 110
           object ShapeCancelItem: TShape
             Left = 0
             Top = 0
@@ -788,9 +521,6 @@ object VwPrincipal: TVwPrincipal
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 5
-          ExplicitLeft = 721
-          ExplicitWidth = 140
-          ExplicitHeight = 110
           object ShapeDevolution: TShape
             Left = 0
             Top = 0
@@ -830,8 +560,6 @@ object VwPrincipal: TVwPrincipal
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 6
-          ExplicitLeft = 864
-          ExplicitHeight = 110
           object ShapeMoreFunctions: TShape
             Left = 0
             Top = 0
@@ -863,7 +591,14 @@ object VwPrincipal: TVwPrincipal
     end
   end
   object aDataSource: TDataSource
-    Left = 636
-    Top = 474
+    DataSet = cdsItens
+    Left = 468
+    Top = 570
+  end
+  object cdsItens: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 408
+    Top = 569
   end
 end
