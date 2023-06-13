@@ -74,6 +74,16 @@ type
     PanelPurchaseTotal: TPanel;
     LabelPurchaseTotal: TLabel;
     Shape1: TShape;
+    Panel1: TPanel;
+    Label1: TLabel;
+    Shape2: TShape;
+    Panel2: TPanel;
+    Label2: TLabel;
+    Shape3: TShape;
+    Panel3: TPanel;
+    Label3: TLabel;
+    Shape4: TShape;
+    Image1: TImage;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
