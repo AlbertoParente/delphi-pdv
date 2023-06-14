@@ -65,7 +65,29 @@ end;
 procedure TVwLogin.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
-//
+  inherited;
+  case Key of
+    VK_ESCAPE:
+    begin
+      Close;
+    end;
+    VK_NEXT:
+    begin
+      Process;
+    end;
+    VK_RETURN:
+    begin
+      SelectNext(Screen.ActiveControl, True, True);
+    end;
+    VK_UP:
+    begin
+      aDataSource.DataSet.Next;
+    end;
+    VK_DOWN:
+    begin
+      aDataSource.DataSet.Prior;
+    end;
+  end;
 end;
 
 procedure TVwLogin.FormShow(Sender: TObject);
@@ -75,6 +97,7 @@ end;
 
 procedure TVwLogin.Process;
 begin
+  Review;
 //
 end;
 
@@ -82,7 +105,6 @@ procedure TVwLogin.Review;
 begin
   if Trim(EditNome.Text) = '' then
     Abort;
-
   if Trim(EditSenha.Text) = '' then
     Abort;
 end;

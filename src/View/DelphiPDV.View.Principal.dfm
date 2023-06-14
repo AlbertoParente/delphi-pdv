@@ -410,13 +410,13 @@ object VwPrincipal: TVwPrincipal
   end
   object aDataSource: TDataSource
     DataSet = cdsItens
-    Left = 468
-    Top = 570
+    Left = 652
+    Top = 146
   end
   object cdsItens: TClientDataSet
     Aggregates = <>
     Params = <>
-    Left = 408
-    Top = 569
+    Left = 656
+    Top = 201
   end
 end

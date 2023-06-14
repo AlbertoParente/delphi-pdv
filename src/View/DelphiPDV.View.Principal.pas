@@ -80,6 +80,7 @@ implementation
 procedure TVwPrincipal.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Action := caFree
+//
 end;
 
 procedure TVwPrincipal.FormKeyDown(Sender: TObject; var Key: Word;
@@ -88,21 +89,32 @@ begin
   inherited;
   case Key of
     VK_ESCAPE:
+    begin
       Close;
+    end;
     VK_NEXT:
+    begin
       Process;
+    end;
     VK_RETURN:
+    begin
       SelectNext(Screen.ActiveControl, True, True);
+    end;
     VK_UP:
+    begin
       aDataSource.DataSet.Next;
+    end;
     VK_DOWN:
+    begin
       aDataSource.DataSet.Prior;
+    end;
   end;
 end;
 
 procedure TVwPrincipal.FormShow(Sender: TObject);
 begin
   aDataSource.DataSet := nil;
+//
 end;
 
 procedure TVwPrincipal.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
@@ -120,12 +132,14 @@ end;
 procedure TVwPrincipal.Process;
 begin
   Review;
+//
 end;
 
 procedure TVwPrincipal.Review;
 begin
   if not Assigned(aDataSource.DataSet) then
     Exit;
+//
 end;
 
 end.

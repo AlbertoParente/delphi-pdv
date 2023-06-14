@@ -141,10 +141,6 @@ object VwLogin: TVwLogin
           Font.Name = 'Segoe UI'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 204
-          ExplicitHeight = 94
         end
         object ButtonClose: TcxButton
           AlignWithMargins = True
@@ -161,10 +157,6 @@ object VwLogin: TVwLogin
           Font.Name = 'Segoe UI'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitLeft = 204
-          ExplicitTop = 0
-          ExplicitWidth = 204
-          ExplicitHeight = 94
         end
       end
       object Panel1: TPanel
