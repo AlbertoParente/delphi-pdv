@@ -79,14 +79,6 @@ begin
     begin
       SelectNext(Screen.ActiveControl, True, True);
     end;
-    VK_UP:
-    begin
-      aDataSource.DataSet.Next;
-    end;
-    VK_DOWN:
-    begin
-      aDataSource.DataSet.Prior;
-    end;
   end;
 end;
 

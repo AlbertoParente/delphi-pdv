@@ -23,8 +23,6 @@ object VwPrincipal: TVwPrincipal
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitWidth = 1010
-    ExplicitHeight = 712
     object GridPanelMain: TGridPanel
       Left = 0
       Top = 0
@@ -63,8 +61,6 @@ object VwPrincipal: TVwPrincipal
           Value = 15.000000000000000000
         end>
       TabOrder = 0
-      ExplicitWidth = 1010
-      ExplicitHeight = 712
       object PanelTitle: TPanel
         Left = 0
         Top = 0
@@ -82,8 +78,6 @@ object VwPrincipal: TVwPrincipal
         ParentBackground = False
         ParentFont = False
         TabOrder = 0
-        ExplicitWidth = 1010
-        ExplicitHeight = 71
       end
       object GridPanelCenter: TGridPanel
         Left = 0
@@ -115,9 +109,6 @@ object VwPrincipal: TVwPrincipal
             Value = 100.000000000000000000
           end>
         TabOrder = 1
-        ExplicitTop = 71
-        ExplicitWidth = 1010
-        ExplicitHeight = 534
         object DBGrid: TcxGrid
           AlignWithMargins = True
           Left = 0
@@ -141,8 +132,6 @@ object VwPrincipal: TVwPrincipal
           TabOrder = 0
           TabStop = False
           LookAndFeel.Kind = lfOffice11
-          ExplicitWidth = 707
-          ExplicitHeight = 530
           object GridView: TcxGridDBTableView
             Navigator.Buttons.CustomButtons = <>
             Navigator.Buttons.First.Visible = True
@@ -280,23 +269,23 @@ object VwPrincipal: TVwPrincipal
             end
             item
               Column = 0
-              Control = PanelSubTotal
-              Row = 3
+              Control = Image1
+              Row = 0
             end
             item
               Column = 0
-              Control = PanelQuantity
-              Row = 2
-            end
-            item
-              Column = 0
-              Control = PanelPrice
+              Control = Panel1
               Row = 1
             end
             item
               Column = 0
-              Control = Image1
-              Row = 0
+              Control = Panel3
+              Row = 2
+            end
+            item
+              Column = 0
+              Control = Panel5
+              Row = 3
             end>
           Padding.Bottom = 2
           RowCollection = <
@@ -316,9 +305,6 @@ object VwPrincipal: TVwPrincipal
               Value = 18.000000000000000000
             end>
           TabOrder = 1
-          ExplicitLeft = 710
-          ExplicitWidth = 297
-          ExplicitHeight = 528
           object PanelPurchaseTotal: TPanel
             Left = 0
             Top = 426
@@ -327,14 +313,15 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 0
-            ExplicitTop = 431
-            ExplicitWidth = 297
-            ExplicitHeight = 93
             object LabelPurchaseTotal: TLabel
-              Left = 0
+              AlignWithMargins = True
+              Left = 3
               Top = 0
-              Width = 296
+              Width = 293
               Height = 28
+              Margins.Top = 0
+              Margins.Right = 0
+              Margins.Bottom = 0
               Align = alTop
               Caption = 'Total da Compa'
               Font.Charset = DEFAULT_CHARSET
@@ -343,20 +330,9 @@ object VwPrincipal: TVwPrincipal
               Font.Name = 'Segoe UI'
               Font.Style = []
               ParentFont = False
-              ExplicitWidth = 137
-            end
-            object ShapePurchaseTotal: TShape
-              Left = 0
-              Top = 28
-              Width = 296
-              Height = 64
-              Align = alClient
-              Brush.Color = 7119398
-              Pen.Style = psClear
-              Shape = stRoundRect
-              ExplicitTop = 34
-              ExplicitWidth = 290
-              ExplicitHeight = 58
+              ExplicitLeft = 0
+              ExplicitTop = 1
+              ExplicitWidth = 296
             end
             object PanelEditPurchaseTotal: TPanel
               Left = 0
@@ -365,133 +341,41 @@ object VwPrincipal: TVwPrincipal
               Height = 64
               Align = alClient
               BevelOuter = bvNone
-              Padding.Left = 5
-              Padding.Top = 5
-              Padding.Right = 5
-              Padding.Bottom = 5
+              Padding.Left = 3
+              Padding.Top = 3
+              Padding.Right = 3
+              Padding.Bottom = 3
               TabOrder = 0
-              ExplicitTop = 32
-            end
-          end
-          object PanelSubTotal: TPanel
-            Left = 0
-            Top = 333
-            Width = 296
-            Height = 91
-            Align = alClient
-            BevelOuter = bvNone
-            TabOrder = 1
-            ExplicitTop = 334
-            object LabelSubTotal: TLabel
-              Left = 0
-              Top = 0
-              Width = 296
-              Height = 28
-              Align = alTop
-              Caption = 'Sub Total'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -20
-              Font.Name = 'Segoe UI'
-              Font.Style = []
-              ParentFont = False
-              ExplicitWidth = 81
-            end
-            object ShapeSubTotal: TShape
-              AlignWithMargins = True
-              Left = 3
-              Top = 31
-              Width = 290
-              Height = 57
-              Align = alClient
-              Pen.Style = psClear
-              Shape = stRoundRect
-              ExplicitLeft = 64
-              ExplicitTop = 56
-              ExplicitWidth = 65
-              ExplicitHeight = 65
-            end
-          end
-          object PanelQuantity: TPanel
-            Left = 0
-            Top = 239
-            Width = 296
-            Height = 92
-            Align = alClient
-            BevelOuter = bvNone
-            TabOrder = 2
-            ExplicitTop = 242
-            ExplicitWidth = 297
-            ExplicitHeight = 93
-            object LabelQuantity: TLabel
-              Left = 0
-              Top = 0
-              Width = 296
-              Height = 28
-              Align = alTop
-              Caption = 'Quantidade'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -20
-              Font.Name = 'Segoe UI'
-              Font.Style = []
-              ParentFont = False
-              ExplicitWidth = 103
-            end
-            object ShapeQuantity: TShape
-              AlignWithMargins = True
-              Left = 3
-              Top = 31
-              Width = 290
-              Height = 58
-              Align = alClient
-              Pen.Style = psClear
-              Shape = stRoundRect
-              ExplicitLeft = 64
-              ExplicitTop = 56
-              ExplicitWidth = 65
-              ExplicitHeight = 65
-            end
-          end
-          object PanelPrice: TPanel
-            Left = 0
-            Top = 146
-            Width = 296
-            Height = 91
-            Align = alClient
-            BevelOuter = bvNone
-            TabOrder = 3
-            ExplicitTop = 147
-            ExplicitWidth = 297
-            ExplicitHeight = 93
-            object LabelPrice: TLabel
-              Left = 0
-              Top = 0
-              Width = 296
-              Height = 28
-              Align = alTop
-              Caption = 'Pre'#231'o'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -20
-              Font.Name = 'Segoe UI'
-              Font.Style = []
-              ParentFont = False
-              ExplicitTop = 1
-            end
-            object ShapePrice: TShape
-              AlignWithMargins = True
-              Left = 3
-              Top = 31
-              Width = 290
-              Height = 57
-              Align = alClient
-              Pen.Style = psClear
-              Shape = stRoundRect
-              ExplicitLeft = 64
-              ExplicitTop = 56
-              ExplicitWidth = 65
-              ExplicitHeight = 65
+              object ShapePurchaseTotal: TShape
+                Left = 3
+                Top = 3
+                Width = 290
+                Height = 58
+                Align = alClient
+                Brush.Color = 7119398
+                Pen.Style = psClear
+                Shape = stRoundRect
+                ExplicitLeft = 0
+                ExplicitTop = 34
+              end
+              object LabelPurchaseTotalValue: TLabel
+                AlignWithMargins = True
+                Left = 6
+                Top = 6
+                Width = 284
+                Height = 52
+                Align = alClient
+                Alignment = taCenter
+                Caption = 'R$ 100,00'
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = clWhite
+                Font.Height = -32
+                Font.Name = 'Segoe UI'
+                Font.Style = []
+                ParentFont = False
+                ExplicitWidth = 137
+                ExplicitHeight = 45
+              end
             end
           end
           object Image1: TImage
@@ -505,6 +389,233 @@ object VwPrincipal: TVwPrincipal
             ExplicitTop = 48
             ExplicitWidth = 105
             ExplicitHeight = 105
+          end
+          object Panel1: TPanel
+            Left = 0
+            Top = 146
+            Width = 296
+            Height = 91
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 1
+            ExplicitLeft = 55
+            ExplicitTop = 171
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+            object Label1: TLabel
+              AlignWithMargins = True
+              Left = 3
+              Top = 0
+              Width = 293
+              Height = 28
+              Margins.Top = 0
+              Margins.Right = 0
+              Margins.Bottom = 0
+              Align = alTop
+              Caption = 'Pre'#231'o Unit.'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -20
+              Font.Name = 'Segoe UI'
+              Font.Style = []
+              ParentFont = False
+              ExplicitWidth = 95
+            end
+            object Panel2: TPanel
+              Left = 0
+              Top = 28
+              Width = 296
+              Height = 63
+              Align = alClient
+              BevelOuter = bvNone
+              Padding.Left = 3
+              Padding.Top = 3
+              Padding.Right = 3
+              Padding.Bottom = 3
+              TabOrder = 0
+              object Shape1: TShape
+                Left = 3
+                Top = 3
+                Width = 290
+                Height = 57
+                Align = alClient
+                Brush.Color = 7119398
+                Pen.Style = psClear
+                Shape = stRoundRect
+                ExplicitLeft = 0
+                ExplicitTop = 34
+                ExplicitHeight = 58
+              end
+              object Label2: TLabel
+                AlignWithMargins = True
+                Left = 6
+                Top = 6
+                Width = 284
+                Height = 51
+                Align = alClient
+                Alignment = taCenter
+                Caption = 'R$ 10,00'
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = clWhite
+                Font.Height = -32
+                Font.Name = 'Segoe UI'
+                Font.Style = []
+                ParentFont = False
+                ExplicitWidth = 120
+                ExplicitHeight = 45
+              end
+            end
+          end
+          object Panel3: TPanel
+            Left = 0
+            Top = 239
+            Width = 296
+            Height = 92
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 2
+            ExplicitLeft = 55
+            ExplicitTop = 264
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+            object Label3: TLabel
+              AlignWithMargins = True
+              Left = 3
+              Top = 0
+              Width = 293
+              Height = 28
+              Margins.Top = 0
+              Margins.Right = 0
+              Margins.Bottom = 0
+              Align = alTop
+              Caption = 'Quantidade'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -20
+              Font.Name = 'Segoe UI'
+              Font.Style = []
+              ParentFont = False
+              ExplicitWidth = 103
+            end
+            object Panel4: TPanel
+              Left = 0
+              Top = 28
+              Width = 296
+              Height = 64
+              Align = alClient
+              BevelOuter = bvNone
+              Padding.Left = 3
+              Padding.Top = 3
+              Padding.Right = 3
+              Padding.Bottom = 3
+              TabOrder = 0
+              object Shape2: TShape
+                Left = 3
+                Top = 3
+                Width = 290
+                Height = 58
+                Align = alClient
+                Brush.Color = 7119398
+                Pen.Style = psClear
+                Shape = stRoundRect
+                ExplicitLeft = 0
+                ExplicitTop = 34
+              end
+              object Label4: TLabel
+                AlignWithMargins = True
+                Left = 6
+                Top = 6
+                Width = 284
+                Height = 52
+                Align = alClient
+                Alignment = taCenter
+                Caption = '10'
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = clWhite
+                Font.Height = -32
+                Font.Name = 'Segoe UI'
+                Font.Style = []
+                ParentFont = False
+                ExplicitWidth = 34
+                ExplicitHeight = 45
+              end
+            end
+          end
+          object Panel5: TPanel
+            Left = 0
+            Top = 333
+            Width = 296
+            Height = 91
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 3
+            ExplicitLeft = 55
+            ExplicitTop = 358
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+            object Label5: TLabel
+              AlignWithMargins = True
+              Left = 3
+              Top = 0
+              Width = 293
+              Height = 28
+              Margins.Top = 0
+              Margins.Right = 0
+              Margins.Bottom = 0
+              Align = alTop
+              Caption = 'SubTotal'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -20
+              Font.Name = 'Segoe UI'
+              Font.Style = []
+              ParentFont = False
+              ExplicitWidth = 76
+            end
+            object Panel6: TPanel
+              Left = 0
+              Top = 28
+              Width = 296
+              Height = 63
+              Align = alClient
+              BevelOuter = bvNone
+              Padding.Left = 3
+              Padding.Top = 3
+              Padding.Right = 3
+              Padding.Bottom = 3
+              TabOrder = 0
+              object Shape3: TShape
+                Left = 3
+                Top = 3
+                Width = 290
+                Height = 57
+                Align = alClient
+                Brush.Color = 7119398
+                Pen.Style = psClear
+                Shape = stRoundRect
+                ExplicitLeft = 0
+                ExplicitTop = 34
+                ExplicitHeight = 58
+              end
+              object Label6: TLabel
+                AlignWithMargins = True
+                Left = 6
+                Top = 6
+                Width = 284
+                Height = 51
+                Align = alClient
+                Alignment = taCenter
+                Caption = 'R$ 100,00'
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = clWhite
+                Font.Height = -32
+                Font.Name = 'Segoe UI'
+                Font.Style = []
+                ParentFont = False
+                ExplicitLeft = 0
+                ExplicitTop = 3
+              end
+            end
           end
         end
       end
@@ -583,9 +694,6 @@ object VwPrincipal: TVwPrincipal
             Value = 100.000000000000000000
           end>
         TabOrder = 2
-        ExplicitTop = 608
-        ExplicitWidth = 1004
-        ExplicitHeight = 101
         object PanelCancelOperation: TPanel
           AlignWithMargins = True
           Left = 4
@@ -598,7 +706,6 @@ object VwPrincipal: TVwPrincipal
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 0
-          ExplicitHeight = 93
           object ShapeCancelOperation: TShape
             Left = 0
             Top = 0
@@ -638,8 +745,6 @@ object VwPrincipal: TVwPrincipal
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 1
-          ExplicitWidth = 133
-          ExplicitHeight = 93
           object ShapeSearchPrice: TShape
             Left = 0
             Top = 0
@@ -679,8 +784,6 @@ object VwPrincipal: TVwPrincipal
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 2
-          ExplicitLeft = 294
-          ExplicitHeight = 93
           object ShapeOpenCashier: TShape
             Left = 0
             Top = 0
@@ -721,8 +824,6 @@ object VwPrincipal: TVwPrincipal
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 3
-          ExplicitLeft = 434
-          ExplicitHeight = 93
           object ShapeCancelSale: TShape
             Left = 0
             Top = 0
@@ -762,8 +863,6 @@ object VwPrincipal: TVwPrincipal
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 4
-          ExplicitLeft = 574
-          ExplicitHeight = 93
           object ShapeCancelItem: TShape
             Left = 0
             Top = 0
@@ -803,9 +902,6 @@ object VwPrincipal: TVwPrincipal
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 5
-          ExplicitLeft = 714
-          ExplicitWidth = 133
-          ExplicitHeight = 93
           object ShapeDevolution: TShape
             Left = 0
             Top = 0
@@ -845,8 +941,6 @@ object VwPrincipal: TVwPrincipal
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 6
-          ExplicitLeft = 854
-          ExplicitHeight = 93
           object ShapeMoreFunctions: TShape
             Left = 0
             Top = 0
