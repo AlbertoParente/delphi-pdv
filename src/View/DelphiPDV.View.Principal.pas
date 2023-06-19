@@ -27,7 +27,7 @@ uses
   cxGridLevel, cxClasses, cxGridCustomView, cxGridCustomTableView,
   cxGridTableView, cxGridDBTableView, cxGrid, cxTextEdit,
   cxGridCustomLayoutView, cxGridCardView, cxGridDBCardView, Datasnap.DBClient,
-  Vcl.StdCtrls, cxContainer;
+  Vcl.StdCtrls, cxContainer, dxGDIPlusClasses;
 
 type
   TVwPrincipal = class(TForm)
@@ -74,7 +74,7 @@ type
     PanelPurchaseTotal: TPanel;
     LabelPurchaseTotal: TLabel;
     ShapePurchaseTotal: TShape;
-    Image1: TImage;
+    ImageProduct: TImage;
     PanelEditPurchaseTotal: TPanel;
     LabelPurchaseTotalValue: TLabel;
     PanelUnitPrice: TPanel;
@@ -92,6 +92,11 @@ type
     ShapeSubTotal: TShape;
     LabelSubTotalValue: TLabel;
     EditQuantity: TcxTextEdit;
+    PanelProduct: TPanel;
+    LabelProduct: TLabel;
+    PanelEditProduct: TPanel;
+    ShapeProduct: TShape;
+    EditProduct: TcxTextEdit;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
