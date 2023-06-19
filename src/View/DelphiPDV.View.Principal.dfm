@@ -228,6 +228,9 @@ object VwPrincipal: TVwPrincipal
             object ColumnDesconto: TcxGridDBColumn
               Caption = 'Desconto'
               DataBinding.IsNullValueType = True
+              PropertiesClassName = 'TcxTextEditProperties'
+              Properties.Alignment.Horz = taRightJustify
+              HeaderAlignmentHorz = taRightJustify
             end
             object ColumnSubTotal: TcxGridDBColumn
               Caption = 'Sub-Total'
@@ -321,8 +324,6 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 0
-            ExplicitTop = 421
-            ExplicitHeight = 91
             object LabelPurchaseTotal: TLabel
               AlignWithMargins = True
               Left = 3
@@ -354,7 +355,6 @@ object VwPrincipal: TVwPrincipal
               Padding.Right = 3
               Padding.Bottom = 3
               TabOrder = 0
-              ExplicitHeight = 63
               object ShapePurchaseTotal: TShape
                 Left = 3
                 Top = 3
@@ -390,14 +390,12 @@ object VwPrincipal: TVwPrincipal
           end
           object ImageProduct: TImage
             AlignWithMargins = True
-            Left = 50
-            Top = 5
-            Width = 196
-            Height = 91
-            Margins.Left = 50
-            Margins.Top = 5
-            Margins.Right = 50
-            Margins.Bottom = 5
+            Left = 30
+            Top = 3
+            Width = 236
+            Height = 95
+            Margins.Left = 30
+            Margins.Right = 30
             Align = alClient
             Picture.Data = {
               0D546478536D617274496D61676589504E470D0A1A0A0000000D494844520000
@@ -1256,7 +1254,12 @@ object VwPrincipal: TVwPrincipal
               7F1F2F297919FF3E5E52F232FE7DBCA4E465FCFB7849C9CBF8F7F1929297F1EF
               E325252FE3DFC74B4A5EC6BF8F9794BC8C7F1F2F297919FF3E5E52F232FE5D40
               F8FF009833AF95582B3CA60000000049454E44AE426082}
+            Stretch = True
+            Transparent = True
             ExplicitLeft = 74
+            ExplicitTop = 5
+            ExplicitWidth = 196
+            ExplicitHeight = 91
           end
           object PanelUnitPrice: TPanel
             Left = 0
@@ -1266,8 +1269,6 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 1
-            ExplicitTop = 144
-            ExplicitHeight = 90
             object LabelUnitPrice: TLabel
               AlignWithMargins = True
               Left = 3
@@ -1299,7 +1300,6 @@ object VwPrincipal: TVwPrincipal
               Padding.Right = 3
               Padding.Bottom = 3
               TabOrder = 0
-              ExplicitHeight = 62
               object ShapeUnitPrice: TShape
                 Left = 3
                 Top = 3
@@ -1329,8 +1329,7 @@ object VwPrincipal: TVwPrincipal
                 Font.Style = []
                 ParentFont = False
                 ExplicitLeft = 0
-                ExplicitTop = 3
-                ExplicitHeight = 36
+                ExplicitTop = 8
               end
             end
           end
@@ -1342,8 +1341,6 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 2
-            ExplicitTop = 236
-            ExplicitHeight = 91
             object LabelQuantity: TLabel
               AlignWithMargins = True
               Left = 3
@@ -1375,14 +1372,13 @@ object VwPrincipal: TVwPrincipal
               Padding.Right = 3
               Padding.Bottom = 3
               TabOrder = 0
-              ExplicitHeight = 63
               object ShapeQuantity: TShape
                 Left = 3
                 Top = 3
                 Width = 290
                 Height = 47
                 Align = alClient
-                Brush.Color = 7119398
+                Brush.Color = 7865726
                 Pen.Style = psClear
                 Shape = stRoundRect
                 ExplicitLeft = 0
@@ -1395,9 +1391,9 @@ object VwPrincipal: TVwPrincipal
                 Align = alClient
                 ParentFont = False
                 Properties.Alignment.Horz = taCenter
-                Style.BorderColor = 7119398
+                Style.BorderColor = 7865726
                 Style.BorderStyle = ebsNone
-                Style.Color = 7119398
+                Style.Color = 7865726
                 Style.Font.Charset = DEFAULT_CHARSET
                 Style.Font.Color = clWhite
                 Style.Font.Height = -32
@@ -1406,7 +1402,6 @@ object VwPrincipal: TVwPrincipal
                 Style.IsFontAssigned = True
                 TabOrder = 0
                 Text = '10'
-                ExplicitHeight = 51
                 Width = 284
               end
             end
@@ -1419,8 +1414,6 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 3
-            ExplicitTop = 329
-            ExplicitHeight = 90
             object LabelSubTotal: TLabel
               AlignWithMargins = True
               Left = 3
@@ -1452,7 +1445,6 @@ object VwPrincipal: TVwPrincipal
               Padding.Right = 3
               Padding.Bottom = 3
               TabOrder = 0
-              ExplicitHeight = 62
               object ShapeSubTotal: TShape
                 Left = 3
                 Top = 3
@@ -1481,9 +1473,8 @@ object VwPrincipal: TVwPrincipal
                 Font.Name = 'Segoe UI'
                 Font.Style = []
                 ParentFont = False
-                ExplicitLeft = 0
-                ExplicitTop = 3
-                ExplicitHeight = 36
+                ExplicitWidth = 137
+                ExplicitHeight = 45
               end
             end
           end
@@ -1495,10 +1486,6 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 4
-            ExplicitLeft = 55
-            ExplicitTop = 236
-            ExplicitWidth = 185
-            ExplicitHeight = 91
             object LabelProduct: TLabel
               AlignWithMargins = True
               Left = 3
@@ -1530,14 +1517,13 @@ object VwPrincipal: TVwPrincipal
               Padding.Right = 3
               Padding.Bottom = 3
               TabOrder = 0
-              ExplicitHeight = 48
               object ShapeProduct: TShape
                 Left = 3
                 Top = 3
                 Width = 290
                 Height = 46
                 Align = alClient
-                Brush.Color = 7119398
+                Brush.Color = 7865726
                 Pen.Style = psClear
                 Shape = stRoundRect
                 ExplicitLeft = 0
@@ -1550,9 +1536,9 @@ object VwPrincipal: TVwPrincipal
                 Align = alClient
                 ParentFont = False
                 Properties.Alignment.Horz = taCenter
-                Style.BorderColor = 7119398
+                Style.BorderColor = 7865726
                 Style.BorderStyle = ebsNone
-                Style.Color = 7119398
+                Style.Color = 7865726
                 Style.Font.Charset = DEFAULT_CHARSET
                 Style.Font.Color = clWhite
                 Style.Font.Height = -32
@@ -1561,7 +1547,8 @@ object VwPrincipal: TVwPrincipal
                 Style.IsFontAssigned = True
                 TabOrder = 0
                 Text = '00033'
-                ExplicitHeight = 36
+                ExplicitLeft = 0
+                ExplicitTop = 3
                 Width = 284
               end
             end
@@ -1923,13 +1910,13 @@ object VwPrincipal: TVwPrincipal
   end
   object aDataSource: TDataSource
     DataSet = cdsItens
-    Left = 652
-    Top = 146
+    Left = 660
+    Top = 386
   end
   object cdsItens: TClientDataSet
     Aggregates = <>
     Params = <>
     Left = 656
-    Top = 201
+    Top = 449
   end
 end
