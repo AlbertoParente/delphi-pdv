@@ -63,7 +63,6 @@ type
     SpeedButtonCancelSale: TSpeedButton;
     PanelCancelItem: TPanel;
     ShapeCancelItem: TShape;
-    SpeedCancelItem: TSpeedButton;
     PanelDevolution: TPanel;
     ShapeDevolution: TShape;
     SpeedButtonDevolution: TSpeedButton;
@@ -97,12 +96,14 @@ type
     PanelEditProduct: TPanel;
     ShapeProduct: TShape;
     EditProduct: TcxTextEdit;
+    SpeedButtonCancelItem: TSpeedButton;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
       ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
       var ADone: Boolean);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -122,6 +123,16 @@ procedure TVwPrincipal.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Action := caFree
 //
+end;
+
+procedure TVwPrincipal.FormCreate(Sender: TObject);
+begin
+  SpeedButtonCancelOperation.Caption := 'Cancelar Operação ' + ''#13'' + ' (Esc)';
+  SpeedButtonSearchPrice.Caption     := 'Consultar Preço ' + ''#13'' + ' (F4)';
+  SpeedButtonOpenCashier.Caption     := 'Abrir Caixa ' + ''#13'' + ' (F2)';
+  SpeedButtonCancelSale.Caption      := 'Cancelar Venda ' + ''#13'' + ' (F6)';
+  SpeedButtonCancelItem.Caption      := 'Cancelar Item ' + ''#13'' + ' (F5)';
+  SpeedButtonMoreFunctions.Caption   := 'Mais Funções ' + ''#13'' + ' (F12)';
 end;
 
 procedure TVwPrincipal.FormKeyDown(Sender: TObject; var Key: Word;

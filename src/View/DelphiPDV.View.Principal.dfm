@@ -12,6 +12,7 @@ object VwPrincipal: TVwPrincipal
   Font.Style = []
   Position = poDesigned
   OnClose = FormClose
+  OnCreate = FormCreate
   OnKeyDown = FormKeyDown
   OnShow = FormShow
   TextHeight = 15
@@ -1328,8 +1329,8 @@ object VwPrincipal: TVwPrincipal
                 Font.Name = 'Segoe UI'
                 Font.Style = []
                 ParentFont = False
-                ExplicitLeft = 0
-                ExplicitTop = 8
+                ExplicitWidth = 120
+                ExplicitHeight = 45
               end
             end
           end
@@ -1547,8 +1548,6 @@ object VwPrincipal: TVwPrincipal
                 Style.IsFontAssigned = True
                 TabOrder = 0
                 Text = '00033'
-                ExplicitLeft = 0
-                ExplicitTop = 3
                 Width = 284
               end
             end
@@ -1813,12 +1812,13 @@ object VwPrincipal: TVwPrincipal
             ExplicitWidth = 65
             ExplicitHeight = 65
           end
-          object SpeedCancelItem: TSpeedButton
+          object SpeedButtonCancelItem: TSpeedButton
             Left = 0
             Top = 0
             Width = 132
             Height = 90
             Align = alClient
+            DisabledImageName = 'SpeedButtonCancelItem'
             Caption = 'Cancelar Item'
             Flat = True
             ExplicitTop = 3
