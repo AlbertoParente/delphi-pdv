@@ -26,15 +26,161 @@ object Form1: TForm1
       item
         Value = 50.000000000000000000
       end>
-    ControlCollection = <>
+    ControlCollection = <
+      item
+        Column = 1
+        Control = GridPanelLogin
+        Row = 0
+      end>
     RowCollection = <
       item
         Value = 100.000000000000000000
       end>
     TabOrder = 0
-    ExplicitLeft = 280
-    ExplicitTop = 112
-    ExplicitWidth = 185
-    ExplicitHeight = 41
+    object GridPanelLogin: TGridPanel
+      Left = 311
+      Top = 0
+      Width = 311
+      Height = 433
+      Align = alClient
+      BevelOuter = bvNone
+      ColumnCollection = <
+        item
+          Value = 15.000000000000000000
+        end
+        item
+          Value = 70.000000000000000000
+        end
+        item
+          Value = 15.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 1
+          Control = PanelLogin
+          Row = 1
+        end>
+      RowCollection = <
+        item
+          Value = 25.000000000000000000
+        end
+        item
+          Value = 50.000000000000000000
+        end
+        item
+          Value = 25.000000000000000000
+        end>
+      TabOrder = 0
+      ExplicitLeft = 496
+      ExplicitTop = 152
+      ExplicitWidth = 185
+      ExplicitHeight = 41
+      object PanelLogin: TPanel
+        Left = 47
+        Top = 108
+        Width = 217
+        Height = 217
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 0
+        ExplicitLeft = 152
+        ExplicitTop = 176
+        ExplicitWidth = 185
+        ExplicitHeight = 41
+        object LabelLogin: TLabel
+          Left = 0
+          Top = 0
+          Width = 217
+          Height = 28
+          Align = alTop
+          Alignment = taCenter
+          Caption = 'Login'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -20
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
+          ExplicitWidth = 49
+        end
+        object LabelPassword: TLabel
+          Left = 0
+          Top = 76
+          Width = 217
+          Height = 23
+          Align = alTop
+          Caption = 'Senha'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -17
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
+          ExplicitTop = 91
+        end
+        object LabelUsername: TLabel
+          Left = 0
+          Top = 28
+          Width = 217
+          Height = 23
+          Align = alTop
+          Caption = 'Usu'#225'rio'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -17
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
+          ExplicitWidth = 58
+        end
+        object EditUsername: TcxTextEdit
+          Left = 0
+          Top = 51
+          Align = alTop
+          ParentFont = False
+          Style.Font.Charset = DEFAULT_CHARSET
+          Style.Font.Color = clWindowText
+          Style.Font.Height = -13
+          Style.Font.Name = 'Segoe UI'
+          Style.Font.Style = []
+          Style.IsFontAssigned = True
+          TabOrder = 0
+          Width = 217
+        end
+        object EditPassword: TcxTextEdit
+          Left = 0
+          Top = 99
+          Align = alTop
+          ParentFont = False
+          Style.Font.Charset = DEFAULT_CHARSET
+          Style.Font.Color = clWindowText
+          Style.Font.Height = -13
+          Style.Font.Name = 'Segoe UI'
+          Style.Font.Style = []
+          Style.IsFontAssigned = True
+          TabOrder = 1
+          ExplicitLeft = 3
+          ExplicitTop = 102
+          ExplicitWidth = 211
+          Width = 217
+        end
+        object ButtonLogin: TcxButton
+          Left = 0
+          Top = 124
+          Width = 217
+          Height = 39
+          Align = alTop
+          Caption = 'Logar'
+          TabOrder = 2
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindow
+          Font.Height = -20
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
+          ExplicitTop = 74
+        end
+      end
+    end
   end
 end
