@@ -111,7 +111,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\View\DelphiPDV.View.Login2.pas">
-            <Form>Form1</Form>
+            <Form>VwLogin2</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

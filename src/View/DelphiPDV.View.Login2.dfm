@@ -1,7 +1,7 @@
-object Form1: TForm1
+object VwLogin2: TVwLogin2
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'VwLogin2'
   ClientHeight = 433
   ClientWidth = 622
   Color = clBtnFace
@@ -11,6 +11,7 @@ object Form1: TForm1
   Font.Name = 'Segoe UI'
   Font.Style = []
   OnClose = FormClose
+  OnShow = FormShow
   TextHeight = 15
   object GridPanelContainer: TGridPanel
     Left = 0
@@ -30,6 +31,11 @@ object Form1: TForm1
       item
         Column = 1
         Control = GridPanelLogin
+        Row = 0
+      end
+      item
+        Column = 0
+        Control = GridPanel1
         Row = 0
       end>
     RowCollection = <
@@ -71,10 +77,6 @@ object Form1: TForm1
           Value = 25.000000000000000000
         end>
       TabOrder = 0
-      ExplicitLeft = 496
-      ExplicitTop = 152
-      ExplicitWidth = 185
-      ExplicitHeight = 41
       object PanelLogin: TPanel
         Left = 47
         Top = 108
@@ -83,10 +85,6 @@ object Form1: TForm1
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitLeft = 152
-        ExplicitTop = 176
-        ExplicitWidth = 185
-        ExplicitHeight = 41
         object LabelLogin: TLabel
           Left = 0
           Top = 0
@@ -116,7 +114,7 @@ object Form1: TForm1
           Font.Name = 'Segoe UI'
           Font.Style = []
           ParentFont = False
-          ExplicitTop = 91
+          ExplicitWidth = 47
         end
         object LabelUsername: TLabel
           Left = 0
@@ -159,9 +157,6 @@ object Form1: TForm1
           Style.Font.Style = []
           Style.IsFontAssigned = True
           TabOrder = 1
-          ExplicitLeft = 3
-          ExplicitTop = 102
-          ExplicitWidth = 211
           Width = 217
         end
         object ButtonLogin: TcxButton
@@ -178,8 +173,104 @@ object Form1: TForm1
           Font.Name = 'Segoe UI'
           Font.Style = []
           ParentFont = False
-          ExplicitTop = 74
         end
+      end
+    end
+    object GridPanel1: TGridPanel
+      Left = 0
+      Top = 0
+      Width = 311
+      Height = 433
+      Align = alClient
+      BevelOuter = bvNone
+      ColumnCollection = <
+        item
+          Value = 50.000000000000000000
+        end
+        item
+          Value = 50.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = Panel1
+          Row = 0
+        end
+        item
+          Column = 1
+          Control = Panel2
+          Row = 0
+        end
+        item
+          Column = 0
+          Control = Panel3
+          Row = 1
+        end
+        item
+          Column = 1
+          Control = Panel4
+          Row = 1
+        end>
+      RowCollection = <
+        item
+          Value = 50.000000000000000000
+        end
+        item
+          Value = 50.000000000000000000
+        end>
+      TabOrder = 1
+      ExplicitWidth = 193
+      object Panel1: TPanel
+        Left = 0
+        Top = 0
+        Width = 156
+        Height = 216
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 0
+        ExplicitLeft = 56
+        ExplicitTop = 96
+        ExplicitWidth = 185
+        ExplicitHeight = 41
+      end
+      object Panel2: TPanel
+        Left = 156
+        Top = 0
+        Width = 155
+        Height = 216
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 1
+        ExplicitLeft = 56
+        ExplicitTop = 96
+        ExplicitWidth = 185
+        ExplicitHeight = 41
+      end
+      object Panel3: TPanel
+        Left = 0
+        Top = 216
+        Width = 156
+        Height = 217
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 2
+        ExplicitLeft = 56
+        ExplicitTop = 96
+        ExplicitWidth = 185
+        ExplicitHeight = 41
+      end
+      object Panel4: TPanel
+        Left = 156
+        Top = 216
+        Width = 155
+        Height = 217
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 3
+        ExplicitLeft = 56
+        ExplicitTop = 96
+        ExplicitWidth = 185
+        ExplicitHeight = 41
       end
     end
   end

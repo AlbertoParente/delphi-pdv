@@ -25,7 +25,7 @@ uses
   dxSkinXmas2008Blue, Vcl.Menus, Vcl.StdCtrls, cxButtons, cxTextEdit;
 
 type
-  TForm1 = class(TForm)
+  TVwLogin2 = class(TForm)
     GridPanelContainer: TGridPanel;
     GridPanelLogin: TGridPanel;
     PanelLogin: TPanel;
@@ -35,7 +35,13 @@ type
     ButtonLogin: TcxButton;
     LabelPassword: TLabel;
     LabelUsername: TLabel;
+    GridPanel1: TGridPanel;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    Panel4: TPanel;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -45,7 +51,7 @@ type
   end;
 
 var
-  Form1: TForm1;
+  VwLogin2: TVwLogin2;
 
 implementation
 
@@ -53,19 +59,37 @@ implementation
 
 { TForm1 }
 
-procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TVwLogin2.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Action := caFree;
 end;
 
-procedure TForm1.Process;
+procedure TVwLogin2.FormShow(Sender: TObject);
+begin
+  EditUsername.Clear;
+  EditPassword.Clear;
+end;
+
+procedure TVwLogin2.Process;
 begin
   Review;
 end;
 
-procedure TForm1.Review;
+procedure TVwLogin2.Review;
 begin
+  if Trim(EditUsername.Text) = '' then
+  begin
+    EditUsername.SetFocus;
+    Application.MessageBox(PWideChar('Usuário não informado.'), 'Aviso', MB_ICONEXCLAMATION+MB_OK);
+  end;
 
+  if Trim(EditPassword.Text) = '' then
+  begin
+    EditPassword.SetFocus;
+    Application.MessageBox(PWideChar('Senha não informada.'), 'Aviso', MB_ICONEXCLAMATION+MB_OK);
+  end;
+
+  EditPassword.Clear;
 end;
 
 end.
