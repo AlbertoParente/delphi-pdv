@@ -35,11 +35,7 @@ type
     ButtonLogin: TcxButton;
     LabelPassword: TLabel;
     LabelUsername: TLabel;
-    GridPanel1: TGridPanel;
-    Panel1: TPanel;
-    Panel2: TPanel;
-    Panel3: TPanel;
-    Panel4: TPanel;
+    ImageLogin: TImage;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormShow(Sender: TObject);
   private

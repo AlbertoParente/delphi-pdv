@@ -35,7 +35,7 @@ object VwLogin2: TVwLogin2
       end
       item
         Column = 0
-        Control = GridPanel1
+        Control = ImageLogin
         Row = 0
       end>
     RowCollection = <
@@ -176,102 +176,16 @@ object VwLogin2: TVwLogin2
         end
       end
     end
-    object GridPanel1: TGridPanel
+    object ImageLogin: TImage
       Left = 0
       Top = 0
       Width = 311
       Height = 433
       Align = alClient
-      BevelOuter = bvNone
-      ColumnCollection = <
-        item
-          Value = 50.000000000000000000
-        end
-        item
-          Value = 50.000000000000000000
-        end>
-      ControlCollection = <
-        item
-          Column = 0
-          Control = Panel1
-          Row = 0
-        end
-        item
-          Column = 1
-          Control = Panel2
-          Row = 0
-        end
-        item
-          Column = 0
-          Control = Panel3
-          Row = 1
-        end
-        item
-          Column = 1
-          Control = Panel4
-          Row = 1
-        end>
-      RowCollection = <
-        item
-          Value = 50.000000000000000000
-        end
-        item
-          Value = 50.000000000000000000
-        end>
-      TabOrder = 1
-      ExplicitWidth = 193
-      object Panel1: TPanel
-        Left = 0
-        Top = 0
-        Width = 156
-        Height = 216
-        Align = alClient
-        BevelOuter = bvNone
-        TabOrder = 0
-        ExplicitLeft = 56
-        ExplicitTop = 96
-        ExplicitWidth = 185
-        ExplicitHeight = 41
-      end
-      object Panel2: TPanel
-        Left = 156
-        Top = 0
-        Width = 155
-        Height = 216
-        Align = alClient
-        BevelOuter = bvNone
-        TabOrder = 1
-        ExplicitLeft = 56
-        ExplicitTop = 96
-        ExplicitWidth = 185
-        ExplicitHeight = 41
-      end
-      object Panel3: TPanel
-        Left = 0
-        Top = 216
-        Width = 156
-        Height = 217
-        Align = alClient
-        BevelOuter = bvNone
-        TabOrder = 2
-        ExplicitLeft = 56
-        ExplicitTop = 96
-        ExplicitWidth = 185
-        ExplicitHeight = 41
-      end
-      object Panel4: TPanel
-        Left = 156
-        Top = 216
-        Width = 155
-        Height = 217
-        Align = alClient
-        BevelOuter = bvNone
-        TabOrder = 3
-        ExplicitLeft = 56
-        ExplicitTop = 96
-        ExplicitWidth = 185
-        ExplicitHeight = 41
-      end
+      ExplicitLeft = 79
+      ExplicitTop = 102
+      ExplicitWidth = 105
+      ExplicitHeight = 105
     end
   end
 end
