@@ -114,6 +114,10 @@
             <Form>VwLogin2</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="src\View\Component\DelphiPDV.View.Component.Transparency.pas">
+            <Form>TVwComponentTransparency</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

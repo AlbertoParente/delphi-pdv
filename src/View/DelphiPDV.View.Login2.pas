@@ -22,7 +22,8 @@ uses
   dxSkinTheBezier, dxSkinsDefaultPainters, dxSkinValentine,
   dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark,
   dxSkinVisualStudio2013Light, dxSkinVS2010, dxSkinWhiteprint,
-  dxSkinXmas2008Blue, Vcl.Menus, Vcl.StdCtrls, cxButtons, cxTextEdit;
+  dxSkinXmas2008Blue, Vcl.Menus, Vcl.StdCtrls, cxButtons, cxTextEdit,
+  DelphiPDV.View.Component.Transparency;
 
 type
   TVwLogin2 = class(TForm)
@@ -38,8 +39,10 @@ type
     ImageLogin: TImage;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormShow(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
+    FBackground: TTVwComponentTransparency;
   public
     { Public declarations }
     Procedure Process;
@@ -58,6 +61,11 @@ implementation
 procedure TVwLogin2.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Action := caFree;
+end;
+
+procedure TVwLogin2.FormCreate(Sender: TObject);
+begin
+  FBackground := TVwComponentTransparency.Create(nil);
 end;
 
 procedure TVwLogin2.FormShow(Sender: TObject);

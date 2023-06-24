@@ -11,6 +11,7 @@ object VwLogin2: TVwLogin2
   Font.Name = 'Segoe UI'
   Font.Style = []
   OnClose = FormClose
+  OnCreate = FormCreate
   OnShow = FormShow
   TextHeight = 15
   object GridPanelContainer: TGridPanel
