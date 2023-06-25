@@ -23,7 +23,7 @@ uses
   dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark,
   dxSkinVisualStudio2013Light, dxSkinVS2010, dxSkinWhiteprint,
   dxSkinXmas2008Blue, Vcl.Menus, Vcl.StdCtrls, cxButtons, cxTextEdit,
-  DelphiPDV.View.Component.Transparency;
+  DelphiPDV.View.Component.Transparency, dxGDIPlusClasses;
 
 type
   TVwLogin = class(TForm)
@@ -36,6 +36,7 @@ type
     ButtonLogin: TcxButton;
     LabelPassword: TLabel;
     LabelUsername: TLabel;
+    PanelImage: TPanel;
     ImageLogin: TImage;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormShow(Sender: TObject);
@@ -60,12 +61,14 @@ implementation
 
 procedure TVwLogin.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
-  Action := caFree;
+  FBackground.Free;
 end;
 
 procedure TVwLogin.FormCreate(Sender: TObject);
 begin
   FBackground := TVwComponentTransparency.Create(nil);
+  FBackground.Parent := PanelImage;
+  FBackground.Show;
 end;
 
 procedure TVwLogin.FormShow(Sender: TObject);

@@ -226,15 +226,8 @@ object VwPrincipal: TVwPrincipal
               PropertiesClassName = 'TcxTextEditProperties'
               HeaderAlignmentHorz = taCenter
             end
-            object ColumnDesconto: TcxGridDBColumn
-              Caption = 'Desconto'
-              DataBinding.IsNullValueType = True
-              PropertiesClassName = 'TcxTextEditProperties'
-              Properties.Alignment.Horz = taRightJustify
-              HeaderAlignmentHorz = taRightJustify
-            end
-            object ColumnSubTotal: TcxGridDBColumn
-              Caption = 'Sub-Total'
+            object ColumnTotalValue: TcxGridDBColumn
+              Caption = 'Valor Total'
               DataBinding.IsNullValueType = True
               PropertiesClassName = 'TcxTextEditProperties'
               HeaderAlignmentHorz = taRightJustify

@@ -44,9 +44,8 @@ type
     DBGridDBCardView1: TcxGridDBCardView;
     DBGridLevel1: TcxGridLevel;
     ColumnQuantity: TcxGridDBColumn;
-    ColumnSubTotal: TcxGridDBColumn;
+    ColumnTotalValue: TcxGridDBColumn;
     aDataSource: TDataSource;
-    ColumnDesconto: TcxGridDBColumn;
     cdsItens: TClientDataSet;
     GridPanelButtons: TGridPanel;
     PanelCancelOperation: TPanel;
