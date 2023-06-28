@@ -13,6 +13,5 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TVwPrincipal, VwPrincipal);
-  Application.CreateForm(TTVwProduct, TVwProduct);
   Application.Run;
 end.

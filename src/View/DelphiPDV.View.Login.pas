@@ -41,6 +41,8 @@ type
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormShow(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure ButtonLoginClick(Sender: TObject);
   private
     { Private declarations }
     FBackground: TTVwComponentTransparency;
@@ -59,6 +61,11 @@ implementation
 
 { TForm1 }
 
+procedure TVwLogin.ButtonLoginClick(Sender: TObject);
+begin
+  Process;
+end;
+
 procedure TVwLogin.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   FBackground.Free;
@@ -66,9 +73,28 @@ end;
 
 procedure TVwLogin.FormCreate(Sender: TObject);
 begin
-  FBackground := TVwComponentTransparency.Create(nil);
-  FBackground.Parent := PanelImage;
-  FBackground.Show;
+//  FBackground        := TVwComponentTransparency.Create(nil);
+//  FBackground.Parent := PanelImage;
+//  FBackground.Show;
+end;
+
+procedure TVwLogin.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  inherited;
+  case Key of
+    VK_ESCAPE:
+    begin
+      Close;
+    end;
+    VK_NEXT:
+    begin
+      if not ButtonLogin.Focused then
+        SelectNext(Screen.ActiveControl, True, True);
+
+      Process;
+    end;
+  end;
 end;
 
 procedure TVwLogin.FormShow(Sender: TObject);
@@ -80,6 +106,7 @@ end;
 procedure TVwLogin.Process;
 begin
   Review;
+  Close;
 end;
 
 procedure TVwLogin.Review;
