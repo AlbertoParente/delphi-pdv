@@ -1,22 +1,20 @@
-object TVwProduct: TTVwProduct
+object TVwSeller: TTVwSeller
   Left = 0
   Top = 0
-  Caption = 'TVwProduct'
   ClientHeight = 433
-  ClientWidth = 622
+  ClientWidth = 625
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnClose = FormClose
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
     Left = 0
     Top = 2
-    Width = 622
+    Width = 625
     Height = 429
     Margins.Left = 0
     Margins.Top = 2
@@ -37,6 +35,7 @@ object TVwProduct: TTVwProduct
     LookAndFeel.Kind = lfOffice11
     ExplicitLeft = -5
     ExplicitTop = -3
+    ExplicitWidth = 622
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -95,7 +94,7 @@ object TVwProduct: TTVwProduct
         Options.AutoWidthSizable = False
         Width = 60
       end
-      object ColumnDescriptionProduct: TcxGridDBColumn
+      object ColumnSellerName: TcxGridDBColumn
         Caption = 'Descri'#231#227'o do Produto'
         DataBinding.FieldName = 'numconselho'
         DataBinding.IsNullValueType = True
@@ -104,18 +103,6 @@ object TVwProduct: TTVwProduct
         Properties.MaxLength = 0
         Options.AutoWidthSizable = False
         Width = 200
-      end
-      object ColumnQuantity: TcxGridDBColumn
-        Caption = 'Quantidade'
-        DataBinding.IsNullValueType = True
-        PropertiesClassName = 'TcxTextEditProperties'
-        HeaderAlignmentHorz = taCenter
-      end
-      object ColumnPrice: TcxGridDBColumn
-        Caption = 'Pre'#231'o'
-        DataBinding.IsNullValueType = True
-        PropertiesClassName = 'TcxTextEditProperties'
-        HeaderAlignmentHorz = taRightJustify
       end
     end
     object DBGridDBCardView1: TcxGridDBCardView
@@ -130,15 +117,5 @@ object TVwProduct: TTVwProduct
     object DBGridLevel1: TcxGridLevel
       GridView = GridView
     end
-  end
-  object aDataSource: TDataSource
-    Left = 528
-    Top = 192
-  end
-  object cdsProduct: TClientDataSet
-    Aggregates = <>
-    Params = <>
-    Left = 528
-    Top = 272
   end
 end
