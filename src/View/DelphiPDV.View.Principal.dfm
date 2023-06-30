@@ -154,7 +154,7 @@ object VwPrincipal: TVwPrincipal
             FilterBox.CustomizeDialog = False
             ScrollbarAnnotations.CustomAnnotations = <>
             OnCustomDrawCell = GridViewCustomDrawCell
-            DataController.DataSource = aDataSource
+            DataController.DataSource = dsItens
             DataController.Filter.Options = [fcoCaseInsensitive]
             DataController.Summary.DefaultGroupSummaryItems = <>
             DataController.Summary.FooterSummaryItems = <>
@@ -185,8 +185,7 @@ object VwPrincipal: TVwPrincipal
             OptionsView.ShowColumnFilterButtons = sfbAlways
             object ColumnCodigo: TcxGridDBColumn
               Caption = 'Codigo'
-              DataBinding.FieldName = 'uf'
-              DataBinding.IsNullValueType = True
+              DataBinding.FieldName = 'codigo'
               PropertiesClassName = 'TcxTextEditProperties'
               Properties.Alignment.Horz = taCenter
               HeaderAlignmentHorz = taCenter
@@ -196,8 +195,7 @@ object VwPrincipal: TVwPrincipal
             end
             object ColumnItem: TcxGridDBColumn
               Caption = 'Item'
-              DataBinding.FieldName = 'tipoconselho'
-              DataBinding.IsNullValueType = True
+              DataBinding.FieldName = 'item'
               PropertiesClassName = 'TcxTextEditProperties'
               Properties.Alignment.Horz = taCenter
               HeaderAlignmentHorz = taCenter
@@ -207,8 +205,7 @@ object VwPrincipal: TVwPrincipal
             end
             object ColumnDescriptionProduct: TcxGridDBColumn
               Caption = 'Descri'#231#227'o do Produto'
-              DataBinding.FieldName = 'numconselho'
-              DataBinding.IsNullValueType = True
+              DataBinding.FieldName = 'description'
               PropertiesClassName = 'TcxTextEditProperties'
               Properties.Alignment.Horz = taRightJustify
               Properties.MaxLength = 0
@@ -216,8 +213,7 @@ object VwPrincipal: TVwPrincipal
             end
             object ColumnUnitaryValue: TcxGridDBColumn
               Caption = 'Valor Unit'#225'rio'
-              DataBinding.FieldName = 'nome'
-              DataBinding.IsNullValueType = True
+              DataBinding.FieldName = 'unitvalue'
               PropertiesClassName = 'TcxTextEditProperties'
               HeaderAlignmentHorz = taRightJustify
               MinWidth = 70
@@ -225,14 +221,15 @@ object VwPrincipal: TVwPrincipal
             end
             object ColumnQuantity: TcxGridDBColumn
               Caption = 'Quantidade'
-              DataBinding.IsNullValueType = True
+              DataBinding.Expression = #1'SUM(unitvalue*quanitity)'
+              DataBinding.FieldName = 'quantity'
               PropertiesClassName = 'TcxTextEditProperties'
               HeaderAlignmentHorz = taCenter
               MinWidth = 70
             end
             object ColumnTotalValue: TcxGridDBColumn
               Caption = 'Valor Total'
-              DataBinding.IsNullValueType = True
+              DataBinding.FieldName = 'subtotal'
               PropertiesClassName = 'TcxTextEditProperties'
               HeaderAlignmentHorz = taRightJustify
               MinWidth = 70
@@ -1911,15 +1908,9 @@ object VwPrincipal: TVwPrincipal
       end
     end
   end
-  object aDataSource: TDataSource
-    DataSet = cdsItens
+  object dsItens: TDataSource
+    DataSet = dmDados.cdsItens
     Left = 660
     Top = 386
-  end
-  object cdsItens: TClientDataSet
-    Aggregates = <>
-    Params = <>
-    Left = 656
-    Top = 433
   end
 end

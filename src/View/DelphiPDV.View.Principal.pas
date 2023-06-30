@@ -27,7 +27,7 @@ uses
   cxGridLevel, cxClasses, cxGridCustomView, cxGridCustomTableView,
   cxGridTableView, cxGridDBTableView, cxGrid, cxTextEdit,
   cxGridCustomLayoutView, cxGridCardView, cxGridDBCardView, Datasnap.DBClient,
-  Vcl.StdCtrls, cxContainer, dxGDIPlusClasses, DelphiPDV.View.Login;
+  Vcl.StdCtrls, cxContainer, dxGDIPlusClasses, DelphiPDV.View.Login, DelphiPDV.Model.Dados;
 
 type
   TVwPrincipal = class(TForm)
@@ -45,8 +45,7 @@ type
     DBGridLevel1: TcxGridLevel;
     ColumnQuantity: TcxGridDBColumn;
     ColumnTotalValue: TcxGridDBColumn;
-    aDataSource: TDataSource;
-    cdsItens: TClientDataSet;
+    dsItens: TDataSource;
     GridPanelButtons: TGridPanel;
     PanelCancelOperation: TPanel;
     ShapeCancelOperation: TShape;
