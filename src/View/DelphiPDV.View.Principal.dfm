@@ -190,8 +190,9 @@ object VwPrincipal: TVwPrincipal
               PropertiesClassName = 'TcxTextEditProperties'
               Properties.Alignment.Horz = taCenter
               HeaderAlignmentHorz = taCenter
+              MinWidth = 80
               Options.AutoWidthSizable = False
-              Width = 60
+              Width = 80
             end
             object ColumnItem: TcxGridDBColumn
               Caption = 'Item'
@@ -200,8 +201,9 @@ object VwPrincipal: TVwPrincipal
               PropertiesClassName = 'TcxTextEditProperties'
               Properties.Alignment.Horz = taCenter
               HeaderAlignmentHorz = taCenter
+              MinWidth = 80
               Options.AutoWidthSizable = False
-              Width = 60
+              Width = 80
             end
             object ColumnDescriptionProduct: TcxGridDBColumn
               Caption = 'Descri'#231#227'o do Produto'
@@ -210,7 +212,6 @@ object VwPrincipal: TVwPrincipal
               PropertiesClassName = 'TcxTextEditProperties'
               Properties.Alignment.Horz = taRightJustify
               Properties.MaxLength = 0
-              Options.AutoWidthSizable = False
               Width = 200
             end
             object ColumnUnitaryValue: TcxGridDBColumn
@@ -219,18 +220,23 @@ object VwPrincipal: TVwPrincipal
               DataBinding.IsNullValueType = True
               PropertiesClassName = 'TcxTextEditProperties'
               HeaderAlignmentHorz = taRightJustify
+              MinWidth = 70
+              Width = 70
             end
             object ColumnQuantity: TcxGridDBColumn
               Caption = 'Quantidade'
               DataBinding.IsNullValueType = True
               PropertiesClassName = 'TcxTextEditProperties'
               HeaderAlignmentHorz = taCenter
+              MinWidth = 70
             end
             object ColumnTotalValue: TcxGridDBColumn
               Caption = 'Valor Total'
               DataBinding.IsNullValueType = True
               PropertiesClassName = 'TcxTextEditProperties'
               HeaderAlignmentHorz = taRightJustify
+              MinWidth = 70
+              Width = 70
             end
           end
           object DBGridDBCardView1: TcxGridDBCardView
@@ -1779,9 +1785,8 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             Caption = 'Cancelar Venda'
             Flat = True
-            ExplicitTop = 6
-            ExplicitWidth = 150
-            ExplicitHeight = 114
+            ExplicitLeft = 32
+            ExplicitTop = -4
           end
         end
         object PanelCancelItem: TPanel

@@ -48,8 +48,6 @@ object VwLogin: TVwLogin
         Value = 100.000000000000000000
       end>
     TabOrder = 0
-    ExplicitWidth = 622
-    ExplicitHeight = 433
     object GridPanelLogin: TGridPanel
       Left = 415
       Top = 0
@@ -84,7 +82,6 @@ object VwLogin: TVwLogin
           Value = 25.000000000000000000
         end>
       TabOrder = 0
-      ExplicitLeft = 421
       object PanelLogin: TPanel
         Left = 33
         Top = 118
@@ -93,10 +90,6 @@ object VwLogin: TVwLogin
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitLeft = 47
-        ExplicitTop = 108
-        ExplicitWidth = 217
-        ExplicitHeight = 217
         object LabelLogin: TLabel
           Left = 0
           Top = 0
@@ -126,7 +119,7 @@ object VwLogin: TVwLogin
           Font.Name = 'Segoe UI'
           Font.Style = []
           ParentFont = False
-          ExplicitTop = 70
+          ExplicitWidth = 47
         end
         object LabelUsername: TLabel
           Left = 0
@@ -141,7 +134,6 @@ object VwLogin: TVwLogin
           Font.Name = 'Segoe UI'
           Font.Style = []
           ParentFont = False
-          ExplicitTop = 28
           ExplicitWidth = 58
         end
         object EditUsername: TcxTextEdit
@@ -156,7 +148,6 @@ object VwLogin: TVwLogin
           Style.Font.Style = []
           Style.IsFontAssigned = True
           TabOrder = 0
-          ExplicitTop = 48
           Width = 157
         end
         object EditPassword: TcxTextEdit
@@ -171,7 +162,6 @@ object VwLogin: TVwLogin
           Style.Font.Style = []
           Style.IsFontAssigned = True
           TabOrder = 1
-          ExplicitTop = 113
           Width = 157
         end
         object ButtonLogin: TcxButton
@@ -189,7 +179,6 @@ object VwLogin: TVwLogin
           Font.Style = []
           ParentFont = False
           OnClick = ButtonLoginClick
-          ExplicitTop = 172
         end
       end
     end
@@ -201,8 +190,6 @@ object VwLogin: TVwLogin
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitWidth = 311
-      ExplicitHeight = 433
       object ImageLogin: TImage
         Left = 0
         Top = 0

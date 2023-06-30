@@ -123,8 +123,8 @@ implementation
 
 procedure TVwPrincipal.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
+  FLogin.Free;
   Action := caFree
-//
 end;
 
 procedure TVwPrincipal.FormCreate(Sender: TObject);

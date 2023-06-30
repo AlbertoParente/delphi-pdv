@@ -73,9 +73,9 @@ end;
 
 procedure TVwLogin.FormCreate(Sender: TObject);
 begin
-//  FBackground        := TVwComponentTransparency.Create(nil);
-//  FBackground.Parent := PanelImage;
-//  FBackground.Show;
+  FBackground        := TVwComponentTransparency.Create(nil);
+  FBackground.Parent := PanelImage;
+  FBackground.Show;
 end;
 
 procedure TVwLogin.FormKeyDown(Sender: TObject; var Key: Word;
@@ -122,6 +122,14 @@ begin
     EditPassword.SetFocus;
     Application.MessageBox(PWideChar('Senha não informada.'), 'Aviso', MB_ICONEXCLAMATION+MB_OK);
   end;
+
+  if not ((EditUsername.Text = 'alberto.parente') and (EditPassword.Text = '123456')) then
+  begin
+    Application.MessageBox(PWideChar('Senha não informada.'), 'Aviso', MB_ICONEXCLAMATION+MB_OK);
+    Exit;
+  end;
+
+  Close;
 
   EditPassword.Clear;
 end;
