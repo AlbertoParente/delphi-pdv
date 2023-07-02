@@ -115,18 +115,20 @@ begin
   begin
     EditUsername.SetFocus;
     Application.MessageBox(PWideChar('Usuário não informado.'), 'Aviso', MB_ICONEXCLAMATION+MB_OK);
+    Abort;
   end;
 
   if Trim(EditPassword.Text) = '' then
   begin
     EditPassword.SetFocus;
     Application.MessageBox(PWideChar('Senha não informada.'), 'Aviso', MB_ICONEXCLAMATION+MB_OK);
+    Abort;
   end;
 
   if not ((EditUsername.Text = 'alberto.parente') and (EditPassword.Text = '123456')) then
   begin
-    Application.MessageBox(PWideChar('Senha não informada.'), 'Aviso', MB_ICONEXCLAMATION+MB_OK);
-    Exit;
+    Application.MessageBox(PWideChar('Usuário ou senha inválida.'), 'Aviso', MB_ICONEXCLAMATION+MB_OK);
+    Abort;
   end;
 
   Close;

@@ -228,7 +228,7 @@ object VwPrincipal: TVwPrincipal
               MinWidth = 70
             end
             object ColumnTotalValue: TcxGridDBColumn
-              Caption = 'Valor Total'
+              Caption = 'Sub-Total'
               DataBinding.FieldName = 'subtotal'
               PropertiesClassName = 'TcxTextEditProperties'
               HeaderAlignmentHorz = taRightJustify

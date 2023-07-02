@@ -40,35 +40,35 @@ end;
 procedure TdmDados.DataModuleCreate(Sender: TObject);
 begin
   cdsItens.Append;
-  cdsItenscodigo.AsString := '0007';
-  cdsItensitem.AsString := '1';
+  cdsItenscodigo.AsString      := '0007';
+  cdsItensitem.AsString        := '1';
   cdsItensdescription.AsString := 'Dorflex 500mg';
-  cdsItensunitvalue.AsCurrency := 16.50;
-  cdsItensquantity.AsCurrency := 1;
+  cdsItensunitvalue.AsCurrency := 15.50;
+  cdsItensquantity.AsCurrency  := 1;
   cdsItens.Post;
 
   cdsItens.Append;
-  cdsItenscodigo.AsString := '0008';
-  cdsItensitem.AsString := '1';
+  cdsItenscodigo.AsString      := '0008';
+  cdsItensitem.AsString        := '2';
   cdsItensdescription.AsString := 'Trosilax 500mg';
-  cdsItensunitvalue.AsCurrency := 16.50;
-  cdsItensquantity.AsCurrency := 1;
+  cdsItensunitvalue.AsCurrency := 18.50;
+  cdsItensquantity.AsCurrency  := 2;
   cdsItens.Post;
 
   cdsItens.Append;
-  cdsItenscodigo.AsString := '0009';
-  cdsItensitem.AsString := '1';
+  cdsItenscodigo.AsString      := '0009';
+  cdsItensitem.AsString        := '3';
   cdsItensdescription.AsString := 'Dipirona 500mg';
-  cdsItensunitvalue.AsCurrency := 16.50;
-  cdsItensquantity.AsCurrency := 1;
+  cdsItensunitvalue.AsCurrency := 5.00;
+  cdsItensquantity.AsCurrency  := 1;
   cdsItens.Post;
 
   cdsItens.Append;
-  cdsItenscodigo.AsString := '0003';
-  cdsItensitem.AsString := '1';
+  cdsItenscodigo.AsString      := '0003';
+  cdsItensitem.AsString        := '4';
   cdsItensdescription.AsString := 'Paracetaml 500mg';
-  cdsItensunitvalue.AsCurrency := 16.50;
-  cdsItensquantity.AsCurrency := 1;
+  cdsItensunitvalue.AsCurrency := 6.50;
+  cdsItensquantity.AsCurrency  := 3;
   cdsItens.Post;
 
   cdsItens.Open;

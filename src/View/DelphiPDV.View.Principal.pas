@@ -109,8 +109,9 @@ type
     { Private declarations }
   public
     { Public declarations }
-    Procedure Process;
-    Procedure Review;
+    procedure Process;
+    procedure Review;
+    procedure FixedForm;
   end;
 
 var
@@ -119,6 +120,16 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TVwPrincipal.FixedForm;
+begin
+  Self.WindowState           := TWindowState.wsNormal;
+  Self.Position              := poScreenCenter;
+  Self.Constraints.MaxHeight := Self.ClientHeight;
+  Self.Constraints.MinHeight := Self.ClientHeight;
+  Self.Constraints.MaxWidth  := Self.ClientHeight;
+  Self.Constraints.MinWidth  := Self.ClientHeight;
+end;
 
 procedure TVwPrincipal.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
@@ -129,6 +140,7 @@ end;
 procedure TVwPrincipal.FormCreate(Sender: TObject);
 begin
   InitializeButtons;
+  FixedForm;
 end;
 
 procedure TVwPrincipal.FormKeyDown(Sender: TObject; var Key: Word;
@@ -150,19 +162,19 @@ begin
     end;
     VK_UP:
     begin
-      aDataSource.DataSet.Next;
+      dsItens.DataSet.Prior;
     end;
     VK_DOWN:
     begin
-      aDataSource.DataSet.Prior;
+      dsItens.DataSet.Next;
     end;
   end;
 end;
 
 procedure TVwPrincipal.FormShow(Sender: TObject);
 begin
-//  aDataSource.DataSet := nil;
-  FLogin := TVwLogin.Create(nil);
+//  dsItens.DataSet := nil;
+  FLogin        := TVwLogin.Create(nil);
   FLogin.Parent := PanelContainer;
   FLogin.Show;
 end;
@@ -187,7 +199,7 @@ end;
 
 procedure TVwPrincipal.Review;
 begin
-  if not Assigned(aDataSource.DataSet) then
+  if not Assigned(dsItens.DataSet) then
     Exit;
 //
 end;
@@ -195,11 +207,11 @@ end;
 procedure TVwPrincipal.InitializeButtons;
 begin
   SpeedButtonCancelOperation.Caption := 'Cancelar Operação ' + ''#13'' + ' (Esc)';
-  SpeedButtonSearchPrice.Caption := 'Consultar Preço ' + ''#13'' + ' (F4)';
-  SpeedButtonOpenCashier.Caption := 'Abrir Caixa ' + ''#13'' + ' (F2)';
-  SpeedButtonCancelSale.Caption := 'Cancelar Venda ' + ''#13'' + ' (F6)';
-  SpeedButtonCancelItem.Caption := 'Cancelar Item ' + ''#13'' + ' (F5)';
-  SpeedButtonMoreFunctions.Caption := 'Mais Funções ' + ''#13'' + ' (F12)';
+  SpeedButtonSearchPrice.Caption     := 'Consultar Preço ' + ''#13'' + ' (F4)';
+  SpeedButtonOpenCashier.Caption     := 'Abrir Caixa ' + ''#13'' + ' (F2)';
+  SpeedButtonCancelSale.Caption      := 'Cancelar Venda ' + ''#13'' + ' (F6)';
+  SpeedButtonCancelItem.Caption      := 'Cancelar Item ' + ''#13'' + ' (F5)';
+  SpeedButtonMoreFunctions.Caption   := 'Mais Funções ' + ''#13'' + ' (F12)';
 end;
 
 end.
