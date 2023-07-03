@@ -111,7 +111,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\View\Component\DelphiPDV.View.Component.Transparency.pas">
-            <Form>TVwComponentTransparency</Form>
+            <Form>VwComponentTransparency</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\Model\DelphiPDV.Model.Dados.pas">

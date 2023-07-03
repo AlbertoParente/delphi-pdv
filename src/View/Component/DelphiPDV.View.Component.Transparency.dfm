@@ -1,4 +1,4 @@
-object TVwComponentTransparency: TTVwComponentTransparency
+object VwComponentTransparency: TVwComponentTransparency
   Left = 0
   Top = 0
   Align = alClient

@@ -5,14 +5,15 @@ object VwLogin: TVwLogin
   BorderIcons = []
   BorderStyle = bsNone
   Caption = 'VwLogin'
-  ClientHeight = 472
-  ClientWidth = 638
+  ClientHeight = 768
+  ClientWidth = 1024
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  KeyPreview = True
   OnClose = FormClose
   OnCreate = FormCreate
   OnKeyDown = FormKeyDown
@@ -21,8 +22,8 @@ object VwLogin: TVwLogin
   object GridPanelContainer: TGridPanel
     Left = 0
     Top = 0
-    Width = 638
-    Height = 472
+    Width = 1024
+    Height = 768
     Align = alClient
     BevelOuter = bvNone
     ColumnCollection = <
@@ -48,11 +49,13 @@ object VwLogin: TVwLogin
         Value = 100.000000000000000000
       end>
     TabOrder = 0
+    ExplicitWidth = 638
+    ExplicitHeight = 472
     object GridPanelLogin: TGridPanel
-      Left = 415
+      Left = 666
       Top = 0
-      Width = 223
-      Height = 472
+      Width = 358
+      Height = 768
       Align = alClient
       BevelOuter = bvNone
       ColumnCollection = <
@@ -82,18 +85,25 @@ object VwLogin: TVwLogin
           Value = 25.000000000000000000
         end>
       TabOrder = 0
+      ExplicitLeft = 415
+      ExplicitWidth = 223
+      ExplicitHeight = 472
       object PanelLogin: TPanel
-        Left = 33
-        Top = 118
-        Width = 157
-        Height = 236
+        Left = 54
+        Top = 192
+        Width = 250
+        Height = 384
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 0
+        ExplicitLeft = 33
+        ExplicitTop = 118
+        ExplicitWidth = 157
+        ExplicitHeight = 236
         object LabelLogin: TLabel
           Left = 0
           Top = 0
-          Width = 157
+          Width = 250
           Height = 31
           Align = alTop
           Alignment = taCenter
@@ -109,7 +119,7 @@ object VwLogin: TVwLogin
         object LabelPassword: TLabel
           Left = 0
           Top = 93
-          Width = 157
+          Width = 250
           Height = 23
           Align = alTop
           Caption = 'Senha'
@@ -124,7 +134,7 @@ object VwLogin: TVwLogin
         object LabelUsername: TLabel
           Left = 0
           Top = 31
-          Width = 157
+          Width = 250
           Height = 23
           Align = alTop
           Caption = 'Usu'#225'rio'
@@ -148,7 +158,8 @@ object VwLogin: TVwLogin
           Style.Font.Style = []
           Style.IsFontAssigned = True
           TabOrder = 0
-          Width = 157
+          ExplicitWidth = 157
+          Width = 250
         end
         object EditPassword: TcxTextEdit
           Left = 0
@@ -162,12 +173,13 @@ object VwLogin: TVwLogin
           Style.Font.Style = []
           Style.IsFontAssigned = True
           TabOrder = 1
-          Width = 157
+          ExplicitWidth = 157
+          Width = 250
         end
         object ButtonLogin: TcxButton
           Left = 0
           Top = 155
-          Width = 157
+          Width = 250
           Height = 37
           Align = alTop
           Caption = 'Logar'
@@ -179,22 +191,25 @@ object VwLogin: TVwLogin
           Font.Style = []
           ParentFont = False
           OnClick = ButtonLoginClick
+          ExplicitWidth = 157
         end
       end
     end
     object PanelImage: TPanel
       Left = 0
       Top = 0
-      Width = 415
-      Height = 472
+      Width = 666
+      Height = 768
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
+      ExplicitWidth = 415
+      ExplicitHeight = 472
       object ImageLogin: TImage
         Left = 0
         Top = 0
-        Width = 415
-        Height = 472
+        Width = 666
+        Height = 768
         Align = alClient
         ParentShowHint = False
         Picture.Data = {

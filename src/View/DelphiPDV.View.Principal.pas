@@ -27,7 +27,8 @@ uses
   cxGridLevel, cxClasses, cxGridCustomView, cxGridCustomTableView,
   cxGridTableView, cxGridDBTableView, cxGrid, cxTextEdit,
   cxGridCustomLayoutView, cxGridCardView, cxGridDBCardView, Datasnap.DBClient,
-  Vcl.StdCtrls, cxContainer, dxGDIPlusClasses, DelphiPDV.View.Login, DelphiPDV.Model.Dados;
+  Vcl.StdCtrls, cxContainer, dxGDIPlusClasses, DelphiPDV.View.Login, DelphiPDV.Model.Dados,
+  Vcl.WinXCtrls;
 
 type
   TVwPrincipal = class(TForm)
@@ -95,6 +96,8 @@ type
     ShapeProduct: TShape;
     EditProduct: TcxTextEdit;
     SpeedButtonCancelItem: TSpeedButton;
+    SplitViewMoreFunctions: TSplitView;
+    GridPanelSplitView: TGridPanel;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -123,12 +126,8 @@ implementation
 
 procedure TVwPrincipal.FixedForm;
 begin
-  Self.WindowState           := TWindowState.wsNormal;
-  Self.Position              := poScreenCenter;
-  Self.Constraints.MaxHeight := Self.ClientHeight;
-  Self.Constraints.MinHeight := Self.ClientHeight;
-  Self.Constraints.MaxWidth  := Self.ClientHeight;
-  Self.Constraints.MinWidth  := Self.ClientHeight;
+  Self.WindowState := TWindowState.wsNormal;
+  Self.Position    := poScreenCenter;
 end;
 
 procedure TVwPrincipal.FormClose(Sender: TObject; var Action: TCloseAction);
@@ -159,6 +158,30 @@ begin
     VK_RETURN:
     begin
       SelectNext(Screen.ActiveControl, True, True);
+    end;
+    VK_F4:
+    begin
+//
+    end;
+    VK_F2:
+    begin
+//
+    end;
+    VK_F6:
+    begin
+//
+    end;
+    VK_F5:
+    begin
+//
+    end;
+    VK_F12:
+    begin
+//
+    end;
+    VK_F7:
+    begin
+//
     end;
     VK_UP:
     begin

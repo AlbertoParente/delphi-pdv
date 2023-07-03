@@ -45,7 +45,7 @@ type
     procedure ButtonLoginClick(Sender: TObject);
   private
     { Private declarations }
-    FBackground: TTVwComponentTransparency;
+    FBackground: TVwComponentTransparency;
   public
     { Public declarations }
     Procedure Process;

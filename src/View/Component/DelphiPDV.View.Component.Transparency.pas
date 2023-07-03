@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
 
 type
-  TTVwComponentTransparency = class(TForm)
+  TVwComponentTransparency = class(TForm)
   private
     { Private declarations }
   public
@@ -15,7 +15,7 @@ type
   end;
 
 var
-  TVwComponentTransparency: TTVwComponentTransparency;
+  VwComponentTransparency: TVwComponentTransparency;
 
 implementation
 
