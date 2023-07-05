@@ -97,7 +97,13 @@ type
     EditProduct: TcxTextEdit;
     SpeedButtonCancelItem: TSpeedButton;
     SplitViewMoreFunctions: TSplitView;
-    GridPanelSplitView: TGridPanel;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    Panel4: TPanel;
+    Panel5: TPanel;
+    Panel6: TPanel;
+    Panel7: TPanel;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -105,6 +111,7 @@ type
       ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
       var ADone: Boolean);
     procedure FormCreate(Sender: TObject);
+    procedure SpeedButtonMoreFunctionsClick(Sender: TObject);
   private
     FLogin: TVwLogin;
 
@@ -115,6 +122,7 @@ type
     procedure Process;
     procedure Review;
     procedure FixedForm;
+    procedure SplitViewAction(Value: TSplitView);
   end;
 
 var
@@ -183,6 +191,7 @@ begin
     begin
 //
     end;
+    VK_F11: SpeedButtonMoreFunctionsClick(Sender);
     VK_UP:
     begin
       dsItens.DataSet.Prior;
@@ -227,14 +236,24 @@ begin
 //
 end;
 
+procedure TVwPrincipal.SpeedButtonMoreFunctionsClick(Sender: TObject);
+begin
+  SplitViewAction(SplitViewMoreFunctions);
+end;
+
+procedure TVwPrincipal.SplitViewAction(Value: TSplitView);
+begin
+  Value.Opened := not Value.Opened;
+end;
+
 procedure TVwPrincipal.InitializeButtons;
 begin
-  SpeedButtonCancelOperation.Caption := 'Cancelar Operação ' + ''#13'' + ' (Esc)';
-  SpeedButtonSearchPrice.Caption     := 'Consultar Preço ' + ''#13'' + ' (F4)';
-  SpeedButtonOpenCashier.Caption     := 'Abrir Caixa ' + ''#13'' + ' (F2)';
-  SpeedButtonCancelSale.Caption      := 'Cancelar Venda ' + ''#13'' + ' (F6)';
-  SpeedButtonCancelItem.Caption      := 'Cancelar Item ' + ''#13'' + ' (F5)';
-  SpeedButtonMoreFunctions.Caption   := 'Mais Funções ' + ''#13'' + ' (F12)';
+  SpeedButtonCancelOperation.Caption := 'Cancelar Operação ' + ''#13'' + ' <Esc>';
+  SpeedButtonSearchPrice.Caption     := 'Consultar Preço ' + ''#13'' + ' <F4>';
+  SpeedButtonOpenCashier.Caption     := 'Abrir Caixa ' + ''#13'' + ' <F2>';
+  SpeedButtonCancelSale.Caption      := 'Cancelar Venda ' + ''#13'' + ' <F6>';
+  SpeedButtonCancelItem.Caption      := 'Cancelar Item ' + ''#13'' + ' <F5>';
+  SpeedButtonMoreFunctions.Caption   := 'Mais Funções ' + ''#13'' + ' <F11>';
 end;
 
 end.

@@ -1905,6 +1905,7 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             Caption = 'Mais Fun'#231#245'es'
             Flat = True
+            OnClick = SpeedButtonMoreFunctionsClick
             ExplicitLeft = 3
             ExplicitTop = 6
             ExplicitWidth = 149
@@ -1914,49 +1915,109 @@ object VwPrincipal: TVwPrincipal
       end
     end
     object SplitViewMoreFunctions: TSplitView
-      Left = 822
+      Left = 1022
       Top = 0
-      Width = 200
+      Width = 0
       Height = 760
       AnimationDelay = 0
       DisplayMode = svmOverlay
+      Opened = False
       OpenedWidth = 200
       Placement = svpRight
       TabOrder = 1
       UseAnimation = False
-      object GridPanelSplitView: TGridPanel
+      object Panel1: TPanel
         Left = 0
         Top = 0
-        Width = 200
+        Width = 0
         Height = 760
         Align = alClient
         BevelOuter = bvNone
-        ColumnCollection = <
-          item
-            Value = 50.000000000000000000
-          end
-          item
-            Value = 50.000000000000000000
-          end>
-        ControlCollection = <>
-        RowCollection = <
-          item
-            Value = 50.000000000000000000
-          end
-          item
-            Value = 50.000000000000000000
-          end>
+        Color = 14342621
+        ParentBackground = False
         TabOrder = 0
-        ExplicitLeft = 48
-        ExplicitTop = 136
+        ExplicitLeft = 128
+        ExplicitTop = 48
         ExplicitWidth = 185
         ExplicitHeight = 41
+        object Panel2: TPanel
+          Left = 0
+          Top = 205
+          Width = 0
+          Height = 41
+          Align = alTop
+          BevelOuter = bvNone
+          Caption = 'Abrir Gaveta'
+          TabOrder = 0
+          ExplicitLeft = 80
+          ExplicitTop = 24
+          ExplicitWidth = 185
+        end
+        object Panel3: TPanel
+          Left = 0
+          Top = 164
+          Width = 0
+          Height = 41
+          Align = alTop
+          BevelOuter = bvNone
+          Caption = 'Sangria'
+          TabOrder = 1
+          ExplicitTop = 8
+          ExplicitWidth = 200
+        end
+        object Panel4: TPanel
+          Left = 0
+          Top = 123
+          Width = 0
+          Height = 41
+          Align = alTop
+          BevelOuter = bvNone
+          Caption = 'Suprimento'
+          TabOrder = 2
+          ExplicitTop = 0
+          ExplicitWidth = 200
+        end
+        object Panel5: TPanel
+          Left = 0
+          Top = 82
+          Width = 0
+          Height = 41
+          Align = alTop
+          BevelOuter = bvNone
+          Caption = 'Desconto Item <F11>'
+          TabOrder = 3
+          ExplicitTop = 0
+          ExplicitWidth = 200
+        end
+        object Panel6: TPanel
+          Left = 0
+          Top = 41
+          Width = 0
+          Height = 41
+          Align = alTop
+          BevelOuter = bvNone
+          Caption = 'Nova Venda <F3>'
+          TabOrder = 4
+          ExplicitTop = 0
+          ExplicitWidth = 200
+        end
+        object Panel7: TPanel
+          Left = 0
+          Top = 0
+          Width = 0
+          Height = 41
+          Align = alTop
+          BevelOuter = bvNone
+          Caption = 'Informar CPF<F9>'
+          TabOrder = 5
+          ExplicitWidth = 200
+        end
       end
     end
   end
   object dsItens: TDataSource
     DataSet = dmDados.cdsItens
     Left = 668
-    Top = 490
+    Top = 482
   end
 end
