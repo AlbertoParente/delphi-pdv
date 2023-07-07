@@ -1668,6 +1668,7 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             Caption = 'Cancelar Opera'#231#227'o '
             Flat = True
+            OnClick = SpeedButtonCancelOperationClick
             ExplicitTop = 6
             ExplicitWidth = 150
             ExplicitHeight = 114
@@ -1707,9 +1708,9 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             Caption = 'Consultar Pre'#231'o'
             Flat = True
-            ExplicitTop = 3
-            ExplicitWidth = 140
-            ExplicitHeight = 114
+            OnClick = SpeedButtonSearchPriceClick
+            ExplicitLeft = 1
+            ExplicitTop = -1
           end
         end
         object PanelOpenCashier: TPanel
@@ -1746,6 +1747,7 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             Caption = 'Abrir Caixa'
             Flat = True
+            OnClick = SpeedButtonOpenCashierClick
             ExplicitLeft = 3
             ExplicitTop = 3
             ExplicitWidth = 139
@@ -1786,6 +1788,7 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             Caption = 'Cancelar Venda'
             Flat = True
+            OnClick = SpeedButtonCancelSaleClick
             ExplicitLeft = 32
             ExplicitTop = -4
             ExplicitWidth = 131
@@ -1827,6 +1830,7 @@ object VwPrincipal: TVwPrincipal
             DisabledImageName = 'SpeedButtonCancelItem'
             Caption = 'Cancelar Item'
             Flat = True
+            OnClick = SpeedButtonCancelItemClick
             ExplicitTop = 3
             ExplicitWidth = 139
             ExplicitHeight = 110
@@ -1866,6 +1870,7 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             Caption = 'Devolu'#231#227'o'
             Flat = True
+            OnClick = SpeedButtonDevolutionClick
             ExplicitTop = 6
             ExplicitWidth = 140
             ExplicitHeight = 110
@@ -1906,10 +1911,8 @@ object VwPrincipal: TVwPrincipal
             Caption = 'Mais Fun'#231#245'es'
             Flat = True
             OnClick = SpeedButtonMoreFunctionsClick
-            ExplicitLeft = 3
-            ExplicitTop = 6
-            ExplicitWidth = 149
-            ExplicitHeight = 110
+            ExplicitLeft = -1
+            ExplicitTop = -1
           end
         end
       end
@@ -1936,10 +1939,6 @@ object VwPrincipal: TVwPrincipal
         Color = 14342621
         ParentBackground = False
         TabOrder = 0
-        ExplicitLeft = 128
-        ExplicitTop = 48
-        ExplicitWidth = 185
-        ExplicitHeight = 41
         object Panel2: TPanel
           Left = 0
           Top = 205
@@ -1949,9 +1948,6 @@ object VwPrincipal: TVwPrincipal
           BevelOuter = bvNone
           Caption = 'Abrir Gaveta'
           TabOrder = 0
-          ExplicitLeft = 80
-          ExplicitTop = 24
-          ExplicitWidth = 185
         end
         object Panel3: TPanel
           Left = 0
@@ -1962,8 +1958,6 @@ object VwPrincipal: TVwPrincipal
           BevelOuter = bvNone
           Caption = 'Sangria'
           TabOrder = 1
-          ExplicitTop = 8
-          ExplicitWidth = 200
         end
         object Panel4: TPanel
           Left = 0
@@ -1974,8 +1968,6 @@ object VwPrincipal: TVwPrincipal
           BevelOuter = bvNone
           Caption = 'Suprimento'
           TabOrder = 2
-          ExplicitTop = 0
-          ExplicitWidth = 200
         end
         object Panel5: TPanel
           Left = 0
@@ -1986,8 +1978,6 @@ object VwPrincipal: TVwPrincipal
           BevelOuter = bvNone
           Caption = 'Desconto Item <F11>'
           TabOrder = 3
-          ExplicitTop = 0
-          ExplicitWidth = 200
         end
         object Panel6: TPanel
           Left = 0
@@ -1998,8 +1988,6 @@ object VwPrincipal: TVwPrincipal
           BevelOuter = bvNone
           Caption = 'Nova Venda <F3>'
           TabOrder = 4
-          ExplicitTop = 0
-          ExplicitWidth = 200
         end
         object Panel7: TPanel
           Left = 0
@@ -2010,14 +1998,13 @@ object VwPrincipal: TVwPrincipal
           BevelOuter = bvNone
           Caption = 'Informar CPF<F9>'
           TabOrder = 5
-          ExplicitWidth = 200
         end
       end
     end
   end
   object dsItens: TDataSource
     DataSet = dmDados.cdsItens
-    Left = 668
-    Top = 482
+    Left = 676
+    Top = 506
   end
 end

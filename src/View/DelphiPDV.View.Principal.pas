@@ -112,6 +112,12 @@ type
       var ADone: Boolean);
     procedure FormCreate(Sender: TObject);
     procedure SpeedButtonMoreFunctionsClick(Sender: TObject);
+    procedure SpeedButtonCancelOperationClick(Sender: TObject);
+    procedure SpeedButtonSearchPriceClick(Sender: TObject);
+    procedure SpeedButtonOpenCashierClick(Sender: TObject);
+    procedure SpeedButtonCancelSaleClick(Sender: TObject);
+    procedure SpeedButtonCancelItemClick(Sender: TObject);
+    procedure SpeedButtonDevolutionClick(Sender: TObject);
   private
     FLogin: TVwLogin;
 
@@ -205,7 +211,7 @@ end;
 
 procedure TVwPrincipal.FormShow(Sender: TObject);
 begin
-//  dsItens.DataSet := nil;
+  dsItens.DataSet := nil;
   FLogin        := TVwLogin.Create(nil);
   FLogin.Parent := PanelContainer;
   FLogin.Show;
@@ -236,9 +242,39 @@ begin
 //
 end;
 
+procedure TVwPrincipal.SpeedButtonCancelItemClick(Sender: TObject);
+begin
+//
+end;
+
+procedure TVwPrincipal.SpeedButtonCancelOperationClick(Sender: TObject);
+begin
+//
+end;
+
+procedure TVwPrincipal.SpeedButtonCancelSaleClick(Sender: TObject);
+begin
+//
+end;
+
+procedure TVwPrincipal.SpeedButtonDevolutionClick(Sender: TObject);
+begin
+//
+end;
+
 procedure TVwPrincipal.SpeedButtonMoreFunctionsClick(Sender: TObject);
 begin
   SplitViewAction(SplitViewMoreFunctions);
+end;
+
+procedure TVwPrincipal.SpeedButtonOpenCashierClick(Sender: TObject);
+begin
+//
+end;
+
+procedure TVwPrincipal.SpeedButtonSearchPriceClick(Sender: TObject);
+begin
+//
 end;
 
 procedure TVwPrincipal.SplitViewAction(Value: TSplitView);
