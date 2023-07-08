@@ -62,21 +62,83 @@ object VwPayments: TVwPayments
           item
             Value = 100.000000000000000000
           end>
-        ControlCollection = <>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = Panel2
+            Row = 0
+          end
+          item
+            Column = 0
+            Control = Panel3
+            Row = 4
+          end>
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -12
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        Padding.Left = 3
+        Padding.Top = 4
+        Padding.Right = 3
+        Padding.Bottom = 4
+        ParentFont = False
         RowCollection = <
           item
-            Value = 25.000000000000000000
+            Value = 13.000000000000000000
           end
           item
-            Value = 25.000000000000000000
+            Value = 26.000000000000000000
           end
           item
-            Value = 25.000000000000000000
+            Value = 26.000000000000000000
           end
           item
-            Value = 25.000000000000000000
+            Value = 26.000000000000000000
+          end
+          item
+            Value = 9.000000000000000000
           end>
         TabOrder = 0
+        object Panel2: TPanel
+          AlignWithMargins = True
+          Left = 9
+          Top = 11
+          Width = 318
+          Height = 65
+          Align = alClient
+          BevelOuter = bvNone
+          Caption = 'Resumo da Venda'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWhite
+          Font.Height = -33
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 0
+          ExplicitLeft = 160
+          ExplicitTop = 88
+          ExplicitWidth = 185
+          ExplicitHeight = 41
+        end
+        object Panel3: TPanel
+          Left = 6
+          Top = 562
+          Width = 324
+          Height = 47
+          Align = alClient
+          BevelOuter = bvNone
+          Caption = 'Cancelar e Retornar'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = 1357025
+          Font.Height = -20
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 1
+          ExplicitTop = 489
+          ExplicitHeight = 128
+        end
       end
     end
     object Panel1: TPanel
@@ -101,19 +163,13 @@ object VwPayments: TVwPayments
         ControlCollection = <>
         RowCollection = <
           item
-            Value = 20.000000000000050000
+            Value = 33.333333333333390000
           end
           item
-            Value = 20.000000000000000000
+            Value = 33.333333333333300000
           end
           item
-            Value = 20.000000000000000000
-          end
-          item
-            Value = 20.000000000000000000
-          end
-          item
-            Value = 19.999999999999940000
+            Value = 33.333333333333300000
           end>
         TabOrder = 0
       end
