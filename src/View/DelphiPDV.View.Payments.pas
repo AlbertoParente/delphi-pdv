@@ -15,14 +15,6 @@ type
     GridPanel2: TGridPanel;
     aDataSource: TDataSource;
     cdsPayments: TClientDataSet;
-    Panel2: TPanel;
-    Panel3: TPanel;
-    Panel4: TPanel;
-    Panel5: TPanel;
-    Panel6: TPanel;
-    Panel7: TPanel;
-    Panel8: TPanel;
-    Panel9: TPanel;
   private
     { Private declarations }
   public
