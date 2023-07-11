@@ -49,8 +49,6 @@ object VwLogin: TVwLogin
         Value = 100.000000000000000000
       end>
     TabOrder = 0
-    ExplicitWidth = 638
-    ExplicitHeight = 472
     object GridPanelLogin: TGridPanel
       Left = 666
       Top = 0
@@ -76,122 +74,187 @@ object VwLogin: TVwLogin
         end>
       RowCollection = <
         item
-          Value = 25.000000000000000000
+          Value = 35.000000000000000000
         end
         item
-          Value = 50.000000000000000000
+          Value = 30.000000000000000000
         end
         item
-          Value = 25.000000000000000000
+          Value = 35.000000000000000000
         end>
       TabOrder = 0
-      ExplicitLeft = 415
-      ExplicitWidth = 223
-      ExplicitHeight = 472
       object PanelLogin: TPanel
         Left = 54
-        Top = 192
+        Top = 269
         Width = 250
-        Height = 384
+        Height = 230
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitLeft = 33
-        ExplicitTop = 118
-        ExplicitWidth = 157
-        ExplicitHeight = 236
-        object LabelLogin: TLabel
+        ExplicitTop = 192
+        ExplicitHeight = 384
+        object GridPanel1: TGridPanel
           Left = 0
           Top = 0
           Width = 250
-          Height = 31
-          Align = alTop
-          Alignment = taCenter
-          Caption = 'Login'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -23
-          Font.Name = 'Segoe UI'
-          Font.Style = []
-          ParentFont = False
-          ExplicitWidth = 57
-        end
-        object LabelPassword: TLabel
-          Left = 0
-          Top = 93
-          Width = 250
-          Height = 23
-          Align = alTop
-          Caption = 'Senha'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -17
-          Font.Name = 'Segoe UI'
-          Font.Style = []
-          ParentFont = False
-          ExplicitWidth = 47
-        end
-        object LabelUsername: TLabel
-          Left = 0
-          Top = 31
-          Width = 250
-          Height = 23
-          Align = alTop
-          Caption = 'Usu'#225'rio'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -17
-          Font.Name = 'Segoe UI'
-          Font.Style = []
-          ParentFont = False
-          ExplicitWidth = 58
-        end
-        object EditUsername: TcxTextEdit
-          Left = 0
-          Top = 54
-          Align = alTop
-          ParentFont = False
-          Style.Font.Charset = DEFAULT_CHARSET
-          Style.Font.Color = clWindowText
-          Style.Font.Height = -23
-          Style.Font.Name = 'Segoe UI'
-          Style.Font.Style = []
-          Style.IsFontAssigned = True
+          Height = 230
+          Align = alClient
+          BevelOuter = bvNone
+          ColumnCollection = <
+            item
+              Value = 100.000000000000000000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = LabelLogin
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = LabelUsername
+              Row = 1
+            end
+            item
+              Column = 0
+              Control = EditUsername
+              Row = 2
+            end
+            item
+              Column = 0
+              Control = LabelPassword
+              Row = 3
+            end
+            item
+              Column = 0
+              Control = EditPassword
+              Row = 4
+            end
+            item
+              Column = 0
+              Control = ButtonLogin
+              Row = 5
+            end>
+          RowCollection = <
+            item
+              Value = 20.000000000000000000
+            end
+            item
+              Value = 7.997032647378023000
+            end
+            item
+              Value = 22.000000000000000000
+            end
+            item
+              Value = 7.997032647378023000
+            end
+            item
+              Value = 22.000000000000000000
+            end
+            item
+              Value = 20.005934705243960000
+            end>
           TabOrder = 0
-          ExplicitWidth = 157
-          Width = 250
-        end
-        object EditPassword: TcxTextEdit
-          Left = 0
-          Top = 116
-          Align = alTop
-          ParentFont = False
-          Style.Font.Charset = DEFAULT_CHARSET
-          Style.Font.Color = clWindowText
-          Style.Font.Height = -23
-          Style.Font.Name = 'Segoe UI'
-          Style.Font.Style = []
-          Style.IsFontAssigned = True
-          TabOrder = 1
-          ExplicitWidth = 157
-          Width = 250
-        end
-        object ButtonLogin: TcxButton
-          Left = 0
-          Top = 155
-          Width = 250
-          Height = 37
-          Align = alTop
-          Caption = 'Logar'
-          TabOrder = 2
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindow
-          Font.Height = -20
-          Font.Name = 'Segoe UI'
-          Font.Style = []
-          ParentFont = False
-          OnClick = ButtonLoginClick
-          ExplicitWidth = 157
+          ExplicitLeft = 54
+          ExplicitTop = -6
+          ExplicitHeight = 192
+          object LabelLogin: TLabel
+            Left = 0
+            Top = 0
+            Width = 250
+            Height = 31
+            Align = alTop
+            Alignment = taCenter
+            Caption = 'Login'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -23
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            ParentFont = False
+            ExplicitWidth = 57
+          end
+          object LabelUsername: TLabel
+            Left = 0
+            Top = 46
+            Width = 250
+            Height = 23
+            Align = alTop
+            Caption = 'Usu'#225'rio'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            ParentFont = False
+            ExplicitTop = 64
+            ExplicitWidth = 58
+          end
+          object EditUsername: TcxTextEdit
+            Left = 0
+            Top = 64
+            Align = alClient
+            ParentFont = False
+            Style.Font.Charset = DEFAULT_CHARSET
+            Style.Font.Color = clWindowText
+            Style.Font.Height = -23
+            Style.Font.Name = 'Segoe UI'
+            Style.Font.Style = []
+            Style.IsFontAssigned = True
+            TabOrder = 0
+            ExplicitTop = 128
+            ExplicitHeight = 39
+            Width = 250
+          end
+          object LabelPassword: TLabel
+            Left = 0
+            Top = 115
+            Width = 250
+            Height = 23
+            Align = alTop
+            Caption = 'Senha'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            ParentFont = False
+            ExplicitTop = 126
+          end
+          object EditPassword: TcxTextEdit
+            Left = 0
+            Top = 133
+            Align = alClient
+            ParentFont = False
+            Style.Font.Charset = DEFAULT_CHARSET
+            Style.Font.Color = clWindowText
+            Style.Font.Height = -23
+            Style.Font.Name = 'Segoe UI'
+            Style.Font.Style = []
+            Style.IsFontAssigned = True
+            TabOrder = 1
+            ExplicitTop = 256
+            ExplicitHeight = 39
+            Width = 250
+          end
+          object ButtonLogin: TcxButton
+            Left = 0
+            Top = 184
+            Width = 250
+            Height = 46
+            Align = alClient
+            Caption = 'Logar'
+            TabOrder = 2
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindow
+            Font.Height = -20
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            ParentFont = False
+            OnClick = ButtonLoginClick
+            ExplicitTop = 160
+            ExplicitHeight = 25
+          end
         end
       end
     end
@@ -203,8 +266,6 @@ object VwLogin: TVwLogin
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitWidth = 415
-      ExplicitHeight = 472
       object ImageLogin: TImage
         Left = 0
         Top = 0

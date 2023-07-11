@@ -37,13 +37,21 @@ type
     Label11: TLabel;
     Label12: TLabel;
     Label13: TLabel;
-    Label14: TLabel;
-    Label15: TLabel;
     Label16: TLabel;
-    Label17: TLabel;
-    Label18: TLabel;
     Shape3: TShape;
     Shape4: TShape;
+    GridPanel5: TGridPanel;
+    Panel6: TPanel;
+    Label3: TLabel;
+    Label19: TLabel;
+    Label20: TLabel;
+    Label21: TLabel;
+    Label22: TLabel;
+    Label23: TLabel;
+    Label24: TLabel;
+    Label25: TLabel;
+    Shape5: TShape;
+    Shape6: TShape;
   private
     { Private declarations }
   public
