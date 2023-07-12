@@ -32,26 +32,8 @@ type
     Label10: TLabel;
     Shape1: TShape;
     Shape2: TShape;
-    GridPanel4: TGridPanel;
     Panel5: TPanel;
-    Label11: TLabel;
-    Label12: TLabel;
-    Label13: TLabel;
-    Label16: TLabel;
-    Shape3: TShape;
-    Shape4: TShape;
-    GridPanel5: TGridPanel;
     Panel6: TPanel;
-    Label3: TLabel;
-    Label19: TLabel;
-    Label20: TLabel;
-    Label21: TLabel;
-    Label22: TLabel;
-    Label23: TLabel;
-    Label24: TLabel;
-    Label25: TLabel;
-    Shape5: TShape;
-    Shape6: TShape;
   private
     { Private declarations }
   public
