@@ -15,8 +15,8 @@ object dmDados: TdmDados
     Aggregates = <>
     Params = <>
     OnCalcFields = cdsItensCalcFields
-    Left = 16
-    Top = 9
+    Left = 40
+    Top = 25
     object cdsItenscodigo: TStringField
       FieldName = 'codigo'
       Size = 100
