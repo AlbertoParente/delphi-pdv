@@ -14,7 +14,7 @@ begin
   Application.Initialize;
   ReportMemoryLeaksOnShutdown   := True;
   Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TdmDados, dmDados);
   Application.CreateForm(TVwPrincipal, VwPrincipal);
-  Application.CreateForm(TVwPayments, VwPayments);
   Application.Run;
 end.

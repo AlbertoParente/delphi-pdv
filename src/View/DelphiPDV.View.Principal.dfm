@@ -112,6 +112,9 @@ object VwPrincipal: TVwPrincipal
         RowCollection = <
           item
             Value = 100.000000000000000000
+          end
+          item
+            SizeStyle = ssAuto
           end>
         TabOrder = 1
         object DBGrid: TcxGrid
@@ -1632,6 +1635,9 @@ object VwPrincipal: TVwPrincipal
         RowCollection = <
           item
             Value = 100.000000000000000000
+          end
+          item
+            SizeStyle = ssAuto
           end>
         TabOrder = 2
         object PanelCancelOperation: TPanel
@@ -2001,10 +2007,33 @@ object VwPrincipal: TVwPrincipal
         end
       end
     end
+    object SplitViewPayments: TSplitView
+      Left = 306
+      Top = 0
+      Width = 716
+      Height = 760
+      DisplayMode = svmOverlay
+      OpenedWidth = 716
+      Placement = svpRight
+      TabOrder = 3
+      object PanelSplitViewPayments: TPanel
+        Left = 0
+        Top = 0
+        Width = 716
+        Height = 760
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 0
+        ExplicitLeft = 504
+        ExplicitTop = 184
+        ExplicitWidth = 185
+        ExplicitHeight = 41
+      end
+    end
   end
   object dsItens: TDataSource
     DataSet = dmDados.cdsItens
-    Left = 20
+    Left = 28
     Top = 586
   end
 end

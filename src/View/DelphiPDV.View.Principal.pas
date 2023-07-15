@@ -28,7 +28,7 @@ uses
   cxGridTableView, cxGridDBTableView, cxGrid, cxTextEdit,
   cxGridCustomLayoutView, cxGridCardView, cxGridDBCardView, Datasnap.DBClient,
   Vcl.StdCtrls, cxContainer, dxGDIPlusClasses, DelphiPDV.View.Login, DelphiPDV.Model.Dados,
-  Vcl.WinXCtrls;
+  Vcl.WinXCtrls, DelphiPDV.View.Payments;
 
 type
   TVwPrincipal = class(TForm)
@@ -104,6 +104,8 @@ type
     Panel5: TPanel;
     Panel6: TPanel;
     Panel7: TPanel;
+    SplitViewPayments: TSplitView;
+    PanelSplitViewPayments: TPanel;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -158,6 +160,9 @@ end;
 
 procedure TVwPrincipal.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
+var
+  APayments := TVwPayments;
+
 begin
   inherited;
   case Key of
@@ -195,7 +200,7 @@ begin
     end;
     VK_F7:
     begin
-//
+      APayments := TVwPayments.Create(nil)
     end;
     VK_F11: SpeedButtonMoreFunctionsClick(Sender);
     VK_UP:
