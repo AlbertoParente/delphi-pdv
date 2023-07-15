@@ -2024,16 +2024,154 @@ object VwPrincipal: TVwPrincipal
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitLeft = 504
-        ExplicitTop = 184
-        ExplicitWidth = 185
-        ExplicitHeight = 41
+        object GridPanel1: TGridPanel
+          Left = 0
+          Top = 0
+          Width = 716
+          Height = 760
+          Align = alClient
+          BevelOuter = bvNone
+          ColumnCollection = <
+            item
+              Value = 100.000000000000000000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = Panel8
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = Panel9
+              Row = 1
+            end
+            item
+              Column = 0
+              Control = Panel10
+              Row = 2
+            end
+            item
+              Column = 0
+              Control = Panel11
+              Row = 3
+            end
+            item
+              Column = 0
+              Control = Panel12
+              Row = 4
+            end
+            item
+              Column = 0
+              Control = Panel13
+              Row = 5
+            end>
+          RowCollection = <
+            item
+              Value = 16.642938746814300000
+            end
+            item
+              Value = 16.642938746814300000
+            end
+            item
+              Value = 16.642938746814300000
+            end
+            item
+              Value = 16.642938746814300000
+            end
+            item
+              Value = 16.642938746814300000
+            end
+            item
+              Value = 16.785306265928520000
+            end>
+          TabOrder = 0
+          ExplicitLeft = -6
+          object Panel8: TPanel
+            Left = 0
+            Top = 0
+            Width = 716
+            Height = 126
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 0
+            ExplicitLeft = 384
+            ExplicitTop = 64
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+          end
+          object Panel9: TPanel
+            Left = 0
+            Top = 126
+            Width = 716
+            Height = 127
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 1
+            ExplicitLeft = 384
+            ExplicitTop = 64
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+          end
+          object Panel10: TPanel
+            Left = 0
+            Top = 253
+            Width = 716
+            Height = 126
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 2
+            ExplicitLeft = 384
+            ExplicitTop = 64
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+          end
+          object Panel11: TPanel
+            Left = 0
+            Top = 379
+            Width = 716
+            Height = 127
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 3
+            ExplicitLeft = 384
+            ExplicitTop = 64
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+          end
+          object Panel12: TPanel
+            Left = 0
+            Top = 506
+            Width = 716
+            Height = 126
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 4
+            ExplicitLeft = 384
+            ExplicitTop = 64
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+          end
+          object Panel13: TPanel
+            Left = 0
+            Top = 632
+            Width = 716
+            Height = 128
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 5
+            ExplicitLeft = 384
+            ExplicitTop = 64
+            ExplicitWidth = 185
+            ExplicitHeight = 41
+          end
+        end
       end
     end
   end
   object dsItens: TDataSource
     DataSet = dmDados.cdsItens
-    Left = 28
-    Top = 586
+    Left = 20
+    Top = 578
   end
 end
