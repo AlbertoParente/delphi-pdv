@@ -105,14 +105,6 @@ type
     Panel6: TPanel;
     Panel7: TPanel;
     SplitViewPayments: TSplitView;
-    PanelSplitViewPayments: TPanel;
-    GridPanel1: TGridPanel;
-    Panel8: TPanel;
-    Panel9: TPanel;
-    Panel10: TPanel;
-    Panel11: TPanel;
-    Panel12: TPanel;
-    Panel13: TPanel;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
