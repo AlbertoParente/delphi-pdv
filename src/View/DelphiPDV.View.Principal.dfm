@@ -2016,11 +2016,111 @@ object VwPrincipal: TVwPrincipal
       OpenedWidth = 716
       Placement = svpRight
       TabOrder = 3
+      object GridPanel1: TGridPanel
+        Left = 0
+        Top = 0
+        Width = 716
+        Height = 760
+        Align = alClient
+        BevelOuter = bvNone
+        ColumnCollection = <
+          item
+            Value = 100.000000000000000000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = Panel8
+            Row = 0
+          end
+          item
+            Column = 0
+            Control = Panel9
+            Row = 1
+          end
+          item
+            Column = 0
+            Control = Panel10
+            Row = 2
+          end
+          item
+            Column = 0
+            Control = Panel11
+            Row = 3
+          end>
+        RowCollection = <
+          item
+            Value = 25.000000000000000000
+          end
+          item
+            Value = 25.000000000000000000
+          end
+          item
+            Value = 25.000000000000000000
+          end
+          item
+            Value = 25.000000000000000000
+          end>
+        TabOrder = 0
+        ExplicitLeft = -6
+        object Panel8: TPanel
+          Left = 0
+          Top = 0
+          Width = 716
+          Height = 190
+          Align = alClient
+          BevelOuter = bvNone
+          TabOrder = 0
+          ExplicitLeft = 456
+          ExplicitTop = 80
+          ExplicitWidth = 185
+          ExplicitHeight = 41
+        end
+        object Panel9: TPanel
+          Left = 0
+          Top = 190
+          Width = 716
+          Height = 190
+          Align = alClient
+          BevelOuter = bvNone
+          TabOrder = 1
+          ExplicitLeft = 456
+          ExplicitTop = 80
+          ExplicitWidth = 185
+          ExplicitHeight = 41
+        end
+        object Panel10: TPanel
+          Left = 0
+          Top = 380
+          Width = 716
+          Height = 190
+          Align = alClient
+          BevelOuter = bvNone
+          TabOrder = 2
+          ExplicitLeft = 456
+          ExplicitTop = 80
+          ExplicitWidth = 185
+          ExplicitHeight = 41
+        end
+        object Panel11: TPanel
+          Left = 0
+          Top = 570
+          Width = 716
+          Height = 190
+          Align = alClient
+          BevelOuter = bvNone
+          TabOrder = 3
+          ExplicitLeft = 456
+          ExplicitTop = 80
+          ExplicitWidth = 185
+          ExplicitHeight = 41
+        end
+      end
     end
   end
   object dsItens: TDataSource
     DataSet = dmDados.cdsItens
-    Left = 28
-    Top = 578
+    Left = 44
+    Top = 576
   end
 end

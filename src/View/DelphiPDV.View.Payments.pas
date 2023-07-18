@@ -43,6 +43,9 @@ type
     Shape4: TShape;
     Label3: TLabel;
     Label14: TLabel;
+    Panel6: TPanel;
+    Panel8: TPanel;
+    Panel9: TPanel;
   private
     { Private declarations }
   public

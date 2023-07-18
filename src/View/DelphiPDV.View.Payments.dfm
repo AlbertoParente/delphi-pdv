@@ -680,7 +680,22 @@ object VwPayments: TVwPayments
           item
             Value = 100.000000000000000000
           end>
-        ControlCollection = <>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = Panel6
+            Row = 0
+          end
+          item
+            Column = 0
+            Control = Panel8
+            Row = 1
+          end
+          item
+            Column = 0
+            Control = Panel9
+            Row = 2
+          end>
         RowCollection = <
           item
             Value = 33.333333333333390000
@@ -692,18 +707,55 @@ object VwPayments: TVwPayments
             Value = 33.333333333333310000
           end>
         TabOrder = 0
+        ExplicitLeft = 3
+        object Panel6: TPanel
+          Left = 0
+          Top = 0
+          Width = 504
+          Height = 206
+          Align = alClient
+          BevelOuter = bvNone
+          TabOrder = 0
+          ExplicitLeft = 3
+        end
+        object Panel8: TPanel
+          Left = 0
+          Top = 206
+          Width = 504
+          Height = 205
+          Align = alClient
+          BevelOuter = bvNone
+          TabOrder = 1
+          ExplicitLeft = 3
+          ExplicitTop = 288
+          ExplicitWidth = 185
+          ExplicitHeight = 41
+        end
+        object Panel9: TPanel
+          Left = 0
+          Top = 411
+          Width = 504
+          Height = 206
+          Align = alClient
+          BevelOuter = bvNone
+          TabOrder = 2
+          ExplicitLeft = 3
+          ExplicitTop = 493
+          ExplicitWidth = 185
+          ExplicitHeight = 41
+        end
       end
     end
   end
   object aDataSource: TDataSource
     DataSet = cdsPayments
-    Left = 792
-    Top = 496
+    Left = 784
+    Top = 480
   end
   object cdsPayments: TClientDataSet
     Aggregates = <>
     Params = <>
-    Left = 792
-    Top = 552
+    Left = 784
+    Top = 536
   end
 end
