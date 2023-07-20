@@ -33,7 +33,7 @@ object VwPayments: TVwPayments
       end
       item
         Column = 1
-        Control = Panel1
+        Control = GridPanel1
         Row = 0
       end>
     RowCollection = <
@@ -661,25 +661,108 @@ object VwPayments: TVwPayments
         end
       end
     end
-    object Panel1: TPanel
+    object GridPanel1: TGridPanel
       Left = 336
       Top = 0
       Width = 504
       Height = 617
       Align = alClient
       BevelOuter = bvNone
+      ColumnCollection = <
+        item
+          Value = 100.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = Shape6
+          Row = 1
+        end
+        item
+          Column = 0
+          Control = Shape7
+          Row = 2
+        end
+        item
+          Column = 0
+          Control = Shape5
+          Row = 3
+        end
+        item
+          Column = 0
+          Control = Label15
+          Row = 0
+        end>
+      RowCollection = <
+        item
+          Value = 33.333333333333300000
+        end
+        item
+          Value = 33.333333333333300000
+        end
+        item
+          Value = 33.333333333333400000
+        end
+        item
+          SizeStyle = ssAuto
+        end>
       TabOrder = 1
+      ExplicitLeft = 339
+      object Shape6: TShape
+        AlignWithMargins = True
+        Left = 3
+        Top = 396
+        Width = 501
+        Height = 5
+        Margins.Right = 0
+        Align = alBottom
+        Brush.Color = 1357025
+        ExplicitTop = 400
+      end
+      object Shape7: TShape
+        AlignWithMargins = True
+        Left = 3
+        Top = 598
+        Width = 501
+        Height = 5
+        Margins.Right = 0
+        Align = alBottom
+        Brush.Color = 1357025
+        ExplicitTop = 608
+      end
+      object Shape5: TShape
+        AlignWithMargins = True
+        Left = 3
+        Top = 609
+        Width = 501
+        Height = 5
+        Margins.Right = 0
+        Align = alBottom
+        Brush.Color = 1357025
+        ExplicitTop = 138
+      end
+      object Label15: TLabel
+        Left = 0
+        Top = 0
+        Width = 504
+        Height = 15
+        Align = alTop
+        Caption = 'Label15'
+        ExplicitLeft = 248
+        ExplicitTop = 80
+        ExplicitWidth = 40
+      end
     end
   end
   object aDataSource: TDataSource
     DataSet = cdsPayments
     Left = 784
-    Top = 24
+    Top = 80
   end
   object cdsPayments: TClientDataSet
     Aggregates = <>
     Params = <>
     Left = 784
-    Top = 88
+    Top = 128
   end
 end

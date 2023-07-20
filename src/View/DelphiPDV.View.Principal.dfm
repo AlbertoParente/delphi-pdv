@@ -2008,18 +2008,19 @@ object VwPrincipal: TVwPrincipal
       end
     end
     object SplitViewPayments: TSplitView
-      Left = 306
+      Left = 1022
       Top = 0
-      Width = 716
+      Width = 0
       Height = 760
       DisplayMode = svmOverlay
+      Opened = False
       OpenedWidth = 716
       Placement = svpRight
       TabOrder = 3
       object GridPanel1: TGridPanel
         Left = 0
         Top = 0
-        Width = 716
+        Width = 0
         Height = 760
         Align = alClient
         BevelOuter = bvNone
@@ -2048,12 +2049,13 @@ object VwPrincipal: TVwPrincipal
             Value = 16.666666666666500000
           end>
         TabOrder = 0
+        ExplicitWidth = 716
       end
     end
   end
   object dsItens: TDataSource
     DataSet = dmDados.cdsItens
     Left = 28
-    Top = 568
+    Top = 592
   end
 end

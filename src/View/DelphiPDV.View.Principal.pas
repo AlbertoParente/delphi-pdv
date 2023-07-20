@@ -161,7 +161,7 @@ end;
 procedure TVwPrincipal.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 var
-  APayments := TVwPayments;
+  APayments: TVwPayments;
 
 begin
   inherited;
@@ -200,7 +200,10 @@ begin
     end;
     VK_F7:
     begin
-      APayments := TVwPayments.Create(nil)
+      APayments        := TVwPayments.Create(nil);
+      APayments.Parent := PanelContainer;
+      APayments.Show;
+      SplitViewAction(SplitViewPayments);
     end;
     VK_F11: SpeedButtonMoreFunctionsClick(Sender);
     VK_UP:
@@ -237,14 +240,12 @@ end;
 procedure TVwPrincipal.Process;
 begin
   Review;
-//
 end;
 
 procedure TVwPrincipal.Review;
 begin
   if not Assigned(dsItens.DataSet) then
     Exit;
-//
 end;
 
 procedure TVwPrincipal.SpeedButtonCancelItemClick(Sender: TObject);

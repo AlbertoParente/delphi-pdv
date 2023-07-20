@@ -11,7 +11,6 @@ type
   TVwPayments = class(TForm)
     GridPanelMain: TGridPanel;
     PanelInformation: TPanel;
-    Panel1: TPanel;
     GridPanel2: TGridPanel;
     aDataSource: TDataSource;
     cdsPayments: TClientDataSet;
@@ -42,6 +41,11 @@ type
     Shape4: TShape;
     Label3: TLabel;
     Label14: TLabel;
+    GridPanel1: TGridPanel;
+    Shape6: TShape;
+    Shape7: TShape;
+    Shape5: TShape;
+    Label15: TLabel;
   private
     { Private declarations }
   public
