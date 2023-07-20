@@ -10,6 +10,8 @@ object VwPayments: TVwPayments
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnClose = FormClose
+  OnKeyDown = FormKeyDown
   TextHeight = 15
   object GridPanelMain: TGridPanel
     Left = 0
@@ -676,22 +678,27 @@ object VwPayments: TVwPayments
         item
           Column = 0
           Control = Shape6
-          Row = 1
+          Row = 4
         end
         item
           Column = 0
           Control = Shape7
-          Row = 2
-        end
-        item
-          Column = 0
-          Control = Shape5
           Row = 3
         end
         item
           Column = 0
-          Control = Label15
+          Control = Shape5
           Row = 0
+        end
+        item
+          Column = 0
+          Control = Panel1
+          Row = 2
+        end
+        item
+          Column = 0
+          Control = Panel6
+          Row = 1
         end>
       RowCollection = <
         item
@@ -705,13 +712,16 @@ object VwPayments: TVwPayments
         end
         item
           SizeStyle = ssAuto
+        end
+        item
+          SizeStyle = ssAuto
         end>
       TabOrder = 1
       ExplicitLeft = 339
       object Shape6: TShape
         AlignWithMargins = True
         Left = 3
-        Top = 396
+        Top = 609
         Width = 501
         Height = 5
         Margins.Right = 0
@@ -733,36 +743,51 @@ object VwPayments: TVwPayments
       object Shape5: TShape
         AlignWithMargins = True
         Left = 3
-        Top = 609
+        Top = 190
         Width = 501
         Height = 5
         Margins.Right = 0
         Align = alBottom
         Brush.Color = 1357025
-        ExplicitTop = 138
+        ExplicitTop = 193
       end
-      object Label15: TLabel
+      object Panel1: TPanel
         Left = 0
-        Top = 0
+        Top = 397
         Width = 504
-        Height = 15
-        Align = alTop
-        Caption = 'Label15'
-        ExplicitLeft = 248
-        ExplicitTop = 80
-        ExplicitWidth = 40
+        Height = 198
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 0
+        ExplicitLeft = 232
+        ExplicitTop = 288
+        ExplicitWidth = 185
+        ExplicitHeight = 41
+      end
+      object Panel6: TPanel
+        Left = 0
+        Top = 198
+        Width = 504
+        Height = 199
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 1
+        ExplicitLeft = 232
+        ExplicitTop = 288
+        ExplicitWidth = 185
+        ExplicitHeight = 41
       end
     end
   end
   object aDataSource: TDataSource
     DataSet = cdsPayments
-    Left = 784
-    Top = 80
+    Left = 800
+    Top = 8
   end
   object cdsPayments: TClientDataSet
     Aggregates = <>
     Params = <>
-    Left = 784
-    Top = 128
+    Left = 800
+    Top = 80
   end
 end

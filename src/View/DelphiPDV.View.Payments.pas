@@ -45,11 +45,16 @@ type
     Shape6: TShape;
     Shape7: TShape;
     Shape5: TShape;
-    Label15: TLabel;
+    Panel1: TPanel;
+    Panel6: TPanel;
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
     { Public declarations }
+    procedure Process;
+    procedure Review;
   end;
 
 var
@@ -58,5 +63,40 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TVwPayments.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Close;
+end;
+
+procedure TVwPayments.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  inherited;
+  case Key of
+    VK_ESCAPE:
+    begin
+      Close;
+    end;
+    VK_NEXT:
+    begin
+      Process;
+    end;
+    VK_RETURN:
+    begin
+      SelectNext(Screen.ActiveControl, True, True);
+    end;
+  end;
+end;
+
+procedure TVwPayments.Process;
+begin
+  Review;
+end;
+
+procedure TVwPayments.Review;
+begin
+//
+end;
 
 end.

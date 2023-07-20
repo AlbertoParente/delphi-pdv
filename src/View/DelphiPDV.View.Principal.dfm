@@ -2049,13 +2049,12 @@ object VwPrincipal: TVwPrincipal
             Value = 16.666666666666500000
           end>
         TabOrder = 0
-        ExplicitWidth = 716
       end
     end
   end
   object dsItens: TDataSource
     DataSet = dmDados.cdsItens
     Left = 28
-    Top = 592
+    Top = 576
   end
 end
