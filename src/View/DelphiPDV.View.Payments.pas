@@ -47,6 +47,12 @@ type
     Shape5: TShape;
     Panel1: TPanel;
     Panel6: TPanel;
+    Panel8: TPanel;
+    GridPanel5: TGridPanel;
+    Panel9: TPanel;
+    Shape8: TShape;
+    Shape9: TShape;
+    Shape10: TShape;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private

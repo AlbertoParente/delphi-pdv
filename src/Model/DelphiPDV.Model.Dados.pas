@@ -71,6 +71,30 @@ begin
   cdsItensquantity.AsCurrency  := 3;
   cdsItens.Post;
 
+  cdsItens.Append;
+  cdsItenscodigo.AsString      := '0007';
+  cdsItensitem.AsString        := '3';
+  cdsItensdescription.AsString := 'Nimesulida 500mg';
+  cdsItensunitvalue.AsCurrency := 8.00;
+  cdsItensquantity.AsCurrency  := 1;
+  cdsItens.Post;
+
+  cdsItens.Append;
+  cdsItenscodigo.AsString      := '0011';
+  cdsItensitem.AsString        := '4';
+  cdsItensdescription.AsString := 'Luftal 500mg';
+  cdsItensunitvalue.AsCurrency := 12.50;
+  cdsItensquantity.AsCurrency  := 3;
+  cdsItens.Post;
+
+  cdsItens.Append;
+  cdsItenscodigo.AsString      := '0013';
+  cdsItensitem.AsString        := '4';
+  cdsItensdescription.AsString := 'Kaloba 500mg';
+  cdsItensunitvalue.AsCurrency := 65.50;
+  cdsItensquantity.AsCurrency  := 3;
+  cdsItens.Post;
+
   cdsItens.Open;
 end;
 
