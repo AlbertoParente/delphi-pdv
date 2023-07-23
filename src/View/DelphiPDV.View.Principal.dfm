@@ -135,7 +135,7 @@ object VwPrincipal: TVwPrincipal
           Font.Color = clWindowText
           Font.Height = -13
           Font.Name = 'Segoe UI'
-          Font.Style = []
+          Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 0
           TabStop = False
@@ -343,9 +343,9 @@ object VwPrincipal: TVwPrincipal
               Font.Color = clWindowText
               Font.Height = -20
               Font.Name = 'Segoe UI'
-              Font.Style = []
+              Font.Style = [fsBold]
               ParentFont = False
-              ExplicitWidth = 137
+              ExplicitWidth = 147
             end
             object PanelEditPurchaseTotal: TPanel
               Left = 0
@@ -1289,9 +1289,9 @@ object VwPrincipal: TVwPrincipal
               Font.Color = clWindowText
               Font.Height = -20
               Font.Name = 'Segoe UI'
-              Font.Style = []
+              Font.Style = [fsBold]
               ParentFont = False
-              ExplicitWidth = 95
+              ExplicitWidth = 104
             end
             object PanelEditUnitPrice: TPanel
               Left = 0
@@ -1362,9 +1362,9 @@ object VwPrincipal: TVwPrincipal
               Font.Color = clWindowText
               Font.Height = -20
               Font.Name = 'Segoe UI'
-              Font.Style = []
+              Font.Style = [fsBold]
               ParentFont = False
-              ExplicitWidth = 103
+              ExplicitWidth = 110
             end
             object PanelEditQuantity: TPanel
               Left = 0
@@ -1436,9 +1436,9 @@ object VwPrincipal: TVwPrincipal
               Font.Color = clWindowText
               Font.Height = -20
               Font.Name = 'Segoe UI'
-              Font.Style = []
+              Font.Style = [fsBold]
               ParentFont = False
-              ExplicitWidth = 76
+              ExplicitWidth = 82
             end
             object PanelEditSubTotal: TPanel
               Left = 0
@@ -1509,9 +1509,9 @@ object VwPrincipal: TVwPrincipal
               Font.Color = clWindowText
               Font.Height = -20
               Font.Name = 'Segoe UI'
-              Font.Style = []
+              Font.Style = [fsBold]
               ParentFont = False
-              ExplicitWidth = 72
+              ExplicitWidth = 76
             end
             object PanelEditProduct: TPanel
               Left = 0
@@ -1674,10 +1674,15 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             Caption = 'Cancelar Opera'#231#227'o '
             Flat = True
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Segoe UI'
+            Font.Style = [fsBold]
+            ParentFont = False
             OnClick = SpeedButtonCancelOperationClick
-            ExplicitTop = 6
-            ExplicitWidth = 150
-            ExplicitHeight = 114
+            ExplicitLeft = 1
+            ExplicitTop = -1
           end
         end
         object PanelSearchPrice: TPanel
@@ -1714,6 +1719,12 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             Caption = 'Consultar Pre'#231'o'
             Flat = True
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Segoe UI'
+            Font.Style = [fsBold]
+            ParentFont = False
             OnClick = SpeedButtonSearchPriceClick
             ExplicitLeft = 1
             ExplicitTop = -1
@@ -1753,6 +1764,12 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             Caption = 'Abrir Caixa'
             Flat = True
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Segoe UI'
+            Font.Style = [fsBold]
+            ParentFont = False
             OnClick = SpeedButtonOpenCashierClick
             ExplicitLeft = 3
             ExplicitTop = 3
@@ -1794,6 +1811,12 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             Caption = 'Cancelar Venda'
             Flat = True
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Segoe UI'
+            Font.Style = [fsBold]
+            ParentFont = False
             OnClick = SpeedButtonCancelSaleClick
             ExplicitLeft = 32
             ExplicitTop = -4
@@ -1836,10 +1859,15 @@ object VwPrincipal: TVwPrincipal
             DisabledImageName = 'SpeedButtonCancelItem'
             Caption = 'Cancelar Item'
             Flat = True
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Segoe UI'
+            Font.Style = [fsBold]
+            ParentFont = False
             OnClick = SpeedButtonCancelItemClick
-            ExplicitTop = 3
-            ExplicitWidth = 139
-            ExplicitHeight = 110
+            ExplicitLeft = -1
+            ExplicitTop = -1
           end
         end
         object PanelDevolution: TPanel
@@ -1876,6 +1904,12 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             Caption = 'Devolu'#231#227'o'
             Flat = True
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Segoe UI'
+            Font.Style = [fsBold]
+            ParentFont = False
             OnClick = SpeedButtonDevolutionClick
             ExplicitTop = 6
             ExplicitWidth = 140
@@ -1916,6 +1950,12 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             Caption = 'Mais Fun'#231#245'es'
             Flat = True
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Segoe UI'
+            Font.Style = [fsBold]
+            ParentFont = False
             OnClick = SpeedButtonMoreFunctionsClick
             ExplicitLeft = -1
             ExplicitTop = -1
@@ -2055,6 +2095,6 @@ object VwPrincipal: TVwPrincipal
   object dsItens: TDataSource
     DataSet = dmDados.cdsItens
     Left = 28
-    Top = 560
+    Top = 584
   end
 end

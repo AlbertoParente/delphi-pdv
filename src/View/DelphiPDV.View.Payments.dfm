@@ -89,11 +89,6 @@ object VwPayments: TVwPayments
             Column = 0
             Control = Panel5
             Row = 2
-          end
-          item
-            Column = 0
-            Control = Panel8
-            Row = 3
           end>
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWhite
@@ -131,7 +126,7 @@ object VwPayments: TVwPayments
           Font.Color = clWhite
           Font.Height = -33
           Font.Name = 'Segoe UI'
-          Font.Style = []
+          Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 0
         end
@@ -147,7 +142,7 @@ object VwPayments: TVwPayments
           Font.Color = 1357025
           Font.Height = -20
           Font.Name = 'Segoe UI'
-          Font.Style = []
+          Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 1
         end
@@ -272,9 +267,9 @@ object VwPayments: TVwPayments
               Font.Color = 1357025
               Font.Height = -20
               Font.Name = 'Segoe UI'
-              Font.Style = []
+              Font.Style = [fsBold]
               ParentFont = False
-              ExplicitWidth = 34
+              ExplicitWidth = 37
               ExplicitHeight = 28
             end
           end
@@ -666,109 +661,6 @@ object VwPayments: TVwPayments
             end
           end
         end
-        object Panel8: TPanel
-          Left = 0
-          Top = 382
-          Width = 306
-          Height = 152
-          Align = alClient
-          BevelOuter = bvNone
-          TabOrder = 4
-          ExplicitLeft = 60
-          ExplicitTop = 437
-          ExplicitWidth = 185
-          ExplicitHeight = 41
-          object GridPanel5: TGridPanel
-            Left = 0
-            Top = 0
-            Width = 306
-            Height = 152
-            Align = alClient
-            ColumnCollection = <
-              item
-                Value = 70.000000000000000000
-              end
-              item
-                Value = 30.000000000000000000
-              end>
-            ControlCollection = <
-              item
-                Column = 0
-                Control = Panel9
-                Row = 0
-              end
-              item
-                Column = 0
-                Control = Shape8
-                Row = 5
-              end
-              item
-                Column = 1
-                Control = Shape9
-                Row = 5
-              end>
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWhite
-            Font.Height = -20
-            Font.Name = 'Segoe UI'
-            Font.Style = []
-            ParentFont = False
-            RowCollection = <
-              item
-                Value = 16.642938746814300000
-              end
-              item
-                Value = 16.642938746814300000
-              end
-              item
-                Value = 16.642938746814300000
-              end
-              item
-                Value = 16.642938746814300000
-              end
-              item
-                Value = 16.642938746814300000
-              end
-              item
-                Value = 16.785306265928520000
-              end>
-            TabOrder = 0
-            object Panel9: TPanel
-              Left = 1
-              Top = 1
-              Width = 213
-              Height = 25
-              Align = alClient
-              BevelOuter = bvNone
-              TabOrder = 0
-            end
-            object Shape8: TShape
-              AlignWithMargins = True
-              Left = 4
-              Top = 143
-              Width = 210
-              Height = 5
-              Margins.Right = 0
-              Align = alBottom
-              Brush.Color = 1357025
-              ExplicitTop = 130
-              ExplicitWidth = 207
-            end
-            object Shape9: TShape
-              AlignWithMargins = True
-              Left = 214
-              Top = 143
-              Width = 88
-              Height = 5
-              Margins.Left = 0
-              Align = alBottom
-              Brush.Color = 1357025
-              ExplicitLeft = 217
-              ExplicitTop = 84
-              ExplicitWidth = 85
-            end
-          end
-        end
       end
     end
     object GridPanel1: TGridPanel
@@ -785,27 +677,17 @@ object VwPayments: TVwPayments
       ControlCollection = <
         item
           Column = 0
-          Control = Shape6
-          Row = 4
-        end
-        item
-          Column = 0
-          Control = Shape7
-          Row = 3
-        end
-        item
-          Column = 0
-          Control = Shape5
-          Row = 0
-        end
-        item
-          Column = 0
           Control = Panel1
           Row = 2
         end
         item
           Column = 0
           Control = Panel6
+          Row = 0
+        end
+        item
+          Column = 0
+          Control = Panel8
           Row = 1
         end>
       RowCollection = <
@@ -817,89 +699,103 @@ object VwPayments: TVwPayments
         end
         item
           Value = 33.333333333333400000
-        end
-        item
-          SizeStyle = ssAuto
-        end
-        item
-          SizeStyle = ssAuto
         end>
       TabOrder = 1
-      object Shape6: TShape
-        AlignWithMargins = True
-        Left = 3
-        Top = 609
-        Width = 501
-        Height = 5
-        Margins.Right = 0
-        Align = alBottom
-        Brush.Color = 1357025
-        ExplicitTop = 400
-      end
-      object Shape7: TShape
-        AlignWithMargins = True
-        Left = 3
-        Top = 598
-        Width = 501
-        Height = 5
-        Margins.Right = 0
-        Align = alBottom
-        Brush.Color = 1357025
-        ExplicitTop = 608
-      end
-      object Shape5: TShape
-        AlignWithMargins = True
-        Left = 3
-        Top = 190
-        Width = 501
-        Height = 5
-        Margins.Right = 0
-        Align = alBottom
-        Brush.Color = 1357025
-        ExplicitTop = 193
-      end
+      ExplicitLeft = 339
       object Panel1: TPanel
         Left = 0
-        Top = 397
+        Top = 411
         Width = 504
-        Height = 198
+        Height = 206
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitLeft = 6
-        ExplicitTop = 394
+        ExplicitLeft = 3
+        ExplicitTop = 401
+        ExplicitHeight = 202
+        object Panel9: TPanel
+          Left = 0
+          Top = 0
+          Width = 504
+          Height = 206
+          Align = alClient
+          BevelOuter = bvNone
+          TabOrder = 0
+          ExplicitLeft = 3
+          ExplicitHeight = 202
+          object Shape7: TShape
+            AlignWithMargins = True
+            Left = 3
+            Top = 198
+            Width = 501
+            Height = 5
+            Margins.Right = 0
+            Align = alBottom
+            Brush.Color = 1357025
+            ExplicitLeft = 6
+            ExplicitTop = 393
+          end
+        end
       end
       object Panel6: TPanel
         Left = 0
-        Top = 198
+        Top = 0
         Width = 504
-        Height = 199
+        Height = 206
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 1
-        object Shape10: TShape
+        ExplicitLeft = 3
+        ExplicitHeight = 202
+        object Shape5: TShape
           AlignWithMargins = True
           Left = 3
-          Top = 191
+          Top = 198
           Width = 501
           Height = 5
           Margins.Right = 0
           Align = alBottom
           Brush.Color = 1357025
-          ExplicitTop = 193
+          ExplicitLeft = 6
+          ExplicitTop = 393
+        end
+      end
+      object Panel8: TPanel
+        Left = 0
+        Top = 206
+        Width = 504
+        Height = 205
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 2
+        ExplicitLeft = 3
+        ExplicitTop = 282
+        ExplicitWidth = 185
+        ExplicitHeight = 41
+        object Shape6: TShape
+          AlignWithMargins = True
+          Left = 3
+          Top = 197
+          Width = 501
+          Height = 5
+          Margins.Right = 0
+          Align = alBottom
+          Brush.Color = 1357025
+          ExplicitLeft = 6
+          ExplicitTop = 393
         end
       end
     end
   end
   object aDataSource: TDataSource
     DataSet = cdsPayments
-    Left = 792
-    Top = 40
+    Left = 800
+    Top = 472
   end
   object cdsPayments: TClientDataSet
     Aggregates = <>
     Params = <>
-    Left = 792
-    Top = 120
+    Left = 800
+    Top = 544
   end
 end
