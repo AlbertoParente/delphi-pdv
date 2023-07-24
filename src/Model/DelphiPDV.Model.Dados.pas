@@ -91,7 +91,7 @@ begin
   cdsItenscodigo.AsString      := '0013';
   cdsItensitem.AsString        := '4';
   cdsItensdescription.AsString := 'Kaloba 500mg';
-  cdsItensunitvalue.AsCurrency := 65.50;
+  cdsItensunitvalue.AsCurrency := 13.00;
   cdsItensquantity.AsCurrency  := 3;
   cdsItens.Post;
 

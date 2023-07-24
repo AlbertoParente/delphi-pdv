@@ -121,7 +121,8 @@ type
     procedure SpeedButtonCancelItemClick(Sender: TObject);
     procedure SpeedButtonDevolutionClick(Sender: TObject);
   private
-    FLogin: TVwLogin;
+    FVwLogin: TVwLogin;
+    FVwPayments: TVwPayments;
 
     procedure InitializeButtons;
     { Private declarations }
@@ -148,7 +149,7 @@ end;
 
 procedure TVwPrincipal.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
-  FLogin.Free;
+  FVwLogin.Free;
   Action := caFree
 end;
 
@@ -162,7 +163,6 @@ procedure TVwPrincipal.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 var
   APayments: TVwPayments;
-
 begin
   inherited;
   case Key of
@@ -220,9 +220,9 @@ end;
 procedure TVwPrincipal.FormShow(Sender: TObject);
 begin
   dsItens.DataSet := nil;
-  FLogin        := TVwLogin.Create(nil);
-  FLogin.Parent := PanelContainer;
-  FLogin.Show;
+  FVwLogin        := TVwLogin.Create(nil);
+  FVwLogin.Parent := PanelContainer;
+  FVwLogin.Show;
 end;
 
 procedure TVwPrincipal.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
@@ -291,11 +291,11 @@ end;
 procedure TVwPrincipal.InitializeButtons;
 begin
   SpeedButtonCancelOperation.Caption := 'Cancelar Operação ' + ''#13'' + ' <Esc>';
-  SpeedButtonSearchPrice.Caption     := 'Consultar Preço ' + ''#13'' + ' <F4>';
-  SpeedButtonOpenCashier.Caption     := 'Abrir Caixa ' + ''#13'' + ' <F2>';
-  SpeedButtonCancelSale.Caption      := 'Cancelar Venda ' + ''#13'' + ' <F6>';
-  SpeedButtonCancelItem.Caption      := 'Cancelar Item ' + ''#13'' + ' <F5>';
-  SpeedButtonMoreFunctions.Caption   := 'Mais Funções ' + ''#13'' + ' <F11>';
+  SpeedButtonSearchPrice.Caption     := 'Consultar Preço '   + ''#13'' + ' <F4>';
+  SpeedButtonOpenCashier.Caption     := 'Abrir Caixa '       + ''#13'' + ' <F2>';
+  SpeedButtonCancelSale.Caption      := 'Cancelar Venda '    + ''#13'' + ' <F6>';
+  SpeedButtonCancelItem.Caption      := 'Cancelar Item '     + ''#13'' + ' <F5>';
+  SpeedButtonMoreFunctions.Caption   := 'Mais Funções '      + ''#13'' + ' <F11>';
 end;
 
 end.

@@ -381,14 +381,14 @@ object VwPrincipal: TVwPrincipal
                 Height = 48
                 Align = alClient
                 Alignment = taCenter
-                Caption = 'R$ 100,00'
+                Caption = 'R$ 39,00'
                 Font.Charset = DEFAULT_CHARSET
                 Font.Color = clWhite
                 Font.Height = -32
                 Font.Name = 'Segoe UI'
                 Font.Style = []
                 ParentFont = False
-                ExplicitWidth = 137
+                ExplicitWidth = 120
                 ExplicitHeight = 45
               end
             end
@@ -1327,7 +1327,7 @@ object VwPrincipal: TVwPrincipal
                 Height = 48
                 Align = alClient
                 Alignment = taCenter
-                Caption = 'R$ 10,00'
+                Caption = 'R$ 13,00'
                 Font.Charset = DEFAULT_CHARSET
                 Font.Color = clWhite
                 Font.Height = -32
@@ -1408,7 +1408,7 @@ object VwPrincipal: TVwPrincipal
                 Style.Font.Style = []
                 Style.IsFontAssigned = True
                 TabOrder = 0
-                Text = '10'
+                Text = '3'
                 Width = 289
               end
             end
@@ -1474,14 +1474,14 @@ object VwPrincipal: TVwPrincipal
                 Height = 48
                 Align = alClient
                 Alignment = taCenter
-                Caption = 'R$ 100,00'
+                Caption = 'R$ 39,00'
                 Font.Charset = DEFAULT_CHARSET
                 Font.Color = clWhite
                 Font.Height = -32
                 Font.Name = 'Segoe UI'
                 Font.Style = []
                 ParentFont = False
-                ExplicitWidth = 137
+                ExplicitWidth = 120
                 ExplicitHeight = 45
               end
             end
@@ -1555,7 +1555,7 @@ object VwPrincipal: TVwPrincipal
                 Style.Font.Style = []
                 Style.IsFontAssigned = True
                 TabOrder = 0
-                Text = '00033'
+                Text = '00013'
                 Width = 289
               end
             end
@@ -2094,7 +2094,7 @@ object VwPrincipal: TVwPrincipal
   end
   object dsItens: TDataSource
     DataSet = dmDados.cdsItens
-    Left = 28
-    Top = 584
+    Left = 20
+    Top = 576
   end
 end

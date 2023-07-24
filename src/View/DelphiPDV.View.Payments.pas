@@ -41,14 +41,6 @@ type
     Shape4: TShape;
     Label3: TLabel;
     Label14: TLabel;
-    GridPanel1: TGridPanel;
-    Panel1: TPanel;
-    Panel6: TPanel;
-    Shape5: TShape;
-    Panel8: TPanel;
-    Shape6: TShape;
-    Panel9: TPanel;
-    Shape7: TShape;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
@@ -98,7 +90,7 @@ end;
 
 procedure TVwPayments.Review;
 begin
-//
+
 end;
 
 end.
