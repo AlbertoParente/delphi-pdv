@@ -40,7 +40,7 @@ end;
 procedure TdmDados.DataModuleCreate(Sender: TObject);
 begin
   cdsItens.Append;
-  cdsItenscodigo.AsString      := '0007';
+  cdsItenscodigo.AsString      := '0001';
   cdsItensitem.AsString        := '1';
   cdsItensdescription.AsString := 'Dorflex 500mg';
   cdsItensunitvalue.AsCurrency := 15.50;
@@ -48,7 +48,7 @@ begin
   cdsItens.Post;
 
   cdsItens.Append;
-  cdsItenscodigo.AsString      := '0008';
+  cdsItenscodigo.AsString      := '0002';
   cdsItensitem.AsString        := '2';
   cdsItensdescription.AsString := 'Trosilax 500mg';
   cdsItensunitvalue.AsCurrency := 18.50;
@@ -56,7 +56,7 @@ begin
   cdsItens.Post;
 
   cdsItens.Append;
-  cdsItenscodigo.AsString      := '0009';
+  cdsItenscodigo.AsString      := '0003';
   cdsItensitem.AsString        := '3';
   cdsItensdescription.AsString := 'Dipirona 500mg';
   cdsItensunitvalue.AsCurrency := 5.00;
@@ -64,7 +64,7 @@ begin
   cdsItens.Post;
 
   cdsItens.Append;
-  cdsItenscodigo.AsString      := '0003';
+  cdsItenscodigo.AsString      := '0004';
   cdsItensitem.AsString        := '4';
   cdsItensdescription.AsString := 'Paracetaml 500mg';
   cdsItensunitvalue.AsCurrency := 6.50;
@@ -72,7 +72,7 @@ begin
   cdsItens.Post;
 
   cdsItens.Append;
-  cdsItenscodigo.AsString      := '0007';
+  cdsItenscodigo.AsString      := '0005';
   cdsItensitem.AsString        := '3';
   cdsItensdescription.AsString := 'Nimesulida 500mg';
   cdsItensunitvalue.AsCurrency := 8.00;
@@ -80,11 +80,59 @@ begin
   cdsItens.Post;
 
   cdsItens.Append;
-  cdsItenscodigo.AsString      := '0011';
+  cdsItenscodigo.AsString      := '0006';
   cdsItensitem.AsString        := '4';
   cdsItensdescription.AsString := 'Luftal 500mg';
   cdsItensunitvalue.AsCurrency := 12.50;
   cdsItensquantity.AsCurrency  := 3;
+  cdsItens.Post;
+
+  cdsItens.Append;
+  cdsItenscodigo.AsString      := '0007';
+  cdsItensitem.AsString        := '4';
+  cdsItensdescription.AsString := 'Kaloba 500mg';
+  cdsItensunitvalue.AsCurrency := 13.00;
+  cdsItensquantity.AsCurrency  := 3;
+  cdsItens.Post;
+
+  cdsItens.Append;
+  cdsItenscodigo.AsString      := '0008';
+  cdsItensitem.AsString        := '1';
+  cdsItensdescription.AsString := 'Dorflex 500mg';
+  cdsItensunitvalue.AsCurrency := 15.50;
+  cdsItensquantity.AsCurrency  := 1;
+  cdsItens.Post;
+
+  cdsItens.Append;
+  cdsItenscodigo.AsString      := '0009';
+  cdsItensitem.AsString        := '2';
+  cdsItensdescription.AsString := 'Trosilax 500mg';
+  cdsItensunitvalue.AsCurrency := 18.50;
+  cdsItensquantity.AsCurrency  := 2;
+  cdsItens.Post;
+
+  cdsItens.Append;
+  cdsItenscodigo.AsString      := '0010';
+  cdsItensitem.AsString        := '3';
+  cdsItensdescription.AsString := 'Dipirona 500mg';
+  cdsItensunitvalue.AsCurrency := 5.00;
+  cdsItensquantity.AsCurrency  := 1;
+  cdsItens.Post;
+
+  cdsItens.Append;
+  cdsItenscodigo.AsString      := '00011';
+  cdsItensitem.AsString        := '4';
+  cdsItensdescription.AsString := 'Paracetaml 500mg';
+  cdsItensunitvalue.AsCurrency := 6.50;
+  cdsItensquantity.AsCurrency  := 3;
+  cdsItens.Post;
+
+  cdsItens.Append;
+  cdsItenscodigo.AsString      := '00012';
+  cdsItensitem.AsString        := '3';
+  cdsItensdescription.AsString := 'Nimesulida 500mg';
+  cdsItensunitvalue.AsCurrency := 8.00;
+  cdsItensquantity.AsCurrency  := 1;
   cdsItens.Post;
 
   cdsItens.Append;
