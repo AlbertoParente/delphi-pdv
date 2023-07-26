@@ -46,7 +46,6 @@ type
     DBGridLevel1: TcxGridLevel;
     ColumnQuantity: TcxGridDBColumn;
     ColumnTotalValue: TcxGridDBColumn;
-    dsItens: TDataSource;
     GridPanelButtons: TGridPanel;
     PanelCancelOperation: TPanel;
     ShapeCancelOperation: TShape;
@@ -106,6 +105,7 @@ type
     Panel7: TPanel;
     SplitViewPayments: TSplitView;
     GridPanel1: TGridPanel;
+    dsItens: TDataSource;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);

@@ -32,17 +32,14 @@ object VwPayments: TVwPayments
         Column = 0
         Control = PanelInformation
         Row = 0
-      end
-      item
-        Column = 1
-        Control = GridPanel1
-        Row = 0
       end>
     RowCollection = <
       item
         Value = 100.000000000000000000
       end>
     TabOrder = 0
+    ExplicitLeft = 64
+    ExplicitTop = 168
     object PanelInformation: TPanel
       Left = 0
       Top = 0
@@ -89,11 +86,6 @@ object VwPayments: TVwPayments
             Column = 0
             Control = Panel5
             Row = 2
-          end
-          item
-            Column = 0
-            Control = Panel10
-            Row = 3
           end>
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWhite
@@ -666,131 +658,18 @@ object VwPayments: TVwPayments
             end
           end
         end
-        object Panel10: TPanel
-          Left = 0
-          Top = 382
-          Width = 306
-          Height = 152
-          Align = alClient
-          BevelOuter = bvNone
-          TabOrder = 4
-          ExplicitLeft = 144
-          ExplicitTop = 448
-          ExplicitWidth = 185
-          ExplicitHeight = 41
-        end
-      end
-    end
-    object GridPanel1: TGridPanel
-      Left = 336
-      Top = 0
-      Width = 504
-      Height = 617
-      Align = alClient
-      BevelOuter = bvNone
-      ColumnCollection = <
-        item
-          Value = 50.000000000000000000
-        end
-        item
-          Value = 50.000000000000000000
-        end>
-      ControlCollection = <
-        item
-          Column = 0
-          Control = Panel1
-          Row = 0
-        end
-        item
-          Column = 1
-          Control = Panel6
-          Row = 0
-        end
-        item
-          Column = 0
-          Control = Panel8
-          Row = 1
-        end
-        item
-          Column = 1
-          Control = Panel9
-          Row = 1
-        end>
-      RowCollection = <
-        item
-          Value = 50.000000000000000000
-        end
-        item
-          Value = 50.000000000000000000
-        end>
-      TabOrder = 1
-      ExplicitLeft = 576
-      ExplicitTop = 136
-      ExplicitWidth = 185
-      ExplicitHeight = 41
-      object Panel1: TPanel
-        Left = 0
-        Top = 0
-        Width = 252
-        Height = 308
-        Align = alClient
-        BevelOuter = bvNone
-        TabOrder = 0
-        ExplicitLeft = 168
-        ExplicitTop = 120
-        ExplicitWidth = 185
-        ExplicitHeight = 41
-      end
-      object Panel6: TPanel
-        Left = 252
-        Top = 0
-        Width = 252
-        Height = 308
-        Align = alClient
-        BevelOuter = bvNone
-        TabOrder = 1
-        ExplicitLeft = 168
-        ExplicitTop = 120
-        ExplicitWidth = 185
-        ExplicitHeight = 41
-      end
-      object Panel8: TPanel
-        Left = 0
-        Top = 308
-        Width = 252
-        Height = 309
-        Align = alClient
-        BevelOuter = bvNone
-        TabOrder = 2
-        ExplicitLeft = 168
-        ExplicitTop = 120
-        ExplicitWidth = 185
-        ExplicitHeight = 41
-      end
-      object Panel9: TPanel
-        Left = 252
-        Top = 308
-        Width = 252
-        Height = 309
-        Align = alClient
-        BevelOuter = bvNone
-        TabOrder = 3
-        ExplicitLeft = 168
-        ExplicitTop = 120
-        ExplicitWidth = 185
-        ExplicitHeight = 41
       end
     end
   end
   object aDataSource: TDataSource
     DataSet = cdsPayments
-    Left = 800
-    Top = 464
+    Left = 784
+    Top = 456
   end
   object cdsPayments: TClientDataSet
     Aggregates = <>
     Params = <>
-    Left = 800
-    Top = 528
+    Left = 784
+    Top = 536
   end
 end

@@ -41,16 +41,13 @@ type
     Shape4: TShape;
     Label3: TLabel;
     Label14: TLabel;
-    GridPanel1: TGridPanel;
-    Panel1: TPanel;
-    Panel6: TPanel;
-    Panel8: TPanel;
-    Panel9: TPanel;
-    Panel10: TPanel;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
+    procedure AddPaymentMethod;
+    procedure UpdatePaymentMethod;
+    procedure DeletePaymentMethod;
   public
     { Public declarations }
     procedure Process;
@@ -63,6 +60,16 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TVwPayments.AddPaymentMethod;
+begin
+//
+end;
+
+procedure TVwPayments.DeletePaymentMethod;
+begin
+//
+end;
 
 procedure TVwPayments.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
@@ -82,6 +89,18 @@ begin
     begin
       Process;
     end;
+    VK_F1:
+    begin
+      AddPaymentMethod;
+    end;
+    VK_F2:
+    begin
+      UpdatePaymentMethod;
+    end;
+    VK_F3:
+    begin
+      DeletePaymentMethod;
+    end;
     VK_RETURN:
     begin
       SelectNext(Screen.ActiveControl, True, True);
@@ -96,7 +115,12 @@ end;
 
 procedure TVwPayments.Review;
 begin
+//
+end;
 
+procedure TVwPayments.UpdatePaymentMethod;
+begin
+//
 end;
 
 end.
