@@ -196,7 +196,6 @@ object VwLogin: TVwLogin
             Style.Font.Style = []
             Style.IsFontAssigned = True
             TabOrder = 0
-            ExplicitTop = 58
             Width = 250
           end
           object LabelPassword: TLabel

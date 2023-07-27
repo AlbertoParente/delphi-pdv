@@ -178,26 +178,6 @@ begin
     begin
       SelectNext(Screen.ActiveControl, True, True);
     end;
-    VK_F4:
-    begin
-//
-    end;
-    VK_F2:
-    begin
-//
-    end;
-    VK_F6:
-    begin
-//
-    end;
-    VK_F5:
-    begin
-//
-    end;
-    VK_F12:
-    begin
-//
-    end;
     VK_F7:
     begin
       APayments        := TVwPayments.Create(nil);
@@ -250,22 +230,22 @@ end;
 
 procedure TVwPrincipal.SpeedButtonCancelItemClick(Sender: TObject);
 begin
-//
+  Application.MessageBox(PWideChar('Cancelar Item.'), 'Aviso', MB_ICONEXCLAMATION+MB_OK);
 end;
 
 procedure TVwPrincipal.SpeedButtonCancelOperationClick(Sender: TObject);
 begin
-//
+  Application.MessageBox(PWideChar('Cancelar Operação.'), 'Aviso', MB_ICONEXCLAMATION+MB_OK);
 end;
 
 procedure TVwPrincipal.SpeedButtonCancelSaleClick(Sender: TObject);
 begin
-//
+  Application.MessageBox(PWideChar('Cancelar Venda.'), 'Aviso', MB_ICONEXCLAMATION+MB_OK);
 end;
 
 procedure TVwPrincipal.SpeedButtonDevolutionClick(Sender: TObject);
 begin
-//
+  Application.MessageBox(PWideChar('Consultar Preço.'), 'Aviso', MB_ICONEXCLAMATION+MB_OK);
 end;
 
 procedure TVwPrincipal.SpeedButtonMoreFunctionsClick(Sender: TObject);
@@ -275,12 +255,12 @@ end;
 
 procedure TVwPrincipal.SpeedButtonOpenCashierClick(Sender: TObject);
 begin
-//
+  Application.MessageBox(PWideChar('Consultar Preço.'), 'Aviso', MB_ICONEXCLAMATION+MB_OK);
 end;
 
 procedure TVwPrincipal.SpeedButtonSearchPriceClick(Sender: TObject);
 begin
-//
+  Application.MessageBox(PWideChar('Consultar Preço.'), 'Aviso', MB_ICONEXCLAMATION+MB_OK);
 end;
 
 procedure TVwPrincipal.SplitViewAction(Value: TSplitView);
