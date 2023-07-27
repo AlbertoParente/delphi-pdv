@@ -91,8 +91,6 @@ object VwLogin: TVwLogin
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitTop = 192
-        ExplicitHeight = 384
         object GridPanel1: TGridPanel
           Left = 0
           Top = 0
@@ -155,9 +153,6 @@ object VwLogin: TVwLogin
               Value = 20.005934705243960000
             end>
           TabOrder = 0
-          ExplicitLeft = 54
-          ExplicitTop = -6
-          ExplicitHeight = 192
           object LabelLogin: TLabel
             Left = 0
             Top = 0
@@ -187,7 +182,6 @@ object VwLogin: TVwLogin
             Font.Name = 'Segoe UI'
             Font.Style = []
             ParentFont = False
-            ExplicitTop = 64
             ExplicitWidth = 58
           end
           object EditUsername: TcxTextEdit
@@ -202,8 +196,7 @@ object VwLogin: TVwLogin
             Style.Font.Style = []
             Style.IsFontAssigned = True
             TabOrder = 0
-            ExplicitTop = 128
-            ExplicitHeight = 39
+            ExplicitTop = 58
             Width = 250
           end
           object LabelPassword: TLabel
@@ -219,7 +212,7 @@ object VwLogin: TVwLogin
             Font.Name = 'Segoe UI'
             Font.Style = []
             ParentFont = False
-            ExplicitTop = 126
+            ExplicitWidth = 47
           end
           object EditPassword: TcxTextEdit
             Left = 0
@@ -233,8 +226,6 @@ object VwLogin: TVwLogin
             Style.Font.Style = []
             Style.IsFontAssigned = True
             TabOrder = 1
-            ExplicitTop = 256
-            ExplicitHeight = 39
             Width = 250
           end
           object ButtonLogin: TcxButton
@@ -252,8 +243,6 @@ object VwLogin: TVwLogin
             Font.Style = []
             ParentFont = False
             OnClick = ButtonLoginClick
-            ExplicitTop = 160
-            ExplicitHeight = 25
           end
         end
       end
