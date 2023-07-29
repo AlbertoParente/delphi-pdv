@@ -32,6 +32,11 @@ object VwPayments: TVwPayments
         Column = 0
         Control = PanelInformation
         Row = 0
+      end
+      item
+        Column = 1
+        Control = Panel6
+        Row = 0
       end>
     RowCollection = <
       item
@@ -84,6 +89,11 @@ object VwPayments: TVwPayments
             Column = 0
             Control = Panel5
             Row = 2
+          end
+          item
+            Column = 0
+            Control = GridPanel1
+            Row = 3
           end>
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWhite
@@ -108,6 +118,7 @@ object VwPayments: TVwPayments
             Value = 9.000000000000000000
           end>
         TabOrder = 0
+        ExplicitTop = -17
         object Panel2: TPanel
           AlignWithMargins = True
           Left = 3
@@ -650,24 +661,351 @@ object VwPayments: TVwPayments
               Font.Name = 'Segoe UI'
               Font.Style = []
               ParentFont = False
-              ExplicitLeft = 268
-              ExplicitWidth = 37
+              ExplicitLeft = 217
+              ExplicitTop = 2
+            end
+          end
+        end
+        object GridPanel1: TGridPanel
+          Left = 0
+          Top = 382
+          Width = 306
+          Height = 152
+          Align = alClient
+          ColumnCollection = <
+            item
+              Value = 70.000000000000000000
+            end
+            item
+              Value = 30.000000000000000000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = Panel1
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = Shape5
+              Row = 5
+            end
+            item
+              Column = 1
+              Control = Shape6
+              Row = 5
+            end
+            item
+              Column = 0
+              Control = Label17
+              Row = 1
+            end
+            item
+              Column = 0
+              Control = Label19
+              Row = 2
+            end
+            item
+              Column = 0
+              Control = Label21
+              Row = 3
+            end
+            item
+              Column = 0
+              Control = Label23
+              Row = 4
+            end
+            item
+              Column = 1
+              Control = Label15
+              Row = 0
+            end
+            item
+              Column = 1
+              Control = Label18
+              Row = 1
+            end
+            item
+              Column = 1
+              Control = Label20
+              Row = 2
+            end
+            item
+              Column = 1
+              Control = Label22
+              Row = 3
+            end
+            item
+              Column = 1
+              Control = Label24
+              Row = 4
+            end>
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWhite
+          Font.Height = -20
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
+          RowCollection = <
+            item
+              Value = 16.642938746814300000
+            end
+            item
+              Value = 16.642938746814300000
+            end
+            item
+              Value = 16.642938746814300000
+            end
+            item
+              Value = 16.642938746814300000
+            end
+            item
+              Value = 16.642938746814300000
+            end
+            item
+              Value = 16.785306265928520000
+            end
+            item
+              SizeStyle = ssAuto
+            end
+            item
+              SizeStyle = ssAuto
+            end>
+          TabOrder = 4
+          ExplicitLeft = 60
+          ExplicitTop = 437
+          ExplicitWidth = 185
+          ExplicitHeight = 41
+          object Panel1: TPanel
+            Left = 1
+            Top = 1
+            Width = 213
+            Height = 25
+            Align = alClient
+            BevelOuter = bvNone
+            TabOrder = 0
+            object Label25: TLabel
+              Left = 0
+              Top = 0
+              Width = 213
+              Height = 25
+              Align = alClient
+              Caption = 'Dinheiro:'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWhite
+              Font.Height = -20
+              Font.Name = 'Segoe UI'
+              Font.Style = []
+              ParentFont = False
+              ExplicitWidth = 79
               ExplicitHeight = 28
             end
+          end
+          object Shape5: TShape
+            AlignWithMargins = True
+            Left = 4
+            Top = 143
+            Width = 210
+            Height = 5
+            Margins.Right = 0
+            Align = alBottom
+            Brush.Color = 1357025
+            ExplicitTop = 130
+            ExplicitWidth = 207
+          end
+          object Shape6: TShape
+            AlignWithMargins = True
+            Left = 214
+            Top = 143
+            Width = 88
+            Height = 5
+            Margins.Left = 0
+            Align = alBottom
+            Brush.Color = 1357025
+            ExplicitLeft = 217
+            ExplicitTop = 84
+            ExplicitWidth = 85
+          end
+          object Label17: TLabel
+            Left = 1
+            Top = 26
+            Width = 213
+            Height = 25
+            Align = alClient
+            Caption = 'Credito:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -20
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            ParentFont = False
+            ExplicitWidth = 69
+            ExplicitHeight = 28
+          end
+          object Label19: TLabel
+            Left = 1
+            Top = 51
+            Width = 213
+            Height = 25
+            Align = alClient
+            Caption = 'Debito:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -20
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            ParentFont = False
+            ExplicitLeft = 4
+            ExplicitTop = 45
+          end
+          object Label21: TLabel
+            Left = 1
+            Top = 76
+            Width = 213
+            Height = 25
+            Align = alClient
+            Caption = 'Pix:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -20
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            ParentFont = False
+            ExplicitWidth = 29
+            ExplicitHeight = 28
+          end
+          object Label23: TLabel
+            Left = 1
+            Top = 101
+            Width = 213
+            Height = 25
+            Align = alClient
+            Caption = 'A Prazo:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -20
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            ParentFont = False
+            ExplicitWidth = 71
+            ExplicitHeight = 28
+          end
+          object Label15: TLabel
+            Left = 214
+            Top = 1
+            Width = 91
+            Height = 25
+            Align = alClient
+            Alignment = taRightJustify
+            Caption = '0.00'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -20
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            ParentFont = False
+            ExplicitLeft = 268
+            ExplicitWidth = 37
+            ExplicitHeight = 28
+          end
+          object Label18: TLabel
+            Left = 214
+            Top = 26
+            Width = 91
+            Height = 25
+            Align = alClient
+            Alignment = taRightJustify
+            Caption = '0.00'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -20
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            ParentFont = False
+            ExplicitLeft = 268
+            ExplicitWidth = 37
+            ExplicitHeight = 28
+          end
+          object Label20: TLabel
+            Left = 214
+            Top = 51
+            Width = 91
+            Height = 25
+            Align = alClient
+            Alignment = taRightJustify
+            Caption = '0.00'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -20
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            ParentFont = False
+            ExplicitLeft = 268
+            ExplicitWidth = 37
+            ExplicitHeight = 28
+          end
+          object Label22: TLabel
+            Left = 214
+            Top = 76
+            Width = 91
+            Height = 25
+            Align = alClient
+            Alignment = taRightJustify
+            Caption = '0.00'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -20
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            ParentFont = False
+            ExplicitLeft = 268
+            ExplicitWidth = 37
+            ExplicitHeight = 28
+          end
+          object Label24: TLabel
+            Left = 214
+            Top = 101
+            Width = 91
+            Height = 25
+            Align = alClient
+            Alignment = taRightJustify
+            Caption = '0.00'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -20
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            ParentFont = False
+            ExplicitLeft = 268
+            ExplicitWidth = 37
+            ExplicitHeight = 28
           end
         end
       end
     end
+    object Panel6: TPanel
+      Left = 336
+      Top = 0
+      Width = 504
+      Height = 617
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 1
+      ExplicitLeft = 752
+      ExplicitTop = 168
+      ExplicitWidth = 185
+      ExplicitHeight = 41
+    end
   end
   object aDataSource: TDataSource
     DataSet = cdsPayments
-    Left = 776
+    Left = 736
     Top = 456
   end
   object cdsPayments: TClientDataSet
     Aggregates = <>
     Params = <>
-    Left = 776
+    Left = 736
     Top = 544
   end
 end

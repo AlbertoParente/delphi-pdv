@@ -13,5 +13,6 @@ object VwComponentTransparency: TVwComponentTransparency
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  StyleElements = []
   TextHeight = 15
 end

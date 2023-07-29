@@ -399,11 +399,10 @@ object VwPrincipal: TVwPrincipal
             end
           end
           object ImageProduct: TImage
-            AlignWithMargins = True
-            Left = 30
-            Top = 3
-            Width = 241
-            Height = 104
+            Left = 0
+            Top = 0
+            Width = 301
+            Height = 110
             Margins.Left = 30
             Margins.Right = 30
             Align = alClient
@@ -1266,10 +1265,10 @@ object VwPrincipal: TVwPrincipal
               F8FF009833AF95582B3CA60000000049454E44AE426082}
             Stretch = True
             Transparent = True
-            ExplicitLeft = 74
-            ExplicitTop = 5
-            ExplicitWidth = 196
-            ExplicitHeight = 91
+            ExplicitLeft = 30
+            ExplicitTop = 3
+            ExplicitWidth = 267
+            ExplicitHeight = 104
           end
           object PanelUnitPrice: TPanel
             Left = 0
@@ -2100,6 +2099,6 @@ object VwPrincipal: TVwPrincipal
   object dsItens: TDataSource
     DataSet = dmDados.cdsItens
     Left = 28
-    Top = 584
+    Top = 568
   end
 end
