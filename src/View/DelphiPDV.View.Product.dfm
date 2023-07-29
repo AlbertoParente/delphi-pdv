@@ -1,7 +1,7 @@
-object TVwProduct: TTVwProduct
+object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'TVwProduct'
+  Caption = 'Form1'
   ClientHeight = 433
   ClientWidth = 622
   Color = clBtnFace
@@ -10,7 +10,7 @@ object TVwProduct: TTVwProduct
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnClose = FormClose
+  OnCreate = FormCreate
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
@@ -35,8 +35,6 @@ object TVwProduct: TTVwProduct
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -5
-    ExplicitTop = -3
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -130,15 +128,5 @@ object TVwProduct: TTVwProduct
     object DBGridLevel1: TcxGridLevel
       GridView = GridView
     end
-  end
-  object aDataSource: TDataSource
-    Left = 528
-    Top = 192
-  end
-  object cdsProduct: TClientDataSet
-    Aggregates = <>
-    Params = <>
-    Left = 528
-    Top = 272
   end
 end

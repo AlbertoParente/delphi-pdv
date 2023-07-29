@@ -26,10 +26,10 @@ uses
   dxScrollbarAnnotations, Data.DB, cxDBData, cxTextEdit, cxGridLevel,
   cxGridCustomLayoutView, cxGridCardView, cxGridDBCardView,
   cxGridCustomTableView, cxGridTableView, cxGridDBTableView, cxClasses,
-  cxGridCustomView, cxGrid, Datasnap.DBClient;
+  cxGridCustomView, cxGrid;
 
 type
-  TTVwProduct = class(TForm)
+  TForm1 = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -38,37 +38,23 @@ type
     ColumnPrice: TcxGridDBColumn;
     DBGridDBCardView1: TcxGridDBCardView;
     DBGridLevel1: TcxGridLevel;
-    aDataSource: TDataSource;
-    cdsProduct: TClientDataSet;
-    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
     { Public declarations }
-    Procedure Process;
-    Procedure Review;
   end;
 
 var
-  TVwProduct: TTVwProduct;
+  Form1: TForm1;
 
 implementation
 
 {$R *.dfm}
 
-procedure TTVwProduct.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TForm1.FormCreate(Sender: TObject);
 begin
   Action := CaFree;
-end;
-
-procedure TTVwProduct.Process;
-begin
-  Review;
-end;
-
-procedure TTVwProduct.Review;
-begin
-//
 end;
 
 end.
