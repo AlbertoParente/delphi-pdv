@@ -29,38 +29,44 @@ uses
   cxGridCustomView, cxGrid;
 
 type
-  TTVwSeller = class(TForm)
+  TVwSeller = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
     ColumnSellerName: TcxGridDBColumn;
     DBGridDBCardView1: TcxGridDBCardView;
     DBGridLevel1: TcxGridLevel;
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
     { Public declarations }
-    Procedure Process;
-    Procedure Review;
+    procedure Process;
+    procedure Review;
   end;
 
 var
-  TVwSeller: TTVwSeller;
+  VwSeller: TVwSeller;
 
 implementation
 
 {$R *.dfm}
 
-{ TForm1 }
+{ TVwSeller }
 
-procedure TTVwSeller.Process;
+procedure TVwSeller.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Action := caFree;
+end;
+
+procedure TVwSeller.Process;
 begin
   Review;
 end;
 
-procedure TTVwSeller.Review;
+procedure TVwSeller.Review;
 begin
-
+//
 end;
 
 end.

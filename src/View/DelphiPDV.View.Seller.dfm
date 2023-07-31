@@ -1,20 +1,21 @@
-object TVwSeller: TTVwSeller
+object VwSeller: TVwSeller
   Left = 0
   Top = 0
   ClientHeight = 433
-  ClientWidth = 625
+  ClientWidth = 622
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnClose = FormClose
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
     Left = 0
     Top = 2
-    Width = 625
+    Width = 622
     Height = 429
     Margins.Left = 0
     Margins.Top = 2
@@ -33,9 +34,8 @@ object TVwSeller: TTVwSeller
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -5
-    ExplicitTop = -3
-    ExplicitWidth = 622
+    ExplicitLeft = -3
+    ExplicitWidth = 625
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -95,7 +95,7 @@ object TVwSeller: TTVwSeller
         Width = 60
       end
       object ColumnSellerName: TcxGridDBColumn
-        Caption = 'Descri'#231#227'o do Produto'
+        Caption = 'Vendedor'
         DataBinding.FieldName = 'numconselho'
         DataBinding.IsNullValueType = True
         PropertiesClassName = 'TcxTextEditProperties'
