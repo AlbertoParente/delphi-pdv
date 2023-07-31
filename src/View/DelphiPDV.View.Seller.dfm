@@ -10,6 +10,7 @@ object VwSeller: TVwSeller
   Font.Name = 'Segoe UI'
   Font.Style = []
   OnClose = FormClose
+  OnKeyDown = FormKeyDown
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
@@ -34,8 +35,6 @@ object VwSeller: TVwSeller
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -3
-    ExplicitWidth = 625
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -56,6 +55,7 @@ object VwSeller: TVwSeller
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
+      DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
       DataController.Summary.FooterSummaryItems = <>
@@ -117,5 +117,9 @@ object VwSeller: TVwSeller
     object DBGridLevel1: TcxGridLevel
       GridView = GridView
     end
+  end
+  object aDataSource: TDataSource
+    Left = 40
+    Top = 368
   end
 end
