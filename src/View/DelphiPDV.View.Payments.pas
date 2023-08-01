@@ -63,12 +63,12 @@ implementation
 
 procedure TVwPayments.AddPaymentMethod;
 begin
-//
+
 end;
 
 procedure TVwPayments.DeletePaymentMethod;
 begin
-//
+
 end;
 
 procedure TVwPayments.FormClose(Sender: TObject; var Action: TCloseAction);
@@ -115,12 +115,12 @@ end;
 
 procedure TVwPayments.Review;
 begin
-//
+
 end;
 
 procedure TVwPayments.UpdatePaymentMethod;
 begin
-//
+
 end;
 
 end.

@@ -105,7 +105,7 @@ type
     Panel7: TPanel;
     SplitViewPayments: TSplitView;
     GridPanel1: TGridPanel;
-    dsItens: TDataSource;
+    aDataSource: TDataSource;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -188,18 +188,18 @@ begin
     VK_F11: SpeedButtonMoreFunctionsClick(Sender);
     VK_UP:
     begin
-      dsItens.DataSet.Prior;
+      aDataSource.DataSet.Prior;
     end;
     VK_DOWN:
     begin
-      dsItens.DataSet.Next;
+      aDataSource.DataSet.Next;
     end;
   end;
 end;
 
 procedure TVwPrincipal.FormShow(Sender: TObject);
 begin
-  dsItens.DataSet := nil;
+  aDataSource.DataSet := nil;
   FVwLogin        := TVwLogin.Create(nil);
   FVwLogin.Parent := PanelContainer;
   FVwLogin.Show;
@@ -224,7 +224,7 @@ end;
 
 procedure TVwPrincipal.Review;
 begin
-  if not Assigned(dsItens.DataSet) then
+  if not Assigned(aDataSource.DataSet) then
     Exit;
 end;
 
