@@ -8,7 +8,8 @@ uses
   DelphiPDV.Model.Dados in 'src\Model\DelphiPDV.Model.Dados.pas' {dmDados: TDataModule},
   DelphiPDV.View.Payments in 'src\View\DelphiPDV.View.Payments.pas' {VwPayments},
   DelphiPDV.View.Product in 'src\View\DelphiPDV.View.Product.pas' {VwProduct},
-  DelphiPDV.View.Seller in 'src\View\DelphiPDV.View.Seller.pas' {VwSeller};
+  DelphiPDV.View.Seller in 'src\View\DelphiPDV.View.Seller.pas' {VwSeller},
+  DelphiPDV.View.Client in 'src\View\DelphiPDV.View.Client.pas' {VwClient};
 
 {$R *.res}
 
@@ -18,7 +19,6 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TdmDados, dmDados);
   Application.CreateForm(TVwPrincipal, VwPrincipal);
-  Application.CreateForm(TVwProduct, VwProduct);
-  Application.CreateForm(TVwSeller, VwSeller);
+  Application.CreateForm(TVwClient, VwClient);
   Application.Run;
 end.

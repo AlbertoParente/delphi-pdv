@@ -1,23 +1,22 @@
-object VwSeller: TVwSeller
+object VwClient: TVwClient
   Left = 0
   Top = 0
-  ClientHeight = 433
-  ClientWidth = 622
+  Caption = 'VwClient'
+  ClientHeight = 441
+  ClientWidth = 624
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnClose = FormClose
-  OnKeyDown = FormKeyDown
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
     Left = 0
     Top = 2
-    Width = 622
-    Height = 429
+    Width = 624
+    Height = 437
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -35,6 +34,8 @@ object VwSeller: TVwSeller
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitWidth = 622
+    ExplicitHeight = 429
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -95,8 +96,8 @@ object VwSeller: TVwSeller
         Options.AutoWidthSizable = False
         Width = 60
       end
-      object ColumnSellerName: TcxGridDBColumn
-        Caption = 'Vendedor'
+      object ColumnClientName: TcxGridDBColumn
+        Caption = 'Cliente'
         DataBinding.FieldName = 'numconselho'
         DataBinding.IsNullValueType = True
         PropertiesClassName = 'TcxTextEditProperties'
@@ -104,6 +105,10 @@ object VwSeller: TVwSeller
         Properties.MaxLength = 0
         Options.AutoWidthSizable = False
         Width = 200
+      end
+      object ColumnCpf: TcxGridDBColumn
+        Caption = 'CPF'
+        DataBinding.IsNullValueType = True
       end
     end
     object DBGridDBCardView1: TcxGridDBCardView
@@ -120,7 +125,7 @@ object VwSeller: TVwSeller
     end
   end
   object aDataSource: TDataSource
-    Left = 48
-    Top = 352
+    Left = 32
+    Top = 376
   end
 end
