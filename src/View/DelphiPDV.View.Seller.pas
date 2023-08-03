@@ -26,7 +26,7 @@ uses
   dxScrollbarAnnotations, Data.DB, cxDBData, cxTextEdit, cxGridLevel,
   cxGridCustomLayoutView, cxGridCardView, cxGridDBCardView,
   cxGridCustomTableView, cxGridTableView, cxGridDBTableView, cxClasses,
-  cxGridCustomView, cxGrid;
+  cxGridCustomView, cxGrid, Vcl.StdCtrls, Vcl.ExtCtrls;
 
 type
   TVwSeller = class(TForm)
@@ -37,6 +37,9 @@ type
     DBGridDBCardView1: TcxGridDBCardView;
     DBGridLevel1: TcxGridLevel;
     aDataSource: TDataSource;
+    Panel1: TPanel;
+    Label1: TLabel;
+    EditPesquisa: TEdit;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;

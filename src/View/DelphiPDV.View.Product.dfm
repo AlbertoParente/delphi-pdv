@@ -15,9 +15,9 @@ object VwProduct: TVwProduct
   object DBGrid: TcxGrid
     AlignWithMargins = True
     Left = 0
-    Top = 2
+    Top = 43
     Width = 622
-    Height = 429
+    Height = 388
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -131,8 +131,36 @@ object VwProduct: TVwProduct
       GridView = GridView
     end
   end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 622
+    Height = 41
+    Align = alTop
+    BevelOuter = bvNone
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 0
+      Top = 0
+      Width = 622
+      Height = 15
+      Align = alTop
+      Caption = 'Label1'
+      ExplicitWidth = 34
+    end
+    object EditPesquisa: TEdit
+      Left = 0
+      Top = 18
+      Width = 622
+      Height = 23
+      Align = alBottom
+      ImeName = 'EditPesquisa'
+      TabOrder = 0
+      Text = 'EditPesquisa'
+    end
+  end
   object aDataSource: TDataSource
-    Left = 32
-    Top = 344
+    Left = 40
+    Top = 368
   end
 end

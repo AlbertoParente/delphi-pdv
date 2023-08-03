@@ -10,13 +10,14 @@ object VwClient: TVwClient
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnKeyDown = FormKeyDown
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
     Left = 0
-    Top = 2
+    Top = 43
     Width = 624
-    Height = 437
+    Height = 396
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -34,8 +35,8 @@ object VwClient: TVwClient
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitWidth = 622
-    ExplicitHeight = 429
+    ExplicitLeft = -5
+    ExplicitTop = 38
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -122,6 +123,38 @@ object VwClient: TVwClient
     end
     object DBGridLevel1: TcxGridLevel
       GridView = GridView
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 624
+    Height = 41
+    Align = alTop
+    BevelOuter = bvNone
+    TabOrder = 1
+    ExplicitLeft = 160
+    ExplicitTop = 88
+    ExplicitWidth = 185
+    object Label1: TLabel
+      Left = 0
+      Top = 0
+      Width = 624
+      Height = 15
+      Align = alTop
+      Caption = 'Label1'
+      ExplicitWidth = 34
+    end
+    object EditPesquisa: TEdit
+      Left = 0
+      Top = 18
+      Width = 624
+      Height = 23
+      Align = alBottom
+      ImeName = 'EditPesquisa'
+      TabOrder = 0
+      Text = 'EditPesquisa'
+      ExplicitWidth = 622
     end
   end
   object aDataSource: TDataSource
