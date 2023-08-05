@@ -15,9 +15,9 @@ object VwClient: TVwClient
   object DBGrid: TcxGrid
     AlignWithMargins = True
     Left = 0
-    Top = 43
+    Top = 59
     Width = 624
-    Height = 396
+    Height = 380
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -35,8 +35,8 @@ object VwClient: TVwClient
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -5
-    ExplicitTop = 38
+    ExplicitTop = 43
+    ExplicitHeight = 396
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -125,40 +125,38 @@ object VwClient: TVwClient
       GridView = GridView
     end
   end
-  object Panel1: TPanel
+  object PanelPesquisa: TPanel
     Left = 0
     Top = 0
     Width = 624
-    Height = 41
+    Height = 57
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitLeft = 160
-    ExplicitTop = 88
-    ExplicitWidth = 185
-    object Label1: TLabel
+    ExplicitWidth = 622
+    object LabelPesquisa: TLabel
       Left = 0
       Top = 0
       Width = 624
       Height = 15
       Align = alTop
-      Caption = 'Label1'
-      ExplicitWidth = 34
+      Caption = 'Pesquisar Vendedor'
+      ExplicitWidth = 103
     end
     object EditPesquisa: TEdit
       Left = 0
-      Top = 18
+      Top = 15
       Width = 624
-      Height = 23
-      Align = alBottom
-      ImeName = 'EditPesquisa'
+      Height = 42
+      Align = alClient
+      Alignment = taCenter
       TabOrder = 0
-      Text = 'EditPesquisa'
       ExplicitWidth = 622
+      ExplicitHeight = 23
     end
   end
   object aDataSource: TDataSource
-    Left = 32
-    Top = 376
+    Left = 24
+    Top = 360
   end
 end

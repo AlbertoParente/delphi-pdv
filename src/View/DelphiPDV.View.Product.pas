@@ -39,8 +39,8 @@ type
     DBGridDBCardView1: TcxGridDBCardView;
     DBGridLevel1: TcxGridLevel;
     aDataSource: TDataSource;
-    Panel1: TPanel;
-    Label1: TLabel;
+    PanelPesquisa: TPanel;
+    LabelPesquisa: TLabel;
     EditPesquisa: TEdit;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);

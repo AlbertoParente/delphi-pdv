@@ -38,8 +38,8 @@ type
     DBGridLevel1: TcxGridLevel;
     ColumnCpf: TcxGridDBColumn;
     aDataSource: TDataSource;
-    Panel1: TPanel;
-    Label1: TLabel;
+    PanelPesquisa: TPanel;
+    LabelPesquisa: TLabel;
     EditPesquisa: TEdit;
     procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
       ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
