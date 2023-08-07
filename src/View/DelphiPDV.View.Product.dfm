@@ -35,8 +35,6 @@ object VwProduct: TVwProduct
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitTop = 43
-    ExplicitHeight = 388
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -162,7 +160,7 @@ object VwProduct: TVwProduct
     end
   end
   object aDataSource: TDataSource
-    Left = 24
-    Top = 360
+    Left = 32
+    Top = 368
   end
 end

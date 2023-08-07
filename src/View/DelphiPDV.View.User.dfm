@@ -10,6 +10,7 @@ object VwUser: TVwUser
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnClose = FormClose
   OnKeyDown = FormKeyDown
   TextHeight = 15
   object PanelPesquisa: TPanel
@@ -20,7 +21,6 @@ object VwUser: TVwUser
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitWidth = 622
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -38,7 +38,6 @@ object VwUser: TVwUser
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
-      ExplicitWidth = 622
       ExplicitHeight = 23
     end
   end
@@ -65,8 +64,6 @@ object VwUser: TVwUser
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -5
-    ExplicitTop = 54
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -87,6 +84,8 @@ object VwUser: TVwUser
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
+      OnCustomDrawCell = GridViewCustomDrawCell
+      DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
       DataController.Summary.FooterSummaryItems = <>
@@ -152,5 +151,9 @@ object VwUser: TVwUser
     object DBGridLevel1: TcxGridLevel
       GridView = GridView
     end
+  end
+  object aDataSource: TDataSource
+    Left = 40
+    Top = 376
   end
 end

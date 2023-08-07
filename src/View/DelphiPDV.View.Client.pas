@@ -45,6 +45,7 @@ type
       ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
       var ADone: Boolean);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
@@ -61,6 +62,11 @@ implementation
 {$R *.dfm}
 
 { TVwClient }
+
+procedure TVwClient.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Action := CaFree;
+end;
 
 procedure TVwClient.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
