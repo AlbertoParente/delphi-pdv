@@ -1,7 +1,7 @@
-object VwUser: TVwUser
+object VwEmployee: TVwEmployee
   Left = 0
   Top = 0
-  Caption = 'VwUser'
+  Caption = 'VwEmployee'
   ClientHeight = 441
   ClientWidth = 624
   Color = clBtnFace
@@ -10,7 +10,6 @@ object VwUser: TVwUser
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnClose = FormClose
   OnKeyDown = FormKeyDown
   TextHeight = 15
   object PanelPesquisa: TPanel
@@ -64,8 +63,6 @@ object VwUser: TVwUser
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = 5
-    ExplicitTop = 62
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -86,7 +83,6 @@ object VwUser: TVwUser
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
-      OnCustomDrawCell = GridViewCustomDrawCell
       DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
@@ -127,7 +123,7 @@ object VwUser: TVwUser
         Width = 60
       end
       object ColumnSellerName: TcxGridDBColumn
-        Caption = 'Usuario'
+        Caption = 'Funcion'#225'rio'
         DataBinding.FieldName = 'numconselho'
         DataBinding.IsNullValueType = True
         PropertiesClassName = 'TcxTextEditProperties'
@@ -155,7 +151,7 @@ object VwUser: TVwUser
     end
   end
   object aDataSource: TDataSource
-    Left = 24
-    Top = 376
+    Left = 32
+    Top = 368
   end
 end

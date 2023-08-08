@@ -10,7 +10,8 @@ uses
   DelphiPDV.View.Product in 'src\View\DelphiPDV.View.Product.pas' {VwProduct},
   DelphiPDV.View.Seller in 'src\View\DelphiPDV.View.Seller.pas' {VwSeller},
   DelphiPDV.View.Client in 'src\View\DelphiPDV.View.Client.pas' {VwClient},
-  DelphiPDV.View.User in 'src\View\DelphiPDV.View.User.pas' {VwUser};
+  DelphiPDV.View.User in 'src\View\DelphiPDV.View.User.pas' {VwUser},
+  DelphiPDV.View.Employee in 'src\View\DelphiPDV.View.Employee.pas' {VwEmployee};
 
 {$R *.res}
 
@@ -22,5 +23,6 @@ begin
   Application.CreateForm(TVwPrincipal, VwPrincipal);
   Application.CreateForm(TVwClient, VwClient);
   Application.CreateForm(TVwUser, VwUser);
+  Application.CreateForm(TVwEmployee, VwEmployee);
   Application.Run;
 end.
