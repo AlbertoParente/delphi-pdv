@@ -2,8 +2,8 @@ object VwPayments: TVwPayments
   Left = 0
   Top = 0
   BorderStyle = bsNone
-  ClientHeight = 617
-  ClientWidth = 840
+  ClientHeight = 720
+  ClientWidth = 900
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,8 +16,8 @@ object VwPayments: TVwPayments
   object GridPanelMain: TGridPanel
     Left = 0
     Top = 0
-    Width = 840
-    Height = 617
+    Width = 900
+    Height = 720
     Align = alClient
     BevelOuter = bvNone
     ColumnCollection = <
@@ -38,22 +38,26 @@ object VwPayments: TVwPayments
         Value = 100.000000000000000000
       end>
     TabOrder = 0
+    ExplicitWidth = 840
+    ExplicitHeight = 617
     object PanelInformation: TPanel
       Left = 0
       Top = 0
-      Width = 336
-      Height = 617
+      Width = 360
+      Height = 720
       Align = alClient
       BevelOuter = bvNone
       Color = 5589317
       ParentBackground = False
       TabOrder = 0
+      ExplicitWidth = 336
+      ExplicitHeight = 617
       object GridPanel2: TGridPanel
         AlignWithMargins = True
         Left = 15
         Top = 15
-        Width = 306
-        Height = 587
+        Width = 330
+        Height = 690
         Margins.Left = 15
         Margins.Top = 15
         Margins.Right = 15
@@ -108,12 +112,14 @@ object VwPayments: TVwPayments
             Value = 9.000000000000000000
           end>
         TabOrder = 0
+        ExplicitWidth = 306
+        ExplicitHeight = 587
         object Panel2: TPanel
           AlignWithMargins = True
           Left = 3
           Top = 3
-          Width = 300
-          Height = 70
+          Width = 324
+          Height = 84
           Align = alClient
           BevelOuter = bvNone
           Caption = 'Resumo da Venda'
@@ -124,12 +130,14 @@ object VwPayments: TVwPayments
           Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 0
+          ExplicitWidth = 300
+          ExplicitHeight = 70
         end
         object Panel3: TPanel
           Left = 0
-          Top = 534
-          Width = 306
-          Height = 53
+          Top = 628
+          Width = 330
+          Height = 62
           Align = alClient
           BevelOuter = bvNone
           Caption = 'Cancelar e Retornar'
@@ -140,12 +148,15 @@ object VwPayments: TVwPayments
           Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 1
+          ExplicitTop = 534
+          ExplicitWidth = 306
+          ExplicitHeight = 53
         end
         object GridPanel3: TGridPanel
           Left = 0
-          Top = 76
-          Width = 306
-          Height = 153
+          Top = 90
+          Width = 330
+          Height = 179
           Align = alClient
           ColumnCollection = <
             item
@@ -236,26 +247,32 @@ object VwPayments: TVwPayments
               Value = 16.785306265928520000
             end>
           TabOrder = 2
+          ExplicitTop = 76
+          ExplicitWidth = 306
+          ExplicitHeight = 153
           object Panel4: TPanel
             Left = 1
             Top = 1
-            Width = 213
-            Height = 25
+            Width = 230
+            Height = 29
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 0
+            ExplicitWidth = 213
+            ExplicitHeight = 25
             object Image1: TImage
               Left = 0
               Top = 0
               Width = 41
-              Height = 25
+              Height = 29
               Align = alLeft
+              ExplicitHeight = 25
             end
             object Label1: TLabel
               Left = 41
               Top = 0
-              Width = 172
-              Height = 25
+              Width = 189
+              Height = 29
               Align = alClient
               Caption = 'Edit'
               Font.Charset = DEFAULT_CHARSET
@@ -270,9 +287,9 @@ object VwPayments: TVwPayments
           end
           object Label2: TLabel
             Left = 1
-            Top = 26
-            Width = 213
-            Height = 25
+            Top = 30
+            Width = 230
+            Height = 30
             Align = alClient
             Caption = 'Total da Venda:'
             Font.Charset = DEFAULT_CHARSET
@@ -281,14 +298,15 @@ object VwPayments: TVwPayments
             Font.Name = 'Segoe UI'
             Font.Style = []
             ParentFont = False
+            ExplicitTop = 26
             ExplicitWidth = 132
             ExplicitHeight = 28
           end
           object Label4: TLabel
-            Left = 214
-            Top = 26
-            Width = 91
-            Height = 25
+            Left = 231
+            Top = 30
+            Width = 98
+            Height = 30
             Align = alClient
             Alignment = taRightJustify
             Caption = '0.00'
@@ -299,14 +317,15 @@ object VwPayments: TVwPayments
             Font.Style = []
             ParentFont = False
             ExplicitLeft = 268
+            ExplicitTop = 26
             ExplicitWidth = 37
             ExplicitHeight = 28
           end
           object Label5: TLabel
-            Left = 214
-            Top = 51
-            Width = 91
-            Height = 25
+            Left = 231
+            Top = 60
+            Width = 98
+            Height = 29
             Align = alClient
             Alignment = taRightJustify
             Caption = '0.00'
@@ -317,14 +336,15 @@ object VwPayments: TVwPayments
             Font.Style = []
             ParentFont = False
             ExplicitLeft = 268
+            ExplicitTop = 51
             ExplicitWidth = 37
             ExplicitHeight = 28
           end
           object Label6: TLabel
-            Left = 214
-            Top = 76
-            Width = 91
-            Height = 26
+            Left = 231
+            Top = 89
+            Width = 98
+            Height = 30
             Align = alClient
             Alignment = taRightJustify
             Caption = '0.00'
@@ -335,14 +355,15 @@ object VwPayments: TVwPayments
             Font.Style = []
             ParentFont = False
             ExplicitLeft = 268
+            ExplicitTop = 76
             ExplicitWidth = 37
             ExplicitHeight = 28
           end
           object Label7: TLabel
-            Left = 214
-            Top = 102
-            Width = 91
-            Height = 25
+            Left = 231
+            Top = 119
+            Width = 98
+            Height = 29
             Align = alClient
             Alignment = taRightJustify
             Caption = '0.00'
@@ -353,14 +374,15 @@ object VwPayments: TVwPayments
             Font.Style = []
             ParentFont = False
             ExplicitLeft = 268
+            ExplicitTop = 102
             ExplicitWidth = 37
             ExplicitHeight = 28
           end
           object Label8: TLabel
             Left = 1
-            Top = 51
-            Width = 213
-            Height = 25
+            Top = 60
+            Width = 230
+            Height = 29
             Align = alClient
             Caption = 'Desconto:'
             Font.Charset = DEFAULT_CHARSET
@@ -369,14 +391,15 @@ object VwPayments: TVwPayments
             Font.Name = 'Segoe UI'
             Font.Style = []
             ParentFont = False
+            ExplicitTop = 51
             ExplicitWidth = 87
             ExplicitHeight = 28
           end
           object Label9: TLabel
             Left = 1
-            Top = 76
-            Width = 213
-            Height = 26
+            Top = 89
+            Width = 230
+            Height = 30
             Align = alClient
             Caption = 'Acr'#233'scimo:'
             Font.Charset = DEFAULT_CHARSET
@@ -385,14 +408,15 @@ object VwPayments: TVwPayments
             Font.Name = 'Segoe UI'
             Font.Style = []
             ParentFont = False
+            ExplicitTop = 76
             ExplicitWidth = 94
             ExplicitHeight = 28
           end
           object Label10: TLabel
             Left = 1
-            Top = 102
-            Width = 213
-            Height = 25
+            Top = 119
+            Width = 230
+            Height = 29
             Align = alClient
             Caption = 'Total da Receber:'
             Font.Charset = DEFAULT_CHARSET
@@ -401,14 +425,15 @@ object VwPayments: TVwPayments
             Font.Name = 'Segoe UI'
             Font.Style = []
             ParentFont = False
+            ExplicitTop = 102
             ExplicitWidth = 147
             ExplicitHeight = 28
           end
           object Shape1: TShape
             AlignWithMargins = True
             Left = 4
-            Top = 144
-            Width = 210
+            Top = 170
+            Width = 227
             Height = 5
             Margins.Right = 0
             Align = alBottom
@@ -418,9 +443,9 @@ object VwPayments: TVwPayments
           end
           object Shape2: TShape
             AlignWithMargins = True
-            Left = 214
-            Top = 144
-            Width = 88
+            Left = 231
+            Top = 170
+            Width = 95
             Height = 5
             Margins.Left = 0
             Align = alBottom
@@ -432,17 +457,20 @@ object VwPayments: TVwPayments
         end
         object Panel5: TPanel
           Left = 0
-          Top = 229
-          Width = 306
-          Height = 153
+          Top = 269
+          Width = 330
+          Height = 180
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 3
+          ExplicitTop = 229
+          ExplicitWidth = 306
+          ExplicitHeight = 153
           object GridPanel4: TGridPanel
             Left = 0
             Top = 0
-            Width = 306
-            Height = 153
+            Width = 330
+            Height = 180
             Align = alClient
             ColumnCollection = <
               item
@@ -518,19 +546,23 @@ object VwPayments: TVwPayments
                 Value = 16.785306265928520000
               end>
             TabOrder = 0
+            ExplicitWidth = 306
+            ExplicitHeight = 153
             object Panel7: TPanel
               Left = 1
               Top = 1
-              Width = 213
-              Height = 25
+              Width = 230
+              Height = 30
               Align = alClient
               BevelOuter = bvNone
               TabOrder = 0
+              ExplicitWidth = 213
+              ExplicitHeight = 25
               object Label3: TLabel
                 Left = 0
                 Top = 0
-                Width = 213
-                Height = 25
+                Width = 230
+                Height = 30
                 Align = alClient
                 Caption = 'Total Recebido:'
                 Font.Charset = DEFAULT_CHARSET
@@ -545,9 +577,9 @@ object VwPayments: TVwPayments
             end
             object Label11: TLabel
               Left = 1
-              Top = 26
-              Width = 213
-              Height = 25
+              Top = 31
+              Width = 230
+              Height = 29
               Align = alClient
               Caption = 'Saldo Restante:'
               Font.Charset = DEFAULT_CHARSET
@@ -556,14 +588,15 @@ object VwPayments: TVwPayments
               Font.Name = 'Segoe UI'
               Font.Style = []
               ParentFont = False
+              ExplicitTop = 26
               ExplicitWidth = 133
               ExplicitHeight = 28
             end
             object Label12: TLabel
-              Left = 214
-              Top = 26
-              Width = 91
-              Height = 25
+              Left = 231
+              Top = 31
+              Width = 98
+              Height = 29
               Align = alClient
               Alignment = taRightJustify
               Caption = '0.00'
@@ -574,14 +607,15 @@ object VwPayments: TVwPayments
               Font.Style = []
               ParentFont = False
               ExplicitLeft = 268
+              ExplicitTop = 26
               ExplicitWidth = 37
               ExplicitHeight = 28
             end
             object Label13: TLabel
-              Left = 214
-              Top = 51
-              Width = 91
-              Height = 25
+              Left = 231
+              Top = 60
+              Width = 98
+              Height = 30
               Align = alClient
               Alignment = taRightJustify
               Caption = '0.00'
@@ -592,14 +626,15 @@ object VwPayments: TVwPayments
               Font.Style = []
               ParentFont = False
               ExplicitLeft = 268
+              ExplicitTop = 51
               ExplicitWidth = 37
               ExplicitHeight = 28
             end
             object Label16: TLabel
               Left = 1
-              Top = 51
-              Width = 213
-              Height = 25
+              Top = 60
+              Width = 230
+              Height = 30
               Align = alClient
               Caption = 'Troco:'
               Font.Charset = DEFAULT_CHARSET
@@ -608,14 +643,15 @@ object VwPayments: TVwPayments
               Font.Name = 'Segoe UI'
               Font.Style = []
               ParentFont = False
+              ExplicitTop = 51
               ExplicitWidth = 52
               ExplicitHeight = 28
             end
             object Shape3: TShape
               AlignWithMargins = True
               Left = 4
-              Top = 144
-              Width = 210
+              Top = 171
+              Width = 227
               Height = 5
               Margins.Right = 0
               Align = alBottom
@@ -625,9 +661,9 @@ object VwPayments: TVwPayments
             end
             object Shape4: TShape
               AlignWithMargins = True
-              Left = 214
-              Top = 144
-              Width = 88
+              Left = 231
+              Top = 171
+              Width = 95
               Height = 5
               Margins.Left = 0
               Align = alBottom
@@ -637,10 +673,10 @@ object VwPayments: TVwPayments
               ExplicitWidth = 85
             end
             object Label14: TLabel
-              Left = 214
+              Left = 231
               Top = 1
-              Width = 91
-              Height = 25
+              Width = 98
+              Height = 30
               Align = alClient
               Alignment = taRightJustify
               Caption = '0.00'
@@ -661,13 +697,13 @@ object VwPayments: TVwPayments
   end
   object aDataSource: TDataSource
     DataSet = cdsPayments
-    Left = 768
-    Top = 464
+    Left = 808
+    Top = 600
   end
   object cdsPayments: TClientDataSet
     Aggregates = <>
     Params = <>
-    Left = 768
-    Top = 544
+    Left = 808
+    Top = 656
   end
 end

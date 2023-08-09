@@ -2,8 +2,8 @@ object VwUser: TVwUser
   Left = 0
   Top = 0
   Caption = 'VwUser'
-  ClientHeight = 441
-  ClientWidth = 624
+  ClientHeight = 768
+  ClientWidth = 1024
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,15 +16,16 @@ object VwUser: TVwUser
   object PanelPesquisa: TPanel
     Left = 0
     Top = 0
-    Width = 624
+    Width = 1024
     Height = 57
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 0
+    ExplicitWidth = 624
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
-      Width = 624
+      Width = 1024
       Height = 15
       Align = alTop
       Caption = 'Pesquisar Vendedor'
@@ -33,11 +34,12 @@ object VwUser: TVwUser
     object EditPesquisa: TEdit
       Left = 0
       Top = 15
-      Width = 624
+      Width = 1024
       Height = 42
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
+      ExplicitWidth = 624
       ExplicitHeight = 23
     end
   end
@@ -45,8 +47,8 @@ object VwUser: TVwUser
     AlignWithMargins = True
     Left = 0
     Top = 59
-    Width = 624
-    Height = 380
+    Width = 1024
+    Height = 707
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -64,8 +66,8 @@ object VwUser: TVwUser
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = 5
-    ExplicitTop = 62
+    ExplicitWidth = 624
+    ExplicitHeight = 380
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -155,7 +157,7 @@ object VwUser: TVwUser
     end
   end
   object aDataSource: TDataSource
-    Left = 24
-    Top = 376
+    Left = 32
+    Top = 696
   end
 end

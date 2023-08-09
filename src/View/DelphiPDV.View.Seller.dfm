@@ -1,8 +1,8 @@
 object VwSeller: TVwSeller
   Left = 0
   Top = 0
-  ClientHeight = 433
-  ClientWidth = 622
+  ClientHeight = 768
+  ClientWidth = 1024
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,8 +16,8 @@ object VwSeller: TVwSeller
     AlignWithMargins = True
     Left = 0
     Top = 59
-    Width = 622
-    Height = 372
+    Width = 1024
+    Height = 707
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -35,6 +35,8 @@ object VwSeller: TVwSeller
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitWidth = 622
+    ExplicitHeight = 372
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -122,15 +124,16 @@ object VwSeller: TVwSeller
   object PanelPesquisa: TPanel
     Left = 0
     Top = 0
-    Width = 622
+    Width = 1024
     Height = 57
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
+    ExplicitWidth = 622
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
-      Width = 622
+      Width = 1024
       Height = 15
       Align = alTop
       Caption = 'Pesquisar Vendedor'
@@ -139,16 +142,17 @@ object VwSeller: TVwSeller
     object EditPesquisa: TEdit
       Left = 0
       Top = 15
-      Width = 622
+      Width = 1024
       Height = 42
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
+      ExplicitWidth = 622
       ExplicitHeight = 23
     end
   end
   object aDataSource: TDataSource
     Left = 40
-    Top = 368
+    Top = 704
   end
 end

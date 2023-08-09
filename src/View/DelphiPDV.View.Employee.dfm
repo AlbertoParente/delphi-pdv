@@ -2,8 +2,8 @@ object VwEmployee: TVwEmployee
   Left = 0
   Top = 0
   Caption = 'VwEmployee'
-  ClientHeight = 441
-  ClientWidth = 624
+  ClientHeight = 768
+  ClientWidth = 1024
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,15 +15,16 @@ object VwEmployee: TVwEmployee
   object PanelPesquisa: TPanel
     Left = 0
     Top = 0
-    Width = 624
+    Width = 1024
     Height = 57
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 0
+    ExplicitWidth = 624
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
-      Width = 624
+      Width = 1024
       Height = 15
       Align = alTop
       Caption = 'Pesquisar Vendedor'
@@ -32,11 +33,12 @@ object VwEmployee: TVwEmployee
     object EditPesquisa: TEdit
       Left = 0
       Top = 15
-      Width = 624
+      Width = 1024
       Height = 42
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
+      ExplicitWidth = 624
       ExplicitHeight = 23
     end
   end
@@ -44,8 +46,8 @@ object VwEmployee: TVwEmployee
     AlignWithMargins = True
     Left = 0
     Top = 59
-    Width = 624
-    Height = 380
+    Width = 1024
+    Height = 707
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -63,6 +65,8 @@ object VwEmployee: TVwEmployee
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitWidth = 624
+    ExplicitHeight = 380
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -83,6 +87,7 @@ object VwEmployee: TVwEmployee
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
+      OnCustomDrawCell = GridViewCustomDrawCell
       DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
@@ -151,7 +156,7 @@ object VwEmployee: TVwEmployee
     end
   end
   object aDataSource: TDataSource
-    Left = 32
-    Top = 368
+    Left = 40
+    Top = 704
   end
 end

@@ -2,8 +2,8 @@ object VwClient: TVwClient
   Left = 0
   Top = 0
   Caption = 'VwClient'
-  ClientHeight = 441
-  ClientWidth = 624
+  ClientHeight = 768
+  ClientWidth = 1024
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,8 +17,8 @@ object VwClient: TVwClient
     AlignWithMargins = True
     Left = 0
     Top = 59
-    Width = 624
-    Height = 380
+    Width = 1024
+    Height = 707
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -36,6 +36,8 @@ object VwClient: TVwClient
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitWidth = 624
+    ExplicitHeight = 380
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -127,15 +129,16 @@ object VwClient: TVwClient
   object PanelPesquisa: TPanel
     Left = 0
     Top = 0
-    Width = 624
+    Width = 1024
     Height = 57
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
+    ExplicitWidth = 624
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
-      Width = 624
+      Width = 1024
       Height = 15
       Align = alTop
       Caption = 'Pesquisar Vendedor'
@@ -144,16 +147,17 @@ object VwClient: TVwClient
     object EditPesquisa: TEdit
       Left = 0
       Top = 15
-      Width = 624
+      Width = 1024
       Height = 42
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
+      ExplicitWidth = 624
       ExplicitHeight = 23
     end
   end
   object aDataSource: TDataSource
-    Left = 24
-    Top = 360
+    Left = 40
+    Top = 688
   end
 end
