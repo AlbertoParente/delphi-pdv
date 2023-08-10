@@ -41,6 +41,8 @@ type
     Shape4: TShape;
     Label3: TLabel;
     Label14: TLabel;
+    Panel1: TPanel;
+    LabelInformation: TLabel;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private

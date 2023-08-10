@@ -41,6 +41,8 @@ type
     DBGridDBCardView1: TcxGridDBCardView;
     DBGridLevel1: TcxGridLevel;
     aDataSource: TDataSource;
+    PanelInformation: TPanel;
+    LabelInformation: TLabel;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
       ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;

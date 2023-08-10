@@ -106,6 +106,8 @@ type
     SplitViewPayments: TSplitView;
     GridPanel1: TGridPanel;
     aDataSource: TDataSource;
+    PanelInformation: TPanel;
+    LabelInformation: TLabel;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);

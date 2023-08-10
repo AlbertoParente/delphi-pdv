@@ -21,7 +21,6 @@ object VwUser: TVwUser
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitWidth = 624
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -39,7 +38,6 @@ object VwUser: TVwUser
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
-      ExplicitWidth = 624
       ExplicitHeight = 23
     end
   end
@@ -48,7 +46,7 @@ object VwUser: TVwUser
     Left = 0
     Top = 59
     Width = 1024
-    Height = 707
+    Height = 691
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -66,8 +64,7 @@ object VwUser: TVwUser
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitWidth = 624
-    ExplicitHeight = 380
+    ExplicitHeight = 707
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -154,6 +151,26 @@ object VwUser: TVwUser
     end
     object DBGridLevel1: TcxGridLevel
       GridView = GridView
+    end
+  end
+  object PanelInformation: TPanel
+    Left = 0
+    Top = 752
+    Width = 1024
+    Height = 16
+    Align = alBottom
+    BevelOuter = bvNone
+    TabOrder = 2
+    object LabelInformation: TLabel
+      Left = 0
+      Top = 0
+      Width = 1024
+      Height = 16
+      Align = alClient
+      Alignment = taCenter
+      Caption = '<Esc> Retorna        <Enter> Seleciona'
+      ExplicitWidth = 197
+      ExplicitHeight = 15
     end
   end
   object aDataSource: TDataSource

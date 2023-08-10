@@ -41,6 +41,8 @@ type
     PanelPesquisa: TPanel;
     LabelPesquisa: TLabel;
     EditPesquisa: TEdit;
+    PanelInformation: TPanel;
+    LabelInformation: TLabel;
     procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
       ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
       var ADone: Boolean);

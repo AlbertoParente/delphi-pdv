@@ -42,6 +42,8 @@ type
     PanelPesquisa: TPanel;
     LabelPesquisa: TLabel;
     EditPesquisa: TEdit;
+    PanelInformation: TPanel;
+    LabelInformation: TLabel;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
