@@ -11,7 +11,8 @@ uses
   DelphiPDV.View.Seller in 'src\View\DelphiPDV.View.Seller.pas' {VwSeller},
   DelphiPDV.View.Client in 'src\View\DelphiPDV.View.Client.pas' {VwClient},
   DelphiPDV.View.User in 'src\View\DelphiPDV.View.User.pas' {VwUser},
-  DelphiPDV.View.Employee in 'src\View\DelphiPDV.View.Employee.pas' {VwEmployee};
+  DelphiPDV.View.Employee in 'src\View\DelphiPDV.View.Employee.pas' {VwEmployee},
+  DelphiPDV.View.PaymentList in 'src\View\DelphiPDV.View.PaymentList.pas' {Form1};
 
 {$R *.res}
 
@@ -24,5 +25,6 @@ begin
   Application.CreateForm(TVwClient, VwClient);
   Application.CreateForm(TVwUser, VwUser);
   Application.CreateForm(TVwEmployee, VwEmployee);
+  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.
