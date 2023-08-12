@@ -35,7 +35,8 @@ object VwProduct: TVwProduct
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitHeight = 707
+    ExplicitLeft = 5
+    ExplicitTop = 56
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -146,8 +147,8 @@ object VwProduct: TVwProduct
       Width = 1024
       Height = 15
       Align = alTop
-      Caption = 'Pesquisar Vendedor'
-      ExplicitWidth = 103
+      Caption = 'Pesquisar Produto'
+      ExplicitWidth = 96
     end
     object EditPesquisa: TEdit
       Left = 0
@@ -182,6 +183,6 @@ object VwProduct: TVwProduct
   end
   object aDataSource: TDataSource
     Left = 32
-    Top = 696
+    Top = 672
   end
 end

@@ -27,8 +27,8 @@ object VwUser: TVwUser
       Width = 1024
       Height = 15
       Align = alTop
-      Caption = 'Pesquisar Vendedor'
-      ExplicitWidth = 103
+      Caption = 'Pesquisar Usuarios'
+      ExplicitWidth = 98
     end
     object EditPesquisa: TEdit
       Left = 0
@@ -38,7 +38,7 @@ object VwUser: TVwUser
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
-      ExplicitTop = 12
+      ExplicitHeight = 23
     end
   end
   object DBGrid: TcxGrid
@@ -174,6 +174,6 @@ object VwUser: TVwUser
   end
   object aDataSource: TDataSource
     Left = 32
-    Top = 696
+    Top = 680
   end
 end

@@ -36,7 +36,6 @@ object VwClient: TVwClient
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitHeight = 707
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -139,8 +138,8 @@ object VwClient: TVwClient
       Width = 1024
       Height = 15
       Align = alTop
-      Caption = 'Pesquisar Vendedor'
-      ExplicitWidth = 103
+      Caption = 'Pesquisar Cliente'
+      ExplicitWidth = 90
     end
     object EditPesquisa: TEdit
       Left = 0
@@ -174,7 +173,7 @@ object VwClient: TVwClient
     end
   end
   object aDataSource: TDataSource
-    Left = 40
-    Top = 688
+    Left = 16
+    Top = 672
   end
 end

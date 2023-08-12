@@ -1,9 +1,9 @@
-object VwEmployee: TVwEmployee
+object Form2: TForm2
   Left = 0
   Top = 0
-  Caption = 'VwEmployee'
-  ClientHeight = 768
-  ClientWidth = 1024
+  Caption = 'Form2'
+  ClientHeight = 441
+  ClientWidth = 624
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,28 +15,31 @@ object VwEmployee: TVwEmployee
   object PanelPesquisa: TPanel
     Left = 0
     Top = 0
-    Width = 1024
+    Width = 624
     Height = 57
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 0
+    ExplicitLeft = -400
+    ExplicitWidth = 1024
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
-      Width = 1024
+      Width = 624
       Height = 15
       Align = alTop
-      Caption = 'Pesquisar Funcion'#225'rios'
-      ExplicitWidth = 121
+      Caption = 'Pesquisar Entregadores'
+      ExplicitWidth = 122
     end
     object EditPesquisa: TEdit
       Left = 0
       Top = 15
-      Width = 1024
+      Width = 624
       Height = 42
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
+      ExplicitWidth = 1024
       ExplicitHeight = 23
     end
   end
@@ -44,8 +47,8 @@ object VwEmployee: TVwEmployee
     AlignWithMargins = True
     Left = 0
     Top = 59
-    Width = 1024
-    Height = 691
+    Width = 624
+    Height = 364
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -63,6 +66,10 @@ object VwEmployee: TVwEmployee
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitLeft = -400
+    ExplicitTop = -250
+    ExplicitWidth = 1024
+    ExplicitHeight = 691
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -83,8 +90,6 @@ object VwEmployee: TVwEmployee
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
-      OnCustomDrawCell = GridViewCustomDrawCell
-      DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
       DataController.Summary.FooterSummaryItems = <>
@@ -123,8 +128,8 @@ object VwEmployee: TVwEmployee
         Options.AutoWidthSizable = False
         Width = 60
       end
-      object ColumnSellerName: TcxGridDBColumn
-        Caption = 'Funcion'#225'rio'
+      object ColumnDeliverer: TcxGridDBColumn
+        Caption = 'Entregador'
         DataBinding.FieldName = 'numconselho'
         DataBinding.IsNullValueType = True
         PropertiesClassName = 'TcxTextEditProperties'
@@ -132,10 +137,6 @@ object VwEmployee: TVwEmployee
         Properties.MaxLength = 0
         Options.AutoWidthSizable = False
         Width = 200
-      end
-      object GridViewCpf: TcxGridDBColumn
-        Caption = 'CPF'
-        DataBinding.IsNullValueType = True
       end
     end
     object DBGridDBCardView1: TcxGridDBCardView
@@ -153,16 +154,18 @@ object VwEmployee: TVwEmployee
   end
   object PanelInformation: TPanel
     Left = 0
-    Top = 752
-    Width = 1024
+    Top = 425
+    Width = 624
     Height = 16
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
+    ExplicitLeft = -400
+    ExplicitWidth = 1024
     object LabelInformation: TLabel
       Left = 0
       Top = 0
-      Width = 1024
+      Width = 624
       Height = 16
       Align = alClient
       Alignment = taCenter
@@ -170,9 +173,5 @@ object VwEmployee: TVwEmployee
       ExplicitWidth = 197
       ExplicitHeight = 15
     end
-  end
-  object aDataSource: TDataSource
-    Left = 24
-    Top = 680
   end
 end

@@ -12,7 +12,8 @@ uses
   DelphiPDV.View.Client in 'src\View\DelphiPDV.View.Client.pas' {VwClient},
   DelphiPDV.View.User in 'src\View\DelphiPDV.View.User.pas' {VwUser},
   DelphiPDV.View.Employee in 'src\View\DelphiPDV.View.Employee.pas' {VwEmployee},
-  DelphiPDV.View.PaymentList in 'src\View\DelphiPDV.View.PaymentList.pas' {Form1};
+  DelphiPDV.View.PaymentList in 'src\View\DelphiPDV.View.PaymentList.pas' {Form1},
+  DelphiPDV.View.Deliverer in 'src\View\DelphiPDV.View.Deliverer.pas' {Form2};
 
 {$R *.res}
 
@@ -26,5 +27,6 @@ begin
   Application.CreateForm(TVwUser, VwUser);
   Application.CreateForm(TVwEmployee, VwEmployee);
   Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TForm2, Form2);
   Application.Run;
 end.
