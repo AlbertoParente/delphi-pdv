@@ -25,7 +25,6 @@ object VwPrincipal: TVwPrincipal
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitHeight = 768
     DesignSize = (
       1024
       752)
@@ -67,7 +66,6 @@ object VwPrincipal: TVwPrincipal
           Value = 15.000000000000000000
         end>
       TabOrder = 0
-      ExplicitHeight = 768
       object PanelTitle: TPanel
         Left = 0
         Top = 0
@@ -85,7 +83,6 @@ object VwPrincipal: TVwPrincipal
         ParentBackground = False
         ParentFont = False
         TabOrder = 0
-        ExplicitHeight = 77
       end
       object GridPanelCenter: TGridPanel
         Left = 0
@@ -120,8 +117,6 @@ object VwPrincipal: TVwPrincipal
             SizeStyle = ssAuto
           end>
         TabOrder = 1
-        ExplicitTop = 77
-        ExplicitHeight = 576
         object DBGrid: TcxGrid
           AlignWithMargins = True
           Left = 0
@@ -145,7 +140,6 @@ object VwPrincipal: TVwPrincipal
           TabOrder = 0
           TabStop = False
           LookAndFeel.Kind = lfOffice11
-          ExplicitHeight = 572
           object GridView: TcxGridDBTableView
             Navigator.Buttons.CustomButtons = <>
             Navigator.Buttons.First.Visible = True
@@ -326,7 +320,6 @@ object VwPrincipal: TVwPrincipal
               Value = 16.000000000000000000
             end>
           TabOrder = 1
-          ExplicitHeight = 570
           object PanelPurchaseTotal: TPanel
             Left = 0
             Top = 467
@@ -335,8 +328,6 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 0
-            ExplicitTop = 477
-            ExplicitHeight = 89
             object LabelPurchaseTotal: TLabel
               AlignWithMargins = True
               Left = 3
@@ -368,7 +359,6 @@ object VwPrincipal: TVwPrincipal
               Padding.Right = 3
               Padding.Bottom = 3
               TabOrder = 0
-              ExplicitHeight = 61
               object ShapePurchaseTotal: TShape
                 Left = 3
                 Top = 3
@@ -1283,8 +1273,6 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 1
-            ExplicitTop = 204
-            ExplicitHeight = 89
             object LabelUnitPrice: TLabel
               AlignWithMargins = True
               Left = 3
@@ -1316,7 +1304,6 @@ object VwPrincipal: TVwPrincipal
               Padding.Right = 3
               Padding.Bottom = 3
               TabOrder = 0
-              ExplicitHeight = 61
               object ShapeUnitPrice: TShape
                 Left = 3
                 Top = 3
@@ -1359,8 +1346,6 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 2
-            ExplicitTop = 295
-            ExplicitHeight = 89
             object LabelQuantity: TLabel
               AlignWithMargins = True
               Left = 3
@@ -1392,7 +1377,6 @@ object VwPrincipal: TVwPrincipal
               Padding.Right = 3
               Padding.Bottom = 3
               TabOrder = 0
-              ExplicitHeight = 61
               object ShapeQuantity: TShape
                 Left = 3
                 Top = 3
@@ -1424,7 +1408,6 @@ object VwPrincipal: TVwPrincipal
                 Style.IsFontAssigned = True
                 TabOrder = 0
                 Text = '3'
-                ExplicitHeight = 49
                 Width = 289
               end
             end
@@ -1437,8 +1420,6 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 3
-            ExplicitTop = 386
-            ExplicitHeight = 89
             object LabelSubTotal: TLabel
               AlignWithMargins = True
               Left = 3
@@ -1470,7 +1451,6 @@ object VwPrincipal: TVwPrincipal
               Padding.Right = 3
               Padding.Bottom = 3
               TabOrder = 0
-              ExplicitHeight = 61
               object ShapeSubTotal: TShape
                 Left = 3
                 Top = 3
@@ -1513,8 +1493,6 @@ object VwPrincipal: TVwPrincipal
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 4
-            ExplicitTop = 114
-            ExplicitHeight = 88
             object LabelProduct: TLabel
               AlignWithMargins = True
               Left = 3
@@ -1546,7 +1524,6 @@ object VwPrincipal: TVwPrincipal
               Padding.Right = 3
               Padding.Bottom = 3
               TabOrder = 0
-              ExplicitHeight = 60
               object ShapeProduct: TShape
                 Left = 3
                 Top = 3
@@ -1578,7 +1555,6 @@ object VwPrincipal: TVwPrincipal
                 Style.IsFontAssigned = True
                 TabOrder = 0
                 Text = '00013'
-                ExplicitHeight = 48
                 Width = 289
               end
             end
@@ -1663,8 +1639,6 @@ object VwPrincipal: TVwPrincipal
             SizeStyle = ssAuto
           end>
         TabOrder = 2
-        ExplicitTop = 656
-        ExplicitHeight = 109
         object PanelCancelOperation: TPanel
           AlignWithMargins = True
           Left = 4
@@ -1677,7 +1651,6 @@ object VwPrincipal: TVwPrincipal
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 0
-          ExplicitHeight = 101
           object ShapeCancelOperation: TShape
             Left = 0
             Top = 0
@@ -1724,7 +1697,6 @@ object VwPrincipal: TVwPrincipal
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 1
-          ExplicitHeight = 101
           object ShapeSearchPrice: TShape
             Left = 0
             Top = 0
@@ -1772,7 +1744,6 @@ object VwPrincipal: TVwPrincipal
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 2
-          ExplicitHeight = 101
           object ShapeOpenCashier: TShape
             Left = 0
             Top = 0
@@ -1820,7 +1791,6 @@ object VwPrincipal: TVwPrincipal
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 3
-          ExplicitHeight = 101
           object ShapeCancelSale: TShape
             Left = 0
             Top = 0
@@ -1868,7 +1838,6 @@ object VwPrincipal: TVwPrincipal
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 4
-          ExplicitHeight = 101
           object ShapeCancelItem: TShape
             Left = 0
             Top = 0
@@ -1916,7 +1885,6 @@ object VwPrincipal: TVwPrincipal
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 5
-          ExplicitHeight = 101
           object ShapeDevolution: TShape
             Left = 0
             Top = 0
@@ -1963,7 +1931,6 @@ object VwPrincipal: TVwPrincipal
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 6
-          ExplicitHeight = 101
           object ShapeMoreFunctions: TShape
             Left = 0
             Top = 0
@@ -2012,7 +1979,6 @@ object VwPrincipal: TVwPrincipal
       Placement = svpRight
       TabOrder = 1
       UseAnimation = False
-      ExplicitHeight = 768
       object Panel1: TPanel
         Left = 0
         Top = 0
@@ -2023,7 +1989,6 @@ object VwPrincipal: TVwPrincipal
         Color = 14342621
         ParentBackground = False
         TabOrder = 0
-        ExplicitHeight = 768
         object Panel2: TPanel
           Left = 0
           Top = 205
@@ -2096,7 +2061,6 @@ object VwPrincipal: TVwPrincipal
       OpenedWidth = 716
       Placement = svpRight
       TabOrder = 3
-      ExplicitHeight = 768
       object GridPanel1: TGridPanel
         Left = 0
         Top = 0
@@ -2129,7 +2093,6 @@ object VwPrincipal: TVwPrincipal
             Value = 16.666666666666500000
           end>
         TabOrder = 0
-        ExplicitHeight = 768
       end
     end
   end
@@ -2155,7 +2118,7 @@ object VwPrincipal: TVwPrincipal
   end
   object aDataSource: TDataSource
     DataSet = dmDados.cdsItens
-    Left = 36
-    Top = 568
+    Left = 28
+    Top = 560
   end
 end

@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm2 = class(TForm)
+  TVwDeliverer = class(TForm)
     PanelPesquisa: TPanel;
     LabelPesquisa: TLabel;
     EditPesquisa: TEdit;
@@ -41,21 +41,27 @@ type
     DBGridLevel1: TcxGridLevel;
     PanelInformation: TPanel;
     LabelInformation: TLabel;
+    aDataSource: TDataSource;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+      ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
+      var ADone: Boolean);
   private
     { Private declarations }
   public
     { Public declarations }
+    procedure Process;
+    procedure Review;
   end;
 
 var
-  Form2: TForm2;
+  VwDeliverer: TVwDeliverer;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm2.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TVwDeliverer.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -81,6 +87,28 @@ begin
       aDataSource.DataSet.Next;
     end;
   end;
+end;
+
+procedure TVwDeliverer.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+  ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
+  var ADone: Boolean);
+begin
+  inherited;
+  if AViewInfo.GridRecord.Selected then
+  begin
+    ACanvas.Brush.Color := clHighlight;
+    ACanvas.Font.Color  := clWhite;
+  end;
+end;
+
+procedure TVwDeliverer.Process;
+begin
+  Review;
+end;
+
+procedure TVwDeliverer.Review;
+begin
+
 end;
 
 end.

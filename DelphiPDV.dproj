@@ -148,7 +148,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\View\DelphiPDV.View.Deliverer.pas">
-            <Form>Form2</Form>
+            <Form>VwDeliverer</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
