@@ -13,7 +13,8 @@ uses
   DelphiPDV.View.User in 'src\View\DelphiPDV.View.User.pas' {VwUser},
   DelphiPDV.View.Employee in 'src\View\DelphiPDV.View.Employee.pas' {VwEmployee},
   DelphiPDV.View.PaymentList in 'src\View\DelphiPDV.View.PaymentList.pas' {Form1},
-  DelphiPDV.View.Deliverer in 'src\View\DelphiPDV.View.Deliverer.pas' {VwDeliverer};
+  DelphiPDV.View.Deliverer in 'src\View\DelphiPDV.View.Deliverer.pas' {VwDeliverer},
+  DelphiPDV.View.Prescrible in 'src\View\DelphiPDV.View.Prescrible.pas' {VwPrescrible};
 
 {$R *.res}
 
@@ -23,7 +24,5 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TdmDados, dmDados);
   Application.CreateForm(TVwPrincipal, VwPrincipal);
-  Application.CreateForm(TForm1, Form1);
-  Application.CreateForm(TVwDeliverer, VwDeliverer);
   Application.Run;
 end.
