@@ -46,6 +46,8 @@ type
     procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
       ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
       var ADone: Boolean);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -60,6 +62,11 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TVwDeliverer.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Action := caFree
+end;
 
 procedure TVwDeliverer.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
@@ -87,6 +94,11 @@ begin
       aDataSource.DataSet.Next;
     end;
   end;
+end;
+
+procedure TVwDeliverer.FormShow(Sender: TObject);
+begin
+  aDataSource.DataSet := nil;
 end;
 
 procedure TVwDeliverer.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
