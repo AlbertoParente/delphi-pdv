@@ -48,6 +48,7 @@ type
       var ADone: Boolean);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -96,6 +97,11 @@ begin
       aDataSource.DataSet.Next;
     end;
   end;
+end;
+
+procedure TVwClient.FormShow(Sender: TObject);
+begin
+  aDataSource.DataSet := nul;
 end;
 
 procedure TVwClient.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;

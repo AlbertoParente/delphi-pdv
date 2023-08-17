@@ -12,6 +12,7 @@ object VwUser: TVwUser
   Font.Style = []
   OnClose = FormClose
   OnKeyDown = FormKeyDown
+  OnShow = FormShow
   TextHeight = 15
   object PanelPesquisa: TPanel
     Left = 0
@@ -173,7 +174,7 @@ object VwUser: TVwUser
     end
   end
   object aDataSource: TDataSource
-    Left = 32
-    Top = 680
+    Left = 40
+    Top = 696
   end
 end

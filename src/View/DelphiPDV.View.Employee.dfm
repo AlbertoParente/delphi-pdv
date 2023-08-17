@@ -10,7 +10,9 @@ object VwEmployee: TVwEmployee
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnClose = FormClose
   OnKeyDown = FormKeyDown
+  OnShow = FormShow
   TextHeight = 15
   object PanelPesquisa: TPanel
     Left = 0
@@ -173,6 +175,6 @@ object VwEmployee: TVwEmployee
   end
   object aDataSource: TDataSource
     Left = 24
-    Top = 680
+    Top = 704
   end
 end

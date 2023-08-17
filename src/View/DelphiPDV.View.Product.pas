@@ -49,6 +49,7 @@ type
     procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
       ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
       var ADone: Boolean);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -95,6 +96,11 @@ begin
       aDataSource.DataSet.Next;
     end;
   end;
+end;
+
+procedure TVwProduct.FormShow(Sender: TObject);
+begin
+  aDataSource.DataSet := nil;
 end;
 
 procedure TVwProduct.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;

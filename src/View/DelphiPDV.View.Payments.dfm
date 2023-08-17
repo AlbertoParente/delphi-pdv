@@ -12,6 +12,7 @@ object VwPayments: TVwPayments
   Font.Style = []
   OnClose = FormClose
   OnKeyDown = FormKeyDown
+  OnShow = FormShow
   TextHeight = 15
   object GridPanelMain: TGridPanel
     Left = 0
@@ -38,7 +39,6 @@ object VwPayments: TVwPayments
         Value = 100.000000000000000000
       end>
     TabOrder = 0
-    ExplicitHeight = 720
     object PanelInformation: TPanel
       Left = 0
       Top = 0
@@ -49,7 +49,6 @@ object VwPayments: TVwPayments
       Color = 5589317
       ParentBackground = False
       TabOrder = 0
-      ExplicitHeight = 720
       object GridPanel2: TGridPanel
         AlignWithMargins = True
         Left = 15
@@ -110,7 +109,6 @@ object VwPayments: TVwPayments
             Value = 9.000000000000000000
           end>
         TabOrder = 0
-        ExplicitHeight = 690
         object Panel2: TPanel
           AlignWithMargins = True
           Left = 3
@@ -127,7 +125,6 @@ object VwPayments: TVwPayments
           Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 0
-          ExplicitHeight = 84
         end
         object Panel3: TPanel
           Left = 0
@@ -144,8 +141,6 @@ object VwPayments: TVwPayments
           Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 1
-          ExplicitTop = 628
-          ExplicitHeight = 62
         end
         object GridPanel3: TGridPanel
           Left = 0
@@ -242,8 +237,6 @@ object VwPayments: TVwPayments
               Value = 16.785306265928520000
             end>
           TabOrder = 2
-          ExplicitTop = 90
-          ExplicitHeight = 179
           object Panel4: TPanel
             Left = 1
             Top = 1
@@ -326,7 +319,6 @@ object VwPayments: TVwPayments
             Font.Style = []
             ParentFont = False
             ExplicitLeft = 292
-            ExplicitTop = 60
             ExplicitWidth = 37
           end
           object Label6: TLabel
@@ -344,7 +336,6 @@ object VwPayments: TVwPayments
             Font.Style = []
             ParentFont = False
             ExplicitLeft = 292
-            ExplicitTop = 89
             ExplicitWidth = 37
             ExplicitHeight = 28
           end
@@ -363,7 +354,6 @@ object VwPayments: TVwPayments
             Font.Style = []
             ParentFont = False
             ExplicitLeft = 292
-            ExplicitTop = 119
             ExplicitWidth = 37
             ExplicitHeight = 28
           end
@@ -380,7 +370,6 @@ object VwPayments: TVwPayments
             Font.Name = 'Segoe UI'
             Font.Style = []
             ParentFont = False
-            ExplicitTop = 60
             ExplicitWidth = 87
           end
           object Label9: TLabel
@@ -396,7 +385,6 @@ object VwPayments: TVwPayments
             Font.Name = 'Segoe UI'
             Font.Style = []
             ParentFont = False
-            ExplicitTop = 89
             ExplicitWidth = 94
             ExplicitHeight = 28
           end
@@ -413,7 +401,6 @@ object VwPayments: TVwPayments
             Font.Name = 'Segoe UI'
             Font.Style = []
             ParentFont = False
-            ExplicitTop = 119
             ExplicitWidth = 147
             ExplicitHeight = 28
           end
@@ -451,8 +438,6 @@ object VwPayments: TVwPayments
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 3
-          ExplicitTop = 269
-          ExplicitHeight = 180
           object GridPanel4: TGridPanel
             Left = 0
             Top = 0
@@ -533,7 +518,6 @@ object VwPayments: TVwPayments
                 Value = 16.785306265928520000
               end>
             TabOrder = 0
-            ExplicitHeight = 180
             object Panel7: TPanel
               Left = 1
               Top = 1
@@ -542,7 +526,6 @@ object VwPayments: TVwPayments
               Align = alClient
               BevelOuter = bvNone
               TabOrder = 0
-              ExplicitHeight = 30
               object Label3: TLabel
                 Left = 0
                 Top = 0
@@ -573,7 +556,6 @@ object VwPayments: TVwPayments
               Font.Name = 'Segoe UI'
               Font.Style = []
               ParentFont = False
-              ExplicitTop = 31
               ExplicitWidth = 133
               ExplicitHeight = 28
             end
@@ -592,7 +574,6 @@ object VwPayments: TVwPayments
               Font.Style = []
               ParentFont = False
               ExplicitLeft = 292
-              ExplicitTop = 31
               ExplicitWidth = 37
               ExplicitHeight = 28
             end
@@ -611,7 +592,6 @@ object VwPayments: TVwPayments
               Font.Style = []
               ParentFont = False
               ExplicitLeft = 292
-              ExplicitTop = 60
               ExplicitWidth = 37
             end
             object Label16: TLabel
@@ -627,7 +607,6 @@ object VwPayments: TVwPayments
               Font.Name = 'Segoe UI'
               Font.Style = []
               ParentFont = False
-              ExplicitTop = 60
               ExplicitWidth = 52
             end
             object Shape3: TShape
@@ -686,8 +665,6 @@ object VwPayments: TVwPayments
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitLeft = -124
-    ExplicitWidth = 1024
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -702,13 +679,13 @@ object VwPayments: TVwPayments
   end
   object aDataSource: TDataSource
     DataSet = cdsPayments
-    Left = 808
-    Top = 600
+    Left = 816
+    Top = 584
   end
   object cdsPayments: TClientDataSet
     Aggregates = <>
     Params = <>
-    Left = 808
+    Left = 816
     Top = 656
   end
 end

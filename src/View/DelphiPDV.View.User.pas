@@ -48,6 +48,7 @@ type
       ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
       var ADone: Boolean);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -94,6 +95,11 @@ begin
       aDataSource.DataSet.Next;
     end;
   end;
+end;
+
+procedure TVwUser.FormShow(Sender: TObject);
+begin
+  aDataSource.DataSet := nil;
 end;
 
 procedure TVwUser.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;

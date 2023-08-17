@@ -65,7 +65,7 @@ implementation
 
 procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
-  Action := caFree
+  Action := caFree;
 end;
 
 procedure TForm1.FormKeyDown(Sender: TObject; var Key: Word;

@@ -11,6 +11,7 @@ object VwPrescrible: TVwPrescrible
   Font.Style = []
   OnClose = FormClose
   OnKeyDown = FormKeyDown
+  OnShow = FormShow
   TextHeight = 15
   object PanelPesquisa: TPanel
     Left = 0
@@ -20,7 +21,6 @@ object VwPrescrible: TVwPrescrible
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitWidth = 624
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -38,7 +38,6 @@ object VwPrescrible: TVwPrescrible
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
-      ExplicitWidth = 624
       ExplicitHeight = 23
     end
   end
@@ -65,8 +64,6 @@ object VwPrescrible: TVwPrescrible
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitWidth = 624
-    ExplicitHeight = 364
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -159,8 +156,6 @@ object VwPrescrible: TVwPrescrible
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitTop = 425
-    ExplicitWidth = 624
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -174,7 +169,7 @@ object VwPrescrible: TVwPrescrible
     end
   end
   object aDataSource: TDataSource
-    Left = 40
-    Top = 357
+    Left = 24
+    Top = 693
   end
 end

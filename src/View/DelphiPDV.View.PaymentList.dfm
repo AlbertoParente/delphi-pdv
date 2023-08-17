@@ -170,7 +170,7 @@ object Form1: TForm1
     end
   end
   object aDataSource: TDataSource
-    Left = 40
-    Top = 680
+    Left = 48
+    Top = 688
   end
 end

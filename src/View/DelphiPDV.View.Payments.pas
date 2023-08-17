@@ -45,6 +45,7 @@ type
     LabelInformation: TLabel;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
     procedure AddPaymentMethod;
@@ -75,7 +76,7 @@ end;
 
 procedure TVwPayments.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
-  Close;
+  Action := caFree;
 end;
 
 procedure TVwPayments.FormKeyDown(Sender: TObject; var Key: Word;
@@ -108,6 +109,11 @@ begin
       SelectNext(Screen.ActiveControl, True, True);
     end;
   end;
+end;
+
+procedure TVwPayments.FormShow(Sender: TObject);
+begin
+  aDataSource.DataSet := nil;
 end;
 
 procedure TVwPayments.Process;
