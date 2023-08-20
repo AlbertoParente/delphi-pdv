@@ -160,7 +160,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\View\DelphiPDV.View.Suppliers.pas">
-            <Form>Form2</Form>
+            <Form>VwSuppliers</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
