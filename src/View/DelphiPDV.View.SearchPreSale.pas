@@ -1,4 +1,4 @@
-unit DelphiPDV.View.PesquisarPreVenda;
+unit DelphiPDV.View.SearchPreSale;
 
 interface
 
@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm2 = class(TForm)
+  TVwSearchPreSale = class(TForm)
     PanelPesquisa: TPanel;
     LabelPesquisa: TLabel;
     EditPesquisa: TEdit;
@@ -43,8 +43,13 @@ type
     LabelInformation: TLabel;
     ColumnCliente: TcxGridDBColumn;
     ColumnDataHora: TcxGridDBColumn;
+    aDataSource: TDataSource;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure FormShow(Sender: TObject);
+    procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+      ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
+      var ADone: Boolean);
   private
     { Private declarations }
   public
@@ -54,7 +59,7 @@ type
   end;
 
 var
-  Form2: TForm2;
+  VwSearchPreSale: TVwSearchPreSale;
 
 implementation
 
@@ -62,12 +67,12 @@ implementation
 
 { TForm2 }
 
-procedure TForm2.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TVwSearchPreSale.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Action := caFree;
 end;
 
-procedure TForm2.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TVwSearchPreSale.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -95,12 +100,29 @@ begin
   end;
 end;
 
-procedure TForm2.Process;
+procedure TVwSearchPreSale.FormShow(Sender: TObject);
+begin
+  aDataSource.DataSet := nil;
+end;
+
+procedure TVwSearchPreSale.GridViewCustomDrawCell(
+  Sender: TcxCustomGridTableView; ACanvas: TcxCanvas;
+  AViewInfo: TcxGridTableDataCellViewInfo; var ADone: Boolean);
+begin
+  inherited;
+  if AViewInfo.GridRecord.Selected then
+  begin
+    ACanvas.Brush.Color := clHighlight;
+    ACanvas.Font.Color  := clWhite;
+  end;
+end;
+
+procedure TVwSearchPreSale.Process;
 begin
   Review;
 end;
 
-procedure TForm2.Review;
+procedure TVwSearchPreSale.Review;
 begin
 
 end;

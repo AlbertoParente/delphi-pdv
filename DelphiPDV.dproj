@@ -163,8 +163,8 @@
             <Form>VwSuppliers</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.PesquisarPreVenda.pas">
-            <Form>Form2</Form>
+        <DCCReference Include="src\View\DelphiPDV.View.SearchPreSale.pas">
+            <Form>VwSearchPreSale</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

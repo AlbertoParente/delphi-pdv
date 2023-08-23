@@ -17,7 +17,7 @@ uses
   DelphiPDV.View.Prescrible in 'src\View\DelphiPDV.View.Prescrible.pas' {VwPrescrible},
   DelphiPDV.View.Manufacturer in 'src\View\DelphiPDV.View.Manufacturer.pas' {VwManufacturer},
   DelphiPDV.View.Suppliers in 'src\View\DelphiPDV.View.Suppliers.pas' {VwSuppliers},
-  DelphiPDV.View.PesquisarPreVenda in 'src\View\DelphiPDV.View.PesquisarPreVenda.pas' {Form2};
+  DelphiPDV.View.SearchPreSale in 'src\View\DelphiPDV.View.SearchPreSale.pas' {VwSearchPreSale};
 
 {$R *.res}
 
@@ -29,6 +29,6 @@ begin
   Application.CreateForm(TVwPrincipal, VwPrincipal);
   Application.CreateForm(TVwManufacturer, VwManufacturer);
   Application.CreateForm(TVwSuppliers, VwSuppliers);
-  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TVwSearchPreSale, VwSearchPreSale);
   Application.Run;
 end.
