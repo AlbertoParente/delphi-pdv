@@ -1,4 +1,4 @@
-unit DelphiPDV.View.SearchPreSale;
+unit DelphiPDV.View.Address;
 
 interface
 
@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TVwSearchPreSale = class(TForm)
+  TForm2 = class(TForm)
     PanelPesquisa: TPanel;
     LabelPesquisa: TLabel;
     EditPesquisa: TEdit;
@@ -41,92 +41,18 @@ type
     DBGridLevel1: TcxGridLevel;
     PanelInformation: TPanel;
     LabelInformation: TLabel;
-    ColumnCliente: TcxGridDBColumn;
-    ColumnDataHora: TcxGridDBColumn;
-    aDataSource: TDataSource;
-    ColumnNumberCashier: TcxGridDBColumn;
-    ColumnNumberTurn: TcxGridDBColumn;
-    procedure FormClose(Sender: TObject; var Action: TCloseAction);
-    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
-    procedure FormShow(Sender: TObject);
-    procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
-      ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
-      var ADone: Boolean);
+    ColumnNumber: TcxGridDBColumn;
   private
     { Private declarations }
   public
     { Public declarations }
-    procedure Process;
-    procedure Review;
   end;
 
 var
-  VwSearchPreSale: TVwSearchPreSale;
+  Form2: TForm2;
 
 implementation
 
 {$R *.dfm}
-
-{ TForm2 }
-
-procedure TVwSearchPreSale.FormClose(Sender: TObject; var Action: TCloseAction);
-begin
-  Action := caFree;
-end;
-
-procedure TVwSearchPreSale.FormKeyDown(Sender: TObject; var Key: Word;
-  Shift: TShiftState);
-begin
-  inherited;
-  case Key of
-    VK_ESCAPE:
-    begin
-      Close;
-    end;
-    VK_NEXT:
-    begin
-      Process;
-    end;
-    VK_RETURN:
-    begin
-      SelectNext(Screen.ActiveControl, True, True);
-    end;
-    VK_UP:
-    begin
-      aDataSource.DataSet.Prior;
-    end;
-    VK_DOWN:
-    begin
-      aDataSource.DataSet.Next;
-    end;
-  end;
-end;
-
-procedure TVwSearchPreSale.FormShow(Sender: TObject);
-begin
-  aDataSource.DataSet := nil;
-end;
-
-procedure TVwSearchPreSale.GridViewCustomDrawCell(
-  Sender: TcxCustomGridTableView; ACanvas: TcxCanvas;
-  AViewInfo: TcxGridTableDataCellViewInfo; var ADone: Boolean);
-begin
-  inherited;
-  if AViewInfo.GridRecord.Selected then
-  begin
-    ACanvas.Brush.Color := clHighlight;
-    ACanvas.Font.Color  := clWhite;
-  end;
-end;
-
-procedure TVwSearchPreSale.Process;
-begin
-  Review;
-end;
-
-procedure TVwSearchPreSale.Review;
-begin
-
-end;
 
 end.
