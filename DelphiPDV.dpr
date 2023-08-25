@@ -18,7 +18,7 @@ uses
   DelphiPDV.View.Manufacturer in 'src\View\DelphiPDV.View.Manufacturer.pas' {VwManufacturer},
   DelphiPDV.View.Suppliers in 'src\View\DelphiPDV.View.Suppliers.pas' {VwSuppliers},
   DelphiPDV.View.SearchPreSale in 'src\View\DelphiPDV.View.SearchPreSale.pas' {VwSearchPreSale},
-  DelphiPDV.View.Address in 'src\View\DelphiPDV.View.Address.pas' {Form2};
+  DelphiPDV.View.Address in 'src\View\DelphiPDV.View.Address.pas' {VwAddress};
 
 {$R *.res}
 
@@ -31,6 +31,6 @@ begin
   Application.CreateForm(TVwManufacturer, VwManufacturer);
   Application.CreateForm(TVwSuppliers, VwSuppliers);
   Application.CreateForm(TVwSearchPreSale, VwSearchPreSale);
-  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TVwAddress, VwAddress);
   Application.Run;
 end.

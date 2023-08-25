@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm2 = class(TForm)
+  TVwAddress = class(TForm)
     PanelPesquisa: TPanel;
     LabelPesquisa: TLabel;
     EditPesquisa: TEdit;
@@ -42,17 +42,90 @@ type
     PanelInformation: TPanel;
     LabelInformation: TLabel;
     ColumnNumber: TcxGridDBColumn;
+    aDataSource: TDataSource;
+    ColumnCity: TcxGridDBColumn;
+    ColumnState: TcxGridDBColumn;
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+      ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
+      var ADone: Boolean);
+    procedure FormShow(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
     { Public declarations }
+    procedure Process;
+    procedure Review;
   end;
 
 var
-  Form2: TForm2;
+  VwAddress: TVwAddress;
 
 implementation
 
 {$R *.dfm}
+
+{ TForm2 }
+
+procedure TVwAddress.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Action := caFree;
+end;
+
+procedure TVwAddress.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  inherited;
+  case Key of
+    VK_ESCAPE:
+    begin
+      Close;
+    end;
+    VK_NEXT:
+    begin
+      Process;
+    end;
+    VK_RETURN:
+    begin
+      SelectNext(Screen.ActiveControl, True, True);
+    end;
+    VK_UP:
+    begin
+      aDataSource.DataSet.Prior;
+    end;
+    VK_DOWN:
+    begin
+      aDataSource.DataSet.Next;
+    end;
+  end;
+end;
+
+procedure TVwAddress.FormShow(Sender: TObject);
+begin
+  aDataSource.DataSet := nil;
+end;
+
+procedure TVwAddress.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+  ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
+  var ADone: Boolean);
+begin
+  inherited;
+  if AViewInfo.GridRecord.Selected then
+  begin
+    ACanvas.Brush.Color := clHighlight;
+    ACanvas.Font.Color  := clWhite;
+  end;
+end;
+
+procedure TVwAddress.Process;
+begin
+  Review;
+end;
+
+procedure TVwAddress.Review;
+begin
+
+end;
 
 end.

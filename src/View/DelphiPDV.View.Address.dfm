@@ -1,7 +1,7 @@
-object Form2: TForm2
+object VwAddress: TVwAddress
   Left = 0
   Top = 0
-  Caption = 'Form2'
+  Caption = 'VwAddress'
   ClientHeight = 441
   ClientWidth = 624
   Color = clBtnFace
@@ -10,6 +10,9 @@ object Form2: TForm2
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnClose = FormClose
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
   TextHeight = 15
   object PanelPesquisa: TPanel
     Left = 0
@@ -19,8 +22,6 @@ object Form2: TForm2
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitLeft = -400
-    ExplicitWidth = 1024
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -38,7 +39,6 @@ object Form2: TForm2
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
-      ExplicitWidth = 1024
       ExplicitHeight = 23
     end
   end
@@ -87,6 +87,8 @@ object Form2: TForm2
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
+      OnCustomDrawCell = GridViewCustomDrawCell
+      DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
       DataController.Summary.FooterSummaryItems = <>
@@ -139,6 +141,14 @@ object Form2: TForm2
         Caption = 'Numero'
         DataBinding.IsNullValueType = True
       end
+      object ColumnCity: TcxGridDBColumn
+        Caption = 'Cidade'
+        DataBinding.IsNullValueType = True
+      end
+      object ColumnState: TcxGridDBColumn
+        Caption = 'Estado'
+        DataBinding.IsNullValueType = True
+      end
     end
     object DBGridDBCardView1: TcxGridDBCardView
       Navigator.Buttons.CustomButtons = <>
@@ -161,8 +171,6 @@ object Form2: TForm2
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitLeft = -400
-    ExplicitWidth = 1024
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -174,5 +182,9 @@ object Form2: TForm2
       ExplicitWidth = 197
       ExplicitHeight = 15
     end
+  end
+  object aDataSource: TDataSource
+    Left = 40
+    Top = 352
   end
 end
