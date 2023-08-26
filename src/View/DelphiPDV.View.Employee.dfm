@@ -1,7 +1,6 @@
 object VwEmployee: TVwEmployee
   Left = 0
   Top = 0
-  Caption = 'VwEmployee'
   ClientHeight = 768
   ClientWidth = 1024
   Color = clBtnFace
@@ -174,7 +173,7 @@ object VwEmployee: TVwEmployee
     end
   end
   object aDataSource: TDataSource
-    Left = 24
-    Top = 704
+    Left = 960
+    Top = 80
   end
 end

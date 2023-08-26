@@ -172,7 +172,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\View\DelphiPDV.View.BasicSubstance.pas">
-            <Form>Form2</Form>
+            <Form>VwBasicSubstance</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

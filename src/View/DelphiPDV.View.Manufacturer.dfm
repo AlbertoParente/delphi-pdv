@@ -152,7 +152,7 @@ object VwManufacturer: TVwManufacturer
     end
   end
   object aDataSource: TDataSource
-    Left = 48
-    Top = 677
+    Left = 952
+    Top = 125
   end
 end

@@ -19,7 +19,7 @@ uses
   DelphiPDV.View.Suppliers in 'src\View\DelphiPDV.View.Suppliers.pas' {VwSuppliers},
   DelphiPDV.View.SearchPreSale in 'src\View\DelphiPDV.View.SearchPreSale.pas' {VwSearchPreSale},
   DelphiPDV.View.Address in 'src\View\DelphiPDV.View.Address.pas' {VwAddress},
-  DelphiPDV.View.BasicSubstance in 'src\View\DelphiPDV.View.BasicSubstance.pas' {Form2};
+  DelphiPDV.View.BasicSubstance in 'src\View\DelphiPDV.View.BasicSubstance.pas' {VwBasicSubstance};
 
 {$R *.res}
 
@@ -33,6 +33,6 @@ begin
   Application.CreateForm(TVwSuppliers, VwSuppliers);
   Application.CreateForm(TVwSearchPreSale, VwSearchPreSale);
   Application.CreateForm(TVwAddress, VwAddress);
-  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TVwBasicSubstance, VwBasicSubstance);
   Application.Run;
 end.

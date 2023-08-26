@@ -679,13 +679,13 @@ object VwPayments: TVwPayments
   end
   object aDataSource: TDataSource
     DataSet = cdsPayments
-    Left = 816
-    Top = 584
+    Left = 840
+    Top = 80
   end
   object cdsPayments: TClientDataSet
     Aggregates = <>
     Params = <>
-    Left = 816
-    Top = 656
+    Left = 840
+    Top = 168
   end
 end

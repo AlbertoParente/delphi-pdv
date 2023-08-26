@@ -174,7 +174,7 @@ object VwUser: TVwUser
     end
   end
   object aDataSource: TDataSource
-    Left = 40
-    Top = 696
+    Left = 936
+    Top = 120
   end
 end

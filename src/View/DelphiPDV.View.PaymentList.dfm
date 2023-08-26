@@ -170,7 +170,7 @@ object VwPaymentList: TVwPaymentList
     end
   end
   object aDataSource: TDataSource
-    Left = 40
-    Top = 680
+    Left = 936
+    Top = 120
   end
 end
