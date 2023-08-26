@@ -144,7 +144,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\View\DelphiPDV.View.PaymentList.pas">
-            <Form>Form1</Form>
+            <Form>VwPaymentList</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\View\DelphiPDV.View.Deliverer.pas">
@@ -169,6 +169,10 @@
         </DCCReference>
         <DCCReference Include="src\View\DelphiPDV.View.Address.pas">
             <Form>VwAddress</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="src\View\DelphiPDV.View.BasicSubstance.pas">
+            <Form>Form2</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

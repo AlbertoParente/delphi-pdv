@@ -1,4 +1,4 @@
-unit DelphiPDV.View.PaymentList;
+unit DelphiPDV.View.BasicSubstance;
 
 interface
 
@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TVwPaymentList = class(TForm)
+  TForm2 = class(TForm)
     PanelPesquisa: TPanel;
     LabelPesquisa: TLabel;
     EditPesquisa: TEdit;
@@ -39,15 +39,8 @@ type
     ColumnDescription: TcxGridDBColumn;
     DBGridDBCardView1: TcxGridDBCardView;
     DBGridLevel1: TcxGridLevel;
-    PanelInformation: TPanel;
-    LabelInformation: TLabel;
     aDataSource: TDataSource;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
-    procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
-      ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
-      var ADone: Boolean);
-    procedure FormClose(Sender: TObject; var Action: TCloseAction);
-    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -57,18 +50,13 @@ type
   end;
 
 var
-  VwPaymentList: TVwPaymentList;
+  Form2: TForm2;
 
 implementation
 
 {$R *.dfm}
 
-procedure TVwPaymentList.FormClose(Sender: TObject; var Action: TCloseAction);
-begin
-  Action := caFree;
-end;
-
-procedure TVwPaymentList.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TForm2.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -96,29 +84,12 @@ begin
   end;
 end;
 
-procedure TVwPaymentList.FormShow(Sender: TObject);
-begin
-  aDataSource.DataSet := nil;
-end;
-
-procedure TVwPaymentList.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
-  ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
-  var ADone: Boolean);
-begin
-  inherited;
-  if AViewInfo.GridRecord.Selected then
-  begin
-    ACanvas.Brush.Color := clHighlight;
-    ACanvas.Font.Color  := clWhite;
-  end;
-end;
-
-procedure TVwPaymentList.Process;
+procedure TForm2.Process;
 begin
   Review;
 end;
 
-procedure TVwPaymentList.Review;
+procedure TForm2.Review;
 begin
 
 end;

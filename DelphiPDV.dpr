@@ -12,13 +12,14 @@ uses
   DelphiPDV.View.Client in 'src\View\DelphiPDV.View.Client.pas' {VwClient},
   DelphiPDV.View.User in 'src\View\DelphiPDV.View.User.pas' {VwUser},
   DelphiPDV.View.Employee in 'src\View\DelphiPDV.View.Employee.pas' {VwEmployee},
-  DelphiPDV.View.PaymentList in 'src\View\DelphiPDV.View.PaymentList.pas' {Form1},
+  DelphiPDV.View.PaymentList in 'src\View\DelphiPDV.View.PaymentList.pas' {VwPaymentList},
   DelphiPDV.View.Deliverer in 'src\View\DelphiPDV.View.Deliverer.pas' {VwDeliverer},
   DelphiPDV.View.Prescrible in 'src\View\DelphiPDV.View.Prescrible.pas' {VwPrescrible},
   DelphiPDV.View.Manufacturer in 'src\View\DelphiPDV.View.Manufacturer.pas' {VwManufacturer},
   DelphiPDV.View.Suppliers in 'src\View\DelphiPDV.View.Suppliers.pas' {VwSuppliers},
   DelphiPDV.View.SearchPreSale in 'src\View\DelphiPDV.View.SearchPreSale.pas' {VwSearchPreSale},
-  DelphiPDV.View.Address in 'src\View\DelphiPDV.View.Address.pas' {VwAddress};
+  DelphiPDV.View.Address in 'src\View\DelphiPDV.View.Address.pas' {VwAddress},
+  DelphiPDV.View.BasicSubstance in 'src\View\DelphiPDV.View.BasicSubstance.pas' {Form2};
 
 {$R *.res}
 
@@ -32,5 +33,6 @@ begin
   Application.CreateForm(TVwSuppliers, VwSuppliers);
   Application.CreateForm(TVwSearchPreSale, VwSearchPreSale);
   Application.CreateForm(TVwAddress, VwAddress);
+  Application.CreateForm(TForm2, Form2);
   Application.Run;
 end.
