@@ -19,7 +19,8 @@ uses
   DelphiPDV.View.Suppliers in 'src\View\DelphiPDV.View.Suppliers.pas' {VwSuppliers},
   DelphiPDV.View.SearchPreSale in 'src\View\DelphiPDV.View.SearchPreSale.pas' {VwSearchPreSale},
   DelphiPDV.View.Address in 'src\View\DelphiPDV.View.Address.pas' {VwAddress},
-  DelphiPDV.View.BasicSubstance in 'src\View\DelphiPDV.View.BasicSubstance.pas' {VwBasicSubstance};
+  DelphiPDV.View.BasicSubstance in 'src\View\DelphiPDV.View.BasicSubstance.pas' {VwBasicSubstance},
+  DelphiPDV.View.StorageStore in 'src\View\DelphiPDV.View.StorageStore.pas' {Form1};
 
 {$R *.res}
 
@@ -34,5 +35,6 @@ begin
   Application.CreateForm(TVwSearchPreSale, VwSearchPreSale);
   Application.CreateForm(TVwAddress, VwAddress);
   Application.CreateForm(TVwBasicSubstance, VwBasicSubstance);
+  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.
