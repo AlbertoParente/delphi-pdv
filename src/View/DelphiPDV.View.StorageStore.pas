@@ -45,6 +45,11 @@ type
     ColumnStore: TcxGridDBColumn;
     aDataSource: TDataSource;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure FormShow(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+      ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
+      var ADone: Boolean);
   private
     { Private declarations }
   public
@@ -61,6 +66,11 @@ implementation
 {$R *.dfm}
 
 { TForm1 }
+
+procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Action := caFree;
+end;
 
 procedure TForm1.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
@@ -87,6 +97,23 @@ begin
     begin
       aDataSource.DataSet.Next;
     end;
+  end;
+end;
+
+procedure TForm1.FormShow(Sender: TObject);
+begin
+  aDataSource.DataSet := nil;
+end;
+
+procedure TForm1.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+  ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
+  var ADone: Boolean);
+begin
+  inherited;
+  if AViewInfo.GridRecord.Selected then
+  begin
+    ACanvas.Brush.Color := clHighlight;
+    ACanvas.Font.Color  := clWhite;
   end;
 end;
 
