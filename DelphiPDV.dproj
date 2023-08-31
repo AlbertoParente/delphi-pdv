@@ -180,7 +180,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\View\DelphiPDV.View.SearchDiscount.pas">
-            <Form>Form2</Form>
+            <Form>VwSearchDiscount</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
