@@ -149,7 +149,7 @@ object VwBasicSubstance: TVwBasicSubstance
     end
   end
   object aDataSource: TDataSource
-    Left = 944
+    Left = 968
     Top = 101
   end
 end

@@ -20,8 +20,9 @@ uses
   DelphiPDV.View.SearchPreSale in 'src\View\DelphiPDV.View.SearchPreSale.pas' {VwSearchPreSale},
   DelphiPDV.View.Address in 'src\View\DelphiPDV.View.Address.pas' {VwAddress},
   DelphiPDV.View.BasicSubstance in 'src\View\DelphiPDV.View.BasicSubstance.pas' {VwBasicSubstance},
-  DelphiPDV.View.StorageStore in 'src\View\DelphiPDV.View.StorageStore.pas' {Form1},
-  DelphiPDV.View.SearchDiscount in 'src\View\DelphiPDV.View.SearchDiscount.pas' {VwSearchDiscount};
+  DelphiPDV.View.StorageStore in 'src\View\DelphiPDV.View.StorageStore.pas' {VwStorageStore},
+  DelphiPDV.View.SearchDiscount in 'src\View\DelphiPDV.View.SearchDiscount.pas' {VwSearchDiscount},
+  DelphiPDV.View.other in 'src\View\DelphiPDV.View.other.pas' {Form1};
 
 {$R *.res}
 
@@ -31,5 +32,6 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TdmDados, dmDados);
   Application.CreateForm(TVwPrincipal, VwPrincipal);
+  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.

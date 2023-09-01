@@ -1,7 +1,6 @@
-object Form1: TForm1
+object VwStorageStore: TVwStorageStore
   Left = 0
   Top = 0
-  Caption = 'Form1'
   ClientHeight = 768
   ClientWidth = 1024
   Color = clBtnFace
@@ -37,8 +36,6 @@ object Form1: TForm1
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitWidth = 624
-    ExplicitHeight = 364
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -139,7 +136,6 @@ object Form1: TForm1
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitWidth = 624
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -157,7 +153,6 @@ object Form1: TForm1
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
-      ExplicitWidth = 624
       ExplicitHeight = 23
     end
   end
@@ -169,8 +164,6 @@ object Form1: TForm1
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitTop = 425
-    ExplicitWidth = 624
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -184,7 +177,7 @@ object Form1: TForm1
     end
   end
   object aDataSource: TDataSource
-    Left = 944
-    Top = 120
+    Left = 960
+    Top = 96
   end
 end

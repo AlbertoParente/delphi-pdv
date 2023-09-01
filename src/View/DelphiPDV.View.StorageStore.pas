@@ -29,7 +29,7 @@ uses
   cxGridCustomView, cxGrid, Vcl.StdCtrls, Vcl.ExtCtrls;
 
 type
-  TForm1 = class(TForm)
+  TVwStorageStore = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -59,7 +59,7 @@ type
   end;
 
 var
-  Form1: TForm1;
+  VwStorageStore: TVwStorageStore;
 
 implementation
 
@@ -67,12 +67,12 @@ implementation
 
 { TForm1 }
 
-procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TVwStorageStore.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Action := caFree;
 end;
 
-procedure TForm1.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TVwStorageStore.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -100,12 +100,12 @@ begin
   end;
 end;
 
-procedure TForm1.FormShow(Sender: TObject);
+procedure TVwStorageStore.FormShow(Sender: TObject);
 begin
   aDataSource.DataSet := nil;
 end;
 
-procedure TForm1.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+procedure TVwStorageStore.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
   ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
   var ADone: Boolean);
 begin
@@ -117,12 +117,12 @@ begin
   end;
 end;
 
-procedure TForm1.Process;
+procedure TVwStorageStore.Process;
 begin
   Review;
 end;
 
-procedure TForm1.Review;
+procedure TVwStorageStore.Review;
 begin
 
 end;
