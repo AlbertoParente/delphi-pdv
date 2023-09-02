@@ -41,10 +41,19 @@ type
     DBGridLevel1: TcxGridLevel;
     PanelInformation: TPanel;
     LabelInformation: TLabel;
+    aDataSource: TDataSource;
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure FormShow(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+      ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
+      var ADone: Boolean);
   private
     { Private declarations }
   public
     { Public declarations }
+    procedure Process;
+    procedure Review;
   end;
 
 var
@@ -53,6 +62,16 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm1.Process;
+begin
+  Review;
+end;
+
+procedure TForm1.Review;
+begin
+
+end;
 
 procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
@@ -102,16 +121,6 @@ begin
     ACanvas.Brush.Color := clHighlight;
     ACanvas.Font.Color  := clWhite;
   end;
-end;
-
-procedure TForm1.Process;
-begin
-  Review;
-end;
-
-procedure TForm1.Review;
-begin
-
 end;
 
 end.
