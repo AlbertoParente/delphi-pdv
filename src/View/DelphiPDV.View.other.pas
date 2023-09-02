@@ -54,4 +54,64 @@ implementation
 
 {$R *.dfm}
 
+procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Action := caFree;
+end;
+
+procedure TForm1.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  inherited;
+  case Key of
+    VK_ESCAPE:
+    begin
+      Close;
+    end;
+    VK_NEXT:
+    begin
+      Process;
+    end;
+    VK_RETURN:
+    begin
+      SelectNext(Screen.ActiveControl, True, True);
+    end;
+    VK_UP:
+    begin
+      aDataSource.DataSet.Prior;
+    end;
+    VK_DOWN:
+    begin
+      aDataSource.DataSet.Next;
+    end;
+  end;
+end;
+
+procedure TForm1.FormShow(Sender: TObject);
+begin
+  aDataSource.DataSet := nil;
+end;
+
+procedure TForm1.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+  ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
+  var ADone: Boolean);
+begin
+  inherited;
+  if AViewInfo.GridRecord.Selected then
+  begin
+    ACanvas.Brush.Color := clHighlight;
+    ACanvas.Font.Color  := clWhite;
+  end;
+end;
+
+procedure TForm1.Process;
+begin
+  Review;
+end;
+
+procedure TForm1.Review;
+begin
+
+end;
+
 end.
