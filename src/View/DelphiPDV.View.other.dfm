@@ -1,4 +1,4 @@
-object Form1: TForm1
+object VwDelivery: TVwDelivery
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -21,15 +21,14 @@ object Form1: TForm1
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitWidth = 624
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
       Width = 1024
       Height = 15
       Align = alTop
-      Caption = 'Pesquisar Vendedor'
-      ExplicitWidth = 103
+      Caption = 'Pesquisar Entregas'
+      ExplicitWidth = 98
     end
     object EditPesquisa: TEdit
       Left = 0
@@ -39,7 +38,6 @@ object Form1: TForm1
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
-      ExplicitWidth = 624
       ExplicitHeight = 23
     end
   end
@@ -66,8 +64,8 @@ object Form1: TForm1
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitWidth = 624
-    ExplicitHeight = 364
+    ExplicitLeft = -5
+    ExplicitTop = 56
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -128,8 +126,8 @@ object Form1: TForm1
         Options.AutoWidthSizable = False
         Width = 60
       end
-      object ColumnSellerName: TcxGridDBColumn
-        Caption = 'Vendedor'
+      object ColumnDelivery: TcxGridDBColumn
+        Caption = 'Entrega'
         DataBinding.FieldName = 'numconselho'
         DataBinding.IsNullValueType = True
         PropertiesClassName = 'TcxTextEditProperties'
@@ -137,6 +135,14 @@ object Form1: TForm1
         Properties.MaxLength = 0
         Options.AutoWidthSizable = False
         Width = 200
+      end
+      object ColumnClient: TcxGridDBColumn
+        Caption = 'Cliente'
+        DataBinding.IsNullValueType = True
+      end
+      object ColumnSeller: TcxGridDBColumn
+        Caption = 'Vendedor'
+        DataBinding.IsNullValueType = True
       end
     end
     object DBGridDBCardView1: TcxGridDBCardView
@@ -160,8 +166,6 @@ object Form1: TForm1
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitTop = 425
-    ExplicitWidth = 624
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -175,7 +179,7 @@ object Form1: TForm1
     end
   end
   object aDataSource: TDataSource
-    Left = 968
-    Top = 96
+    Left = 952
+    Top = 104
   end
 end

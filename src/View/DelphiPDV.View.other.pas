@@ -29,19 +29,21 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm1 = class(TForm)
+  TVwDelivery = class(TForm)
     PanelPesquisa: TPanel;
     LabelPesquisa: TLabel;
     EditPesquisa: TEdit;
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
-    ColumnSellerName: TcxGridDBColumn;
+    ColumnDelivery: TcxGridDBColumn;
     DBGridDBCardView1: TcxGridDBCardView;
     DBGridLevel1: TcxGridLevel;
     PanelInformation: TPanel;
     LabelInformation: TLabel;
     aDataSource: TDataSource;
+    ColumnClient: TcxGridDBColumn;
+    ColumnSeller: TcxGridDBColumn;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -57,28 +59,18 @@ type
   end;
 
 var
-  Form1: TForm1;
+  VwDelivery: TVwDelivery;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm1.Process;
-begin
-  Review;
-end;
-
-procedure TForm1.Review;
-begin
-
-end;
-
-procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TVwDelivery.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Action := caFree;
 end;
 
-procedure TForm1.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TVwDelivery.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -106,12 +98,12 @@ begin
   end;
 end;
 
-procedure TForm1.FormShow(Sender: TObject);
+procedure TVwDelivery.FormShow(Sender: TObject);
 begin
   aDataSource.DataSet := nil;
 end;
 
-procedure TForm1.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+procedure TVwDelivery.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
   ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
   var ADone: Boolean);
 begin
@@ -121,6 +113,16 @@ begin
     ACanvas.Brush.Color := clHighlight;
     ACanvas.Font.Color  := clWhite;
   end;
+end;
+
+procedure TVwDelivery.Process;
+begin
+  Review;
+end;
+
+procedure TVwDelivery.Review;
+begin
+
 end;
 
 end.

@@ -22,7 +22,7 @@ uses
   DelphiPDV.View.BasicSubstance in 'src\View\DelphiPDV.View.BasicSubstance.pas' {VwBasicSubstance},
   DelphiPDV.View.StorageStore in 'src\View\DelphiPDV.View.StorageStore.pas' {VwStorageStore},
   DelphiPDV.View.SearchDiscount in 'src\View\DelphiPDV.View.SearchDiscount.pas' {VwSearchDiscount},
-  DelphiPDV.View.other in 'src\View\DelphiPDV.View.other.pas' {Form1};
+  DelphiPDV.View.other in 'src\View\DelphiPDV.View.other.pas' {VwDelivery};
 
 {$R *.res}
 
@@ -32,6 +32,5 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TdmDados, dmDados);
   Application.CreateForm(TVwPrincipal, VwPrincipal);
-  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.
