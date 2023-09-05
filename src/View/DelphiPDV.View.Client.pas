@@ -101,7 +101,7 @@ end;
 
 procedure TVwClient.FormShow(Sender: TObject);
 begin
-  aDataSource.DataSet := nul;
+  aDataSource.DataSet := nIl;
 end;
 
 procedure TVwClient.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;

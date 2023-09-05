@@ -174,7 +174,7 @@ object VwClient: TVwClient
     end
   end
   object aDataSource: TDataSource
-    Left = 944
-    Top = 96
+    Left = 960
+    Top = 104
   end
 end
