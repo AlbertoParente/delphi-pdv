@@ -10,6 +10,9 @@ object Form1: TForm1
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnClose = FormClose
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
   TextHeight = 15
   object PanelPesquisa: TPanel
     Left = 0
@@ -19,8 +22,6 @@ object Form1: TForm1
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitLeft = -400
-    ExplicitWidth = 1024
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -38,7 +39,6 @@ object Form1: TForm1
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
-      ExplicitWidth = 1024
       ExplicitHeight = 23
     end
   end
@@ -65,10 +65,6 @@ object Form1: TForm1
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -400
-    ExplicitTop = -250
-    ExplicitWidth = 1024
-    ExplicitHeight = 691
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -89,6 +85,8 @@ object Form1: TForm1
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
+      OnCustomDrawCell = GridViewCustomDrawCell
+      DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
       DataController.Summary.FooterSummaryItems = <>
@@ -159,8 +157,6 @@ object Form1: TForm1
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitLeft = -400
-    ExplicitWidth = 1024
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -172,5 +168,9 @@ object Form1: TForm1
       ExplicitWidth = 197
       ExplicitHeight = 15
     end
+  end
+  object aDataSource: TDataSource
+    Left = 556
+    Top = 96
   end
 end
