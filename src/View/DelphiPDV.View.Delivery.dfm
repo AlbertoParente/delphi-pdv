@@ -64,8 +64,6 @@ object VwDelivery: TVwDelivery
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -5
-    ExplicitTop = 56
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -179,7 +177,7 @@ object VwDelivery: TVwDelivery
     end
   end
   object aDataSource: TDataSource
-    Left = 952
-    Top = 104
+    Left = 944
+    Top = 128
   end
 end

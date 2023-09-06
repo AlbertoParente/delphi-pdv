@@ -183,8 +183,12 @@
             <Form>VwSearchDiscount</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.other.pas">
+        <DCCReference Include="src\View\DelphiPDV.View.Delivery.pas">
             <Form>VwDelivery</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="src\View\DelphiPDV.View.Batch.pas">
+            <Form>Form1</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
