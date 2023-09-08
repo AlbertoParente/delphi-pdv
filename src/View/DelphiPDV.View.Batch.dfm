@@ -1,9 +1,9 @@
-object Form1: TForm1
+object VwBatch: TVwBatch
   Left = 0
   Top = 0
-  Caption = 'Form1'
-  ClientHeight = 441
-  ClientWidth = 624
+  Caption = 'VwBatch'
+  ClientHeight = 768
+  ClientWidth = 1024
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,15 +17,16 @@ object Form1: TForm1
   object PanelPesquisa: TPanel
     Left = 0
     Top = 0
-    Width = 624
+    Width = 1024
     Height = 57
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 0
+    ExplicitWidth = 624
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
-      Width = 624
+      Width = 1024
       Height = 15
       Align = alTop
       Caption = 'Pesquisar Lote'
@@ -34,11 +35,12 @@ object Form1: TForm1
     object EditPesquisa: TEdit
       Left = 0
       Top = 15
-      Width = 624
+      Width = 1024
       Height = 42
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
+      ExplicitWidth = 624
       ExplicitHeight = 23
     end
   end
@@ -46,8 +48,8 @@ object Form1: TForm1
     AlignWithMargins = True
     Left = 0
     Top = 59
-    Width = 624
-    Height = 364
+    Width = 1024
+    Height = 691
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -65,6 +67,8 @@ object Form1: TForm1
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitWidth = 624
+    ExplicitHeight = 364
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -135,6 +139,14 @@ object Form1: TForm1
         Options.AutoWidthSizable = False
         Width = 200
       end
+      object ColumnDateExpiration: TcxGridDBColumn
+        Caption = 'Data de Fabrica'#231#227'o'
+        DataBinding.IsNullValueType = True
+      end
+      object ColumnDateManufacture: TcxGridDBColumn
+        Caption = 'Data de Vencimento'
+        DataBinding.IsNullValueType = True
+      end
     end
     object DBGridDBCardView1: TcxGridDBCardView
       Navigator.Buttons.CustomButtons = <>
@@ -151,16 +163,18 @@ object Form1: TForm1
   end
   object PanelInformation: TPanel
     Left = 0
-    Top = 425
-    Width = 624
+    Top = 752
+    Width = 1024
     Height = 16
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
+    ExplicitTop = 425
+    ExplicitWidth = 624
     object LabelInformation: TLabel
       Left = 0
       Top = 0
-      Width = 624
+      Width = 1024
       Height = 16
       Align = alClient
       Alignment = taCenter
@@ -170,7 +184,7 @@ object Form1: TForm1
     end
   end
   object aDataSource: TDataSource
-    Left = 556
-    Top = 96
+    Left = 932
+    Top = 120
   end
 end

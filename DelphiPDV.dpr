@@ -23,7 +23,7 @@ uses
   DelphiPDV.View.StorageStore in 'src\View\DelphiPDV.View.StorageStore.pas' {VwStorageStore},
   DelphiPDV.View.SearchDiscount in 'src\View\DelphiPDV.View.SearchDiscount.pas' {VwSearchDiscount},
   DelphiPDV.View.Delivery in 'src\View\DelphiPDV.View.Delivery.pas' {VwDelivery},
-  DelphiPDV.View.Batch in 'src\View\DelphiPDV.View.Batch.pas' {Form1};
+  DelphiPDV.View.Batch in 'src\View\DelphiPDV.View.Batch.pas' {VwBatch};
 
 {$R *.res}
 
@@ -33,6 +33,6 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TdmDados, dmDados);
   Application.CreateForm(TVwPrincipal, VwPrincipal);
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TVwBatch, VwBatch);
   Application.Run;
 end.
