@@ -24,7 +24,7 @@ uses
   DelphiPDV.View.SearchDiscount in 'src\View\DelphiPDV.View.SearchDiscount.pas' {VwSearchDiscount},
   DelphiPDV.View.Delivery in 'src\View\DelphiPDV.View.Delivery.pas' {VwDelivery},
   DelphiPDV.View.Batch in 'src\View\DelphiPDV.View.Batch.pas' {VwBatch},
-  DelphiPDV.View.Other in 'src\View\DelphiPDV.View.Other.pas' {Form1};
+  DelphiPDV.View.Other in 'src\View\DelphiPDV.View.Other.pas' {VwOther};
 
 {$R *.res}
 
@@ -34,6 +34,6 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TdmDados, dmDados);
   Application.CreateForm(TVwPrincipal, VwPrincipal);
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TVwOther, VwOther);
   Application.Run;
 end.
