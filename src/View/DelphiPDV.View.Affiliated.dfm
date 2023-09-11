@@ -1,7 +1,6 @@
-object VwOther: TVwOther
+object VwAffiliated: TVwAffiliated
   Left = 0
   Top = 0
-  Caption = 'VwOther'
   ClientHeight = 768
   ClientWidth = 1024
   Color = clBtnFace
@@ -22,15 +21,14 @@ object VwOther: TVwOther
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitWidth = 624
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
       Width = 1024
       Height = 15
       Align = alTop
-      Caption = 'Pesquisar Vendedor'
-      ExplicitWidth = 103
+      Caption = 'Pesquisar Filiais'
+      ExplicitWidth = 82
     end
     object EditPesquisa: TEdit
       Left = 0
@@ -40,7 +38,6 @@ object VwOther: TVwOther
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
-      ExplicitWidth = 624
       ExplicitHeight = 23
     end
   end
@@ -67,8 +64,6 @@ object VwOther: TVwOther
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitWidth = 624
-    ExplicitHeight = 380
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -129,8 +124,8 @@ object VwOther: TVwOther
         Options.AutoWidthSizable = False
         Width = 60
       end
-      object ColumnSellerName: TcxGridDBColumn
-        Caption = 'Vendedor'
+      object ColumnName: TcxGridDBColumn
+        Caption = 'Nome'
         DataBinding.FieldName = 'numconselho'
         DataBinding.IsNullValueType = True
         PropertiesClassName = 'TcxTextEditProperties'
@@ -138,6 +133,14 @@ object VwOther: TVwOther
         Properties.MaxLength = 0
         Options.AutoWidthSizable = False
         Width = 200
+      end
+      object ColumnCNPJ: TcxGridDBColumn
+        Caption = 'CNPJ'
+        DataBinding.IsNullValueType = True
+      end
+      object ColumnCorporateName: TcxGridDBColumn
+        Caption = 'Raz'#227'o Social'
+        DataBinding.IsNullValueType = True
       end
     end
     object DBGridDBCardView1: TcxGridDBCardView
@@ -155,6 +158,6 @@ object VwOther: TVwOther
   end
   object aDataSource: TDataSource
     Left = 964
-    Top = 88
+    Top = 104
   end
 end

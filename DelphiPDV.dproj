@@ -191,8 +191,8 @@
             <Form>VwBatch</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other.pas">
-            <Form>VwOther</Form>
+        <DCCReference Include="src\View\DelphiPDV.View.Affiliated.pas">
+            <Form>VwAffiliated</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

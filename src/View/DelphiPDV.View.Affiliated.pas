@@ -1,4 +1,4 @@
-unit DelphiPDV.View.Other;
+unit DelphiPDV.View.Affiliated;
 
 interface
 
@@ -29,17 +29,19 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TVwOther = class(TForm)
+  TVwAffiliated = class(TForm)
     PanelPesquisa: TPanel;
     LabelPesquisa: TLabel;
     EditPesquisa: TEdit;
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
-    ColumnSellerName: TcxGridDBColumn;
+    ColumnName: TcxGridDBColumn;
     DBGridDBCardView1: TcxGridDBCardView;
     DBGridLevel1: TcxGridLevel;
     aDataSource: TDataSource;
+    ColumnCNPJ: TcxGridDBColumn;
+    ColumnCorporateName: TcxGridDBColumn;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -55,18 +57,18 @@ type
   end;
 
 var
-  VwOther: TVwOther;
+  VwAffiliated: TVwAffiliated;
 
 implementation
 
 {$R *.dfm}
 
-procedure TVwOther.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TVwAffiliated.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Action := caFree;
 end;
 
-procedure TVwOther.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TVwAffiliated.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -94,12 +96,12 @@ begin
   end;
 end;
 
-procedure TVwOther.FormShow(Sender: TObject);
+procedure TVwAffiliated.FormShow(Sender: TObject);
 begin
   aDataSource.DataSet := nil;
 end;
 
-procedure TVwOther.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+procedure TVwAffiliated.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
   ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
   var ADone: Boolean);
 begin
@@ -111,12 +113,12 @@ begin
   end;
 end;
 
-procedure TVwOther.Process;
+procedure TVwAffiliated.Process;
 begin
   Review;
 end;
 
-procedure TVwOther.Review;
+procedure TVwAffiliated.Review;
 begin
 
 end;
