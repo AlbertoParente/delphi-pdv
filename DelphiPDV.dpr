@@ -25,7 +25,7 @@ uses
   DelphiPDV.View.Delivery in 'src\View\DelphiPDV.View.Delivery.pas' {VwDelivery},
   DelphiPDV.View.Batch in 'src\View\DelphiPDV.View.Batch.pas' {VwBatch},
   DelphiPDV.View.Affiliated in 'src\View\DelphiPDV.View.Affiliated.pas' {VwAffiliated},
-  DelphiPDV.View.Other in 'src\View\DelphiPDV.View.Other.pas' {Form1};
+  DelphiPDV.View.Other in 'src\View\DelphiPDV.View.Other.pas' {VwOther};
 
 {$R *.res}
 
@@ -36,6 +36,6 @@ begin
   Application.CreateForm(TdmDados, dmDados);
   Application.CreateForm(TVwPrincipal, VwPrincipal);
   Application.CreateForm(TVwAffiliated, VwAffiliated);
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TVwOther, VwOther);
   Application.Run;
 end.
