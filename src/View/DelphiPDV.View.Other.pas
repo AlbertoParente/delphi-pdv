@@ -29,19 +29,21 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TVwOther = class(TForm)
+  TVwAlterClient = class(TForm)
     PanelPesquisa: TPanel;
     LabelPesquisa: TLabel;
     EditPesquisa: TEdit;
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
-    ColumnSellerName: TcxGridDBColumn;
+    ColumnClient: TcxGridDBColumn;
     DBGridDBCardView1: TcxGridDBCardView;
     DBGridLevel1: TcxGridLevel;
     PanelInformation: TPanel;
     LabelInformation: TLabel;
     aDataSource: TDataSource;
+    ColumnCPF: TcxGridDBColumn;
+    ColumnRG: TcxGridDBColumn;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -57,18 +59,18 @@ type
   end;
 
 var
-  VwOther: TVwOther;
+  VwAlterClient: TVwAlterClient;
 
 implementation
 
 {$R *.dfm}
 
-procedure TVwOther.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TVwAlterClient.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Action := caFree;
 end;
 
-procedure TVwOther.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TVwAlterClient.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -96,12 +98,12 @@ begin
   end;
 end;
 
-procedure TVwOther.FormShow(Sender: TObject);
+procedure TVwAlterClient.FormShow(Sender: TObject);
 begin
   aDataSource.DataSet := nil;
 end;
 
-procedure TVwOther.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+procedure TVwAlterClient.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
   ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
   var ADone: Boolean);
 begin
@@ -113,12 +115,12 @@ begin
   end;
 end;
 
-procedure TVwOther.Process;
+procedure TVwAlterClient.Process;
 begin
   Review;
 end;
 
-procedure TVwOther.Review;
+procedure TVwAlterClient.Review;
 begin
 
 end;

@@ -1,7 +1,6 @@
-object VwOther: TVwOther
+object VwAlterClient: TVwAlterClient
   Left = 0
   Top = 0
-  Caption = 'VwOther'
   ClientHeight = 768
   ClientWidth = 1024
   Color = clBtnFace
@@ -22,15 +21,14 @@ object VwOther: TVwOther
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitWidth = 624
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
       Width = 1024
       Height = 15
       Align = alTop
-      Caption = 'Pesquisar Vendedor'
-      ExplicitWidth = 103
+      Caption = 'Pesquisar Client'
+      ExplicitWidth = 84
     end
     object EditPesquisa: TEdit
       Left = 0
@@ -40,7 +38,6 @@ object VwOther: TVwOther
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
-      ExplicitWidth = 624
       ExplicitHeight = 23
     end
   end
@@ -67,8 +64,6 @@ object VwOther: TVwOther
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -5
-    ExplicitTop = 56
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -129,8 +124,8 @@ object VwOther: TVwOther
         Options.AutoWidthSizable = False
         Width = 60
       end
-      object ColumnSellerName: TcxGridDBColumn
-        Caption = 'Vendedor'
+      object ColumnClient: TcxGridDBColumn
+        Caption = 'Cliente'
         DataBinding.FieldName = 'numconselho'
         DataBinding.IsNullValueType = True
         PropertiesClassName = 'TcxTextEditProperties'
@@ -138,6 +133,14 @@ object VwOther: TVwOther
         Properties.MaxLength = 0
         Options.AutoWidthSizable = False
         Width = 200
+      end
+      object ColumnCPF: TcxGridDBColumn
+        Caption = 'CPF'
+        DataBinding.IsNullValueType = True
+      end
+      object ColumnRG: TcxGridDBColumn
+        Caption = 'RG'
+        DataBinding.IsNullValueType = True
       end
     end
     object DBGridDBCardView1: TcxGridDBCardView
@@ -161,8 +164,6 @@ object VwOther: TVwOther
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitTop = 425
-    ExplicitWidth = 624
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -176,7 +177,7 @@ object VwOther: TVwOther
     end
   end
   object aDataSource: TDataSource
-    Left = 960
-    Top = 88
+    Left = 952
+    Top = 104
   end
 end
