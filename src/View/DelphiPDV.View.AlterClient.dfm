@@ -177,7 +177,7 @@ object VwAlterClient: TVwAlterClient
     end
   end
   object aDataSource: TDataSource
-    Left = 952
-    Top = 104
+    Left = 968
+    Top = 96
   end
 end

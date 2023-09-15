@@ -1,4 +1,4 @@
-unit DelphiPDV.View.Other;
+unit Other1;
 
 interface
 
@@ -29,48 +29,33 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TVwAlterClient = class(TForm)
+  TForm1 = class(TForm)
     PanelPesquisa: TPanel;
     LabelPesquisa: TLabel;
     EditPesquisa: TEdit;
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
-    ColumnClient: TcxGridDBColumn;
+    ColumnSellerName: TcxGridDBColumn;
     DBGridDBCardView1: TcxGridDBCardView;
     DBGridLevel1: TcxGridLevel;
     PanelInformation: TPanel;
     LabelInformation: TLabel;
-    aDataSource: TDataSource;
-    ColumnCPF: TcxGridDBColumn;
-    ColumnRG: TcxGridDBColumn;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
-    procedure FormShow(Sender: TObject);
-    procedure FormClose(Sender: TObject; var Action: TCloseAction);
-    procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
-      ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
-      var ADone: Boolean);
   private
     { Private declarations }
   public
     { Public declarations }
-    procedure Process;
-    procedure Review;
   end;
 
 var
-  VwAlterClient: TVwAlterClient;
+  Form1: TForm1;
 
 implementation
 
 {$R *.dfm}
 
-procedure TVwAlterClient.FormClose(Sender: TObject; var Action: TCloseAction);
-begin
-  Action := caFree;
-end;
-
-procedure TVwAlterClient.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TForm1.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -96,33 +81,6 @@ begin
       aDataSource.DataSet.Next;
     end;
   end;
-end;
-
-procedure TVwAlterClient.FormShow(Sender: TObject);
-begin
-  aDataSource.DataSet := nil;
-end;
-
-procedure TVwAlterClient.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
-  ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
-  var ADone: Boolean);
-begin
-  inherited;
-  if AViewInfo.GridRecord.Selected then
-  begin
-    ACanvas.Brush.Color := clHighlight;
-    ACanvas.Font.Color  := clWhite;
-  end;
-end;
-
-procedure TVwAlterClient.Process;
-begin
-  Review;
-end;
-
-procedure TVwAlterClient.Review;
-begin
-
 end;
 
 end.
