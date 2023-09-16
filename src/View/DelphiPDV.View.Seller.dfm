@@ -164,11 +164,12 @@ object VwSeller: TVwSeller
       Align = alClient
       Alignment = taCenter
       Caption = '<Esc> Retorna        <Enter> Seleciona'
-      ExplicitTop = 3
+      ExplicitWidth = 197
+      ExplicitHeight = 15
     end
   end
   object aDataSource: TDataSource
     Left = 952
-    Top = 104
+    Top = 96
   end
 end
