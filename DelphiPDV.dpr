@@ -26,7 +26,8 @@ uses
   DelphiPDV.View.Batch in 'src\View\DelphiPDV.View.Batch.pas' {VwBatch},
   DelphiPDV.View.Affiliated in 'src\View\DelphiPDV.View.Affiliated.pas' {VwAffiliated},
   DelphiPDV.View.AlterClient in 'src\View\DelphiPDV.View.AlterClient.pas' {VwAlterClient},
-  Other1 in 'src\View\Other1.pas' {Form1};
+  Other1 in 'src\View\Other1.pas' {Form1},
+  DelphiPDV.View.Other in 'src\View\DelphiPDV.View.Other.pas' {Form2};
 
 {$R *.res}
 
@@ -39,5 +40,6 @@ begin
   Application.CreateForm(TVwAffiliated, VwAffiliated);
   Application.CreateForm(TVwAlterClient, VwAlterClient);
   Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TForm2, Form2);
   Application.Run;
 end.
