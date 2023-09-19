@@ -86,6 +86,7 @@ object Form1: TForm1
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
       OnCustomDrawCell = GridViewCustomDrawCell
+      DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
       DataController.Summary.FooterSummaryItems = <>
@@ -169,7 +170,7 @@ object Form1: TForm1
     end
   end
   object aDataSource: TDataSource
-    Left = 956
-    Top = 96
+    Left = 964
+    Top = 120
   end
 end

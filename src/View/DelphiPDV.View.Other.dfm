@@ -22,7 +22,6 @@ object VwOther: TVwOther
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitWidth = 624
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -40,7 +39,6 @@ object VwOther: TVwOther
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
-      ExplicitWidth = 624
       ExplicitHeight = 23
     end
   end
@@ -67,10 +65,6 @@ object VwOther: TVwOther
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -5
-    ExplicitTop = 56
-    ExplicitWidth = 624
-    ExplicitHeight = 364
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -92,6 +86,7 @@ object VwOther: TVwOther
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
       OnCustomDrawCell = GridViewCustomDrawCell
+      DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
       DataController.Summary.FooterSummaryItems = <>
@@ -162,8 +157,6 @@ object VwOther: TVwOther
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitTop = 425
-    ExplicitWidth = 624
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -178,6 +171,6 @@ object VwOther: TVwOther
   end
   object aDataSource: TDataSource
     Left = 952
-    Top = 88
+    Top = 96
   end
 end

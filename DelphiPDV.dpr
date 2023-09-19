@@ -27,7 +27,8 @@ uses
   DelphiPDV.View.Affiliated in 'src\View\DelphiPDV.View.Affiliated.pas' {VwAffiliated},
   DelphiPDV.View.AlterClient in 'src\View\DelphiPDV.View.AlterClient.pas' {VwAlterClient},
   DelphiPDV.View.Other1 in 'src\View\DelphiPDV.View.Other1.pas' {Form1},
-  DelphiPDV.View.Other in 'src\View\DelphiPDV.View.Other.pas' {VwOther};
+  DelphiPDV.View.Other in 'src\View\DelphiPDV.View.Other.pas' {VwOther},
+  DelphiPDV.View.Other2 in 'src\View\DelphiPDV.View.Other2.pas' {Form2};
 
 {$R *.res}
 
@@ -41,5 +42,6 @@ begin
   Application.CreateForm(TVwAlterClient, VwAlterClient);
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TVwOther, VwOther);
+  Application.CreateForm(TForm2, Form2);
   Application.Run;
 end.
