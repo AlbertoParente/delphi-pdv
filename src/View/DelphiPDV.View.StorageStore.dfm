@@ -177,7 +177,7 @@ object VwStorageStore: TVwStorageStore
     end
   end
   object aDataSource: TDataSource
-    Left = 960
-    Top = 96
+    Left = 952
+    Top = 104
   end
 end

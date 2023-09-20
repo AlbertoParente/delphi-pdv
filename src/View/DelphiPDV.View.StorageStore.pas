@@ -120,6 +120,7 @@ end;
 procedure TVwStorageStore.Process;
 begin
   Review;
+  Close;
 end;
 
 procedure TVwStorageStore.Review;

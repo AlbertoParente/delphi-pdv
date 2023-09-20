@@ -121,6 +121,7 @@ end;
 procedure TVwAddress.Process;
 begin
   Review;
+  Close;
 end;
 
 procedure TVwAddress.Review;

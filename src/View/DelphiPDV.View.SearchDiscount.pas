@@ -118,6 +118,7 @@ end;
 procedure TVwSearchDiscount.Process;
 begin
   Review;
+  Close;
 end;
 
 procedure TVwSearchDiscount.Review;

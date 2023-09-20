@@ -199,16 +199,8 @@
             <Form>VwAlterClient</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other1.pas">
-            <Form>Form1</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
         <DCCReference Include="src\View\DelphiPDV.View.Other.pas">
             <Form>VwOther</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other2.pas">
-            <Form>Form2</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

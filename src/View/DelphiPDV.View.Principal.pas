@@ -222,6 +222,7 @@ end;
 procedure TVwPrincipal.Process;
 begin
   Review;
+  Close;
 end;
 
 procedure TVwPrincipal.Review;

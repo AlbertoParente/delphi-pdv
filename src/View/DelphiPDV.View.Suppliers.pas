@@ -117,6 +117,7 @@ end;
 procedure TVwSuppliers.Process;
 begin
   Review;
+  Close;
 end;
 
 procedure TVwSuppliers.Review;

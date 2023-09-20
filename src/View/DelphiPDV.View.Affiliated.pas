@@ -116,6 +116,7 @@ end;
 procedure TVwAffiliated.Process;
 begin
   Review;
+  Close;
 end;
 
 procedure TVwAffiliated.Review;

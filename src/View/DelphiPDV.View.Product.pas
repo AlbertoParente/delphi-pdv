@@ -118,6 +118,7 @@ end;
 procedure TVwProduct.Process;
 begin
   Review;
+  Close;
 end;
 
 procedure TVwProduct.Review;

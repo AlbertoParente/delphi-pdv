@@ -122,6 +122,7 @@ end;
 procedure TVwSearchPreSale.Process;
 begin
   Review;
+  Close;
 end;
 
 procedure TVwSearchPreSale.Review;
