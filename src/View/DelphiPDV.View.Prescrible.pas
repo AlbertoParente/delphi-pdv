@@ -116,6 +116,7 @@ end;
 procedure TVwPrescrible.Process;
 begin
   Review;
+  Close;
 end;
 
 procedure TVwPrescrible.Review;

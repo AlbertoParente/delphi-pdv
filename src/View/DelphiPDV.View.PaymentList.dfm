@@ -22,6 +22,7 @@ object VwPaymentList: TVwPaymentList
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 0
+    ExplicitLeft = -8
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -65,6 +66,7 @@ object VwPaymentList: TVwPaymentList
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitLeft = -8
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -157,6 +159,7 @@ object VwPaymentList: TVwPaymentList
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
+    ExplicitLeft = -8
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -170,7 +173,7 @@ object VwPaymentList: TVwPaymentList
     end
   end
   object aDataSource: TDataSource
-    Left = 936
-    Top = 120
+    Left = 944
+    Top = 104
   end
 end

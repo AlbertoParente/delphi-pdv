@@ -115,6 +115,7 @@ end;
 procedure TVwBasicSubstance.Process;
 begin
   Review;
+  Close;
 end;
 
 procedure TVwBasicSubstance.Review;

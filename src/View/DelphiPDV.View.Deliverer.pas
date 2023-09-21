@@ -116,6 +116,7 @@ end;
 procedure TVwDeliverer.Process;
 begin
   Review;
+  Close;
 end;
 
 procedure TVwDeliverer.Review;

@@ -119,6 +119,7 @@ end;
 procedure TVwClient.Process;
 begin
   Review;
+  Close;
 end;
 
 procedure TVwClient.Review;

@@ -115,6 +115,7 @@ end;
 procedure TVwManufacturer.Process;
 begin
   Review;
+  Close;
 end;
 
 procedure TVwManufacturer.Review;

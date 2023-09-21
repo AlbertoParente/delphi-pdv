@@ -116,6 +116,7 @@ end;
 procedure TVwPaymentList.Process;
 begin
   Review;
+  Close;
 end;
 
 procedure TVwPaymentList.Review;

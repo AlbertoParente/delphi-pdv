@@ -119,6 +119,7 @@ end;
 procedure TVwPayments.Process;
 begin
   Review;
+  Close;
 end;
 
 procedure TVwPayments.Review;

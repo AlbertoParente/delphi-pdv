@@ -157,7 +157,7 @@ object VwAffiliated: TVwAffiliated
     end
   end
   object aDataSource: TDataSource
-    Left = 972
-    Top = 88
+    Left = 956
+    Top = 96
   end
 end

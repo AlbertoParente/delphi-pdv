@@ -118,6 +118,7 @@ end;
 procedure TVwBatch.Process;
 begin
   Review;
+  Close;
 end;
 
 procedure TVwBatch.Review;

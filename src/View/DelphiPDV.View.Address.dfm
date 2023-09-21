@@ -182,7 +182,7 @@ object VwAddress: TVwAddress
     end
   end
   object aDataSource: TDataSource
-    Left = 944
-    Top = 104
+    Left = 960
+    Top = 96
   end
 end

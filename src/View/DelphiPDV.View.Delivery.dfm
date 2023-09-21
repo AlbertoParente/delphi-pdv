@@ -177,7 +177,7 @@ object VwDelivery: TVwDelivery
     end
   end
   object aDataSource: TDataSource
-    Left = 944
-    Top = 128
+    Left = 952
+    Top = 104
   end
 end
