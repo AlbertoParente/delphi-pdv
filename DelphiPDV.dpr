@@ -27,7 +27,7 @@ uses
   DelphiPDV.View.Affiliated in 'src\View\DelphiPDV.View.Affiliated.pas' {VwAffiliated},
   DelphiPDV.View.AlterClient in 'src\View\DelphiPDV.View.AlterClient.pas' {VwAlterClient},
   DelphiPDV.View.Other in 'src\View\DelphiPDV.View.Other.pas' {VwOther},
-  DelphiPDV.View.Other1 in 'src\View\DelphiPDV.View.Other1.pas' {Form1};
+  DelphiPDV.View.Other1 in 'src\View\DelphiPDV.View.Other1.pas' {VwOther1};
 
 {$R *.res}
 
@@ -37,9 +37,5 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TdmDados, dmDados);
   Application.CreateForm(TVwPrincipal, VwPrincipal);
-  Application.CreateForm(TVwAffiliated, VwAffiliated);
-  Application.CreateForm(TVwAlterClient, VwAlterClient);
-  Application.CreateForm(TVwOther, VwOther);
-  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.
