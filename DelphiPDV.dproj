@@ -208,7 +208,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\View\DelphiPDV.View.Other2.pas">
-            <Form>Form1</Form>
+            <Form>VwOther2</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
