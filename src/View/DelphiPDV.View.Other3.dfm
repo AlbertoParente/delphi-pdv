@@ -1,31 +1,32 @@
-object Form1: TForm1
+object VwOther3: TVwOther3
   Left = 0
   Top = 0
-  Caption = 'Form1'
-  ClientHeight = 441
-  ClientWidth = 624
+  Caption = 'VwOther3'
+  ClientHeight = 768
+  ClientWidth = 1024
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnClose = FormClose
   OnKeyDown = FormKeyDown
+  OnShow = FormShow
   TextHeight = 15
   object PanelPesquisa: TPanel
     Left = 0
     Top = 0
-    Width = 624
+    Width = 1024
     Height = 57
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitLeft = -400
-    ExplicitWidth = 1024
+    ExplicitWidth = 624
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
-      Width = 624
+      Width = 1024
       Height = 15
       Align = alTop
       Caption = 'Pesquisar Vendedor'
@@ -34,12 +35,12 @@ object Form1: TForm1
     object EditPesquisa: TEdit
       Left = 0
       Top = 15
-      Width = 624
+      Width = 1024
       Height = 42
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
-      ExplicitWidth = 1024
+      ExplicitWidth = 624
       ExplicitHeight = 23
     end
   end
@@ -47,8 +48,8 @@ object Form1: TForm1
     AlignWithMargins = True
     Left = 0
     Top = 59
-    Width = 624
-    Height = 380
+    Width = 1024
+    Height = 707
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -67,7 +68,9 @@ object Form1: TForm1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
     ExplicitLeft = -5
-    ExplicitTop = 62
+    ExplicitTop = 54
+    ExplicitWidth = 624
+    ExplicitHeight = 380
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -88,6 +91,8 @@ object Form1: TForm1
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
+      OnCustomDrawCell = GridViewCustomDrawCell
+      DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
       DataController.Summary.FooterSummaryItems = <>
@@ -151,7 +156,7 @@ object Form1: TForm1
     end
   end
   object aDataSource: TDataSource
-    Left = 572
-    Top = 80
+    Left = 948
+    Top = 96
   end
 end
