@@ -1,4 +1,4 @@
-unit DelphiPDV.View.Other3;
+unit DelphiPDV.View.Other4;
 
 interface
 
@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TVwOther3 = class(TForm)
+  TForm1 = class(TForm)
     PanelPesquisa: TPanel;
     LabelPesquisa: TLabel;
     EditPesquisa: TEdit;
@@ -39,15 +39,10 @@ type
     ColumnSellerName: TcxGridDBColumn;
     DBGridDBCardView1: TcxGridDBCardView;
     DBGridLevel1: TcxGridLevel;
-    aDataSource: TDataSource;
     PanelInformation: TPanel;
     LabelInformation: TLabel;
+    aDataSource: TDataSource;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
-    procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
-      ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
-      var ADone: Boolean);
-    procedure FormClose(Sender: TObject; var Action: TCloseAction);
-    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -57,18 +52,15 @@ type
   end;
 
 var
-  VwOther3: TVwOther3;
+  Form1: TForm1;
 
 implementation
 
 {$R *.dfm}
 
-procedure TVwOther3.FormClose(Sender: TObject; var Action: TCloseAction);
-begin
-  Action := caFree;
-end;
+{ TForm1 }
 
-procedure TVwOther3.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TForm1.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -96,30 +88,13 @@ begin
   end;
 end;
 
-procedure TVwOther3.FormShow(Sender: TObject);
-begin
-  aDataSource.DataSet := nil;
-end;
-
-procedure TVwOther3.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
-  ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
-  var ADone: Boolean);
-begin
-  inherited;
-  if AViewInfo.GridRecord.Selected then
-  begin
-    ACanvas.Brush.Color := clHighlight;
-    ACanvas.Font.Color  := clWhite;
-  end;
-end;
-
-procedure TVwOther3.Process;
+procedure TForm1.Process;
 begin
   Review;
   Close;
 end;
 
-procedure TVwOther3.Review;
+procedure TForm1.Review;
 begin
 
 end;
