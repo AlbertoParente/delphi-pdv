@@ -47,7 +47,7 @@ object VwOther1: TVwOther1
     Left = 0
     Top = 59
     Width = 1024
-    Height = 707
+    Height = 691
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -65,6 +65,7 @@ object VwOther1: TVwOther1
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitHeight = 707
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -149,8 +150,28 @@ object VwOther1: TVwOther1
       GridView = GridView
     end
   end
+  object PanelInformation: TPanel
+    Left = 0
+    Top = 752
+    Width = 1024
+    Height = 16
+    Align = alBottom
+    BevelOuter = bvNone
+    TabOrder = 2
+    object LabelInformation: TLabel
+      Left = 0
+      Top = 0
+      Width = 1024
+      Height = 16
+      Align = alClient
+      Alignment = taCenter
+      Caption = '<Esc> Retorna        <Enter> Seleciona'
+      ExplicitWidth = 197
+      ExplicitHeight = 15
+    end
+  end
   object aDataSource: TDataSource
-    Left = 948
+    Left = 956
     Top = 96
   end
 end
