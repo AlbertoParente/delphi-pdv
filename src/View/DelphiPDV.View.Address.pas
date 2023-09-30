@@ -103,6 +103,7 @@ end;
 
 procedure TVwAddress.FormShow(Sender: TObject);
 begin
+  EditPesquisa.Clear;
   aDataSource.DataSet := nil;
 end;
 

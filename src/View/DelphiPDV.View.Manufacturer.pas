@@ -41,6 +41,8 @@ type
     DBGridLevel1: TcxGridLevel;
     aDataSource: TDataSource;
     ColumnCNPJ: TcxGridDBColumn;
+    PanelInformation: TPanel;
+    LabelInformation: TLabel;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
       ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
@@ -97,6 +99,7 @@ end;
 
 procedure TVwManufacturer.FormShow(Sender: TObject);
 begin
+  EditPesquisa.Clear;
   aDataSource.DataSet := nil;
 end;
 

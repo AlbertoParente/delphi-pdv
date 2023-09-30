@@ -101,6 +101,7 @@ end;
 
 procedure TVwClient.FormShow(Sender: TObject);
 begin
+  EditPesquisa.Clear;
   aDataSource.DataSet := nIl;
 end;
 

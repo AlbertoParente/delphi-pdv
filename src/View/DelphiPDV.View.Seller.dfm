@@ -145,7 +145,7 @@ object VwSeller: TVwSeller
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
-      ExplicitHeight = 23
+      ExplicitTop = 12
     end
   end
   object PanelInformation: TPanel
@@ -169,7 +169,7 @@ object VwSeller: TVwSeller
     end
   end
   object aDataSource: TDataSource
-    Left = 944
-    Top = 88
+    Left = 936
+    Top = 104
   end
 end

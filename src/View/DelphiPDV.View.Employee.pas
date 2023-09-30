@@ -99,6 +99,7 @@ end;
 
 procedure TVwEmployee.FormShow(Sender: TObject);
 begin
+  EditPesquisa.Clear;
   aDataSource.DataSet := nil;
 end;
 

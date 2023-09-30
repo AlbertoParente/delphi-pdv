@@ -173,7 +173,7 @@ object VwEmployee: TVwEmployee
     end
   end
   object aDataSource: TDataSource
-    Left = 952
+    Left = 968
     Top = 96
   end
 end

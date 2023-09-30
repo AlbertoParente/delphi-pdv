@@ -178,7 +178,7 @@ object VwBatch: TVwBatch
     end
   end
   object aDataSource: TDataSource
-    Left = 956
+    Left = 932
     Top = 104
   end
 end
