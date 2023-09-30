@@ -170,7 +170,7 @@ object VwSearchDiscount: TVwSearchDiscount
     end
   end
   object aDataSource: TDataSource
-    Left = 948
-    Top = 104
+    Left = 964
+    Top = 96
   end
 end

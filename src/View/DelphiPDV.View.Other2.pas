@@ -100,6 +100,7 @@ end;
 
 procedure TVwOther2.FormShow(Sender: TObject);
 begin
+  EditPesquisa.Clear;
   aDataSource.DataSet := nil;
 end;
 

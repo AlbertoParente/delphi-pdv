@@ -174,7 +174,7 @@ object VwSuppliers: TVwSuppliers
     end
   end
   object aDataSource: TDataSource
-    Left = 944
-    Top = 112
+    Left = 968
+    Top = 96
   end
 end

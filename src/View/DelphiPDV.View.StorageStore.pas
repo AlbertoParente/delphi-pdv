@@ -102,6 +102,7 @@ end;
 
 procedure TVwStorageStore.FormShow(Sender: TObject);
 begin
+  EditPesquisa.Clear;
   aDataSource.DataSet := nil;
 end;
 

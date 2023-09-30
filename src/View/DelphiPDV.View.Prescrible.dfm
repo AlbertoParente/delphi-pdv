@@ -169,7 +169,7 @@ object VwPrescrible: TVwPrescrible
     end
   end
   object aDataSource: TDataSource
-    Left = 968
+    Left = 952
     Top = 85
   end
 end
