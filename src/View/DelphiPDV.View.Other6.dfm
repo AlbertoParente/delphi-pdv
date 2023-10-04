@@ -1,24 +1,54 @@
-object VwSeller: TVwSeller
+object Form1: TForm1
   Left = 0
   Top = 0
-  ClientHeight = 768
-  ClientWidth = 1024
+  Caption = 'Form1'
+  ClientHeight = 441
+  ClientWidth = 624
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnClose = FormClose
   OnKeyDown = FormKeyDown
-  OnShow = FormShow
   TextHeight = 15
+  object PanelPesquisa: TPanel
+    Left = 0
+    Top = 0
+    Width = 624
+    Height = 57
+    Align = alTop
+    BevelOuter = bvNone
+    TabOrder = 0
+    ExplicitLeft = -400
+    ExplicitWidth = 1024
+    object LabelPesquisa: TLabel
+      Left = 0
+      Top = 0
+      Width = 624
+      Height = 15
+      Align = alTop
+      Caption = 'Pesquisar Vendedor'
+      ExplicitWidth = 103
+    end
+    object EditPesquisa: TEdit
+      Left = 0
+      Top = 15
+      Width = 624
+      Height = 42
+      Align = alClient
+      Alignment = taCenter
+      TabOrder = 0
+      ExplicitWidth = 1024
+      ExplicitHeight = 23
+    end
+  end
   object DBGrid: TcxGrid
     AlignWithMargins = True
     Left = 0
     Top = 59
-    Width = 1024
-    Height = 691
+    Width = 624
+    Height = 364
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -33,11 +63,13 @@ object VwSeller: TVwSeller
     Font.Name = 'Segoe UI'
     Font.Style = []
     ParentFont = False
-    TabOrder = 0
+    TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -5
-    ExplicitTop = 62
+    ExplicitLeft = -400
+    ExplicitTop = -250
+    ExplicitWidth = 1024
+    ExplicitHeight = 691
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -58,8 +90,6 @@ object VwSeller: TVwSeller
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
-      OnCustomDrawCell = GridViewCustomDrawCell
-      DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
       DataController.Summary.FooterSummaryItems = <>
@@ -122,46 +152,20 @@ object VwSeller: TVwSeller
       GridView = GridView
     end
   end
-  object PanelPesquisa: TPanel
-    Left = 0
-    Top = 0
-    Width = 1024
-    Height = 57
-    Align = alTop
-    BevelOuter = bvNone
-    TabOrder = 1
-    object LabelPesquisa: TLabel
-      Left = 0
-      Top = 0
-      Width = 1024
-      Height = 15
-      Align = alTop
-      Caption = 'Pesquisar Vendedor'
-      ExplicitWidth = 103
-    end
-    object EditPesquisa: TEdit
-      Left = 0
-      Top = 15
-      Width = 1024
-      Height = 42
-      Align = alClient
-      Alignment = taCenter
-      TabOrder = 0
-      ExplicitHeight = 23
-    end
-  end
   object PanelInformation: TPanel
     Left = 0
-    Top = 752
-    Width = 1024
+    Top = 425
+    Width = 624
     Height = 16
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
+    ExplicitLeft = -400
+    ExplicitWidth = 1024
     object LabelInformation: TLabel
       Left = 0
       Top = 0
-      Width = 1024
+      Width = 624
       Height = 16
       Align = alClient
       Alignment = taCenter
@@ -171,7 +175,7 @@ object VwSeller: TVwSeller
     end
   end
   object aDataSource: TDataSource
-    Left = 960
+    Left = 596
     Top = 96
   end
 end
