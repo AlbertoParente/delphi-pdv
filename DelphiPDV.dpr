@@ -32,7 +32,8 @@ uses
   DelphiPDV.View.Other3 in 'src\View\DelphiPDV.View.Other3.pas' {VwOther3},
   DelphiPDV.View.Other4 in 'src\View\DelphiPDV.View.Other4.pas' {VwOther4},
   DelphiPDV.View.Other5 in 'src\View\DelphiPDV.View.Other5.pas' {VwOther5},
-  DelphiPDV.View.Other6 in 'src\View\DelphiPDV.View.Other6.pas' {VwOther6};
+  DelphiPDV.View.Other6 in 'src\View\DelphiPDV.View.Other6.pas' {VwOther6},
+  DelphiPDV.View.SearchPreSaleItens in 'src\View\DelphiPDV.View.SearchPreSaleItens.pas' {Form1};
 
 {$R *.res}
 
@@ -45,5 +46,6 @@ begin
   Application.CreateForm(TVwOther4, VwOther4);
   Application.CreateForm(TVwOther5, VwOther5);
   Application.CreateForm(TVwOther6, VwOther6);
+  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.
