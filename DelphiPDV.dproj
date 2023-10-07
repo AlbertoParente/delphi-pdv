@@ -228,7 +228,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\View\DelphiPDV.View.SearchPreSaleItens.pas">
-            <Form>Form1</Form>
+            <Form>VwSearchPreSaleItens</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
