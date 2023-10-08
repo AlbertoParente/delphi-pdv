@@ -21,7 +21,6 @@ object VwSearchPreSaleItens: TVwSearchPreSaleItens
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitWidth = 624
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -39,7 +38,6 @@ object VwSearchPreSaleItens: TVwSearchPreSaleItens
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
-      ExplicitWidth = 624
       ExplicitHeight = 23
     end
   end
@@ -66,10 +64,6 @@ object VwSearchPreSaleItens: TVwSearchPreSaleItens
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = 5
-    ExplicitTop = 54
-    ExplicitWidth = 624
-    ExplicitHeight = 380
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -170,7 +164,7 @@ object VwSearchPreSaleItens: TVwSearchPreSaleItens
     end
   end
   object aDataSource: TDataSource
-    Left = 956
-    Top = 104
+    Left = 948
+    Top = 120
   end
 end
