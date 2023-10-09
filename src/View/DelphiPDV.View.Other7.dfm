@@ -1,7 +1,7 @@
-object Form1: TForm1
+object VwOther7: TVwOther7
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'VwOther7'
   ClientHeight = 441
   ClientWidth = 624
   Color = clBtnFace
@@ -10,7 +10,9 @@ object Form1: TForm1
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnClose = FormClose
   OnKeyDown = FormKeyDown
+  OnShow = FormShow
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
@@ -35,6 +37,7 @@ object Form1: TForm1
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitLeft = -5
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -55,6 +58,8 @@ object Form1: TForm1
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
+      OnCustomDrawCell = GridViewCustomDrawCell
+      DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
       DataController.Summary.FooterSummaryItems = <>
@@ -156,8 +161,6 @@ object Form1: TForm1
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitTop = 160
-    ExplicitHeight = 279
     object cxGridDBTableView1: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -255,5 +258,9 @@ object Form1: TForm1
     object cxGridLevel1: TcxGridLevel
       GridView = cxGridDBTableView1
     end
+  end
+  object aDataSource: TDataSource
+    Left = 552
+    Top = 40
   end
 end
