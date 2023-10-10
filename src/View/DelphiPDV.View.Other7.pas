@@ -29,7 +29,7 @@ uses
   cxGridCustomView, cxGrid;
 
 type
-  TVwOther7 = class(TForm)
+  TVwConferencePreSale = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -40,17 +40,18 @@ type
     ColumnNumberTurn: TcxGridDBColumn;
     DBGridDBCardView1: TcxGridDBCardView;
     DBGridLevel1: TcxGridLevel;
+    aDataSource: TDataSource;
+    dsItens: TDataSource;
     cxGrid1: TcxGrid;
     cxGridDBTableView1: TcxGridDBTableView;
     cxGridDBColumn1: TcxGridDBColumn;
-    cxGridDBColumn2: TcxGridDBColumn;
-    cxGridDBColumn3: TcxGridDBColumn;
-    cxGridDBColumn4: TcxGridDBColumn;
-    cxGridDBColumn5: TcxGridDBColumn;
-    cxGridDBColumn6: TcxGridDBColumn;
+    ColumnProduct: TcxGridDBColumn;
+    ColumnManufactoring: TcxGridDBColumn;
+    ColumnDataTime: TcxGridDBColumn;
+    ColumnUnitValue: TcxGridDBColumn;
+    ColumnQuantity: TcxGridDBColumn;
     cxGridDBCardView1: TcxGridDBCardView;
     cxGridLevel1: TcxGridLevel;
-    aDataSource: TDataSource;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
       ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
@@ -66,18 +67,18 @@ type
   end;
 
 var
-  VwOther7: TVwOther7;
+  VwConferencePreSale: TVwConferencePreSale;
 
 implementation
 
 {$R *.dfm}
 
-procedure TVwOther7.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TVwConferencePreSale.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Action := caFree;
 end;
 
-procedure TVwOther7.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TVwConferencePreSale.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -105,12 +106,13 @@ begin
   end;
 end;
 
-procedure TVwOther7.FormShow(Sender: TObject);
+procedure TVwConferencePreSale.FormShow(Sender: TObject);
 begin
   aDataSource.DataSet := nil;
+  dsItens.DataSet := nil;
 end;
 
-procedure TVwOther7.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+procedure TVwConferencePreSale.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
   ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
   var ADone: Boolean);
 begin
@@ -122,13 +124,13 @@ begin
   end;
 end;
 
-procedure TVwOther7.Process;
+procedure TVwConferencePreSale.Process;
 begin
   Review;
   Close;
 end;
 
-procedure TVwOther7.Review;
+procedure TVwConferencePreSale.Review;
 begin
 
 end;

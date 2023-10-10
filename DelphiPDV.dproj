@@ -232,7 +232,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\View\DelphiPDV.View.Other7.pas">
-            <Form>VwOther7</Form>
+            <Form>VwConferencePreSale</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

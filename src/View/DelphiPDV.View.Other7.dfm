@@ -1,7 +1,7 @@
-object VwOther7: TVwOther7
+object VwConferencePreSale: TVwConferencePreSale
   Left = 0
   Top = 0
-  Caption = 'VwOther7'
+  Caption = 'VwConferencePreSale'
   ClientHeight = 441
   ClientWidth = 624
   Color = clBtnFace
@@ -37,7 +37,6 @@ object VwOther7: TVwOther7
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -5
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -161,6 +160,10 @@ object VwOther7: TVwOther7
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitLeft = -400
+    ExplicitTop = -266
+    ExplicitWidth = 1024
+    ExplicitHeight = 707
     object cxGridDBTableView1: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -181,6 +184,8 @@ object VwOther7: TVwOther7
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
+      OnCustomDrawCell = GridViewCustomDrawCell
+      DataController.DataSource = dsItens
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
       DataController.Summary.FooterSummaryItems = <>
@@ -219,12 +224,12 @@ object VwOther7: TVwOther7
         Options.AutoWidthSizable = False
         Width = 60
       end
-      object cxGridDBColumn2: TcxGridDBColumn
-        Caption = 'Cliente'
+      object ColumnProduct: TcxGridDBColumn
+        Caption = 'Produto'
         DataBinding.IsNullValueType = True
       end
-      object cxGridDBColumn3: TcxGridDBColumn
-        Caption = 'Vendedor'
+      object ColumnManufactoring: TcxGridDBColumn
+        Caption = 'Fabricante'
         DataBinding.FieldName = 'numconselho'
         DataBinding.IsNullValueType = True
         PropertiesClassName = 'TcxTextEditProperties'
@@ -233,16 +238,16 @@ object VwOther7: TVwOther7
         Options.AutoWidthSizable = False
         Width = 200
       end
-      object cxGridDBColumn4: TcxGridDBColumn
-        Caption = 'Data/Hora'
+      object ColumnDataTime: TcxGridDBColumn
+        Caption = 'Classifica'#231#227'o'
         DataBinding.IsNullValueType = True
       end
-      object cxGridDBColumn5: TcxGridDBColumn
-        Caption = 'Caixa'
+      object ColumnUnitValue: TcxGridDBColumn
+        Caption = 'Valor Unit.'
         DataBinding.IsNullValueType = True
       end
-      object cxGridDBColumn6: TcxGridDBColumn
-        Caption = 'Turno'
+      object ColumnQuantity: TcxGridDBColumn
+        Caption = 'Quantidade'
         DataBinding.IsNullValueType = True
       end
     end
@@ -262,5 +267,9 @@ object VwOther7: TVwOther7
   object aDataSource: TDataSource
     Left = 552
     Top = 40
+  end
+  object dsItens: TDataSource
+    Left = 544
+    Top = 256
   end
 end

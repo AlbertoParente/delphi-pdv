@@ -34,7 +34,7 @@ uses
   DelphiPDV.View.Other5 in 'src\View\DelphiPDV.View.Other5.pas' {VwOther5},
   DelphiPDV.View.Other6 in 'src\View\DelphiPDV.View.Other6.pas' {VwOther6},
   DelphiPDV.View.SearchPreSaleItens in 'src\View\DelphiPDV.View.SearchPreSaleItens.pas' {VwSearchPreSaleItens},
-  DelphiPDV.View.Other7 in 'src\View\DelphiPDV.View.Other7.pas' {VwOther7};
+  DelphiPDV.View.Other7 in 'src\View\DelphiPDV.View.Other7.pas' {VwConferencePreSale};
 
 {$R *.res}
 
