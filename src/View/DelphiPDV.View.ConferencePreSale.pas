@@ -1,4 +1,4 @@
-unit DelphiPDV.View.Other7;
+unit DelphiPDV.View.ConferencePreSale;
 
 interface
 
@@ -26,7 +26,7 @@ uses
   dxScrollbarAnnotations, Data.DB, cxDBData, cxTextEdit, cxGridLevel,
   cxGridCustomLayoutView, cxGridCardView, cxGridDBCardView,
   cxGridCustomTableView, cxGridTableView, cxGridDBTableView, cxClasses,
-  cxGridCustomView, cxGrid;
+  cxGridCustomView, cxGrid, Vcl.StdCtrls, Vcl.ExtCtrls;
 
 type
   TVwConferencePreSale = class(TForm)
@@ -52,6 +52,11 @@ type
     ColumnQuantity: TcxGridDBColumn;
     cxGridDBCardView1: TcxGridDBCardView;
     cxGridLevel1: TcxGridLevel;
+    PanelPesquisa: TPanel;
+    LabelPesquisa: TLabel;
+    EditPesquisa: TEdit;
+    PanelInformation: TPanel;
+    LabelInformation: TLabel;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
       ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
