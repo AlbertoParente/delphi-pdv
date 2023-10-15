@@ -43,10 +43,14 @@ type
     LabelInformation: TLabel;
     aDataSource: TDataSource;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
     { Public declarations }
+    procedure Process;
+    procedure Review;
   end;
 
 var
@@ -55,6 +59,12 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  EditPesquisa.Clear;
+  aDataSource.DataSet := nil;
+end;
 
 procedure TForm1.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
@@ -82,6 +92,22 @@ begin
       aDataSource.DataSet.Next;
     end;
   end;
+end;
+
+procedure TForm1.FormShow(Sender: TObject);
+begin
+  Action := caFree;
+end;
+
+procedure TForm1.Process;
+begin
+  Review;
+  Close;
+end;
+
+procedure TForm1.Review;
+begin
+
 end;
 
 end.
