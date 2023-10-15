@@ -240,6 +240,10 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\View\DelphiPDV.View.Other8.pas">
+            <Form>VwOther8</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="src\View\DelphiPDV.View.Other9.pas">
             <Form>Form1</Form>
             <FormType>dfm</FormType>
         </DCCReference>

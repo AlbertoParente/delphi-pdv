@@ -1,4 +1,4 @@
-unit DelphiPDV.View.Other8;
+unit DelphiPDV.View.Other9;
 
 interface
 
@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TVwOther8 = class(TForm)
+  TForm1 = class(TForm)
     PanelPesquisa: TPanel;
     LabelPesquisa: TLabel;
     EditPesquisa: TEdit;
@@ -41,73 +41,17 @@ type
     DBGridLevel1: TcxGridLevel;
     PanelInformation: TPanel;
     LabelInformation: TLabel;
-    aDataSource: TDataSource;
-    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
-    procedure FormClose(Sender: TObject; var Action: TCloseAction);
-    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
     { Public declarations }
-    procedure Process;
-    procedure Review;
   end;
 
 var
-  VwOther8: TVwOther8;
+  Form1: TForm1;
 
 implementation
 
 {$R *.dfm}
-
-procedure TVwOther8.FormClose(Sender: TObject; var Action: TCloseAction);
-begin
-  Action := caFree;
-end;
-
-procedure TVwOther8.FormKeyDown(Sender: TObject; var Key: Word;
-  Shift: TShiftState);
-begin
-  inherited;
-  case Key of
-    VK_ESCAPE:
-    begin
-      Close;
-    end;
-    VK_NEXT:
-    begin
-      Process;
-    end;
-    VK_RETURN:
-    begin
-      SelectNext(Screen.ActiveControl, True, True);
-    end;
-    VK_UP:
-    begin
-      aDataSource.DataSet.Prior;
-    end;
-    VK_DOWN:
-    begin
-      aDataSource.DataSet.Next;
-    end;
-  end;
-end;
-
-procedure TVwOther8.FormShow(Sender: TObject);
-begin
-  EditPesquisa.Clear;
-  aDataSource.DataSet := nil;
-end;
-
-procedure TVwOther8.Process;
-begin
-  Review;
-  Close;
-end;
-
-procedure TVwOther8.Review;
-begin
-
-end;
 
 end.
