@@ -37,7 +37,8 @@ uses
   DelphiPDV.View.ConferencePreSale in 'src\View\DelphiPDV.View.ConferencePreSale.pas' {VwConferencePreSale},
   DelphiPDV.View.Other7 in 'src\View\DelphiPDV.View.Other7.pas' {VwOther7},
   DelphiPDV.View.Other8 in 'src\View\DelphiPDV.View.Other8.pas' {VwOther8},
-  DelphiPDV.View.Other9 in 'src\View\DelphiPDV.View.Other9.pas' {VwOther9};
+  DelphiPDV.View.Other9 in 'src\View\DelphiPDV.View.Other9.pas' {VwOther9},
+  DelphiPDV.View.Other10 in 'src\View\DelphiPDV.View.Other10.pas' {Form1};
 
 {$R *.res}
 
@@ -47,5 +48,6 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TdmDados, dmDados);
   Application.CreateForm(TVwPrincipal, VwPrincipal);
+  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.
