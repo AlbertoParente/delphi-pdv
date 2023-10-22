@@ -1480,8 +1480,8 @@ object VwPrincipal: TVwPrincipal
                 Font.Name = 'Segoe UI'
                 Font.Style = []
                 ParentFont = False
-                ExplicitLeft = 9
-                ExplicitTop = 8
+                ExplicitWidth = 120
+                ExplicitHeight = 45
               end
             end
           end
@@ -2118,7 +2118,7 @@ object VwPrincipal: TVwPrincipal
   end
   object aDataSource: TDataSource
     DataSet = dmDados.cdsItens
-    Left = 644
-    Top = 128
+    Left = 660
+    Top = 120
   end
 end
