@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm1 = class(TForm)
+  TVwoOther22 = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -45,6 +45,11 @@ type
     procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
       ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
       var ADone: Boolean);
+    procedure GridViewEditKeyDown(Sender: TcxCustomGridTableView;
+      AItem: TcxCustomGridTableItem; AEdit: TcxCustomEdit; var Key: Word;
+      Shift: TShiftState);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -54,7 +59,7 @@ type
   end;
 
 var
-  Form1: TForm1;
+  VwoOther22: TVwoOther22;
 
 implementation
 
@@ -62,7 +67,18 @@ implementation
 
 { TForm1 }
 
-procedure TForm1.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+procedure TVwoOther22.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Action := caFree;
+end;
+
+procedure TVwoOther22.FormShow(Sender: TObject);
+begin
+  EditPesquisa.Clear;
+  aDataSource.DataSet := nil;
+end;
+
+procedure TVwoOther22.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
   ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
   var ADone: Boolean);
 begin
@@ -74,13 +90,42 @@ begin
   end;
 end;
 
-procedure TForm1.Process;
+procedure TVwoOther22.GridViewEditKeyDown(Sender: TcxCustomGridTableView;
+  AItem: TcxCustomGridTableItem; AEdit: TcxCustomEdit; var Key: Word;
+  Shift: TShiftState);
+begin
+  inherited;
+  case Key of
+    VK_ESCAPE:
+    begin
+      Close;
+    end;
+    VK_NEXT:
+    begin
+      Process;
+    end;
+    VK_RETURN:
+    begin
+      SelectNext(Screen.ActiveControl, True, True);
+    end;
+    VK_UP:
+    begin
+      aDataSource.DataSet.Prior;
+    end;
+    VK_DOWN:
+    begin
+      aDataSource.DataSet.Next;
+    end;
+  end;
+end;
+
+procedure TVwoOther22.Process;
 begin
   Review;
   Close;
 end;
 
-procedure TForm1.Review;
+procedure TVwoOther22.Review;
 begin
 
 end;
