@@ -50,7 +50,8 @@ uses
   DelphiPDV.View.Other19 in 'src\View\DelphiPDV.View.Other19.pas' {VwOther19},
   DelphiPDV.View.Other20 in 'src\View\DelphiPDV.View.Other20.pas' {VwOther20},
   DelphiPDV.View.Other21 in 'src\View\DelphiPDV.View.Other21.pas' {VwOther21},
-  DelphiPDV.View.Other22 in 'src\View\DelphiPDV.View.Other22.pas' {VwoOther22};
+  DelphiPDV.View.Other22 in 'src\View\DelphiPDV.View.Other22.pas' {VwoOther22},
+  DelphiPDV.View.Other23 in 'src\View\DelphiPDV.View.Other23.pas' {Form1};
 
 {$R *.res}
 
@@ -60,5 +61,6 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TdmDados, dmDados);
   Application.CreateForm(TVwPrincipal, VwPrincipal);
+  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.
