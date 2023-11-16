@@ -303,6 +303,10 @@
             <Form>VwOther23</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="src\View\DelphiPDV.View.Other24.pas">
+            <Form>Form1</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
