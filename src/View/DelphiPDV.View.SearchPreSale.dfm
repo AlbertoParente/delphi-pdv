@@ -64,8 +64,6 @@ object VwSearchPreSale: TVwSearchPreSale
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = 5
-    ExplicitTop = 56
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -186,7 +184,7 @@ object VwSearchPreSale: TVwSearchPreSale
     end
   end
   object aDataSource: TDataSource
-    Left = 968
-    Top = 88
+    Left = 952
+    Top = 96
   end
 end

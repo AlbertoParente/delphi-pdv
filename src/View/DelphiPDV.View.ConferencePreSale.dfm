@@ -37,8 +37,6 @@ object VwConferencePreSale: TVwConferencePreSale
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -5
-    ExplicitWidth = 624
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -162,9 +160,6 @@ object VwConferencePreSale: TVwConferencePreSale
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -5
-    ExplicitWidth = 624
-    ExplicitHeight = 190
     object cxGridDBTableView1: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -273,7 +268,6 @@ object VwConferencePreSale: TVwConferencePreSale
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitLeft = -400
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -281,8 +275,7 @@ object VwConferencePreSale: TVwConferencePreSale
       Height = 15
       Align = alTop
       Caption = 'Pesquisar Vendedor'
-      ExplicitTop = -6
-      ExplicitWidth = 624
+      ExplicitWidth = 103
     end
     object EditPesquisa: TEdit
       Left = 0
@@ -292,8 +285,7 @@ object VwConferencePreSale: TVwConferencePreSale
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
-      ExplicitTop = 12
-      ExplicitWidth = 624
+      ExplicitHeight = 23
     end
   end
   object PanelInformation: TPanel
@@ -304,8 +296,6 @@ object VwConferencePreSale: TVwConferencePreSale
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 3
-    ExplicitLeft = -400
-    ExplicitTop = 425
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -319,11 +309,11 @@ object VwConferencePreSale: TVwConferencePreSale
     end
   end
   object aDataSource: TDataSource
-    Left = 568
-    Top = 88
+    Left = 952
+    Top = 80
   end
   object dsItens: TDataSource
-    Left = 568
+    Left = 952
     Top = 288
   end
 end
