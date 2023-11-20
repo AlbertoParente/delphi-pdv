@@ -1,23 +1,22 @@
-object VwOther25: TVwOther25
+object Form1: TForm1
   Left = 0
   Top = 0
-  ClientHeight = 768
-  ClientWidth = 1024
+  Caption = 'Form1'
+  ClientHeight = 441
+  ClientWidth = 624
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnClose = FormClose
   OnKeyDown = FormKeyDown
-  OnShow = FormShow
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
     Left = 0
     Top = 59
-    Width = 1024
+    Width = 624
     Height = 186
     Margins.Left = 0
     Margins.Top = 2
@@ -36,6 +35,8 @@ object VwOther25: TVwOther25
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitLeft = -400
+    ExplicitWidth = 1024
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -140,8 +141,8 @@ object VwOther25: TVwOther25
     AlignWithMargins = True
     Left = 0
     Top = 249
-    Width = 1024
-    Height = 501
+    Width = 624
+    Height = 174
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -159,6 +160,10 @@ object VwOther25: TVwOther25
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitLeft = -400
+    ExplicitTop = -60
+    ExplicitWidth = 1024
+    ExplicitHeight = 501
     object cxGridDBTableView1: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -261,15 +266,17 @@ object VwOther25: TVwOther25
   object PanelPesquisa: TPanel
     Left = 0
     Top = 0
-    Width = 1024
+    Width = 624
     Height = 57
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 2
+    ExplicitLeft = -400
+    ExplicitWidth = 1024
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
-      Width = 1024
+      Width = 624
       Height = 15
       Align = alTop
       Caption = 'Pesquisar Vendedor'
@@ -278,26 +285,29 @@ object VwOther25: TVwOther25
     object EditPesquisa: TEdit
       Left = 0
       Top = 15
-      Width = 1024
+      Width = 624
       Height = 42
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
+      ExplicitWidth = 1024
       ExplicitHeight = 23
     end
   end
   object PanelInformation: TPanel
     Left = 0
-    Top = 752
-    Width = 1024
+    Top = 425
+    Width = 624
     Height = 16
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 3
+    ExplicitLeft = -400
+    ExplicitWidth = 1024
     object LabelInformation: TLabel
       Left = 0
       Top = 0
-      Width = 1024
+      Width = 624
       Height = 16
       Align = alClient
       Alignment = taCenter
@@ -307,11 +317,11 @@ object VwOther25: TVwOther25
     end
   end
   object aDataSource: TDataSource
-    Left = 964
+    Left = 572
     Top = 72
   end
   object dsItens: TDataSource
-    Left = 964
-    Top = 296
+    Left = 580
+    Top = 280
   end
 end
