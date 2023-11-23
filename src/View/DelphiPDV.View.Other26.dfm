@@ -307,11 +307,11 @@ object VwOther26: TVwOther26
     end
   end
   object aDataSource: TDataSource
-    Left = 948
-    Top = 88
+    Left = 932
+    Top = 96
   end
   object dsItens: TDataSource
-    Left = 956
-    Top = 304
+    Left = 924
+    Top = 312
   end
 end
