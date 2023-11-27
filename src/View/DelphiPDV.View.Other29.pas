@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm2 = class(TForm)
+  TVwOther29 = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -45,6 +45,9 @@ type
     procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
       ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
       var ADone: Boolean);
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -54,13 +57,52 @@ type
   end;
 
 var
-  Form2: TForm2;
+  VwOther29: TVwOther29;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm2.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+procedure TVwOther29.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Action := caFree;
+end;
+
+procedure TVwOther29.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  inherited;
+  case Key of
+    VK_ESCAPE:
+    begin
+      Close;
+    end;
+    VK_NEXT:
+    begin
+      Process;
+    end;
+    VK_RETURN:
+    begin
+      SelectNext(Screen.ActiveControl, True, True);
+    end;
+    VK_UP:
+    begin
+      aDataSource.DataSet.Prior;
+    end;
+    VK_DOWN:
+    begin
+      aDataSource.DataSet.Next;
+    end;
+  end;
+end;
+
+procedure TVwOther29.FormShow(Sender: TObject);
+begin
+  EditPesquisa.Clear;
+  aDataSource.DataSet := nil;
+end;
+
+procedure TVwOther29.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
   ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
   var ADone: Boolean);
 begin
@@ -72,13 +114,13 @@ begin
   end;
 end;
 
-procedure TForm2.Process;
+procedure TVwOther29.Process;
 begin
   Review;
   Close;
 end;
 
-procedure TForm2.Review;
+procedure TVwOther29.Review;
 begin
 
 end;

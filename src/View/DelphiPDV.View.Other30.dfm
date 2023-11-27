@@ -35,8 +35,6 @@ object Form3: TForm3
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -400
-    ExplicitWidth = 1024
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -159,10 +157,6 @@ object Form3: TForm3
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -400
-    ExplicitTop = -60
-    ExplicitWidth = 1024
-    ExplicitHeight = 501
     object cxGridDBTableView1: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -270,8 +264,6 @@ object Form3: TForm3
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitLeft = -400
-    ExplicitWidth = 1024
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -289,7 +281,6 @@ object Form3: TForm3
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
-      ExplicitWidth = 1024
       ExplicitHeight = 23
     end
   end
@@ -301,8 +292,6 @@ object Form3: TForm3
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 3
-    ExplicitLeft = -400
-    ExplicitWidth = 1024
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -316,11 +305,11 @@ object Form3: TForm3
     end
   end
   object aDataSource: TDataSource
-    Left = 596
+    Left = 572
     Top = 80
   end
   object dsItens: TDataSource
-    Left = 596
-    Top = 304
+    Left = 564
+    Top = 288
   end
 end
