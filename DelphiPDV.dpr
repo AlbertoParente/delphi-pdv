@@ -59,7 +59,8 @@ uses
   DelphiPDV.View.Other28 in 'src\View\DelphiPDV.View.Other28.pas' {Form1},
   DelphiPDV.View.Other29 in 'src\View\DelphiPDV.View.Other29.pas' {VwOther29},
   DelphiPDV.View.Other30 in 'src\View\DelphiPDV.View.Other30.pas' {VwOther30},
-  DelphiPDV.View.Other31 in 'src\View\DelphiPDV.View.Other31.pas' {VwOther31};
+  DelphiPDV.View.Other31 in 'src\View\DelphiPDV.View.Other31.pas' {VwOther31},
+  DelphiPDV.View.Other32 in 'src\View\DelphiPDV.View.Other32.pas' {Form2};
 
 {$R *.res}
 
