@@ -1,22 +1,23 @@
-object Form3: TForm3
+object VwOther33: TVwOther33
   Left = 0
   Top = 0
-  Caption = 'Form3'
-  ClientHeight = 441
-  ClientWidth = 624
+  ClientHeight = 768
+  ClientWidth = 1024
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnClose = FormClose
   OnKeyDown = FormKeyDown
+  OnShow = FormShow
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
     Left = 0
     Top = 59
-    Width = 624
+    Width = 1024
     Height = 186
     Margins.Left = 0
     Margins.Top = 2
@@ -35,8 +36,7 @@ object Form3: TForm3
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -400
-    ExplicitWidth = 1024
+    ExplicitWidth = 624
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -57,6 +57,7 @@ object Form3: TForm3
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
+      OnCustomDrawCell = GridViewCustomDrawCell
       DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
@@ -140,8 +141,8 @@ object Form3: TForm3
     AlignWithMargins = True
     Left = 0
     Top = 249
-    Width = 624
-    Height = 174
+    Width = 1024
+    Height = 501
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -159,10 +160,8 @@ object Form3: TForm3
     TabOrder = 1
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -400
-    ExplicitTop = -60
-    ExplicitWidth = 1024
-    ExplicitHeight = 501
+    ExplicitWidth = 624
+    ExplicitHeight = 174
     object cxGridDBTableView1: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -265,17 +264,16 @@ object Form3: TForm3
   object PanelPesquisa: TPanel
     Left = 0
     Top = 0
-    Width = 624
+    Width = 1024
     Height = 57
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitLeft = -400
-    ExplicitWidth = 1024
+    ExplicitWidth = 624
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
-      Width = 624
+      Width = 1024
       Height = 15
       Align = alTop
       Caption = 'Pesquisar Vendedor'
@@ -284,29 +282,29 @@ object Form3: TForm3
     object EditPesquisa: TEdit
       Left = 0
       Top = 15
-      Width = 624
+      Width = 1024
       Height = 42
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
-      ExplicitWidth = 1024
+      ExplicitWidth = 624
       ExplicitHeight = 23
     end
   end
   object PanelInformation: TPanel
     Left = 0
-    Top = 425
-    Width = 624
+    Top = 752
+    Width = 1024
     Height = 16
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 3
-    ExplicitLeft = -400
-    ExplicitWidth = 1024
+    ExplicitTop = 425
+    ExplicitWidth = 624
     object LabelInformation: TLabel
       Left = 0
       Top = 0
-      Width = 624
+      Width = 1024
       Height = 16
       Align = alClient
       Alignment = taCenter
@@ -316,11 +314,11 @@ object Form3: TForm3
     end
   end
   object aDataSource: TDataSource
-    Left = 596
-    Top = 88
+    Left = 948
+    Top = 80
   end
   object dsItens: TDataSource
-    Left = 596
-    Top = 312
+    Left = 948
+    Top = 304
   end
 end
