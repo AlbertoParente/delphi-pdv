@@ -63,7 +63,7 @@ uses
   DelphiPDV.View.Other32 in 'src\View\DelphiPDV.View.Other32.pas' {Form2},
   DelphiPDV.View.Other33 in 'src\View\DelphiPDV.View.Other33.pas' {VwOther33},
   DelphiPDV.View.Other34 in 'src\View\DelphiPDV.View.Other34.pas' {VwOther34},
-  DelphiPDV.View.Other35 in 'src\View\DelphiPDV.View.Other35.pas' {Form4};
+  DelphiPDV.View.Other35 in 'src\View\DelphiPDV.View.Other35.pas' {VwOther35};
 
 {$R *.res}
 
