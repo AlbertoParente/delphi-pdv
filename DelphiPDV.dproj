@@ -364,7 +364,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\View\DelphiPDV.View.Other39.pas">
-            <Form>Form4</Form>
+            <Form>VwOther39</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

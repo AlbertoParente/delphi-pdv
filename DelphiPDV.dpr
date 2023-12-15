@@ -67,7 +67,7 @@ uses
   DelphiPDV.View.Other36 in 'src\View\DelphiPDV.View.Other36.pas' {VwOther36},
   DelphiPDV.View.Other37 in 'src\View\DelphiPDV.View.Other37.pas' {VwOther37},
   DelphiPDV.View.Other38 in 'src\View\DelphiPDV.View.Other38.pas' {VwOther38},
-  DelphiPDV.View.Other39 in 'src\View\DelphiPDV.View.Other39.pas' {Form4};
+  DelphiPDV.View.Other39 in 'src\View\DelphiPDV.View.Other39.pas' {VwOther39};
 
 {$R *.res}
 
