@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm5 = class(TForm)
+  TVwOther47 = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -43,6 +43,11 @@ type
     LabelInformation: TLabel;
     aDataSource: TDataSource;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+      ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
+      var ADone: Boolean);
+    procedure FormShow(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
@@ -52,13 +57,18 @@ type
   end;
 
 var
-  Form5: TForm5;
+  VwOther47: TVwOther47;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm5.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TVwOther47.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Action := caFree;
+end;
+
+procedure TVwOther47.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -86,12 +96,31 @@ begin
   end;
 end;
 
-procedure TForm5.Process;
+procedure TVwOther47.FormShow(Sender: TObject);
 begin
-
+  EditPesquisa.Clear;
+  aDataSource.DataSet := nil;
 end;
 
-procedure TForm5.Review;
+procedure TVwOther47.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+  ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
+  var ADone: Boolean);
+begin
+  inherited;
+  if AViewInfo.GridRecord.Selected then
+  begin
+    ACanvas.Brush.Color := clHighlight;
+    ACanvas.Font.Color  := clWhite;
+  end;
+end;
+
+procedure TVwOther47.Process;
+begin
+  Review;
+  Close;
+end;
+
+procedure TVwOther47.Review;
 begin
 
 end;
