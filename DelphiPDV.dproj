@@ -392,7 +392,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\View\DelphiPDV.View.Other46.pas">
-            <Form>Form4</Form>
+            <Form>VwOther46</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\View\DelphiPDV.View.Other47.pas">
