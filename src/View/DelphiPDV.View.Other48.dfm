@@ -169,7 +169,7 @@ object VwOther48: TVwOther48
     end
   end
   object aDataSource: TDataSource
-    Left = 980
-    Top = 72
+    Left = 940
+    Top = 96
   end
 end

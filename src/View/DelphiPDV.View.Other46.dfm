@@ -36,8 +36,6 @@ object VwOther46: TVwOther46
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitWidth = 624
-    ExplicitHeight = 364
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -130,7 +128,6 @@ object VwOther46: TVwOther46
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitWidth = 624
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -148,7 +145,6 @@ object VwOther46: TVwOther46
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
-      ExplicitWidth = 624
       ExplicitHeight = 23
     end
   end
@@ -160,8 +156,6 @@ object VwOther46: TVwOther46
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitTop = 425
-    ExplicitWidth = 624
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -175,7 +169,7 @@ object VwOther46: TVwOther46
     end
   end
   object aDataSource: TDataSource
-    Left = 964
-    Top = 80
+    Left = 940
+    Top = 104
   end
 end
