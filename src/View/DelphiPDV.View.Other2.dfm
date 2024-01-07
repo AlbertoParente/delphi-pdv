@@ -170,7 +170,7 @@ object VwOther2: TVwOther2
     end
   end
   object aDataSource: TDataSource
-    Left = 964
-    Top = 88
+    Left = 940
+    Top = 112
   end
 end

@@ -367,50 +367,6 @@
             <Form>VwOther39</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other40.pas">
-            <Form>VwOther40</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other41.pas">
-            <Form>VwOther41</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other42.pas">
-            <Form>VwOther42</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other43.pas">
-            <Form>VwOther43</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other44.pas">
-            <Form>VwOther44</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other45.pas">
-            <Form>VwOther45</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other46.pas">
-            <Form>VwOther46</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other47.pas">
-            <Form>VwOther47</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other48.pas">
-            <Form>VwOther48</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other49.pas">
-            <Form>VwOther49</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other50.pas">
-            <Form>VwOther50</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

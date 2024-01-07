@@ -67,18 +67,7 @@ uses
   DelphiPDV.View.Other36 in 'src\View\DelphiPDV.View.Other36.pas' {VwOther36},
   DelphiPDV.View.Other37 in 'src\View\DelphiPDV.View.Other37.pas' {VwOther37},
   DelphiPDV.View.Other38 in 'src\View\DelphiPDV.View.Other38.pas' {VwOther38},
-  DelphiPDV.View.Other39 in 'src\View\DelphiPDV.View.Other39.pas' {VwOther39},
-  DelphiPDV.View.Other40 in 'src\View\DelphiPDV.View.Other40.pas' {VwOther40},
-  DelphiPDV.View.Other41 in 'src\View\DelphiPDV.View.Other41.pas' {VwOther41},
-  DelphiPDV.View.Other42 in 'src\View\DelphiPDV.View.Other42.pas' {VwOther42},
-  DelphiPDV.View.Other43 in 'src\View\DelphiPDV.View.Other43.pas' {VwOther43},
-  DelphiPDV.View.Other44 in 'src\View\DelphiPDV.View.Other44.pas' {VwOther44},
-  DelphiPDV.View.Other45 in 'src\View\DelphiPDV.View.Other45.pas' {VwOther45},
-  DelphiPDV.View.Other46 in 'src\View\DelphiPDV.View.Other46.pas' {VwOther46},
-  DelphiPDV.View.Other47 in 'src\View\DelphiPDV.View.Other47.pas' {VwOther47},
-  DelphiPDV.View.Other48 in 'src\View\DelphiPDV.View.Other48.pas' {VwOther48},
-  DelphiPDV.View.Other49 in 'src\View\DelphiPDV.View.Other49.pas' {VwOther49},
-  DelphiPDV.View.Other50 in 'src\View\DelphiPDV.View.Other50.pas' {VwOther50};
+  DelphiPDV.View.Other39 in 'src\View\DelphiPDV.View.Other39.pas' {VwOther39};
 
 {$R *.res}
 
