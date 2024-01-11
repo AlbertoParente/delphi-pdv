@@ -114,7 +114,6 @@ object VwPayments: TVwPayments
             Value = 9.000000000000000000
           end>
         TabOrder = 0
-        ExplicitTop = 12
         object Panel2: TPanel
           AlignWithMargins = True
           Left = 3
@@ -668,10 +667,6 @@ object VwPayments: TVwPayments
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 4
-          ExplicitLeft = 72
-          ExplicitTop = 505
-          ExplicitWidth = 185
-          ExplicitHeight = 41
           object GridPanel1: TGridPanel
             Left = 0
             Top = 0
@@ -913,13 +908,13 @@ object VwPayments: TVwPayments
   end
   object aDataSource: TDataSource
     DataSet = cdsPayments
-    Left = 824
-    Top = 48
+    Left = 856
+    Top = 16
   end
   object cdsPayments: TClientDataSet
     Aggregates = <>
     Params = <>
-    Left = 824
-    Top = 120
+    Left = 840
+    Top = 88
   end
 end
