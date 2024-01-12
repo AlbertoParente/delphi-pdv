@@ -203,52 +203,8 @@
             <Form>VwOther</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other1.pas">
-            <Form>VwOther1</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other2.pas">
-            <Form>VwOther2</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other3.pas">
-            <Form>VwOther3</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other4.pas">
-            <Form>VwOther4</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other5.pas">
-            <Form>VwOther5</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other6.pas">
-            <Form>VwOther6</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.SearchPreSaleItens.pas">
-            <Form>VwSearchPreSaleItens</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.ConferencePreSale.pas">
-            <Form>VwConferencePreSale</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other7.pas">
-            <Form>VwOther7</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other8.pas">
-            <Form>VwOther8</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other9.pas">
-            <Form>VwOther9</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other10.pas">
-            <Form>VwOther10</Form>
+        <DCCReference Include="src\View\View.PreReceipt.pas">
+            <Form>Form1</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

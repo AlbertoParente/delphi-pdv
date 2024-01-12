@@ -27,18 +27,7 @@ uses
   DelphiPDV.View.Affiliated in 'src\View\DelphiPDV.View.Affiliated.pas' {VwAffiliated},
   DelphiPDV.View.AlterClient in 'src\View\DelphiPDV.View.AlterClient.pas' {VwAlterClient},
   DelphiPDV.View.Other in 'src\View\DelphiPDV.View.Other.pas' {VwOther},
-  DelphiPDV.View.Other1 in 'src\View\DelphiPDV.View.Other1.pas' {VwOther1},
-  DelphiPDV.View.Other2 in 'src\View\DelphiPDV.View.Other2.pas' {VwOther2},
-  DelphiPDV.View.Other3 in 'src\View\DelphiPDV.View.Other3.pas' {VwOther3},
-  DelphiPDV.View.Other4 in 'src\View\DelphiPDV.View.Other4.pas' {VwOther4},
-  DelphiPDV.View.Other5 in 'src\View\DelphiPDV.View.Other5.pas' {VwOther5},
-  DelphiPDV.View.Other6 in 'src\View\DelphiPDV.View.Other6.pas' {VwOther6},
-  DelphiPDV.View.SearchPreSaleItens in 'src\View\DelphiPDV.View.SearchPreSaleItens.pas' {VwSearchPreSaleItens},
-  DelphiPDV.View.ConferencePreSale in 'src\View\DelphiPDV.View.ConferencePreSale.pas' {VwConferencePreSale},
-  DelphiPDV.View.Other7 in 'src\View\DelphiPDV.View.Other7.pas' {VwOther7},
-  DelphiPDV.View.Other8 in 'src\View\DelphiPDV.View.Other8.pas' {VwOther8},
-  DelphiPDV.View.Other9 in 'src\View\DelphiPDV.View.Other9.pas' {VwOther9},
-  DelphiPDV.View.Other10 in 'src\View\DelphiPDV.View.Other10.pas' {VwOther10};
+  View.PreReceipt in 'src\View\View.PreReceipt.pas' {Form1};
 
 {$R *.res}
 
@@ -48,5 +37,6 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TdmDados, dmDados);
   Application.CreateForm(TVwPrincipal, VwPrincipal);
+  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.
