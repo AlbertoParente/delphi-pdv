@@ -204,7 +204,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\View\View.PreReceipt.pas">
-            <Form>Form1</Form>
+            <Form>VwPreReceipt</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\View\DelphiPDV.View.Other1.pas">

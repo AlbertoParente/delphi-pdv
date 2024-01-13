@@ -1,22 +1,24 @@
-object Form1: TForm1
+object VwPreReceipt: TVwPreReceipt
   Left = 0
   Top = 0
-  Caption = 'Form1'
-  ClientHeight = 441
-  ClientWidth = 624
+  ClientHeight = 768
+  ClientWidth = 1024
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnClose = FormClose
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
     Left = 0
     Top = 59
-    Width = 624
-    Height = 364
+    Width = 1024
+    Height = 691
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -34,7 +36,8 @@ object Form1: TForm1
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = 5
+    ExplicitWidth = 624
+    ExplicitHeight = 364
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -126,16 +129,16 @@ object Form1: TForm1
   object PanelPesquisa: TPanel
     Left = 0
     Top = 0
-    Width = 624
+    Width = 1024
     Height = 57
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitLeft = 5
+    ExplicitWidth = 624
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
-      Width = 624
+      Width = 1024
       Height = 15
       Align = alTop
       Caption = 'Pesquisar Pr'#233'-Recebimento'
@@ -144,28 +147,29 @@ object Form1: TForm1
     object EditPesquisa: TEdit
       Left = 0
       Top = 15
-      Width = 624
+      Width = 1024
       Height = 42
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
-      ExplicitWidth = 1024
+      ExplicitWidth = 624
       ExplicitHeight = 23
     end
   end
   object PanelInformation: TPanel
     Left = 0
-    Top = 425
-    Width = 624
+    Top = 752
+    Width = 1024
     Height = 16
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitLeft = 5
+    ExplicitTop = 425
+    ExplicitWidth = 624
     object LabelInformation: TLabel
       Left = 0
       Top = 0
-      Width = 624
+      Width = 1024
       Height = 16
       Align = alClient
       Alignment = taCenter
@@ -175,7 +179,7 @@ object Form1: TForm1
     end
   end
   object aDataSource: TDataSource
-    Left = 569
+    Left = 961
     Top = 88
   end
 end

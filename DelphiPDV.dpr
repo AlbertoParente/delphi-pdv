@@ -27,7 +27,7 @@ uses
   DelphiPDV.View.Affiliated in 'src\View\DelphiPDV.View.Affiliated.pas' {VwAffiliated},
   DelphiPDV.View.AlterClient in 'src\View\DelphiPDV.View.AlterClient.pas' {VwAlterClient},
   DelphiPDV.View.Other in 'src\View\DelphiPDV.View.Other.pas' {VwOther},
-  View.PreReceipt in 'src\View\View.PreReceipt.pas' {Form1},
+  View.PreReceipt in 'src\View\View.PreReceipt.pas' {VwPreReceipt},
   DelphiPDV.View.Other1 in 'src\View\DelphiPDV.View.Other1.pas' {VwOther1};
 
 {$R *.res}
@@ -38,6 +38,5 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TdmDados, dmDados);
   Application.CreateForm(TVwPrincipal, VwPrincipal);
-  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.
