@@ -30,7 +30,8 @@ uses
   View.PreReceipt in 'src\View\View.PreReceipt.pas' {VwPreReceipt},
   DelphiPDV.View.Other1 in 'src\View\DelphiPDV.View.Other1.pas' {VwOther1},
   DelphiPDV.View.Other2 in 'src\View\DelphiPDV.View.Other2.pas' {Form1},
-  DelphiPDV.View.Other3 in 'src\View\DelphiPDV.View.Other3.pas' {Form2};
+  DelphiPDV.View.Other3 in 'src\View\DelphiPDV.View.Other3.pas' {Form2},
+  DelphiPDV.View.Other4 in 'src\View\DelphiPDV.View.Other4.pas' {Form3};
 
 {$R *.res}
 
@@ -42,5 +43,6 @@ begin
   Application.CreateForm(TVwPrincipal, VwPrincipal);
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TForm3, Form3);
   Application.Run;
 end.

@@ -1,24 +1,23 @@
-object VwPreReceipt: TVwPreReceipt
+object Form3: TForm3
   Left = 0
   Top = 0
-  ClientHeight = 768
-  ClientWidth = 1024
+  Caption = 'Form3'
+  ClientHeight = 441
+  ClientWidth = 624
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnClose = FormClose
   OnKeyDown = FormKeyDown
-  OnShow = FormShow
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
     Left = 0
     Top = 59
-    Width = 1024
-    Height = 691
+    Width = 624
+    Height = 364
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -31,11 +30,15 @@ object VwPreReceipt: TVwPreReceipt
     Font.Color = clWindowText
     Font.Height = -13
     Font.Name = 'Segoe UI'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitLeft = -400
+    ExplicitTop = -250
+    ExplicitWidth = 1024
+    ExplicitHeight = 691
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -56,7 +59,6 @@ object VwPreReceipt: TVwPreReceipt
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
-      OnCustomDrawCell = GridViewCustomDrawCell
       DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
@@ -96,8 +98,12 @@ object VwPreReceipt: TVwPreReceipt
         Options.AutoWidthSizable = False
         Width = 60
       end
-      object ColumnSellerName: TcxGridDBColumn
-        Caption = 'Cliente'
+      object ColumnStore: TcxGridDBColumn
+        Caption = 'Loja'
+        DataBinding.IsNullValueType = True
+      end
+      object ColumnProduct: TcxGridDBColumn
+        Caption = 'Produto'
         DataBinding.FieldName = 'numconselho'
         DataBinding.IsNullValueType = True
         PropertiesClassName = 'TcxTextEditProperties'
@@ -106,8 +112,8 @@ object VwPreReceipt: TVwPreReceipt
         Options.AutoWidthSizable = False
         Width = 200
       end
-      object GridViewColumn1: TcxGridDBColumn
-        Caption = 'Valor'
+      object ColumnQuantity: TcxGridDBColumn
+        Caption = 'Quantidade'
         DataBinding.IsNullValueType = True
       end
     end
@@ -127,43 +133,48 @@ object VwPreReceipt: TVwPreReceipt
   object PanelPesquisa: TPanel
     Left = 0
     Top = 0
-    Width = 1024
+    Width = 624
     Height = 57
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
+    ExplicitLeft = -400
+    ExplicitWidth = 1024
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
-      Width = 1024
+      Width = 624
       Height = 15
       Align = alTop
-      Caption = 'Pesquisar Pr'#233'-Recebimento'
-      ExplicitWidth = 145
+      Caption = 'Pesquisar Estoque de Lojas'
+      ExplicitWidth = 141
     end
     object EditPesquisa: TEdit
       Left = 0
       Top = 15
-      Width = 1024
+      Width = 624
       Height = 42
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
+      ExplicitWidth = 1024
       ExplicitHeight = 23
     end
   end
   object PanelInformation: TPanel
     Left = 0
-    Top = 752
-    Width = 1024
+    Top = 425
+    Width = 624
     Height = 16
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
+    ExplicitLeft = -400
+    ExplicitWidth = 1024
     object LabelInformation: TLabel
       Left = 0
       Top = 0
-      Width = 1024
+      Width = 624
       Height = 16
       Align = alClient
       Alignment = taCenter
@@ -173,7 +184,7 @@ object VwPreReceipt: TVwPreReceipt
     end
   end
   object aDataSource: TDataSource
-    Left = 945
-    Top = 104
+    Left = 596
+    Top = 88
   end
 end
