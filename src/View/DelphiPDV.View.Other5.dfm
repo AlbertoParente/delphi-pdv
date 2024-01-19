@@ -1,52 +1,22 @@
-object VwOther1: TVwOther1
+object Form4: TForm4
   Left = 0
   Top = 0
-  ClientHeight = 768
-  ClientWidth = 1024
+  Caption = 'Form4'
+  ClientHeight = 441
+  ClientWidth = 624
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnClose = FormClose
-  OnKeyDown = FormKeyDown
-  OnShow = FormShow
   TextHeight = 15
-  object PanelPesquisa: TPanel
-    Left = 0
-    Top = 0
-    Width = 1024
-    Height = 57
-    Align = alTop
-    BevelOuter = bvNone
-    TabOrder = 0
-    object LabelPesquisa: TLabel
-      Left = 0
-      Top = 0
-      Width = 1024
-      Height = 15
-      Align = alTop
-      Caption = 'Pesquisar Vendedor'
-      ExplicitWidth = 103
-    end
-    object EditPesquisa: TEdit
-      Left = 0
-      Top = 15
-      Width = 1024
-      Height = 42
-      Align = alClient
-      Alignment = taCenter
-      TabOrder = 0
-      ExplicitHeight = 23
-    end
-  end
   object DBGrid: TcxGrid
     AlignWithMargins = True
     Left = 0
     Top = 59
-    Width = 1024
-    Height = 691
+    Width = 624
+    Height = 364
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -59,11 +29,15 @@ object VwOther1: TVwOther1
     Font.Color = clWindowText
     Font.Height = -13
     Font.Name = 'Segoe UI'
-    Font.Style = []
+    Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 1
+    TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitLeft = -400
+    ExplicitTop = -250
+    ExplicitWidth = 1024
+    ExplicitHeight = 691
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -148,18 +122,51 @@ object VwOther1: TVwOther1
       GridView = GridView
     end
   end
+  object PanelPesquisa: TPanel
+    Left = 0
+    Top = 0
+    Width = 624
+    Height = 57
+    Align = alTop
+    BevelOuter = bvNone
+    TabOrder = 1
+    ExplicitLeft = -400
+    ExplicitWidth = 1024
+    object LabelPesquisa: TLabel
+      Left = 0
+      Top = 0
+      Width = 624
+      Height = 15
+      Align = alTop
+      Caption = 'Pesquisar Vendedor'
+      ExplicitWidth = 103
+    end
+    object EditPesquisa: TEdit
+      Left = 0
+      Top = 15
+      Width = 624
+      Height = 42
+      Align = alClient
+      Alignment = taCenter
+      TabOrder = 0
+      ExplicitWidth = 1024
+      ExplicitHeight = 23
+    end
+  end
   object PanelInformation: TPanel
     Left = 0
-    Top = 752
-    Width = 1024
+    Top = 425
+    Width = 624
     Height = 16
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
+    ExplicitLeft = -400
+    ExplicitWidth = 1024
     object LabelInformation: TLabel
       Left = 0
       Top = 0
-      Width = 1024
+      Width = 624
       Height = 16
       Align = alClient
       Alignment = taCenter
@@ -169,7 +176,7 @@ object VwOther1: TVwOther1
     end
   end
   object aDataSource: TDataSource
-    Left = 916
-    Top = 136
+    Left = 556
+    Top = 88
   end
 end
