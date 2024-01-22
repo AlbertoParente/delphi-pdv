@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm6 = class(TForm)
+  TVwOther7 = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -45,6 +45,9 @@ type
     procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
       ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
       var ADone: Boolean);
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure FormShow(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
@@ -54,13 +57,18 @@ type
   end;
 
 var
-  Form6: TForm6;
+  VwOther7: TVwOther7;
 
 implementation
 
 {$R *.dfm}
 
-procedure TVwSeller.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TVwOther7.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Action := caFree;
+end;
+
+procedure TVwOther7.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -88,7 +96,13 @@ begin
   end;
 end;
 
-procedure TForm6.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+procedure TVwOther7.FormShow(Sender: TObject);
+begin
+  EditPesquisa.Clear;
+  aDataSource.DataSet := nil;
+end;
+
+procedure TVwOther7.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
   ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
   var ADone: Boolean);
 begin
@@ -100,13 +114,13 @@ begin
   end;
 end;
 
-procedure TForm6.Process;
+procedure TVwOther7.Process;
 begin
   Review;
   Close;
 end;
 
-procedure TForm6.Review;
+procedure TVwOther7.Review;
 begin
 
 end;
