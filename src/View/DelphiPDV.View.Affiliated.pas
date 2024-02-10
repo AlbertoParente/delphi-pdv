@@ -125,4 +125,27 @@ begin
 
 end;
 
+procedure TVwAffiliated.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+  ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
+  var ADone: Boolean);
+begin
+  inherited;
+  if AViewInfo.GridRecord.Selected then
+  begin
+    ACanvas.Brush.Color := clHighlight;
+    ACanvas.Font.Color  := clWhite;
+  end;
+end;
+
+procedure TVwAffiliated.Process;
+begin
+  Review;
+  Close;
+end;
+
+procedure TVwAffiliated.Review;
+begin
+
+end;
+
 end.
