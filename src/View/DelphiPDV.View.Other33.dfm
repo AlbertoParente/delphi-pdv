@@ -1,4 +1,4 @@
-object Form30: TForm30
+object Form31: TForm31
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -9,6 +9,7 @@ object Form30: TForm30
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnKeyDown = FormKeyDown
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
@@ -33,6 +34,8 @@ object Form30: TForm30
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitLeft = -400
+    ExplicitTop = 64
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -124,6 +127,7 @@ object Form30: TForm30
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
+    ExplicitLeft = -400
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -152,6 +156,8 @@ object Form30: TForm30
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
+    ExplicitLeft = -400
+    ExplicitTop = 425
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -187,6 +193,7 @@ object Form30: TForm30
     TabOrder = 3
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitLeft = -400
     object cxGridDBTableView1: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -271,7 +278,7 @@ object Form30: TForm30
     end
   end
   object aDataSource: TDataSource
-    Left = 988
-    Top = 88
+    Left = 972
+    Top = 80
   end
 end
