@@ -1,4 +1,4 @@
-object Form33: TForm33
+object Form44: TForm44
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -9,6 +9,7 @@ object Form33: TForm33
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnClose = FormClose
   OnKeyDown = FormKeyDown
   TextHeight = 15
   object DBGrid: TcxGrid
@@ -34,6 +35,8 @@ object Form33: TForm33
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitLeft = -400
+    ExplicitTop = 64
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -125,6 +128,7 @@ object Form33: TForm33
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
+    ExplicitLeft = -400
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -153,6 +157,8 @@ object Form33: TForm33
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
+    ExplicitLeft = -400
+    ExplicitTop = 425
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -188,7 +194,7 @@ object Form33: TForm33
     TabOrder = 3
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -5
+    ExplicitLeft = -400
     object cxGridDBTableView1: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -209,7 +215,6 @@ object Form33: TForm33
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
-      OnCustomDrawCell = cxGridDBTableView1CustomDrawCell
       DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
@@ -275,6 +280,6 @@ object Form33: TForm33
   end
   object aDataSource: TDataSource
     Left = 940
-    Top = 88
+    Top = 96
   end
 end
