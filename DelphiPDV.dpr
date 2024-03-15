@@ -79,7 +79,8 @@ uses
   DelphiPDV.View.Other49 in 'src\View\DelphiPDV.View.Other49.pas' {Form47},
   DelphiPDV.View.Other50 in 'src\View\DelphiPDV.View.Other50.pas' {Form48},
   DelphiPDV.View.Other51 in 'src\View\DelphiPDV.View.Other51.pas' {Form49},
-  DelphiPDV.View.Other52 in 'src\View\DelphiPDV.View.Other52.pas' {Form50};
+  DelphiPDV.View.Other52 in 'src\View\DelphiPDV.View.Other52.pas' {Form50},
+  DelphiPDV.View.Other53 in 'src\View\DelphiPDV.View.Other53.pas' {Form51};
 
 {$R *.res}
 
@@ -139,5 +140,6 @@ begin
   Application.CreateForm(TForm48, Form48);
   Application.CreateForm(TForm49, Form49);
   Application.CreateForm(TForm50, Form50);
+  Application.CreateForm(TForm51, Form51);
   Application.Run;
 end.
