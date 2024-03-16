@@ -272,7 +272,7 @@ object Form31: TForm31
     end
   end
   object aDataSource: TDataSource
-    Left = 916
-    Top = 96
+    Left = 980
+    Top = 72
   end
 end
