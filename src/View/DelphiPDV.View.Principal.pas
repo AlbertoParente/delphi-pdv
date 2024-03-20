@@ -28,7 +28,7 @@ uses
   cxGridTableView, cxGridDBTableView, cxGrid, cxTextEdit,
   cxGridCustomLayoutView, cxGridCardView, cxGridDBCardView, Datasnap.DBClient,
   Vcl.StdCtrls, cxContainer, dxGDIPlusClasses, DelphiPDV.View.Login, DelphiPDV.Model.Dados,
-  Vcl.WinXCtrls, DelphiPDV.View.Payments;
+  Vcl.WinXCtrls, DelphiPDV.View.Payments, dxSkinWXI;
 
 type
   TVwPrincipal = class(TForm)
