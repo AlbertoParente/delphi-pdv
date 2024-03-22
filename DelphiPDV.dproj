@@ -443,6 +443,10 @@
             <Form>Form57</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="src\View\DelphiPDV.View.Other60.pas">
+            <Form>Form58</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
