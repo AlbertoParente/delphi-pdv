@@ -26,7 +26,7 @@ uses
   dxScrollbarAnnotations, Data.DB, cxDBData, cxTextEdit, Vcl.StdCtrls,
   Vcl.ExtCtrls, cxGridLevel, cxGridCustomLayoutView, cxGridCardView,
   cxGridDBCardView, cxGridCustomTableView, cxGridTableView, cxGridDBTableView,
-  cxClasses, cxGridCustomView, cxGrid;
+  cxClasses, cxGridCustomView, cxGrid, dxSkinWXI;
 
 type
   TForm30 = class(TForm)
