@@ -1,4 +1,4 @@
-object Form77: TForm77
+object Form78: TForm78
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -34,6 +34,8 @@ object Form77: TForm77
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitLeft = -400
+    ExplicitTop = -250
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -54,6 +56,7 @@ object Form77: TForm77
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
+      OnCustomDrawCell = GridViewCustomDrawCell
       DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
@@ -125,6 +128,7 @@ object Form77: TForm77
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
+    ExplicitLeft = -400
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -153,6 +157,8 @@ object Form77: TForm77
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
+    ExplicitLeft = -400
+    ExplicitTop = 425
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -166,7 +172,7 @@ object Form77: TForm77
     end
   end
   object aDataSource: TDataSource
-    Left = 916
-    Top = 128
+    Left = 956
+    Top = 88
   end
 end
