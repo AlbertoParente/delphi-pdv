@@ -34,7 +34,6 @@ object Form31: TForm31
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -5
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -273,7 +272,7 @@ object Form31: TForm31
     end
   end
   object aDataSource: TDataSource
-    Left = 844
-    Top = 160
+    Left = 972
+    Top = 72
   end
 end
