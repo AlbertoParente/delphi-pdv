@@ -1,4 +1,4 @@
-object Form27: TForm27
+object Form97: TForm97
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -9,8 +9,7 @@ object Form27: TForm27
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnClose = FormClose
-  OnShow = FormShow
+  OnKeyDown = FormKeyDown
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
@@ -173,7 +172,7 @@ object Form27: TForm27
     end
   end
   object aDataSource: TDataSource
-    Left = 940
-    Top = 80
+    Left = 948
+    Top = 88
   end
 end
