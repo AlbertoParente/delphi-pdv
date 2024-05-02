@@ -1,4 +1,4 @@
-object Form36: TForm36
+object Form98: TForm98
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -9,9 +9,7 @@ object Form36: TForm36
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnClose = FormClose
   OnKeyDown = FormKeyDown
-  OnShow = FormShow
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
@@ -36,8 +34,8 @@ object Form36: TForm36
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = 5
-    ExplicitTop = 56
+    ExplicitLeft = -400
+    ExplicitTop = -250
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -58,7 +56,6 @@ object Form36: TForm36
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
-      OnCustomDrawCell = GridViewCustomDrawCell
       DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
@@ -174,7 +171,7 @@ object Form36: TForm36
     end
   end
   object aDataSource: TDataSource
-    Left = 956
+    Left = 964
     Top = 88
   end
 end

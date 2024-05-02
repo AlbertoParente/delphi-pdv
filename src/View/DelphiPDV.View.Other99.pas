@@ -1,4 +1,4 @@
-unit DelphiPDV.View.Other33;
+unit DelphiPDV.View.Other99;
 
 interface
 
@@ -21,15 +21,15 @@ uses
   dxSkinSummer2008, dxSkinTheAsphaltWorld, dxSkinTheBezier,
   dxSkinsDefaultPainters, dxSkinValentine, dxSkinVisualStudio2013Blue,
   dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light, dxSkinVS2010,
-  dxSkinWhiteprint, dxSkinXmas2008Blue, cxStyles, cxCustomData, cxFilter,
-  cxData, cxDataStorage, cxEdit, cxNavigator, dxDateRanges,
+  dxSkinWhiteprint, dxSkinWXI, dxSkinXmas2008Blue, cxStyles, cxCustomData,
+  cxFilter, cxData, cxDataStorage, cxEdit, cxNavigator, dxDateRanges,
   dxScrollbarAnnotations, Data.DB, cxDBData, cxTextEdit, Vcl.StdCtrls,
   Vcl.ExtCtrls, cxGridLevel, cxGridCustomLayoutView, cxGridCardView,
   cxGridDBCardView, cxGridCustomTableView, cxGridTableView, cxGridDBTableView,
-  cxClasses, cxGridCustomView, cxGrid, dxSkinWXI;
+  cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm31 = class(TForm)
+  TForm98 = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -41,30 +41,24 @@ type
     EditPesquisa: TEdit;
     PanelInformation: TPanel;
     LabelInformation: TLabel;
-    cxGrid1: TcxGrid;
-    cxGridDBTableView1: TcxGridDBTableView;
-    cxGridDBColumn1: TcxGridDBColumn;
-    cxGridDBColumn2: TcxGridDBColumn;
-    cxGridDBCardView1: TcxGridDBCardView;
-    cxGridLevel1: TcxGridLevel;
     aDataSource: TDataSource;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
   private
     { Private declarations }
   public
     { Public declarations }
-    procedure Process;
+     procedure Process;
     procedure Review;
   end;
 
 var
-  Form31: TForm31;
+  Form98: TForm98;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm31.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TForm98.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -92,13 +86,13 @@ begin
   end;
 end;
 
-procedure TForm31.Process;
+procedure TForm98.Process;
 begin
   Review;
   Close;
 end;
 
-procedure TForm31.Review;
+procedure TForm98.Review;
 begin
 
 end;
