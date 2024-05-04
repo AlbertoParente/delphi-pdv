@@ -1,4 +1,4 @@
-object Form93: TForm93
+object Form101: TForm101
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -34,6 +34,8 @@ object Form93: TForm93
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitLeft = -400
+    ExplicitTop = 64
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -125,6 +127,7 @@ object Form93: TForm93
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
+    ExplicitLeft = -400
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -153,6 +156,8 @@ object Form93: TForm93
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
+    ExplicitLeft = -400
+    ExplicitTop = 425
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -188,6 +193,7 @@ object Form93: TForm93
     TabOrder = 3
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitLeft = -400
     object cxGridDBTableView1: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -272,7 +278,7 @@ object Form93: TForm93
     end
   end
   object aDataSource: TDataSource
-    Left = 908
-    Top = 112
+    Left = 948
+    Top = 80
   end
 end
