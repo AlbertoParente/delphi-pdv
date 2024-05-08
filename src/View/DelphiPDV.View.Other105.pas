@@ -1,4 +1,4 @@
-unit DelphiPDV.View.Other43;
+unit DelphiPDV.View.Other105;
 
 interface
 
@@ -21,15 +21,15 @@ uses
   dxSkinSummer2008, dxSkinTheAsphaltWorld, dxSkinTheBezier,
   dxSkinsDefaultPainters, dxSkinValentine, dxSkinVisualStudio2013Blue,
   dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light, dxSkinVS2010,
-  dxSkinWhiteprint, dxSkinXmas2008Blue, cxStyles, cxCustomData, cxFilter,
-  cxData, cxDataStorage, cxEdit, cxNavigator, dxDateRanges,
+  dxSkinWhiteprint, dxSkinWXI, dxSkinXmas2008Blue, cxStyles, cxCustomData,
+  cxFilter, cxData, cxDataStorage, cxEdit, cxNavigator, dxDateRanges,
   dxScrollbarAnnotations, Data.DB, cxDBData, cxTextEdit, Vcl.StdCtrls,
   Vcl.ExtCtrls, cxGridLevel, cxGridCustomLayoutView, cxGridCardView,
   cxGridDBCardView, cxGridCustomTableView, cxGridTableView, cxGridDBTableView,
-  cxClasses, cxGridCustomView, cxGrid, dxSkinWXI;
+  cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm41 = class(TForm)
+  TForm104 = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -41,48 +41,66 @@ type
     EditPesquisa: TEdit;
     PanelInformation: TPanel;
     LabelInformation: TLabel;
+    cxGrid1: TcxGrid;
+    cxGridDBTableView1: TcxGridDBTableView;
+    cxGridDBColumn1: TcxGridDBColumn;
+    cxGridDBColumn2: TcxGridDBColumn;
+    cxGridDBCardView1: TcxGridDBCardView;
+    cxGridLevel1: TcxGridLevel;
     aDataSource: TDataSource;
-    procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
-      ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
-      var ADone: Boolean);
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
     { Public declarations }
-    procedure Process;
-    procedure Review;
   end;
 
 var
-  Form41: TForm41;
+  Form104: TForm104;
 
 implementation
 
 {$R *.dfm}
 
-{ TForm41 }
+procedure TForm104.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Action := caFree;
+end;
 
-procedure TForm41.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
-  ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
-  var ADone: Boolean);
+procedure TForm104.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
 begin
   inherited;
-  if AViewInfo.GridRecord.Selected then
-  begin
-    ACanvas.Brush.Color := clHighlight;
-    ACanvas.Font.Color  := clWhite;
+  case Key of
+    VK_ESCAPE:
+    begin
+      Close;
+    end;
+    VK_NEXT:
+    begin
+      Process;
+    end;
+    VK_RETURN:
+    begin
+      SelectNext(Screen.ActiveControl, True, True);
+    end;
+    VK_UP:
+    begin
+      aDataSource.DataSet.Prior;
+    end;
+    VK_DOWN:
+    begin
+      aDataSource.DataSet.Next;
+    end;
   end;
 end;
 
-procedure TForm41.Process;
+procedure TForm104.FormShow(Sender: TObject);
 begin
-  Review;
-  Close;
-end;
-
-procedure TForm41.Review;
-begin
-
+  EditPesquisa.Clear;
+  aDataSource.DataSet := nil;
 end;
 
 end.
