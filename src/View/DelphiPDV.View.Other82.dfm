@@ -33,8 +33,6 @@ object Form80: TForm80
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -400
-    ExplicitTop = 64
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -126,7 +124,6 @@ object Form80: TForm80
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitLeft = -400
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -155,8 +152,6 @@ object Form80: TForm80
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitLeft = -400
-    ExplicitTop = 425
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -192,7 +187,6 @@ object Form80: TForm80
     TabOrder = 3
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -5
     object cxGridDBTableView1: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -278,7 +272,7 @@ object Form80: TForm80
     end
   end
   object aDataSource: TDataSource
-    Left = 924
-    Top = 120
+    Left = 964
+    Top = 88
   end
 end

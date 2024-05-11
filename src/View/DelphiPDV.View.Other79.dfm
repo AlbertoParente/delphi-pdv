@@ -166,7 +166,7 @@ object Form77: TForm77
     end
   end
   object aDataSource: TDataSource
-    Left = 916
-    Top = 128
+    Left = 948
+    Top = 88
   end
 end
