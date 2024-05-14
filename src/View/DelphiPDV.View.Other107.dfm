@@ -34,8 +34,6 @@ object Form106: TForm106
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -400
-    ExplicitTop = -250
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -127,7 +125,6 @@ object Form106: TForm106
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitLeft = -400
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -156,8 +153,6 @@ object Form106: TForm106
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitLeft = -400
-    ExplicitTop = 425
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -171,7 +166,7 @@ object Form106: TForm106
     end
   end
   object aDataSource: TDataSource
-    Left = 948
-    Top = 88
+    Left = 892
+    Top = 128
   end
 end
