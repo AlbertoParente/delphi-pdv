@@ -1,4 +1,4 @@
-object Form58: TForm58
+object Form114: TForm114
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -9,6 +9,7 @@ object Form58: TForm58
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnKeyDown = FormKeyDown
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
@@ -55,6 +56,7 @@ object Form58: TForm58
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
+      OnCustomDrawCell = GridViewCustomDrawCell
       DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
@@ -170,7 +172,7 @@ object Form58: TForm58
     end
   end
   object aDataSource: TDataSource
-    Left = 956
+    Left = 948
     Top = 88
   end
 end
