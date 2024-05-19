@@ -2118,7 +2118,7 @@ object VwPrincipal: TVwPrincipal
   end
   object aDataSource: TDataSource
     DataSet = dmDados.cdsItens
-    Left = 36
-    Top = 144
+    Left = 652
+    Top = 136
   end
 end
