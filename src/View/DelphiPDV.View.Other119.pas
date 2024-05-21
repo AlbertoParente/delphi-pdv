@@ -1,4 +1,4 @@
-unit DelphiPDV.View.Other80;
+unit DelphiPDV.View.Other119;
 
 interface
 
@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm78 = class(TForm)
+  TForm117 = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -42,7 +42,6 @@ type
     PanelInformation: TPanel;
     LabelInformation: TLabel;
     aDataSource: TDataSource;
-    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
       ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
       var ADone: Boolean);
@@ -55,41 +54,13 @@ type
   end;
 
 var
-  Form78: TForm78;
+  Form117: TForm117;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm78.FormKeyDown(Sender: TObject; var Key: Word;
-  Shift: TShiftState);
-begin
-  inherited;
-  case Key of
-    VK_ESCAPE:
-    begin
-      Close;
-    end;
-    VK_NEXT:
-    begin
-      Process;
-    end;
-    VK_RETURN:
-    begin
-      SelectNext(Screen.ActiveControl, True, True);
-    end;
-    VK_UP:
-    begin
-      aDataSource.DataSet.Prior;
-    end;
-    VK_DOWN:
-    begin
-      aDataSource.DataSet.Next;
-    end;
-  end;
-end;
-
-procedure TForm78.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+procedure TForm117.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
   ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
   var ADone: Boolean);
 begin
@@ -101,13 +72,13 @@ begin
   end;
 end;
 
-procedure TForm78.Process;
+procedure TForm117.Process;
 begin
   Review;
   Close;
 end;
 
-procedure TForm78.Review;
+procedure TForm117.Review;
 begin
 
 end;

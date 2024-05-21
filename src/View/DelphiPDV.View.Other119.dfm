@@ -1,4 +1,4 @@
-object Form78: TForm78
+object Form117: TForm117
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -9,7 +9,6 @@ object Form78: TForm78
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnKeyDown = FormKeyDown
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
@@ -34,8 +33,8 @@ object Form78: TForm78
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -64
-    ExplicitTop = 107
+    ExplicitLeft = -400
+    ExplicitTop = -250
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -128,6 +127,7 @@ object Form78: TForm78
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
+    ExplicitLeft = -400
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -156,6 +156,8 @@ object Form78: TForm78
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
+    ExplicitLeft = -400
+    ExplicitTop = 425
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -169,7 +171,7 @@ object Form78: TForm78
     end
   end
   object aDataSource: TDataSource
-    Left = 852
-    Top = 152
+    Left = 948
+    Top = 80
   end
 end
