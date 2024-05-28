@@ -1,4 +1,4 @@
-object Form100: TForm100
+object Form124: TForm124
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -172,7 +172,7 @@ object Form100: TForm100
     end
   end
   object aDataSource: TDataSource
-    Left = 948
+    Left = 956
     Top = 88
   end
 end

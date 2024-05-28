@@ -1,4 +1,4 @@
-unit DelphiPDV.View.Other104;
+unit DelphiPDV.View.Other126;
 
 interface
 
@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm103 = class(TForm)
+  TForm124 = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -50,18 +50,16 @@ type
     { Private declarations }
   public
     { Public declarations }
-    procedure Process;
-    procedure Review;
   end;
 
 var
-  Form103: TForm103;
+  Form124: TForm124;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm103.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TForm124.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -89,7 +87,7 @@ begin
   end;
 end;
 
-procedure TForm103.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+procedure TForm124.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
   ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
   var ADone: Boolean);
 begin
@@ -99,17 +97,6 @@ begin
     ACanvas.Brush.Color := clHighlight;
     ACanvas.Font.Color  := clWhite;
   end;
-end;
-
-procedure TForm103.Process;
-begin
-  EditPesquisa.Clear;
-  aDataSource.DataSet := nil;
-end;
-
-procedure TForm103.Review;
-begin
-
 end;
 
 end.
