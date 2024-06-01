@@ -1,4 +1,4 @@
-object Form111: TForm111
+object Form129: TForm129
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -56,7 +56,6 @@ object Form111: TForm111
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
-      OnCustomDrawCell = GridViewCustomDrawCell
       DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
@@ -172,7 +171,7 @@ object Form111: TForm111
     end
   end
   object aDataSource: TDataSource
-    Left = 940
-    Top = 80
+    Left = 932
+    Top = 88
   end
 end

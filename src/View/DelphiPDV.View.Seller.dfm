@@ -169,7 +169,7 @@ object VwSeller: TVwSeller
     end
   end
   object aDataSource: TDataSource
-    Left = 936
-    Top = 432
+    Left = 960
+    Top = 112
   end
 end
