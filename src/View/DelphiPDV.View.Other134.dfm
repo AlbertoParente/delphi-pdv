@@ -1,4 +1,4 @@
-object Form122: TForm122
+object Form132: TForm132
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -34,9 +34,8 @@ object Form122: TForm122
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -5
-    ExplicitWidth = 624
-    ExplicitHeight = 364
+    ExplicitLeft = -400
+    ExplicitTop = -250
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -57,7 +56,6 @@ object Form122: TForm122
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
-      OnCustomDrawCell = GridViewCustomDrawCell
       DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
@@ -129,8 +127,7 @@ object Form122: TForm122
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitLeft = -5
-    ExplicitWidth = 624
+    ExplicitLeft = -400
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -159,9 +156,8 @@ object Form122: TForm122
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitLeft = -5
+    ExplicitLeft = -400
     ExplicitTop = 425
-    ExplicitWidth = 624
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -175,7 +171,7 @@ object Form122: TForm122
     end
   end
   object aDataSource: TDataSource
-    Left = 943
-    Top = 80
+    Left = 908
+    Top = 104
   end
 end
