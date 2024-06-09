@@ -1,4 +1,4 @@
-object Form135: TForm135
+object Form136: TForm136
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -35,7 +35,8 @@ object Form135: TForm135
     TabStop = False
     LookAndFeel.Kind = lfOffice11
     ExplicitLeft = -5
-    ExplicitTop = 62
+    ExplicitTop = 54
+    ExplicitWidth = 624
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -127,6 +128,9 @@ object Form135: TForm135
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
+    ExplicitLeft = -5
+    ExplicitTop = -5
+    ExplicitWidth = 624
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -155,6 +159,9 @@ object Form135: TForm135
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
+    ExplicitLeft = -5
+    ExplicitTop = 42
+    ExplicitWidth = 624
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -190,6 +197,9 @@ object Form135: TForm135
     TabOrder = 3
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitLeft = -5
+    ExplicitTop = 60
+    ExplicitWidth = 624
     object cxGridDBTableView1: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -274,7 +284,7 @@ object Form135: TForm135
     end
   end
   object aDataSource: TDataSource
-    Left = 492
-    Top = 120
+    Left = 887
+    Top = 131
   end
 end
