@@ -203,7 +203,8 @@ uses
   DelphiPDV.View.Other173 in 'src\View\DelphiPDV.View.Other173.pas' {Form171},
   DelphiPDV.View.Other174 in 'src\View\DelphiPDV.View.Other174.pas' {Form172},
   DelphiPDV.View.Other175 in 'src\View\DelphiPDV.View.Other175.pas' {Form173},
-  DelphiPDV.View.Other176 in 'src\View\DelphiPDV.View.Other176.pas' {Form174};
+  DelphiPDV.View.Other176 in 'src\View\DelphiPDV.View.Other176.pas' {Form174},
+  DelphiPDV.View.Other177 in 'src\View\DelphiPDV.View.Other177.pas' {Form175};
 
 {$R *.res}
 
@@ -387,5 +388,6 @@ begin
   Application.CreateForm(TForm172, Form172);
   Application.CreateForm(TForm173, Form173);
   Application.CreateForm(TForm174, Form174);
+  Application.CreateForm(TForm175, Form175);
   Application.Run;
 end.
