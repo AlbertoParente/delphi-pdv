@@ -1,4 +1,4 @@
-object VwSeller: TVwSeller
+object Form204: TForm204
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -9,7 +9,6 @@ object VwSeller: TVwSeller
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnClose = FormClose
   OnKeyDown = FormKeyDown
   OnShow = FormShow
   TextHeight = 15
@@ -36,6 +35,8 @@ object VwSeller: TVwSeller
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitLeft = -400
+    ExplicitTop = -250
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -128,6 +129,7 @@ object VwSeller: TVwSeller
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
+    ExplicitLeft = -400
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -156,6 +158,8 @@ object VwSeller: TVwSeller
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
+    ExplicitLeft = -400
+    ExplicitTop = 425
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -169,7 +173,7 @@ object VwSeller: TVwSeller
     end
   end
   object aDataSource: TDataSource
-    Left = 968
-    Top = 80
+    Left = 964
+    Top = 88
   end
 end
