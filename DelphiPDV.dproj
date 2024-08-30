@@ -1075,6 +1075,10 @@
             <Form>Form215</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="src\View\DelphiPDV.View.Other217.pas">
+            <Form>Form216</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

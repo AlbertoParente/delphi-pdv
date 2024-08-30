@@ -161,7 +161,6 @@ object VwPrincipal: TVwPrincipal
             FilterBox.CustomizeDialog = False
             ScrollbarAnnotations.CustomAnnotations = <>
             OnCustomDrawCell = GridViewCustomDrawCell
-            DataController.DataSource = aDataSource
             DataController.Filter.Options = [fcoCaseInsensitive]
             DataController.Summary.DefaultGroupSummaryItems = <>
             DataController.Summary.FooterSummaryItems = <>
@@ -2121,7 +2120,7 @@ object VwPrincipal: TVwPrincipal
   end
   object aDataSource: TDataSource
     DataSet = dmDados.cdsItens
-    Left = 668
-    Top = 136
+    Left = 636
+    Top = 152
   end
 end
