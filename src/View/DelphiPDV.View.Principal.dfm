@@ -192,6 +192,7 @@ object VwPrincipal: TVwPrincipal
             object ColumnCodigo: TcxGridDBColumn
               Caption = 'Codigo'
               DataBinding.FieldName = 'codigo'
+              DataBinding.IsNullValueType = True
               PropertiesClassName = 'TcxTextEditProperties'
               Properties.Alignment.Horz = taCenter
               HeaderAlignmentHorz = taCenter
@@ -202,6 +203,7 @@ object VwPrincipal: TVwPrincipal
             object ColumnItem: TcxGridDBColumn
               Caption = 'Item'
               DataBinding.FieldName = 'item'
+              DataBinding.IsNullValueType = True
               PropertiesClassName = 'TcxTextEditProperties'
               Properties.Alignment.Horz = taCenter
               HeaderAlignmentHorz = taCenter
@@ -212,6 +214,7 @@ object VwPrincipal: TVwPrincipal
             object ColumnDescriptionProduct: TcxGridDBColumn
               Caption = 'Descri'#231#227'o do Produto'
               DataBinding.FieldName = 'description'
+              DataBinding.IsNullValueType = True
               PropertiesClassName = 'TcxTextEditProperties'
               Properties.Alignment.Horz = taRightJustify
               Properties.MaxLength = 0
@@ -220,6 +223,7 @@ object VwPrincipal: TVwPrincipal
             object ColumnUnitaryValue: TcxGridDBColumn
               Caption = 'Valor Unit'#225'rio'
               DataBinding.FieldName = 'unitvalue'
+              DataBinding.IsNullValueType = True
               PropertiesClassName = 'TcxTextEditProperties'
               HeaderAlignmentHorz = taRightJustify
               MinWidth = 70
@@ -229,6 +233,7 @@ object VwPrincipal: TVwPrincipal
               Caption = 'Quantidade'
               DataBinding.Expression = #1'SUM(unitvalue*quanitity)'
               DataBinding.FieldName = 'quantity'
+              DataBinding.IsNullValueType = True
               PropertiesClassName = 'TcxTextEditProperties'
               HeaderAlignmentHorz = taCenter
               MinWidth = 70
@@ -236,6 +241,7 @@ object VwPrincipal: TVwPrincipal
             object ColumnTotalValue: TcxGridDBColumn
               Caption = 'Sub-Total'
               DataBinding.FieldName = 'subtotal'
+              DataBinding.IsNullValueType = True
               PropertiesClassName = 'TcxTextEditProperties'
               HeaderAlignmentHorz = taRightJustify
               MinWidth = 70
@@ -2120,7 +2126,7 @@ object VwPrincipal: TVwPrincipal
   end
   object aDataSource: TDataSource
     DataSet = dmDados.cdsItens
-    Left = 636
-    Top = 152
+    Left = 676
+    Top = 128
   end
 end
