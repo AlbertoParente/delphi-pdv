@@ -255,7 +255,8 @@ uses
   DelphiPDV.View.Other224 in 'src\View\DelphiPDV.View.Other224.pas' {Form223},
   DelphiPDV.View.Other225 in 'src\View\DelphiPDV.View.Other225.pas' {Form224},
   DelphiPDV.View.Other226 in 'src\View\DelphiPDV.View.Other226.pas' {Form225},
-  DelphiPDV.View.Other227 in 'src\View\DelphiPDV.View.Other227.pas' {Form226};
+  DelphiPDV.View.Other227 in 'src\View\DelphiPDV.View.Other227.pas' {Form226},
+  DelphiPDV.View.Other228 in 'src\View\DelphiPDV.View.Other228.pas' {Form227};
 
 {$R *.res}
 
@@ -491,5 +492,6 @@ begin
   Application.CreateForm(TForm224, Form224);
   Application.CreateForm(TForm225, Form225);
   Application.CreateForm(TForm226, Form226);
+  Application.CreateForm(TForm227, Form227);
   Application.Run;
 end.
