@@ -1,4 +1,4 @@
-object Form171: TForm171
+object Form231: TForm231
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -9,14 +9,13 @@ object Form171: TForm171
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnKeyDown = FormKeyDown
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
     Left = 0
     Top = 59
     Width = 1024
-    Height = 313
+    Height = 361
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -34,7 +33,9 @@ object Form171: TForm171
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -5
+    ExplicitLeft = -400
+    ExplicitTop = -250
+    ExplicitHeight = 691
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -55,6 +56,7 @@ object Form171: TForm171
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
+      OnCustomDrawCell = GridViewCustomDrawCell
       DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
@@ -172,9 +174,9 @@ object Form171: TForm171
   object cxGrid1: TcxGrid
     AlignWithMargins = True
     Left = 0
-    Top = 376
+    Top = 424
     Width = 1024
-    Height = 374
+    Height = 326
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -276,7 +278,7 @@ object Form171: TForm171
     end
   end
   object aDataSource: TDataSource
-    Left = 916
-    Top = 120
+    Left = 940
+    Top = 80
   end
 end
