@@ -1,4 +1,4 @@
-unit DelphiPDV.View.Other186;
+unit DelphiPDV.View.Other237;
 
 interface
 
@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm184 = class(TForm)
+  TForm236 = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -49,9 +49,6 @@ type
     cxGridDBCardView1: TcxGridDBCardView;
     cxGridLevel1: TcxGridLevel;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
-    procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
-      ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
-      var ADone: Boolean);
   private
     { Private declarations }
   public
@@ -61,13 +58,13 @@ type
   end;
 
 var
-  Form184: TForm184;
+  Form236: TForm236;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm184.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TForm236.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -95,25 +92,13 @@ begin
   end;
 end;
 
-procedure TForm184.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
-  ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
-  var ADone: Boolean);
-begin
-  inherited;
-  if AViewInfo.GridRecord.Selected then
-  begin
-    ACanvas.Brush.Color := clHighlight;
-    ACanvas.Font.Color  := clWhite;
-  end;
-end;
-
-procedure TForm184.Process;
+procedure TForm236.Process;
 begin
   Review;
   Close;
 end;
 
-procedure TForm184.Review;
+procedure TForm236.Review;
 begin
 
 end;
