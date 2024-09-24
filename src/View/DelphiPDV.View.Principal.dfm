@@ -140,8 +140,6 @@ object VwPrincipal: TVwPrincipal
           TabOrder = 0
           TabStop = False
           LookAndFeel.Kind = lfOffice11
-          ExplicitLeft = -40
-          ExplicitTop = 45
           object GridView: TcxGridDBTableView
             Navigator.Buttons.CustomButtons = <>
             Navigator.Buttons.First.Visible = True
@@ -2128,7 +2126,7 @@ object VwPrincipal: TVwPrincipal
   end
   object aDataSource: TDataSource
     DataSet = dmDados.cdsItens
-    Left = 604
-    Top = 192
+    Left = 564
+    Top = 152
   end
 end
