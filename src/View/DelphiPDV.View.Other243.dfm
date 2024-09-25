@@ -1,4 +1,4 @@
-object Form204: TForm204
+object Form242: TForm242
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -10,7 +10,6 @@ object Form204: TForm204
   Font.Name = 'Segoe UI'
   Font.Style = []
   OnKeyDown = FormKeyDown
-  OnShow = FormShow
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
@@ -35,8 +34,10 @@ object Form204: TForm204
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -400
-    ExplicitTop = -250
+    ExplicitLeft = -88
+    ExplicitTop = 35
+    ExplicitWidth = 624
+    ExplicitHeight = 364
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -129,7 +130,9 @@ object Form204: TForm204
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitLeft = -400
+    ExplicitLeft = -88
+    ExplicitTop = -24
+    ExplicitWidth = 624
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -158,8 +161,9 @@ object Form204: TForm204
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitLeft = -400
-    ExplicitTop = 425
+    ExplicitLeft = -88
+    ExplicitTop = 401
+    ExplicitWidth = 624
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -174,6 +178,6 @@ object Form204: TForm204
   end
   object aDataSource: TDataSource
     Left = 964
-    Top = 88
+    Top = 104
   end
 end
