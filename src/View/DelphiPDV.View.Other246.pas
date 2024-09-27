@@ -1,4 +1,4 @@
-unit DelphiPDV.View.Other206;
+unit DelphiPDV.View.Other246;
 
 interface
 
@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm205 = class(TForm)
+  TForm245 = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -42,10 +42,15 @@ type
     PanelInformation: TPanel;
     LabelInformation: TLabel;
     aDataSource: TDataSource;
-    procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+    cxGrid1: TcxGrid;
+    cxGridDBTableView1: TcxGridDBTableView;
+    cxGridDBColumn1: TcxGridDBColumn;
+    cxGridDBColumn2: TcxGridDBColumn;
+    cxGridDBCardView1: TcxGridDBCardView;
+    cxGridLevel1: TcxGridLevel;
+    procedure cxGridDBTableView1CustomDrawCell(Sender: TcxCustomGridTableView;
       ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
       var ADone: Boolean);
-    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -55,21 +60,15 @@ type
   end;
 
 var
-  Form205: TForm205;
+  Form245: TForm245;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm205.FormShow(Sender: TObject);
-begin
-  EditPesquisa.Clear;
-  aDataSource.DataSet := nil;
-end;
-
-procedure TForm205.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
-  ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
-  var ADone: Boolean);
+procedure TForm245.cxGridDBTableView1CustomDrawCell(
+  Sender: TcxCustomGridTableView; ACanvas: TcxCanvas;
+  AViewInfo: TcxGridTableDataCellViewInfo; var ADone: Boolean);
 begin
   inherited;
   if AViewInfo.GridRecord.Selected then
@@ -79,13 +78,13 @@ begin
   end;
 end;
 
-procedure TForm205.Process;
+procedure TForm245.Process;
 begin
   Review;
   Close;
 end;
 
-procedure TForm205.Review;
+procedure TForm245.Review;
 begin
 
 end;
