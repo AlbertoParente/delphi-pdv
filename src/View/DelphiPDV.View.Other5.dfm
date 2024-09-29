@@ -135,11 +135,10 @@ object Form4: TForm4
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
-      Width = 624
+      Width = 103
       Height = 15
       Align = alTop
       Caption = 'Pesquisar Vendedor'
-      ExplicitWidth = 103
     end
     object EditPesquisa: TEdit
       Left = 0
@@ -166,13 +165,11 @@ object Form4: TForm4
     object LabelInformation: TLabel
       Left = 0
       Top = 0
-      Width = 624
-      Height = 16
+      Width = 197
+      Height = 15
       Align = alClient
       Alignment = taCenter
       Caption = '<Esc> Retorna        <Enter> Seleciona'
-      ExplicitWidth = 197
-      ExplicitHeight = 15
     end
   end
   object aDataSource: TDataSource

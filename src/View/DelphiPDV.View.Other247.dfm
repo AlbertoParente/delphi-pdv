@@ -1,4 +1,4 @@
-object Form3: TForm3
+object Form246: TForm246
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -9,8 +9,6 @@ object Form3: TForm3
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnKeyDown = FormKeyDown
-  OnShow = FormShow
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
@@ -30,13 +28,13 @@ object Form3: TForm3
     Font.Color = clWindowText
     Font.Height = -13
     Font.Name = 'Segoe UI'
-    Font.Style = []
+    Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = 5
-    ExplicitTop = 56
+    ExplicitLeft = -400
+    ExplicitTop = -250
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -96,12 +94,8 @@ object Form3: TForm3
         Options.AutoWidthSizable = False
         Width = 60
       end
-      object ColumnStore: TcxGridDBColumn
-        Caption = 'Loja'
-        DataBinding.IsNullValueType = True
-      end
-      object ColumnProduct: TcxGridDBColumn
-        Caption = 'Produto'
+      object ColumnSellerName: TcxGridDBColumn
+        Caption = 'Vendedor'
         DataBinding.FieldName = 'numconselho'
         DataBinding.IsNullValueType = True
         PropertiesClassName = 'TcxTextEditProperties'
@@ -109,10 +103,6 @@ object Form3: TForm3
         Properties.MaxLength = 0
         Options.AutoWidthSizable = False
         Width = 200
-      end
-      object ColumnQuantity: TcxGridDBColumn
-        Caption = 'Quantidade'
-        DataBinding.IsNullValueType = True
       end
     end
     object DBGridDBCardView1: TcxGridDBCardView
@@ -136,15 +126,15 @@ object Form3: TForm3
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitWidth = 624
+    ExplicitLeft = -400
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
       Width = 1024
       Height = 15
       Align = alTop
-      Caption = 'Pesquisar Estoque de Lojas'
-      ExplicitWidth = 141
+      Caption = 'Pesquisar Vendedor'
+      ExplicitWidth = 103
     end
     object EditPesquisa: TEdit
       Left = 0
@@ -154,7 +144,6 @@ object Form3: TForm3
       Align = alClient
       Alignment = taCenter
       TabOrder = 0
-      ExplicitWidth = 624
       ExplicitHeight = 23
     end
   end
@@ -166,8 +155,8 @@ object Form3: TForm3
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
+    ExplicitLeft = -400
     ExplicitTop = 425
-    ExplicitWidth = 624
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -181,7 +170,7 @@ object Form3: TForm3
     end
   end
   object aDataSource: TDataSource
-    Left = 924
-    Top = 104
+    Left = 956
+    Top = 96
   end
 end

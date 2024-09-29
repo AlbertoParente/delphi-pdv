@@ -26,7 +26,7 @@ uses
   cxEdit, cxNavigator, dxDateRanges, dxScrollbarAnnotations, Data.DB, cxDBData,
   cxTextEdit, cxGridLevel, cxGridCustomLayoutView, cxGridCardView,
   cxGridDBCardView, cxGridCustomTableView, cxGridTableView, cxGridDBTableView,
-  cxClasses, cxGridCustomView, cxGrid;
+  cxClasses, cxGridCustomView, cxGrid, dxSkinWXI;
 
 type
   TVwAffiliated = class(TForm)
@@ -100,29 +100,6 @@ procedure TVwAffiliated.FormShow(Sender: TObject);
 begin
   EditPesquisa.Clear;
   aDataSource.DataSet := nil;
-end;
-
-procedure TVwAffiliated.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
-  ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
-  var ADone: Boolean);
-begin
-  inherited;
-  if AViewInfo.GridRecord.Selected then
-  begin
-    ACanvas.Brush.Color := clHighlight;
-    ACanvas.Font.Color  := clWhite;
-  end;
-end;
-
-procedure TVwAffiliated.Process;
-begin
-  Review;
-  Close;
-end;
-
-procedure TVwAffiliated.Review;
-begin
-
 end;
 
 procedure TVwAffiliated.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;

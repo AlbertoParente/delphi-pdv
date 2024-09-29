@@ -26,7 +26,7 @@ uses
   dxScrollbarAnnotations, Data.DB, cxDBData, cxTextEdit, cxGridLevel,
   cxGridCustomLayoutView, cxGridCardView, cxGridDBCardView,
   cxGridCustomTableView, cxGridTableView, cxGridDBTableView, cxClasses,
-  cxGridCustomView, cxGrid, Vcl.StdCtrls, Vcl.ExtCtrls;
+  cxGridCustomView, cxGrid, Vcl.StdCtrls, Vcl.ExtCtrls, dxSkinWXI;
 
 type
   TForm2 = class(TForm)
@@ -48,10 +48,10 @@ type
     aDataSource: TDataSource;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure FormShow(Sender: TObject);
     procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
       ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
       var ADone: Boolean);
-    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -66,18 +66,6 @@ var
 implementation
 
 {$R *.dfm}
-
-procedure TForm2.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
-  ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
-  var ADone: Boolean);
-begin
-  inherited;
-  if AViewInfo.GridRecord.Selected then
-  begin
-    ACanvas.Brush.Color := clHighlight;
-    ACanvas.Font.Color  := clWhite;
-  end;
-end;
 
 procedure TForm2.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
