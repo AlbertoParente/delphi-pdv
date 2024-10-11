@@ -1,4 +1,4 @@
-object Form12: TForm12
+object Form19: TForm19
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -9,7 +9,9 @@ object Form12: TForm12
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnClose = FormClose
   OnKeyDown = FormKeyDown
+  OnShow = FormShow
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
@@ -34,8 +36,8 @@ object Form12: TForm12
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -400
-    ExplicitTop = -250
+    ExplicitLeft = 5
+    ExplicitTop = 56
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -128,14 +130,16 @@ object Form12: TForm12
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitLeft = -400
+    ExplicitLeft = -5
+    ExplicitWidth = 624
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
-      Width = 103
+      Width = 1024
       Height = 15
       Align = alTop
       Caption = 'Pesquisar Vendedor'
+      ExplicitWidth = 103
     end
     object EditPesquisa: TEdit
       Left = 0
@@ -156,20 +160,23 @@ object Form12: TForm12
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitLeft = -400
+    ExplicitLeft = -5
     ExplicitTop = 425
+    ExplicitWidth = 624
     object LabelInformation: TLabel
       Left = 0
       Top = 0
-      Width = 197
-      Height = 15
+      Width = 1024
+      Height = 16
       Align = alClient
       Alignment = taCenter
       Caption = '<Esc> Retorna        <Enter> Seleciona'
+      ExplicitWidth = 197
+      ExplicitHeight = 15
     end
   end
   object aDataSource: TDataSource
-    Left = 940
-    Top = 112
+    Left = 943
+    Top = 88
   end
 end

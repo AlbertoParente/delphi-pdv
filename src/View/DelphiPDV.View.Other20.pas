@@ -1,4 +1,4 @@
-unit DelphiPDV.View.Other16;
+unit DelphiPDV.View.Other20;
 
 interface
 
@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm15 = class(TForm)
+  TForm19 = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -42,16 +42,12 @@ type
     PanelInformation: TPanel;
     LabelInformation: TLabel;
     aDataSource: TDataSource;
-    cxGrid1: TcxGrid;
-    cxGridDBTableView1: TcxGridDBTableView;
-    cxGridDBColumn1: TcxGridDBColumn;
-    cxGridDBColumn2: TcxGridDBColumn;
-    cxGridDBCardView1: TcxGridDBCardView;
-    cxGridLevel1: TcxGridLevel;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
       ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
       var ADone: Boolean);
+    procedure FormShow(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
@@ -61,13 +57,18 @@ type
   end;
 
 var
-  Form15: TForm15;
+  Form19: TForm19;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm15.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TForm19.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Action := caFree;
+end;
+
+procedure TForm19.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -95,7 +96,13 @@ begin
   end;
 end;
 
-procedure TForm15.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+procedure TForm19.FormShow(Sender: TObject);
+begin
+  EditPesquisa.Clear;
+  aDataSource.DataSet := nil;
+end;
+
+procedure TForm19.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
   ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
   var ADone: Boolean);
 begin
@@ -107,13 +114,13 @@ begin
   end;
 end;
 
-procedure TForm15.Process;
+procedure TForm19.Process;
 begin
   Review;
   Close;
 end;
 
-procedure TForm15.Review;
+procedure TForm19.Review;
 begin
 
 end;

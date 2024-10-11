@@ -243,30 +243,6 @@
             <Form>Form7</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other210.pas">
-            <Form>Form209</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other211.pas">
-            <Form>Form210</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other212.pas">
-            <Form>Form211</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other213.pas">
-            <Form>Form212</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other214.pas">
-            <Form>Form213</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="src\View\DelphiPDV.View.Other215.pas">
-            <Form>Form214</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
         <DCCReference Include="src\View\DelphiPDV.View.Other216.pas">
             <Form>Form215</Form>
             <FormType>dfm</FormType>
@@ -437,6 +413,10 @@
         </DCCReference>
         <DCCReference Include="src\View\DelphiPDV.View.Other19.pas">
             <Form>Form18</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="src\View\DelphiPDV.View.Other20.pas">
+            <Form>Form19</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

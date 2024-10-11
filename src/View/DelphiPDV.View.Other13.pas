@@ -50,6 +50,8 @@ type
     { Private declarations }
   public
     { Public declarations }
+    procedure Process;
+    procedure Review;
   end;
 
 var
@@ -97,6 +99,17 @@ begin
     ACanvas.Brush.Color := clHighlight;
     ACanvas.Font.Color  := clWhite;
   end;
+end;
+
+procedure TForm12.Process;
+begin
+  Review;
+  Close;
+end;
+
+procedure TForm12.Review;
+begin
+
 end;
 
 end.
