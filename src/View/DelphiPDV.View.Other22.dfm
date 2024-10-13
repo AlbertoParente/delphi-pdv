@@ -1,4 +1,4 @@
-object Form219: TForm219
+object Form21: TForm21
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -34,8 +34,8 @@ object Form219: TForm219
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -400
-    ExplicitTop = -250
+    ExplicitLeft = 5
+    ExplicitTop = 56
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -56,7 +56,6 @@ object Form219: TForm219
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
-      OnCustomDrawCell = GridViewCustomDrawCell
       DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
@@ -172,7 +171,7 @@ object Form219: TForm219
     end
   end
   object aDataSource: TDataSource
-    Left = 932
+    Left = 900
     Top = 104
   end
 end
