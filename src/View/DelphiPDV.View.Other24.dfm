@@ -1,4 +1,4 @@
-object VwSeller: TVwSeller
+object Form23: TForm23
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -9,16 +9,14 @@ object VwSeller: TVwSeller
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnClose = FormClose
   OnKeyDown = FormKeyDown
-  OnShow = FormShow
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
     Left = 0
     Top = 59
     Width = 1024
-    Height = 691
+    Height = 313
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -36,6 +34,9 @@ object VwSeller: TVwSeller
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitLeft = -400
+    ExplicitTop = -250
+    ExplicitHeight = 691
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -56,7 +57,6 @@ object VwSeller: TVwSeller
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
-      OnCustomDrawCell = GridViewCustomDrawCell
       DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
@@ -128,6 +128,7 @@ object VwSeller: TVwSeller
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
+    ExplicitLeft = -400
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -156,6 +157,8 @@ object VwSeller: TVwSeller
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 2
+    ExplicitLeft = -400
+    ExplicitTop = 425
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -168,8 +171,114 @@ object VwSeller: TVwSeller
       ExplicitHeight = 15
     end
   end
+  object cxGrid1: TcxGrid
+    AlignWithMargins = True
+    Left = 0
+    Top = 376
+    Width = 1024
+    Height = 374
+    Margins.Left = 0
+    Margins.Top = 2
+    Margins.Right = 0
+    Margins.Bottom = 2
+    Align = alBottom
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Enabled = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+    TabStop = False
+    LookAndFeel.Kind = lfOffice11
+    object cxGridDBTableView1: TcxGridDBTableView
+      Navigator.Buttons.CustomButtons = <>
+      Navigator.Buttons.First.Visible = True
+      Navigator.Buttons.PriorPage.Visible = True
+      Navigator.Buttons.Prior.Visible = True
+      Navigator.Buttons.Next.Visible = True
+      Navigator.Buttons.NextPage.Visible = True
+      Navigator.Buttons.Last.Visible = True
+      Navigator.Buttons.Insert.Visible = True
+      Navigator.Buttons.Append.Visible = False
+      Navigator.Buttons.Delete.Visible = True
+      Navigator.Buttons.Edit.Visible = True
+      Navigator.Buttons.Post.Visible = True
+      Navigator.Buttons.Cancel.Visible = True
+      Navigator.Buttons.Refresh.Visible = True
+      Navigator.Buttons.SaveBookmark.Visible = True
+      Navigator.Buttons.GotoBookmark.Visible = True
+      Navigator.Buttons.Filter.Visible = True
+      FilterBox.CustomizeDialog = False
+      ScrollbarAnnotations.CustomAnnotations = <>
+      DataController.DataSource = aDataSource
+      DataController.Filter.Options = [fcoCaseInsensitive]
+      DataController.Summary.DefaultGroupSummaryItems = <>
+      DataController.Summary.FooterSummaryItems = <>
+      DataController.Summary.SummaryGroups = <>
+      Filtering.ColumnFilteredItemsList = True
+      OptionsBehavior.CellHints = True
+      OptionsBehavior.DragDropText = True
+      OptionsBehavior.IncSearch = True
+      OptionsCustomize.ColumnFiltering = False
+      OptionsCustomize.ColumnGrouping = False
+      OptionsCustomize.ColumnHidingOnGrouping = False
+      OptionsCustomize.ColumnHorzSizing = False
+      OptionsCustomize.ColumnMoving = False
+      OptionsCustomize.ColumnSorting = False
+      OptionsCustomize.ColumnsQuickCustomizationReordering = qcrEnabled
+      OptionsCustomize.DataRowSizing = True
+      OptionsData.CancelOnExit = False
+      OptionsData.Deleting = False
+      OptionsData.DeletingConfirmation = False
+      OptionsData.Editing = False
+      OptionsData.Inserting = False
+      OptionsSelection.CellSelect = False
+      OptionsSelection.HideSelection = True
+      OptionsView.FocusRect = False
+      OptionsView.NoDataToDisplayInfoText = '<Sem Dados>'
+      OptionsView.ColumnAutoWidth = True
+      OptionsView.GroupByBox = False
+      OptionsView.ShowColumnFilterButtons = sfbAlways
+      object cxGridDBColumn1: TcxGridDBColumn
+        Caption = 'Codigo'
+        DataBinding.FieldName = 'uf'
+        DataBinding.IsNullValueType = True
+        PropertiesClassName = 'TcxTextEditProperties'
+        Properties.Alignment.Horz = taCenter
+        HeaderAlignmentHorz = taCenter
+        Options.AutoWidthSizable = False
+        Width = 60
+      end
+      object cxGridDBColumn2: TcxGridDBColumn
+        Caption = 'Vendedor'
+        DataBinding.FieldName = 'numconselho'
+        DataBinding.IsNullValueType = True
+        PropertiesClassName = 'TcxTextEditProperties'
+        Properties.Alignment.Horz = taRightJustify
+        Properties.MaxLength = 0
+        Options.AutoWidthSizable = False
+        Width = 200
+      end
+    end
+    object cxGridDBCardView1: TcxGridDBCardView
+      Navigator.Buttons.CustomButtons = <>
+      ScrollbarAnnotations.CustomAnnotations = <>
+      DataController.Summary.DefaultGroupSummaryItems = <>
+      DataController.Summary.FooterSummaryItems = <>
+      DataController.Summary.SummaryGroups = <>
+      OptionsView.CardIndent = 7
+      OptionsView.CellAutoHeight = True
+    end
+    object cxGridLevel1: TcxGridLevel
+      GridView = cxGridDBTableView1
+    end
+  end
   object aDataSource: TDataSource
-    Left = 824
-    Top = 288
+    Left = 940
+    Top = 104
   end
 end
