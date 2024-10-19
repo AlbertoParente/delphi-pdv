@@ -1,4 +1,4 @@
-unit DelphiPDV.View.Other227;
+unit DelphiPDV.View.Other28;
 
 interface
 
@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm226 = class(TForm)
+  TForm27 = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -42,13 +42,8 @@ type
     PanelInformation: TPanel;
     LabelInformation: TLabel;
     aDataSource: TDataSource;
-    cxGrid1: TcxGrid;
-    cxGridDBTableView1: TcxGridDBTableView;
-    cxGridDBColumn1: TcxGridDBColumn;
-    cxGridDBColumn2: TcxGridDBColumn;
-    cxGridDBCardView1: TcxGridDBCardView;
-    cxGridLevel1: TcxGridLevel;
-    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -58,47 +53,32 @@ type
   end;
 
 var
-  Form226: TForm226;
+  Form27: TForm27;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm226.FormKeyDown(Sender: TObject; var Key: Word;
-  Shift: TShiftState);
+{ TForm27 }
+
+procedure TForm27.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
-  inherited;
-  case Key of
-    VK_ESCAPE:
-    begin
-      Close;
-    end;
-    VK_NEXT:
-    begin
-      Process;
-    end;
-    VK_RETURN:
-    begin
-      SelectNext(Screen.ActiveControl, True, True);
-    end;
-    VK_UP:
-    begin
-      aDataSource.DataSet.Prior;
-    end;
-    VK_DOWN:
-    begin
-      aDataSource.DataSet.Next;
-    end;
-  end;
+  Action := caFree;
 end;
 
-procedure TForm226.Process;
+procedure TForm27.FormShow(Sender: TObject);
+begin
+  EditPesquisa.Clear;
+  aDataSource.DataSet := nil;
+end;
+
+procedure TForm27.Process;
 begin
   Review;
   Close;
 end;
 
-procedure TForm226.Review;
+procedure TForm27.Review;
 begin
 
 end;
