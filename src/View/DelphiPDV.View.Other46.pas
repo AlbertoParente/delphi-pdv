@@ -1,4 +1,4 @@
-unit DelphiPDV.View.Other246;
+unit DelphiPDV.View.Other46;
 
 interface
 
@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm245 = class(TForm)
+  TForm45 = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -42,15 +42,10 @@ type
     PanelInformation: TPanel;
     LabelInformation: TLabel;
     aDataSource: TDataSource;
-    cxGrid1: TcxGrid;
-    cxGridDBTableView1: TcxGridDBTableView;
-    cxGridDBColumn1: TcxGridDBColumn;
-    cxGridDBColumn2: TcxGridDBColumn;
-    cxGridDBCardView1: TcxGridDBCardView;
-    cxGridLevel1: TcxGridLevel;
-    procedure cxGridDBTableView1CustomDrawCell(Sender: TcxCustomGridTableView;
+    procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
       ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
       var ADone: Boolean);
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
   private
     { Private declarations }
   public
@@ -60,15 +55,43 @@ type
   end;
 
 var
-  Form245: TForm245;
+  Form45: TForm45;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm245.cxGridDBTableView1CustomDrawCell(
-  Sender: TcxCustomGridTableView; ACanvas: TcxCanvas;
-  AViewInfo: TcxGridTableDataCellViewInfo; var ADone: Boolean);
+procedure TForm45.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  inherited;
+  case Key of
+    VK_ESCAPE:
+    begin
+      Close;
+    end;
+    VK_NEXT:
+    begin
+      Process;
+    end;
+    VK_RETURN:
+    begin
+      SelectNext(Screen.ActiveControl, True, True);
+    end;
+    VK_UP:
+    begin
+      aDataSource.DataSet.Prior;
+    end;
+    VK_DOWN:
+    begin
+      aDataSource.DataSet.Next;
+    end;
+  end;
+end;
+
+procedure TForm45.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+  ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
+  var ADone: Boolean);
 begin
   inherited;
   if AViewInfo.GridRecord.Selected then
@@ -78,13 +101,14 @@ begin
   end;
 end;
 
-procedure TForm245.Process;
+procedure TForm45.Process;
+begin
 begin
   Review;
   Close;
 end;
 
-procedure TForm245.Review;
+procedure TForm45.Review;
 begin
 
 end;
