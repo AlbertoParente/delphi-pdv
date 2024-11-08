@@ -1,4 +1,4 @@
-object Form246: TForm246
+object Form47: TForm47
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -9,6 +9,7 @@ object Form246: TForm246
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnKeyDown = FormKeyDown
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
@@ -33,8 +34,8 @@ object Form246: TForm246
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -400
-    ExplicitTop = -250
+    ExplicitLeft = -5
+    ExplicitTop = 56
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -125,6 +126,7 @@ object Form246: TForm246
     Height = 57
     Align = alTop
     BevelOuter = bvNone
+    Enabled = False
     TabOrder = 1
     ExplicitLeft = -400
     object LabelPesquisa: TLabel
@@ -134,6 +136,7 @@ object Form246: TForm246
       Height = 15
       Align = alTop
       Caption = 'Pesquisar Vendedor'
+      Enabled = False
       ExplicitWidth = 103
     end
     object EditPesquisa: TEdit
@@ -143,6 +146,7 @@ object Form246: TForm246
       Height = 42
       Align = alClient
       Alignment = taCenter
+      Enabled = False
       TabOrder = 0
       ExplicitHeight = 23
     end
@@ -154,6 +158,7 @@ object Form246: TForm246
     Height = 16
     Align = alBottom
     BevelOuter = bvNone
+    Enabled = False
     TabOrder = 2
     ExplicitLeft = -400
     ExplicitTop = 425
@@ -165,12 +170,14 @@ object Form246: TForm246
       Align = alClient
       Alignment = taCenter
       Caption = '<Esc> Retorna        <Enter> Seleciona'
+      Enabled = False
       ExplicitWidth = 197
       ExplicitHeight = 15
     end
   end
   object aDataSource: TDataSource
-    Left = 956
-    Top = 96
+    Enabled = False
+    Left = 932
+    Top = 88
   end
 end
