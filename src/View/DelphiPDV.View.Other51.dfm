@@ -1,4 +1,4 @@
-object Form195: TForm195
+object Form50: TForm50
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -127,6 +127,7 @@ object Form195: TForm195
     Height = 57
     Align = alTop
     BevelOuter = bvNone
+    Enabled = False
     TabOrder = 1
     ExplicitLeft = -400
     object LabelPesquisa: TLabel
@@ -136,6 +137,7 @@ object Form195: TForm195
       Height = 15
       Align = alTop
       Caption = 'Pesquisar Vendedor'
+      Enabled = False
       ExplicitWidth = 103
     end
     object EditPesquisa: TEdit
@@ -145,6 +147,7 @@ object Form195: TForm195
       Height = 42
       Align = alClient
       Alignment = taCenter
+      Enabled = False
       TabOrder = 0
       ExplicitHeight = 23
     end
@@ -156,6 +159,7 @@ object Form195: TForm195
     Height = 16
     Align = alBottom
     BevelOuter = bvNone
+    Enabled = False
     TabOrder = 2
     ExplicitLeft = -400
     ExplicitTop = 425
@@ -167,12 +171,14 @@ object Form195: TForm195
       Align = alClient
       Alignment = taCenter
       Caption = '<Esc> Retorna        <Enter> Seleciona'
+      Enabled = False
       ExplicitWidth = 197
       ExplicitHeight = 15
     end
   end
   object aDataSource: TDataSource
-    Left = 948
-    Top = 96
+    Enabled = False
+    Left = 940
+    Top = 104
   end
 end
