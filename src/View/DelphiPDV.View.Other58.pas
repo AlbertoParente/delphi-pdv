@@ -1,4 +1,4 @@
-unit DelphiPDV.View.Other59;
+unit DelphiPDV.View.Other58;
 
 interface
 
@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm59 = class(TForm)
+  TForm57 = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -43,6 +43,9 @@ type
     LabelInformation: TLabel;
     aDataSource: TDataSource;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+      ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
+      var ADone: Boolean);
   private
     { Private declarations }
   public
@@ -52,13 +55,13 @@ type
   end;
 
 var
-  Form59: TForm59;
+  Form57: TForm57;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm59.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TForm57.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -86,13 +89,25 @@ begin
   end;
 end;
 
-procedure TForm59.Process;
+procedure TForm57.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+  ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
+  var ADone: Boolean);
+begin
+  inherited;
+  if AViewInfo.GridRecord.Selected then
+  begin
+    ACanvas.Brush.Color := clHighlight;
+    ACanvas.Font.Color  := clWhite;
+  end;
+end;
+
+procedure TForm57.Process;
 begin
   Review;
   Close;
 end;
 
-procedure TForm59.Review;
+procedure TForm57.Review;
 begin
 
 end;
