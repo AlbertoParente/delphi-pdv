@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm60 = class(TForm)
+  TForm59 = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -43,9 +43,6 @@ type
     LabelInformation: TLabel;
     aDataSource: TDataSource;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
-    procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
-      ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
-      var ADone: Boolean);
   private
     { Private declarations }
   public
@@ -55,13 +52,13 @@ type
   end;
 
 var
-  Form60: TForm60;
+  Form59: TForm59;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm60.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TForm59.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -89,25 +86,13 @@ begin
   end;
 end;
 
-procedure TForm60.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
-  ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
-  var ADone: Boolean);
-begin
-  inherited;
-  if AViewInfo.GridRecord.Selected then
-  begin
-    ACanvas.Brush.Color := clHighlight;
-    ACanvas.Font.Color  := clWhite;
-  end;
-end;
-
-procedure TForm60.Process;
+procedure TForm59.Process;
 begin
   Review;
   Close;
 end;
 
-procedure TForm60.Review;
+procedure TForm59.Review;
 begin
 
 end;
