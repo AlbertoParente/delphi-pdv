@@ -1,4 +1,4 @@
-unit DelphiPDV.View.Other59;
+unit DelphiPDV.View.Other67;
 
 interface
 
@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm58 = class(TForm)
+  TForm66 = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -42,16 +42,9 @@ type
     PanelInformation: TPanel;
     LabelInformation: TLabel;
     aDataSource: TDataSource;
-    cxGrid1: TcxGrid;
-    cxGridDBTableView1: TcxGridDBTableView;
-    cxGridDBColumn1: TcxGridDBColumn;
-    cxGridDBColumn2: TcxGridDBColumn;
-    cxGridDBCardView1: TcxGridDBCardView;
-    cxGridLevel1: TcxGridLevel;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
-    procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
-      ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
-      var ADone: Boolean);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -61,13 +54,18 @@ type
   end;
 
 var
-  Form58: TForm58;
+  Form66: TForm66;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm58.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TForm66.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Action := caFree;
+end;
+
+procedure TForm66.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -95,25 +93,19 @@ begin
   end;
 end;
 
-procedure TForm58.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
-  ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
-  var ADone: Boolean);
+procedure TForm66.FormShow(Sender: TObject);
 begin
-  inherited;
-  if AViewInfo.GridRecord.Selected then
-  begin
-    ACanvas.Brush.Color := clHighlight;
-    ACanvas.Font.Color  := clWhite;
-  end;
+  EditPesquisa.Clear;
+  aDataSource.DataSet := nil;
 end;
 
-procedure TForm58.Process;
+procedure TForm66.Process;
 begin
   Review;
   Close;
 end;
 
-procedure TForm58.Review;
+procedure TForm66.Review;
 begin
 
 end;

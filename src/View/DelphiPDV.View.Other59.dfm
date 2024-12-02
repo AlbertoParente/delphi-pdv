@@ -134,12 +134,11 @@ object Form58: TForm58
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
-      Width = 1024
+      Width = 103
       Height = 15
       Align = alTop
       Caption = 'Pesquisar Vendedor'
       Enabled = False
-      ExplicitWidth = 103
     end
     object EditPesquisa: TEdit
       Left = 0
@@ -167,14 +166,12 @@ object Form58: TForm58
     object LabelInformation: TLabel
       Left = 0
       Top = 0
-      Width = 1024
-      Height = 16
+      Width = 197
+      Height = 15
       Align = alClient
       Alignment = taCenter
       Caption = '<Esc> Retorna        <Enter> Seleciona'
       Enabled = False
-      ExplicitWidth = 197
-      ExplicitHeight = 15
     end
   end
   object cxGrid1: TcxGrid

@@ -37,23 +37,6 @@ uses
   DelphiPDV.View.Other7 in 'src\View\DelphiPDV.View.Other7.pas' {VwOther7},
   DelphiPDV.View.Other8 in 'src\View\DelphiPDV.View.Other8.pas' {Form6},
   DelphiPDV.View.Other9 in 'src\View\DelphiPDV.View.Other9.pas' {Form7},
-  DelphiPDV.View.Other240 in 'src\View\DelphiPDV.View.Other240.pas' {Form239},
-  DelphiPDV.View.Other241 in 'src\View\DelphiPDV.View.Other241.pas' {Form240},
-  DelphiPDV.View.Other242 in 'src\View\DelphiPDV.View.Other242.pas' {Form241},
-  DelphiPDV.View.Other243 in 'src\View\DelphiPDV.View.Other243.pas' {Form242},
-  DelphiPDV.View.Other244 in 'src\View\DelphiPDV.View.Other244.pas' {Form243},
-  DelphiPDV.View.Other245 in 'src\View\DelphiPDV.View.Other245.pas' {Form244},
-  DelphiPDV.View.Other246 in 'src\View\DelphiPDV.View.Other246.pas' {Form245},
-  DelphiPDV.View.Other247 in 'src\View\DelphiPDV.View.Other247.pas' {Form246},
-  DelphiPDV.View.Other248 in 'src\View\DelphiPDV.View.Other248.pas' {Form8},
-  DelphiPDV.View.Other10 in 'src\View\DelphiPDV.View.Other10.pas' {Form9},
-  DelphiPDV.View.Other11 in 'src\View\DelphiPDV.View.Other11.pas' {Form10},
-  DelphiPDV.View.Other12 in 'src\View\DelphiPDV.View.Other12.pas' {Form11},
-  DelphiPDV.View.Other13 in 'src\View\DelphiPDV.View.Other13.pas' {Form12},
-  DelphiPDV.View.Other14 in 'src\View\DelphiPDV.View.Other14.pas' {Form13},
-  DelphiPDV.View.Other15 in 'src\View\DelphiPDV.View.Other15.pas' {Form14},
-  DelphiPDV.View.Other16 in 'src\View\DelphiPDV.View.Other16.pas' {Form15},
-  DelphiPDV.View.Other17 in 'src\View\DelphiPDV.View.Other17.pas' {Form16},
   DelphiPDV.View.Other18 in 'src\View\DelphiPDV.View.Other18.pas' {Form17},
   DelphiPDV.View.Other19 in 'src\View\DelphiPDV.View.Other19.pas' {Form18},
   DelphiPDV.View.Other20 in 'src\View\DelphiPDV.View.Other20.pas' {Form19},
@@ -102,7 +85,8 @@ uses
   DelphiPDV.View.Other63 in 'src\View\DelphiPDV.View.Other63.pas' {Form62},
   DelphiPDV.View.Other64 in 'src\View\DelphiPDV.View.Other64.pas' {Form63},
   DelphiPDV.View.Other65 in 'src\View\DelphiPDV.View.Other65.pas' {Form64},
-  DelphiPDV.View.Other66 in 'src\View\DelphiPDV.View.Other66.pas' {Form65};
+  DelphiPDV.View.Other66 in 'src\View\DelphiPDV.View.Other66.pas' {Form65},
+  DelphiPDV.View.Other67 in 'src\View\DelphiPDV.View.Other67.pas' {Form66};
 
 {$R *.res}
 
@@ -119,19 +103,6 @@ begin
   Application.CreateForm(TForm5, Form5);
   Application.CreateForm(TForm6, Form6);
   Application.CreateForm(TForm7, Form7);
-  Application.CreateForm(TForm243, Form243);
-  Application.CreateForm(TForm244, Form244);
-  Application.CreateForm(TForm245, Form245);
-  Application.CreateForm(TForm246, Form246);
-  Application.CreateForm(TForm8, Form8);
-  Application.CreateForm(TForm9, Form9);
-  Application.CreateForm(TForm10, Form10);
-  Application.CreateForm(TForm11, Form11);
-  Application.CreateForm(TForm12, Form12);
-  Application.CreateForm(TForm13, Form13);
-  Application.CreateForm(TForm14, Form14);
-  Application.CreateForm(TForm15, Form15);
-  Application.CreateForm(TForm16, Form16);
   Application.CreateForm(TForm17, Form17);
   Application.CreateForm(TForm18, Form18);
   Application.CreateForm(TForm19, Form19);
@@ -181,5 +152,6 @@ begin
   Application.CreateForm(TForm63, Form63);
   Application.CreateForm(TForm64, Form64);
   Application.CreateForm(TForm65, Form65);
+  Application.CreateForm(TForm66, Form66);
   Application.Run;
 end.

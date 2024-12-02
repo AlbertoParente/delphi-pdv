@@ -103,7 +103,6 @@ end;
 
 procedure TForm45.Process;
 begin
-begin
   Review;
   Close;
 end;
