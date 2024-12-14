@@ -29,7 +29,11 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
+<<<<<<< HEAD
   TForm67 = class(TForm)
+=======
+  TForm78 = class(TForm)
+>>>>>>> 8a4fdd141b95ed6fc2a5250855a01d44a4fc5c07
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -42,12 +46,22 @@ type
     PanelInformation: TPanel;
     LabelInformation: TLabel;
     aDataSource: TDataSource;
+<<<<<<< HEAD
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
       ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
       var ADone: Boolean);
+=======
+    cxGrid1: TcxGrid;
+    cxGridDBTableView1: TcxGridDBTableView;
+    cxGridDBColumn1: TcxGridDBColumn;
+    cxGridDBColumn2: TcxGridDBColumn;
+    cxGridDBCardView1: TcxGridDBCardView;
+    cxGridLevel1: TcxGridLevel;
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+>>>>>>> 8a4fdd141b95ed6fc2a5250855a01d44a4fc5c07
   private
     { Private declarations }
   public
@@ -57,18 +71,26 @@ type
   end;
 
 var
+<<<<<<< HEAD
   Form67: TForm67;
+=======
+  Form16: TForm16;
+>>>>>>> 8a4fdd141b95ed6fc2a5250855a01d44a4fc5c07
 
 implementation
 
 {$R *.dfm}
 
+<<<<<<< HEAD
 procedure TForm67.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Action := caFree;
 end;
 
 procedure TForm67.FormKeyDown(Sender: TObject; var Key: Word;
+=======
+procedure TForm78.FormKeyDown(Sender: TObject; var Key: Word;
+>>>>>>> 8a4fdd141b95ed6fc2a5250855a01d44a4fc5c07
   Shift: TShiftState);
 begin
   inherited;
@@ -96,6 +118,7 @@ begin
   end;
 end;
 
+<<<<<<< HEAD
 procedure TForm67.FormShow(Sender: TObject);
 begin
   EditPesquisa.Clear;
@@ -115,12 +138,19 @@ begin
 end;
 
 procedure TForm67.Process;
+=======
+procedure TForm78.Process;
+>>>>>>> 8a4fdd141b95ed6fc2a5250855a01d44a4fc5c07
 begin
   Review;
   Close;
 end;
 
+<<<<<<< HEAD
 procedure TForm67.Review;
+=======
+procedure TForm78.Review;
+>>>>>>> 8a4fdd141b95ed6fc2a5250855a01d44a4fc5c07
 begin
 
 end;
