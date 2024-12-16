@@ -1,4 +1,4 @@
-object VwSeller: TVwSeller
+object Form68: TForm68
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -175,7 +175,7 @@ object VwSeller: TVwSeller
   end
   object aDataSource: TDataSource
     Enabled = False
-    Left = 824
-    Top = 168
+    Left = 960
+    Top = 96
   end
 end
