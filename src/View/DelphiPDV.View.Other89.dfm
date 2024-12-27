@@ -1,4 +1,4 @@
-object Form24: TForm24
+object Form79: TForm79
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -9,9 +9,7 @@ object Form24: TForm24
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnClose = FormClose
   OnKeyDown = FormKeyDown
-  OnShow = FormShow
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
@@ -36,8 +34,8 @@ object Form24: TForm24
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = 5
-    ExplicitTop = 56
+    ExplicitLeft = -400
+    ExplicitTop = -250
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -58,7 +56,6 @@ object Form24: TForm24
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
-      OnCustomDrawCell = GridViewCustomDrawCell
       DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
@@ -129,6 +126,7 @@ object Form24: TForm24
     Height = 57
     Align = alTop
     BevelOuter = bvNone
+    Enabled = False
     TabOrder = 1
     ExplicitLeft = -400
     object LabelPesquisa: TLabel
@@ -138,6 +136,7 @@ object Form24: TForm24
       Height = 15
       Align = alTop
       Caption = 'Pesquisar Vendedor'
+      Enabled = False
       ExplicitWidth = 103
     end
     object EditPesquisa: TEdit
@@ -147,6 +146,7 @@ object Form24: TForm24
       Height = 42
       Align = alClient
       Alignment = taCenter
+      Enabled = False
       TabOrder = 0
       ExplicitHeight = 23
     end
@@ -158,6 +158,7 @@ object Form24: TForm24
     Height = 16
     Align = alBottom
     BevelOuter = bvNone
+    Enabled = False
     TabOrder = 2
     ExplicitLeft = -400
     ExplicitTop = 425
@@ -169,12 +170,14 @@ object Form24: TForm24
       Align = alClient
       Alignment = taCenter
       Caption = '<Esc> Retorna        <Enter> Seleciona'
+      Enabled = False
       ExplicitWidth = 197
       ExplicitHeight = 15
     end
   end
   object aDataSource: TDataSource
-    Left = 932
-    Top = 96
+    Enabled = False
+    Left = 964
+    Top = 80
   end
 end
