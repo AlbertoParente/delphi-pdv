@@ -1,4 +1,4 @@
-object Form28: TForm28
+object Form81: TForm81
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -16,7 +16,7 @@ object Form28: TForm28
     Left = 0
     Top = 59
     Width = 1024
-    Height = 297
+    Height = 313
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -34,10 +34,9 @@ object Form28: TForm28
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = 5
-    ExplicitTop = 56
-    ExplicitWidth = 624
-    ExplicitHeight = 364
+    ExplicitLeft = -400
+    ExplicitTop = -250
+    ExplicitHeight = 691
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -128,6 +127,7 @@ object Form28: TForm28
     Height = 57
     Align = alTop
     BevelOuter = bvNone
+    Enabled = False
     TabOrder = 1
     ExplicitLeft = -400
     object LabelPesquisa: TLabel
@@ -137,6 +137,7 @@ object Form28: TForm28
       Height = 15
       Align = alTop
       Caption = 'Pesquisar Vendedor'
+      Enabled = False
       ExplicitWidth = 103
     end
     object EditPesquisa: TEdit
@@ -146,6 +147,7 @@ object Form28: TForm28
       Height = 42
       Align = alClient
       Alignment = taCenter
+      Enabled = False
       TabOrder = 0
       ExplicitHeight = 23
     end
@@ -157,6 +159,7 @@ object Form28: TForm28
     Height = 16
     Align = alBottom
     BevelOuter = bvNone
+    Enabled = False
     TabOrder = 2
     ExplicitLeft = -400
     ExplicitTop = 425
@@ -168,6 +171,7 @@ object Form28: TForm28
       Align = alClient
       Alignment = taCenter
       Caption = '<Esc> Retorna        <Enter> Seleciona'
+      Enabled = False
       ExplicitWidth = 197
       ExplicitHeight = 15
     end
@@ -175,9 +179,9 @@ object Form28: TForm28
   object cxGrid1: TcxGrid
     AlignWithMargins = True
     Left = 0
-    Top = 360
+    Top = 376
     Width = 1024
-    Height = 390
+    Height = 374
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -279,7 +283,8 @@ object Form28: TForm28
     end
   end
   object aDataSource: TDataSource
-    Left = 924
-    Top = 120
+    Enabled = False
+    Left = 932
+    Top = 96
   end
 end
