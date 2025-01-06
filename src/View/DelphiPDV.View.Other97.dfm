@@ -1,4 +1,4 @@
-object Form33: TForm33
+object Form86: TForm86
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -34,8 +34,6 @@ object Form33: TForm33
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = 224
-    ExplicitTop = 35
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -126,8 +124,8 @@ object Form33: TForm33
     Height = 57
     Align = alTop
     BevelOuter = bvNone
+    Enabled = False
     TabOrder = 1
-    ExplicitLeft = -400
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -135,6 +133,7 @@ object Form33: TForm33
       Height = 15
       Align = alTop
       Caption = 'Pesquisar Vendedor'
+      Enabled = False
       ExplicitWidth = 103
     end
     object EditPesquisa: TEdit
@@ -144,6 +143,7 @@ object Form33: TForm33
       Height = 42
       Align = alClient
       Alignment = taCenter
+      Enabled = False
       TabOrder = 0
       ExplicitHeight = 23
     end
@@ -155,9 +155,8 @@ object Form33: TForm33
     Height = 16
     Align = alBottom
     BevelOuter = bvNone
+    Enabled = False
     TabOrder = 2
-    ExplicitLeft = -400
-    ExplicitTop = 425
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -166,12 +165,14 @@ object Form33: TForm33
       Align = alClient
       Alignment = taCenter
       Caption = '<Esc> Retorna        <Enter> Seleciona'
+      Enabled = False
       ExplicitWidth = 197
       ExplicitHeight = 15
     end
   end
   object aDataSource: TDataSource
-    Left = 924
-    Top = 96
+    Enabled = False
+    Left = 880
+    Top = 120
   end
 end
