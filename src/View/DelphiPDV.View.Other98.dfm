@@ -1,4 +1,4 @@
-object Form36: TForm36
+object Form87: TForm87
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -14,9 +14,9 @@ object Form36: TForm36
   object DBGrid: TcxGrid
     AlignWithMargins = True
     Left = 0
-    Top = 59
+    Top = 365
     Width = 1024
-    Height = 361
+    Height = 385
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -34,7 +34,8 @@ object Form36: TForm36
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = 5
+    ExplicitTop = 59
+    ExplicitHeight = 691
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -55,7 +56,6 @@ object Form36: TForm36
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
-      OnCustomDrawCell = GridViewCustomDrawCell
       DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
@@ -126,8 +126,8 @@ object Form36: TForm36
     Height = 57
     Align = alTop
     BevelOuter = bvNone
+    Enabled = False
     TabOrder = 1
-    ExplicitLeft = -400
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -135,6 +135,7 @@ object Form36: TForm36
       Height = 15
       Align = alTop
       Caption = 'Pesquisar Vendedor'
+      Enabled = False
       ExplicitWidth = 103
     end
     object EditPesquisa: TEdit
@@ -144,6 +145,7 @@ object Form36: TForm36
       Height = 42
       Align = alClient
       Alignment = taCenter
+      Enabled = False
       TabOrder = 0
       ExplicitHeight = 23
     end
@@ -155,9 +157,8 @@ object Form36: TForm36
     Height = 16
     Align = alBottom
     BevelOuter = bvNone
+    Enabled = False
     TabOrder = 2
-    ExplicitLeft = -400
-    ExplicitTop = 425
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -166,6 +167,7 @@ object Form36: TForm36
       Align = alClient
       Alignment = taCenter
       Caption = '<Esc> Retorna        <Enter> Seleciona'
+      Enabled = False
       ExplicitWidth = 197
       ExplicitHeight = 15
     end
@@ -173,14 +175,14 @@ object Form36: TForm36
   object cxGrid1: TcxGrid
     AlignWithMargins = True
     Left = 0
-    Top = 424
+    Top = 59
     Width = 1024
-    Height = 326
+    Height = 302
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
     Margins.Bottom = 2
-    Align = alBottom
+    Align = alTop
     BevelInner = bvNone
     BevelOuter = bvNone
     Enabled = False
@@ -193,6 +195,7 @@ object Form36: TForm36
     TabOrder = 3
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitLeft = -5
     object cxGridDBTableView1: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -277,7 +280,8 @@ object Form36: TForm36
     end
   end
   object aDataSource: TDataSource
-    Left = 940
-    Top = 112
+    Enabled = False
+    Left = 936
+    Top = 96
   end
 end
