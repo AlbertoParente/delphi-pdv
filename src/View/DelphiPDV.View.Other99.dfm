@@ -1,4 +1,4 @@
-object Form38: TForm38
+object Form88: TForm88
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -56,7 +56,6 @@ object Form38: TForm38
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
-      OnCustomDrawCell = GridViewCustomDrawCell
       DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
@@ -127,6 +126,7 @@ object Form38: TForm38
     Height = 57
     Align = alTop
     BevelOuter = bvNone
+    Enabled = False
     TabOrder = 1
     ExplicitLeft = -400
     object LabelPesquisa: TLabel
@@ -136,6 +136,7 @@ object Form38: TForm38
       Height = 15
       Align = alTop
       Caption = 'Pesquisar Vendedor'
+      Enabled = False
       ExplicitWidth = 103
     end
     object EditPesquisa: TEdit
@@ -145,6 +146,7 @@ object Form38: TForm38
       Height = 42
       Align = alClient
       Alignment = taCenter
+      Enabled = False
       TabOrder = 0
       ExplicitHeight = 23
     end
@@ -156,6 +158,7 @@ object Form38: TForm38
     Height = 16
     Align = alBottom
     BevelOuter = bvNone
+    Enabled = False
     TabOrder = 2
     ExplicitLeft = -400
     ExplicitTop = 425
@@ -167,12 +170,14 @@ object Form38: TForm38
       Align = alClient
       Alignment = taCenter
       Caption = '<Esc> Retorna        <Enter> Seleciona'
+      Enabled = False
       ExplicitWidth = 197
       ExplicitHeight = 15
     end
   end
   object aDataSource: TDataSource
-    Left = 916
-    Top = 120
+    Enabled = False
+    Left = 908
+    Top = 160
   end
 end
