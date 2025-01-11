@@ -1,4 +1,4 @@
-object Form44: TForm44
+object Form91: TForm91
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -16,7 +16,7 @@ object Form44: TForm44
     Left = 0
     Top = 59
     Width = 1024
-    Height = 337
+    Height = 273
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -34,9 +34,7 @@ object Form44: TForm44
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -400
-    ExplicitTop = -250
-    ExplicitHeight = 691
+    ExplicitLeft = -5
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -57,7 +55,6 @@ object Form44: TForm44
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
-      OnCustomDrawCell = GridViewCustomDrawCell
       DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
@@ -180,9 +177,9 @@ object Form44: TForm44
   object cxGrid1: TcxGrid
     AlignWithMargins = True
     Left = 0
-    Top = 400
+    Top = 336
     Width = 1024
-    Height = 350
+    Height = 414
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -200,7 +197,6 @@ object Form44: TForm44
     TabOrder = 3
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitTop = 59
     object cxGridDBTableView1: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -286,7 +282,7 @@ object Form44: TForm44
   end
   object aDataSource: TDataSource
     Enabled = False
-    Left = 940
-    Top = 88
+    Left = 852
+    Top = 112
   end
 end
