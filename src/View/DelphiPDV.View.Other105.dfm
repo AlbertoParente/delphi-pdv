@@ -1,4 +1,4 @@
-object Form49: TForm49
+object Form94: TForm94
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -16,7 +16,7 @@ object Form49: TForm49
     Left = 0
     Top = 59
     Width = 1024
-    Height = 321
+    Height = 289
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -179,9 +179,9 @@ object Form49: TForm49
   object cxGrid1: TcxGrid
     AlignWithMargins = True
     Left = 0
-    Top = 384
+    Top = 352
     Width = 1024
-    Height = 366
+    Height = 398
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -284,7 +284,7 @@ object Form49: TForm49
   end
   object aDataSource: TDataSource
     Enabled = False
-    Left = 956
-    Top = 88
+    Left = 964
+    Top = 104
   end
 end
