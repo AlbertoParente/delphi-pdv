@@ -1,4 +1,4 @@
-object VwSeller: TVwSeller
+object Form100: TForm100
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -9,9 +9,7 @@ object VwSeller: TVwSeller
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnClose = FormClose
   OnKeyDown = FormKeyDown
-  OnShow = FormShow
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
@@ -58,7 +56,6 @@ object VwSeller: TVwSeller
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
-      OnCustomDrawCell = GridViewCustomDrawCell
       DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
@@ -131,6 +128,7 @@ object VwSeller: TVwSeller
     BevelOuter = bvNone
     Enabled = False
     TabOrder = 1
+    ExplicitLeft = 5
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -162,6 +160,7 @@ object VwSeller: TVwSeller
     BevelOuter = bvNone
     Enabled = False
     TabOrder = 2
+    ExplicitLeft = 5
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -177,7 +176,7 @@ object VwSeller: TVwSeller
   end
   object aDataSource: TDataSource
     Enabled = False
-    Left = 976
+    Left = 981
     Top = 88
   end
 end
