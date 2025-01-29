@@ -1,4 +1,4 @@
-unit DelphiPDV.View.Other64;
+unit DelphiPDV.View.Other120;
 
 interface
 
@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm63 = class(TForm)
+  TForm109 = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -42,12 +42,6 @@ type
     PanelInformation: TPanel;
     LabelInformation: TLabel;
     aDataSource: TDataSource;
-    cxGrid1: TcxGrid;
-    cxGridDBTableView1: TcxGridDBTableView;
-    cxGridDBColumn1: TcxGridDBColumn;
-    cxGridDBColumn2: TcxGridDBColumn;
-    cxGridDBCardView1: TcxGridDBCardView;
-    cxGridLevel1: TcxGridLevel;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
   private
     { Private declarations }
@@ -58,15 +52,13 @@ type
   end;
 
 var
-  Form63: TForm63;
+  Form109: TForm109;
 
 implementation
 
 {$R *.dfm}
 
-{ TForm63 }
-
-procedure TForm63.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TForm109.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   inherited;
@@ -94,13 +86,13 @@ begin
   end;
 end;
 
-procedure TForm63.Process;
+procedure TForm109.Process;
 begin
   Review;
   Close;
 end;
 
-procedure TForm63.Review;
+procedure TForm109.Review;
 begin
 
 end;
