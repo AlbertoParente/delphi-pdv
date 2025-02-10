@@ -1,4 +1,4 @@
-object VwSeller: TVwSeller
+object Form121: TForm121
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -9,9 +9,6 @@ object VwSeller: TVwSeller
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnClose = FormClose
-  OnKeyDown = FormKeyDown
-  OnShow = FormShow
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
@@ -175,7 +172,7 @@ object VwSeller: TVwSeller
   end
   object aDataSource: TDataSource
     Enabled = False
-    Left = 787
-    Top = 168
+    Left = 955
+    Top = 104
   end
 end
