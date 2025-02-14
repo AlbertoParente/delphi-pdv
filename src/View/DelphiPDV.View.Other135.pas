@@ -1,4 +1,4 @@
-unit DelphiPDV.View.Other1343;
+unit DelphiPDV.View.Other135;
 
 interface
 
@@ -29,7 +29,7 @@ uses
   cxClasses, cxGridCustomView, cxGrid;
 
 type
-  TForm123 = class(TForm)
+  TForm125 = class(TForm)
     DBGrid: TcxGrid;
     GridView: TcxGridDBTableView;
     ColumnCodigo: TcxGridDBColumn;
@@ -48,7 +48,9 @@ type
     cxGridDBColumn2: TcxGridDBColumn;
     cxGridDBCardView1: TcxGridDBCardView;
     cxGridLevel1: TcxGridLevel;
-    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+      ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
+      var ADone: Boolean);
   private
     { Private declarations }
   public
@@ -58,47 +60,33 @@ type
   end;
 
 var
-  Form123: TForm123;
+  Form125: TForm125;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm123.FormKeyDown(Sender: TObject; var Key: Word;
-  Shift: TShiftState);
+{ TForm125 }
+
+procedure TForm125.GridViewCustomDrawCell(Sender: TcxCustomGridTableView;
+  ACanvas: TcxCanvas; AViewInfo: TcxGridTableDataCellViewInfo;
+  var ADone: Boolean);
 begin
   inherited;
-  case Key of
-    VK_ESCAPE:
-    begin
-      Close;
-    end;
-    VK_NEXT:
-    begin
-      Process;
-    end;
-    VK_RETURN:
-    begin
-      SelectNext(Screen.ActiveControl, True, True);
-    end;
-    VK_UP:
-    begin
-      aDataSource.DataSet.Prior;
-    end;
-    VK_DOWN:
-    begin
-      aDataSource.DataSet.Next;
-    end;
+  if AViewInfo.GridRecord.Selected then
+  begin
+    ACanvas.Brush.Color := clHighlight;
+    ACanvas.Font.Color  := clWhite;
   end;
 end;
 
-procedure TForm123.Process;
+procedure TForm125.Process;
 begin
   Review;
   Close;
 end;
 
-procedure TForm123.Review;
+procedure TForm125.Review;
 begin
 
 end;
