@@ -1,4 +1,4 @@
-object Form60: TForm60
+object Form128: TForm128
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -9,13 +9,14 @@ object Form60: TForm60
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnKeyDown = FormKeyDown
   TextHeight = 15
   object DBGrid: TcxGrid
     AlignWithMargins = True
     Left = 0
     Top = 59
     Width = 1024
-    Height = 321
+    Height = 305
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -33,8 +34,8 @@ object Form60: TForm60
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = -400
-    ExplicitTop = -250
+    ExplicitLeft = 5
+    ExplicitTop = 56
     ExplicitHeight = 691
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
@@ -56,7 +57,6 @@ object Form60: TForm60
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
-      OnCustomDrawCell = GridViewCustomDrawCell
       DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
@@ -129,7 +129,6 @@ object Form60: TForm60
     BevelOuter = bvNone
     Enabled = False
     TabOrder = 1
-    ExplicitLeft = -400
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -161,8 +160,6 @@ object Form60: TForm60
     BevelOuter = bvNone
     Enabled = False
     TabOrder = 2
-    ExplicitLeft = -400
-    ExplicitTop = 425
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -179,9 +176,9 @@ object Form60: TForm60
   object cxGrid1: TcxGrid
     AlignWithMargins = True
     Left = 0
-    Top = 384
+    Top = 368
     Width = 1024
-    Height = 366
+    Height = 382
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -284,7 +281,7 @@ object Form60: TForm60
   end
   object aDataSource: TDataSource
     Enabled = False
-    Left = 916
-    Top = 112
+    Left = 947
+    Top = 104
   end
 end
