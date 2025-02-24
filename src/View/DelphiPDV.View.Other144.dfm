@@ -1,4 +1,4 @@
-object Form123: TForm123
+object Form134: TForm134
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -16,7 +16,7 @@ object Form123: TForm123
     Left = 0
     Top = 59
     Width = 1024
-    Height = 289
+    Height = 305
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -34,7 +34,9 @@ object Form123: TForm123
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
-    ExplicitLeft = 5
+    ExplicitLeft = -400
+    ExplicitTop = -250
+    ExplicitHeight = 691
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -127,6 +129,7 @@ object Form123: TForm123
     BevelOuter = bvNone
     Enabled = False
     TabOrder = 1
+    ExplicitLeft = -400
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -158,6 +161,8 @@ object Form123: TForm123
     BevelOuter = bvNone
     Enabled = False
     TabOrder = 2
+    ExplicitLeft = -400
+    ExplicitTop = 425
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -174,9 +179,9 @@ object Form123: TForm123
   object cxGrid1: TcxGrid
     AlignWithMargins = True
     Left = 0
-    Top = 352
+    Top = 368
     Width = 1024
-    Height = 398
+    Height = 382
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -279,7 +284,7 @@ object Form123: TForm123
   end
   object aDataSource: TDataSource
     Enabled = False
-    Left = 859
-    Top = 160
+    Left = 948
+    Top = 104
   end
 end
