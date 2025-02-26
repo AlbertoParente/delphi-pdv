@@ -1,4 +1,4 @@
-object Form12: TForm12
+object Form136: TForm136
   Left = 0
   Top = 0
   ClientHeight = 768
@@ -14,9 +14,9 @@ object Form12: TForm12
   object DBGrid: TcxGrid
     AlignWithMargins = True
     Left = 0
-    Top = 59
+    Top = 381
     Width = 1024
-    Height = 305
+    Height = 369
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
@@ -34,6 +34,8 @@ object Form12: TForm12
     TabOrder = 0
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitLeft = -400
+    ExplicitTop = -250
     ExplicitHeight = 691
     object GridView: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
@@ -55,7 +57,6 @@ object Form12: TForm12
       Navigator.Buttons.Filter.Visible = True
       FilterBox.CustomizeDialog = False
       ScrollbarAnnotations.CustomAnnotations = <>
-      OnCustomDrawCell = GridViewCustomDrawCell
       DataController.DataSource = aDataSource
       DataController.Filter.Options = [fcoCaseInsensitive]
       DataController.Summary.DefaultGroupSummaryItems = <>
@@ -128,6 +129,7 @@ object Form12: TForm12
     BevelOuter = bvNone
     Enabled = False
     TabOrder = 1
+    ExplicitLeft = -400
     object LabelPesquisa: TLabel
       Left = 0
       Top = 0
@@ -159,6 +161,8 @@ object Form12: TForm12
     BevelOuter = bvNone
     Enabled = False
     TabOrder = 2
+    ExplicitLeft = -400
+    ExplicitTop = 425
     object LabelInformation: TLabel
       Left = 0
       Top = 0
@@ -175,14 +179,14 @@ object Form12: TForm12
   object cxGrid1: TcxGrid
     AlignWithMargins = True
     Left = 0
-    Top = 368
+    Top = 59
     Width = 1024
-    Height = 382
+    Height = 318
     Margins.Left = 0
     Margins.Top = 2
     Margins.Right = 0
     Margins.Bottom = 2
-    Align = alBottom
+    Align = alTop
     BevelInner = bvNone
     BevelOuter = bvNone
     Enabled = False
@@ -195,6 +199,7 @@ object Form12: TForm12
     TabOrder = 3
     TabStop = False
     LookAndFeel.Kind = lfOffice11
+    ExplicitTop = 432
     object cxGridDBTableView1: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -280,7 +285,7 @@ object Form12: TForm12
   end
   object aDataSource: TDataSource
     Enabled = False
-    Left = 888
-    Top = 128
+    Left = 956
+    Top = 88
   end
 end
