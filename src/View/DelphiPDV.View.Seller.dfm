@@ -175,7 +175,7 @@ object VwSeller: TVwSeller
   end
   object aDataSource: TDataSource
     Enabled = False
-    Left = 867
-    Top = 152
+    Left = 963
+    Top = 96
   end
 end
