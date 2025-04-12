@@ -44,6 +44,16 @@ type
     Panel1: TPanel;
     LabelInformation: TLabel;
     Panel6: TPanel;
+    GridPanel1: TGridPanel;
+    Panel8: TPanel;
+    Label15: TLabel;
+    Label17: TLabel;
+    Label18: TLabel;
+    Label19: TLabel;
+    Label20: TLabel;
+    Shape5: TShape;
+    Shape6: TShape;
+    Label21: TLabel;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormShow(Sender: TObject);
